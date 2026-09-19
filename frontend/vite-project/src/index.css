@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "IBM Plex Sans", sans-serif;
+
+  /* DFL Express Light Theme Palette */
+  --color-ink: #f8fafc;       /* Light Page Background */
+  --color-panel: #ffffff;     /* White Card Background */
+  --color-ivory: #0b132a;     /* Main Dark Navy Text */
+  --color-slate: #64748b;     /* Subtitle & Muted Text */
+  --color-brass: #e66e19;     /* Primary Brand Orange Accent */
+  --color-ember: #238b9b;     /* Ocean Teal Footer Accent */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-ink);
+  color: var(--color-ivory);
+}
+
+::selection {
+  background: var(--color-brass);
+  color: #ffffff;
+}
+
+/* Jab user keyboard se Tab key press karke kisi button, link, input etc. par pahunchta hai, tab us element ke around ye outline dikhegi. */
+:focus-visible {
+  outline: 2px solid var(--color-brass);
+  outline-offset: 1px;
+}
+
+/* ===== Animations (used across Navbar, Home hero, tracker & CTAs) ===== */
+
+
+/* Element neeche se upar aayega aur saath mein visible hoga. */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Ye horizontal line ko draw hone jaisa effect deta hai. */
+@keyframes lineDraw {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+
+/* Ye gradient ko horizontally move karata hai. */
+@keyframes gradientFlow {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+
+/* Ye CTA ke around glow/pulse effect ke liye hai. */
+@keyframes ctaPulse {
+  0%, 100% {
+    opacity: 0.25;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.06);
+  }
+}
+
+/* Ye arrow ko thoda right move karata hai. */
+@keyframes arrowNudge {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+}
+/* Element ko left side se right side move karata hai. */
+@keyframes shipmentMove {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 86%;
+  }
+}
+
+.animate-shipment {
+     animation: shipmentMove 6s linear infinite alternate;
+     }
+
+/* Ye element ko upar-neeche floating effect deta hai. */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+/* jin users ne apne device mein animations kam/disable karne ki preference set ki hai, unke liye website ki animations almost band kar dena. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
