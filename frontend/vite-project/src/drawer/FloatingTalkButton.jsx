@@ -4,17 +4,49 @@ export default function FloatingTalkButton() {
   const { openModal } = useTalkModal();
 
   return (
-    <div className="fixed bottom-6 right-6 z-30">
+    <div className="fixed bottom-20 right-10 z-30">
+      {/* Custom Keyframes for Smooth Animation */}
+      <style>{`
+        @keyframes customPulse {
+          0% {
+            transform: scale(0.95);
+            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+          }
+          70% {
+            transform: scale(1);
+            box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+          }
+          100% {
+            transform: scale(0.95);
+            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+          }
+        }
+
+        @keyframes gentleFloat {
+          0%, 100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-6px);
+          }
+        }
+
+        .whatsapp-pulse-btn {
+          animation: customPulse 2s infinite, gentleFloat 3s ease-in-out infinite;
+        }
+      `}</style>
+
       <button
         onClick={openModal}
-        className="group flex items-center gap-3 rounded-full bg-[#E66E19] px-5 py-3.5 text-sm font-bold text-white shadow-2xl ring-4 ring-white transition-all duration-300 hover:scale-105 active:scale-95"
+        aria-label="Open WhatsApp Chat"
+        className="whatsapp-pulse-btn group relative flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-xl transition-transform duration-300 hover:scale-110 active:scale-95"
       >
-        <span className="relative flex h-3 w-3">
-          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75" />
-          <span className="relative inline-flex h-3 w-3 rounded-full bg-white" />
-        </span>
-        <span>Talk to Us</span>
-        <span className="rounded-full bg-white/20 p-1">💬</span>
+        {/* High-Quality Official WhatsApp PNG Icon */}
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png"
+          alt="WhatsApp Chat"
+          className="relative z-10 h-8 w-8 object-contain transition-transform duration-300 group-hover:rotate-12"
+        />
       </button>
     </div>
   );

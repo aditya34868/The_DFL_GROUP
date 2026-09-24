@@ -1,125 +1,127 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Cards({ services = [], onInquire }) {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isTransitioning, setIsTransitioning] = useState(true);
-  const [visibleCards, setVisibleCards] = useState(1);
+  const cardRefs = useRef([]);
+  const [scales, setScales] = useState({});
 
   useEffect(() => {
-    const updateVisibleCards = () => {
-      if (window.innerWidth >= 1024) {
-        setVisibleCards(3);
-      } else if (window.innerWidth >= 640) {
-        setVisibleCards(2);
-      } else {
-        setVisibleCards(1);
-      }
+    const handleScroll = () => {
+      const newScales = {};
+      cardRefs.current.forEach((el, i) => {
+        const nextEl = cardRefs.current[i + 1];
+        if (nextEl) {
+          const nextTop = nextEl.getBoundingClientRect().top;
+          const offset = 80 + (i + 1) * 40;
+          const dist = nextTop - offset;
+          // Scale 1 se reduce hokar 0.93 hoga jab next card touch karega
+          const scale = dist < 250 ? Math.max(0.85, 0.85 + (dist / 250) * 0.07) : 1;
+          newScales[i] = scale;
+        }
+      });
+      setScales(newScales);
     };
 
-    updateVisibleCards();
-    window.addEventListener("resize", updateVisibleCards);
-    return () => window.removeEventListener("resize", updateVisibleCards);
-  }, []);
-
-  const extendedServices = [
-    ...services,
-    ...services.slice(0, visibleCards),
-  ];
-
-  useEffect(() => {
-    if (services.length <= visibleCards) return;
-
-    const timer = setInterval(() => {
-      setIsTransitioning(true);
-      setCurrentIndex((prev) => prev + 1);
-    }, 3500);
-      
-    return () => clearInterval(timer);
-  }, [services.length, visibleCards]);
-   
-  const handleTransitionEnd = () => {
-    if (currentIndex >= services.length) {
-      setIsTransitioning(false);
-      setCurrentIndex(0);
-    }
-  };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [services.length]);
 
   return (
-    <div className="relative mt-12 w-full overflow-hidden">
-      {/* Dynamic Sliding Track */}
-      <div
-        onTransitionEnd={handleTransitionEnd}
-        className={`flex  ${
-          isTransitioning ? "transition-transform duration-700 ease-in-out" : ""
-        }`}
-        style={{
-          transform: `translateX(-${(currentIndex * 100) / visibleCards}%)`,
-        }}
-      >
-        {extendedServices.map((service, idx) => (
-          <div
-            key={`${service.id}-${idx}`}
-            style={{ flex: `0 0 ${100 / visibleCards}%` }}
-            className="px-2.5" // Gap flex box ki jagah padding se manage karein
-          >
-            <div className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200/80 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-[#E66E19]/40 hover:shadow-xl">
-              {/* Top Orange Highlight */}
-              <div className="absolute left-0 right-0 top-0 z-10 h-1 bg-gradient-to-r from-[#E66E19] to-amber-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+    <div className="relative my-8 w-full pb-24">
+      {services.map((service, index) => {
+        const tabOffset = 80 + index * 40;
+        const scale = scales[index] ?? 1;
 
-              {/* Image Banner */}
-              <div className="relative h-48 w-full overflow-hidden bg-slate-100">
-                <img
-                  src={service.image}
-                  alt={service.name}
-                  className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-                />
-                <span className="absolute right-3 top-3 rounded-full bg-[#0B132A]/85 px-3 py-1 font-mono text-[11px] font-semibold text-white backdrop-blur-md">
-                  {service.tag}
-                </span>
+        return (
+          <div
+            key={service.id || index}
+            ref={(el) => (cardRefs.current[index] = el)}
+            className="sticky my-4 origin-top transition-transform duration-100 ease-out"
+            style={{
+              top: `${tabOffset}px`,
+              zIndex: index + 1,
+              transform: `scale(${scale})`,
+            }}
+          >
+            {/* Card Main Container with Solid White Background */}
+            <div className="mx-auto w-full max-w-6xl overflow-hidden rounded-[2rem]  bg-white shadow-2xl">
+              
+              {/* Header Tab */}
+              <div className="flex items-center justify-between  bg-white px-6 py-3.5">
+                <div className="flex items-center gap-3">
+                  <span className="rounded-lg bg-slate-100 px-2.5 py-1 font-mono text-xs font-black text-slate-800">
+                    {index + 1}/{services.length || 4}
+                  </span>
+                  <h4 className="text-xs font-extrabold uppercase text-slate-900 md:text-sm">
+                    {service.name}
+                  </h4>
+                </div>
+                {service.tag && (
+                  <span className="rounded-full bg-slate-100 px-3 py-1 font-mono text-[11px] font-bold text-slate-700">
+                    {service.tag}
+                  </span>
+                )}
               </div>
 
-              {/* Content Details */}
-              <div className="flex flex-1 flex-col justify-between p-6">
-                <div>
-                  <div className="flex items-center gap-2 font-mono text-xs font-bold text-[#E66E19]">
-                    <span>SERVICES // {service.id}</span>
+              {/* Card Body */}
+              <div className="p-6 md:p-8 lg:p-10 bg-white">
+                <div className="flex flex-col justify-between md:flex-row md:items-center">
+                  
+                  {/* Left Content */}
+                  <div className="flex-1 pr-0 md:pr-8">
+                    <h3 className="text-2xl font-black text-[#0B132A] hover:text-[#E66E19] md:text-3xl">
+                      <Link to={service.path || "#"} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+                        {service.name}
+                      </Link>
+                    </h3>
+
+                    <p className="mt-3 text-sm text-slate-600 md:text-base">
+                      {service.description}
+                    </p>
+
+                    {service.features?.length > 0 && (
+                      <ul className="mt-5 grid grid-cols-1 gap-2 text-xs font-bold text-slate-700 sm:grid-cols-2 md:text-sm">
+                        {service.features.map((feat, idx) => (
+                          <li key={idx} className="flex items-center gap-2">
+                            <span className="flex h-4 w-4 items-center justify-center rounded-full bg-[#E66E19]/10 text-[10px] font-black text-[#E66E19]">✓</span>
+                            <span className="truncate">{feat}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+
+                    <div className="mt-6 flex flex-wrap items-center gap-3">
+                      <Link
+                        to={service.path || "#"}
+                        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                        className="rounded-xl bg-[#0B132A] px-6 py-3 text-xs font-bold text-white hover:bg-[#E66E19] md:text-sm"
+                      >
+                        Explore Service →
+                      </Link>
+                      <button
+                        onClick={() => onInquire && onInquire(service)}
+                        className="rounded-xl bg-slate-100 px-5 py-3 text-xs font-bold text-[#0B132A] hover:bg-slate-200 md:text-sm"
+                      >
+                        Get Instant Quote
+                      </button>
+                    </div>
                   </div>
 
-                  <h3 className="mt-2 text-xl font-bold text-[#0B132A] transition-colors group-hover:text-[#E66E19]">
-                    {service.name}
-                  </h3>
-
-                  <p className="mt-2 text-xs leading-relaxed text-slate-500 line-clamp-3">
-                    {service.description}
-                  </p>
-
-                  {service.features?.length > 0 && (
-                    <ul className="mt-4 grid grid-cols-2 gap-2 border-t border-slate-100 pt-4 text-xs font-semibold text-slate-700">
-                      {service.features.map((feature, index) => (
-                        <li key={index} className="flex items-center gap-1.5 truncate">
-                          <span className="text-[#E66E19]">✓</span>
-                          <span className="truncate">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
+                  {/* Right Image */}
+                  {service.image && (
+                    <div className="mt-6 h-56 w-full shrink-0 overflow-hidden rounded-2xl bg-slate-100 md:mt-0 md:h-64 md:w-72 lg:w-80">
+                      <img src={service.image} alt={service.name} className="h-full w-full object-cover" />
+                    </div>
                   )}
-                </div>
 
-                {/* Action Button */}
-                <div className="mt-6 border-t border-slate-100 pt-4">
-                  <button
-                    onClick={() => onInquire?.(service)}
-                    className="group/btn flex w-full items-center justify-between rounded-xl bg-slate-50 px-4 py-2.5 text-xs font-bold text-[#0B132A] transition-all hover:bg-[#E66E19] hover:text-white"
-                  >
-                    <span>Inquire Service</span>
-                    <span className="transition-transform group-hover/btn:translate-x-1">→</span>
-                  </button>
                 </div>
               </div>
+
             </div>
           </div>
-        ))}
-      </div>
+        );
+      })}
     </div>
   );
 }

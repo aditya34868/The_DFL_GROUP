@@ -1,24 +1,6 @@
 import React from "react";
 import PresenceLocations from "../components/PresenceLocations";
-
-const keyHighlights = [
-  {
-    title: "Global Network",
-    description: "Serving clients across continents, we connect you to opportunities in international markets through robust supply chain management."
-  },
-  {
-    title: "Advanced Infrastructure",
-    description: "Our state-of-the-art warehouses and distribution centers ensure secure storage and efficient handling of goods."
-  },
-  {
-    title: "On-the-Ground Teams",
-    description: "Local teams with expert knowledge provide real-time support and insights, ensuring smooth logistics operations."
-  },
-  {
-    title: "Customs & Compliance",
-    description: "Our presence in major ports and trade zones simplifies international shipping with seamless customs clearance."
-  }
-];
+import { keyHighlights } from "../data/siteData";
 
 export default function OurPresence() {
   return (
@@ -49,11 +31,12 @@ export default function OurPresence() {
             </p>
           </div>
 
-          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {/* CENTERED FLEX LAYOUT FOR HIGHLIGHT CARDS */}
+          <div className="mt-10 flex flex-wrap justify-center gap-6">
             {keyHighlights.map((item, index) => (
               <div 
                 key={index}
-                className="rounded-2xl border border-slate-200 bg-orange-50/50 p-6 transition-all duration-300 hover:border-[#E66E19] hover:bg-white hover:shadow-lg hover:-translate-y-1"
+                className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] max-w-xs rounded-2xl border border-slate-200 bg-orange-50/50 p-6 transition-all duration-300 hover:border-[#E66E19] hover:bg-white hover:shadow-lg hover:-translate-y-1"
               >
                 <div className="text-[#E66E19] font-black text-lg">0{index + 1}.</div>
                 <h3 className="mt-2 font-bold text-slate-900">{item.title}</h3>

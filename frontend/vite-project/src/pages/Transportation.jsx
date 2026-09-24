@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {TransportKeyAdvantages,serviceModels} from "../data/siteData"
 import {
   FiTruck,
   FiMapPin,
@@ -14,55 +15,6 @@ import {
 } from "react-icons/fi";
 
 export default function Transportation() {
-  const keyAdvantages = [
-    {
-      icon: <FiMapPin className="h-6 w-6 text-[#E66E19] transition-colors duration-300 group-hover:text-white" />,
-      title: "Extensive Connectivity",
-      description: "Direct access to remote and urban locations with minimal geographical restrictions.",
-    },
-    {
-      icon: <FiClock className="h-6 w-6 text-[#E66E19] transition-colors duration-300 group-hover:text-white" />,
-      title: "Flexible Routes & Schedules",
-      description: "Adaptable dispatch timings and customizable transit routes tailored to urgency.",
-    },
-    {
-      icon: <FiTruck className="h-6 w-6 text-[#E66E19] transition-colors duration-300 group-hover:text-white" />,
-      title: "Door-to-Door Delivery",
-      description: "Seamless single-point pickup and final destination drop-off without extra hassle.",
-    },
-    {
-      icon: <FiDollarSign className="h-6 w-6 text-[#E66E19] transition-colors duration-300 group-hover:text-white" />,
-      title: "Cost-Effective Solutions",
-      description: "Optimized FTL & LTL freight pricing sharing space to reduce operational overheads.",
-    },
-  ];
-
-  const serviceModels = [
-    {
-      title: "Full Truckload (FTL)",
-      detail: "Ideal for large shipments requiring an entire dedicated truck for maximum security & speed.",
-    },
-    {
-      title: "Less-than-Truckload (LTL)",
-      detail: "Cost-sharing model for smaller cargo by combining shipments on shared routes.",
-    },
-    {
-      title: "Door-to-Door Service",
-      detail: "End-to-end management from seller warehouse directly to client doorstep.",
-    },
-    {
-      title: "Door-to-Hub Logistics",
-      detail: "Pickup from factory location and drop-off at central regional distribution hubs.",
-    },
-    {
-      title: "Hub-to-Door Express",
-      detail: "Fast-track movement from primary transit hubs to individual customer locations.",
-    },
-    {
-      title: "GPS Tracked Fleet",
-      detail: "Real-time route surveillance and speed monitoring for full shipment visibility.",
-    },
-  ];
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-800 pt-28 pb-20 px-4 sm:px-6 md:px-12 font-sans">
@@ -88,7 +40,7 @@ export default function Transportation() {
             <div className="w-full border-b border-dashed border-orange-300 absolute left-0 top-1/2 -translate-y-1/2"></div>
             
             {/* MOVING TRUCK ELEMENT */}
-            <div className="absolute top-1/2 -translate-y-1/2 animate-shipment z-10 flex items-center gap-2 bg-[#E66E19] text-white px-3 py-1 rounded-full text-xs font-bold shadow-md shadow-orange-500/20 whitespace-nowrap">
+            <div className="absolute top-7 -translate-y-1/2 animate-scan z-10 flex items-center gap-2 bg-[#E66E19] text-white px-3 py-1 rounded-full text-xs font-bold shadow-md shadow-orange-500/20 whitespace-nowrap">
               <FiTruck className="h-3.5 w-3.5" />
               <span>In-Transit Truckload</span>
             </div>
@@ -208,7 +160,7 @@ export default function Transportation() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {keyAdvantages.map((item, idx) => (
+            {TransportKeyAdvantages.map((item, idx) => (
               <div
                 key={idx}
                 className="group relative flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-[#E66E19] hover:bg-[#E66E19] hover:shadow-xl"

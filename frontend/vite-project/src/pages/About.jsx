@@ -1,47 +1,8 @@
 import React from "react";
 import { useTalkModal } from "../context/TalkModalContext";
-import { LOGISTICS_IMAGES } from "../data/siteData";
-import { 
-  FiGlobe, 
-  FiEye, 
-  FiTarget, 
-  FiAward, 
-  FiUsers, 
-  FiTrendingUp, 
-  FiShield, 
-  FiCheckCircle,
-  FiArrowRight 
-} from "react-icons/fi";
+import { LOGISTICS_IMAGES , aboutCoreValues ,aboutHighlights } from "../data/siteData";
+import {  FiEye, FiTarget,  FiUsers, FiCheckCircle, FiArrowRight } from "react-icons/fi";
 
-const coreValues = [
-  {
-    title: "Honesty & Transparency",
-    desc: "We uphold the highest ethical standards in all our global operations.",
-    icon: FiShield,
-  },
-  {
-    title: "Innovation & Excellence",
-    desc: "Exceeding expectations with dependable, timely, and smart logistics.",
-    icon: FiAward,
-  },
-  {
-    title: "Sustainability",
-    desc: "Adopting green practices and sustainable logistics solutions worldwide.",
-    icon: FiGlobe,
-  },
-  {
-    title: "Together We Grow",
-    desc: "Building long-lasting, mutually beneficial partnerships with clients.",
-    icon: FiTrendingUp,
-  },
-];
-
-const highlights = [
-  "Air Freight & Sea Freight",
-  "Customs Clearance Expert",
-  "Multimodal Transportation",
-  "Tailored Courier Services",
-];
 
 export default function About() {
   const { openModal } = useTalkModal();
@@ -61,7 +22,7 @@ export default function About() {
           <div className="group relative cursor-pointer animate-fade-in-up">
             <div className="relative overflow-hidden rounded-3xl border border-slate-200/80 bg-slate-100 shadow-xl transition-all duration-500 hover:shadow-2xl hover:shadow-orange-500/20">
               <img
-                src={LOGISTICS_IMAGES.cargoAir}
+                src={LOGISTICS_IMAGES.about}
                 alt="DFL Cargo Aviation"
                 className="h-96 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
               />
@@ -100,7 +61,7 @@ export default function About() {
 
             {/* Highlights Grid with Hover Effects */}
             <div className="grid grid-cols-2 gap-3 pt-2">
-              {highlights.map((item) => (
+              {aboutHighlights.map((item) => (
                 <div
                   key={item}
                   className="group flex cursor-pointer items-center gap-2.5 rounded-xl border border-slate-200/80 bg-slate-50 p-3 text-xs font-bold text-slate-800 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#E66E19] hover:bg-orange-50/50 hover:shadow-md hover:shadow-orange-500/10"
@@ -201,7 +162,7 @@ export default function About() {
             </div>
 
             <div className="grid grid-cols-2 gap-4">
-              {coreValues.map((val) => {
+              {aboutCoreValues.map((val) => {
                 const IconComp = val.icon;
                 return (
                   <div

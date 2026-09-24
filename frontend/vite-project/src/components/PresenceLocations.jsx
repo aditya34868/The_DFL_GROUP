@@ -1,64 +1,6 @@
 import React, { useState } from "react";
 import { FiMapPin, FiPhone, FiMail } from "react-icons/fi";
-
-const countries = [
-  { id: "all", label: "All Locations" },
-  { id: "india", label: "India" },
-  { id: "uk", label: "UK" },
-  { id: "thailand", label: "Thailand" },
-  { id: "dubai", label: "Dubai" },
-];
-
-export const branchOffices = [
-  {
-    id: "noida",
-    countryId: "india",
-    city: "Noida",
-    address: "B 331, Logix Technova, Block B, Sector 132, Noida, Uttar Pradesh 201305",
-    phone: "+91 9999309839",
-    email: "sales@dflindia.in"
-  },
-  {
-    id: "mumbai",
-    countryId: "india",
-    city: "Mumbai",
-    address: "231 Sai Chambers, B Wings, Sector 11, CBD Belapur, Navi Mumbai - 400614",
-    phone: "+91 9971076083",
-    email: "kp@dflindia.in"
-  },
-  {
-    id: "ahmedabad",
-    countryId: "india",
-    city: "Ahmedabad",
-    address: "D/1001, 10th Floor Titanium City Centre, Prahladnagar, 100 FT Road, Satellite, Ahmedabad, Gujarat - 380015",
-    phone: "+91 9319524092",
-    email: "ts@dflindia.in"
-  },
-  {
-    id: "london",
-    countryId: "uk",
-    city: "London Hub",
-    address: "Unit 4, Heathrow Cargo Park, Colnbrook, Slough, UK",
-    phone: "+44 20 8123 4567",
-    email: "uk@dflindia.in"
-  },
-  {
-    id: "bangkok",
-    countryId: "thailand",
-    city: "Bangkok Gateway",
-    address: "88/12 Suvarnabhumi Port & Cargo Complex, Bangkok, Thailand",
-    phone: "+66 2 123 4567",
-    email: "thailand@dflindia.in"
-  },
-  {
-    id: "dubai-central",
-    countryId: "dubai",
-    city: "Dubai World Central",
-    address: "Suite 502, Logistics City, DWC, Jebel Ali, Dubai, UAE",
-    phone: "+971 4 800 3355",
-    email: "dubai@dflindia.in"
-  }
-];
+import { countries, branchOffices } from "../data/siteData";
 
 export default function PresenceLocations() {
   const [selectedCountry, setSelectedCountry] = useState("all");
@@ -104,12 +46,13 @@ export default function PresenceLocations() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {/* FLEX WRAP WITH JUSTIFY CENTER */}
+        <div className="flex flex-wrap justify-center gap-6">
           {filteredBranches.map((branch, index) => (
             <div
               key={`${selectedCountry}-${branch.id}`}
               style={{ animationDelay: `${index * 100}ms` }}
-              className="animate-card-entry group relative flex flex-col justify-between overflow-hidden rounded-3xl border border-slate-200/80 bg-white p-8 shadow-xl transition-all duration-300 hover:-translate-y-2 hover:border-[#E66E19] hover:shadow-2xl hover:shadow-orange-500/10"
+              className="animate-card-entry group relative flex w-full max-w-sm flex-col justify-between overflow-hidden rounded-3xl border border-slate-200/80 bg-white p-8 shadow-xl transition-all duration-300 hover:-translate-y-2 hover:border-[#E66E19] hover:shadow-2xl hover:shadow-orange-500/10 sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
             >
               <div className="animate-glow absolute -right-10 -top-10 h-32 w-32 rounded-full bg-orange-100 blur-2xl transition-all duration-300 group-hover:bg-orange-200" />
 

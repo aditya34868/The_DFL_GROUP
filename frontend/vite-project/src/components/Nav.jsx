@@ -156,8 +156,11 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <button
             type="button"
-            className="hidden items-center gap-2 rounded-xl bg-[#E66E19] px-4 py-2 text-sm font-bold text-white transition-all duration-200 hover:bg-[#d55f0f] active:scale-90 md:flex"
-          >
+            className="hidden items-center gap-2 rounded-xl bg-[#E66E19] px-3 py-1 text-sm font-bold text-white transition-all duration-200 hover:bg-[#d55f0f] active:scale-90 md:flex"onClick={() => {
+      window.location.href = "https://express.thedflgroup.com/login";
+    }}>
+      
+          
             <span>Login</span>
             <span className="inline-block text-xl font-extrabold animate-[arrowNudge_1.2s_ease-in-out_infinite]">
               →
@@ -250,7 +253,9 @@ export default function Navbar() {
           <button
             type="button"
             className="mt-2 flex w-full items-center justify-center gap-2 rounded-xl bg-[#E66E19] py-2.5 text-sm font-bold text-white transition-all active:scale-95"
-          >
+          onClick={() => {
+      window.location.href = "https://express.thedflgroup.com/login";
+    }}>
             <span>Login</span>
             <span className="inline-block text-xl font-extrabold animate-[arrowNudge_1.2s_ease-in-out_infinite]">
               →

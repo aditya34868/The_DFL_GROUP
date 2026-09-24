@@ -1,18 +1,109 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { useTalkModal } from "../context/TalkModalContext";
 import Counter from "../components/Counter";
 import Cards from "../components/Cards";
-import FeaturesCards from "../components/FeaturesCards"
-import { LOGISTICS_IMAGES, services, working, stats, highlights , techFeaturesData } from "../data/siteData";
+import FeaturesCards from "../components/FeaturesCards";
+import mapImage from "../assets/Country-Location-Banner.png";
+import { 
+  LOGISTICS_IMAGES, 
+  services, 
+  working, 
+  stats, 
+  highlights, 
+  techFeaturesData, 
+  bottomstats, 
+  testimonials 
+} from "../data/siteData";
+
+// Icons for Partners Banner
+import { SiDhl, SiFedex, SiUps, SiEbay, SiShopify } from "react-icons/si";
 
 export default function Home() {
   const { openModal } = useTalkModal();
   const location = useLocation();
-
   const [activeSlide, setActiveSlide] = useState(0);
-  const [trackingId, setTrackingId] = useState("");
-  const [trackingResult, setTrackingResult] = useState(null);
+  const [index, setIndex] = useState(0); // Bottom pagination index
+
+  const prev = () => setIndex((i) => (i === 0 ? testimonials.length - 1 : i - 1));
+  const next = () => setIndex((i) => (i === testimonials.length - 1 ? 0 : i + 1));
+
+  const current = testimonials[index];
+
+  // Dynamic Brand Partners List
+  const partners = [
+    { 
+      name: "DHL", 
+      icon: (
+        <div className="flex items-center justify-center rounded-lg bg-[#FFCC00] px-3.5 py-1.5 shadow-sm transition-transform hover:scale-105">
+          <SiDhl className="h-7 w-auto text-[#D40511]" />
+        </div>
+      ) 
+    },
+    { 
+      name: "Shopify", 
+      icon: (
+        <div className="flex items-center justify-center rounded-lg bg-[#95BF47]/15 px-3.5 py-1.5 shadow-sm border border-[#95BF47]/30 transition-transform hover:scale-105">
+          <SiShopify className="h-7 w-auto text-[#95BF47]" />
+        </div>
+      ) 
+    },
+    { 
+      name: "FedEx", 
+      icon: (
+        <div className="flex items-center justify-center rounded-lg bg-white px-3.5 py-1.5 shadow-sm border border-slate-200 transition-transform hover:scale-105">
+          <SiFedex className="h-7 w-auto text-[#4D148C]" />
+        </div>
+      ) 
+    },
+    { 
+      name: "Aramex", 
+      icon: (
+        <div className="flex items-center justify-center rounded-lg bg-white px-4 py-1.5 shadow-sm border border-slate-200 transition-transform hover:scale-105">
+          <span className="font-extrabold tracking-tighter text-2xl text-[#E31837] font-sans">
+            aramex
+          </span>
+        </div>
+      ) 
+    },
+    { 
+      name: "UPS", 
+      icon: (
+        <div className="flex items-center justify-center rounded-lg bg-[#351C15] px-3.5 py-1.5 shadow-sm transition-transform hover:scale-105">
+          <SiUps className="h-6 w-auto text-[#FFB81C]" />
+        </div>
+      ) 
+    },
+    { 
+      name: "BlueDart", 
+      icon: (
+        <div className="flex items-center justify-center rounded-lg bg-[#003399] px-3.5 py-1.5 shadow-sm transition-transform hover:scale-105">
+          <span className="font-black italic tracking-tight text-lg text-[#FFCC00]">
+            BLUE DART
+          </span>
+        </div>
+      ) 
+    },
+    { 
+      name: "DTDC", 
+      icon: (
+        <div className="flex items-center justify-center rounded-lg bg-[#002B66] px-3.5 py-1.5 shadow-sm transition-transform hover:scale-105">
+          <span className="font-extrabold tracking-widest text-lg text-white">
+            DTDC
+          </span>
+        </div>
+      ) 
+    },
+    { 
+      name: "eBay", 
+      icon: (
+        <div className="flex items-center justify-center rounded-lg bg-white px-3.5 py-1.5 shadow-sm border border-slate-200 transition-transform hover:scale-105">
+          <SiEbay className="h-8 w-auto text-[#E53238]" />
+        </div>
+      ) 
+    },
+  ];
+
 
   // Auto-play the "why choose us" highlights
   useEffect(() => {
@@ -22,39 +113,26 @@ export default function Home() {
     return () => clearInterval(id);
   }, []);
 
-  // If someone arrives via /#services or /#tracking (Navbar/Footer links), scroll to that section
+  // Smooth scroll for hashtag links
   useEffect(() => {
     if (!location.hash) return;
     const el = document.querySelector(location.hash);
     if (el) el.scrollIntoView({ behavior: "smooth" });
   }, [location.hash]);
 
-  const handleTrackSubmit = (e) => {
-    e.preventDefault();
-    if (!trackingId.trim()) return;
-    setTrackingResult({
-      code: trackingId.toUpperCase(),
-      status: "In Transit - Out for Delivery",
-      location: "Central Hub, Sector 4",
-      eta: "Today before 5:00 PM",
-    });
-  };
-
   return (
     <>
-      {/* HERO */}
+      {/* HERO SECTION */}
       <section
         id="home"
-        className="relative flex min-h-[92vh] items-center overflow-hidden px-6 pb-16 bg-white pt-32 md:px-8"
+        className="relative flex min-h-[92vh] items-center overflow-hidden bg-white px-6 pt-32 pb-16 md:px-8"
       >
-
-        <div className="pointer-events-none absolute left-10 top-20 h-96 w-96 rounded-full blur-3xl "/>
+        <div className="pointer-events-none absolute left-10 top-20 h-96 w-96 rounded-full blur-3xl" />
         <div className="pointer-events-none absolute bottom-20 right-10 h-96 w-96 rounded-full bg-white blur-3xl" />
 
-        {/* Hero Grid Container */}
-         <div className="mx-auto grid w-full max-w-7xl items-start gap-12 md:grid-cols-[1.1fr_0.9fr]">
+        <div className="mx-auto grid w-full max-w-7xl items-start gap-12 md:grid-cols-[1.1fr_0.9fr]">
           <div>
-            <div className="mb-6 inline-flex items-center gap-2.5 rounded-full  border-slate-200 bg-white px-4 py-1.5 text-xs font-semibold text-[#64748B] shadow-md">
+            <div className="mb-6 inline-flex items-center gap-2.5 rounded-full border border-slate-200 bg-white px-4 py-1.5 text-xs font-semibold text-[#64748B] shadow-md">
               <span className="relative flex h-2.5 w-2.5">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#E66E19]/80" />
                 <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#E66E19]" />
@@ -62,10 +140,9 @@ export default function Home() {
               Express Courier & Cargo Operations Active Nationwide
             </div>
 
-            {/* Continuous change text*/}
-          <h1 className="flex min-h-[4em] items-center text-4xl font-extrabold leading-[1.20] bg-gradient-to-r from-[#E66E19] from-20% to-[#000000] to-70% bg-clip-text text-transparent md:min-h-[3.6em] md:text-6xl">
-  {highlights[activeSlide]}
-         </h1>
+            <h1 className="flex min-h-[4em] items-center text-4xl font-extrabold leading-[1.20] bg-gradient-to-r from-[#E66E19] from-20% to-[#000000] to-70% bg-clip-text text-transparent md:min-h-[3.6em] md:text-6xl">
+              {highlights[activeSlide]}
+            </h1>
 
             <div className="my-6 h-1 w-40 origin-left bg-[#E66E19] [animation:lineDraw_2s_0.20s_ease-out_forwards]" />
 
@@ -78,22 +155,21 @@ export default function Home() {
             <div className="mt-8 flex flex-wrap items-center gap-4 opacity-0 [animation:fadeUp_0.7s_0.35s_ease_forwards]">
               <button
                 onClick={openModal}
-                className="group inline-flex items-center gap-2.5 rounded-xl bg-[#0B132A] px-7 py-4 text-sm font-bold text-white shadow-lg transition-all duration-200 hover:bg-[#1E293B] hover:shadow-xl active:scale-95"
+                className="group inline-flex items-center gap-2.5 rounded-xl bg-[#0B132A] px-7 py-4 text-sm font-bold text-white shadow-lg transition-all duration-200 hover:bg-[#1E293B] hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#E66E19] active:scale-95"
               >
                 <span>Talk to Us / Request Quote</span>
-                <span className="text-[#E66E19] transition-transform duration-200 group-hover:translate-x-1">
+                <span className="text-[#E66E19] transition-transform duration-200 group-hover:translate-x-1" aria-hidden="true">
                   →
                 </span>
               </button>
 
               <a
                 href="#tracking"
-                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-6 py-4 text-sm font-bold text-[#0B132A] shadow-sm transition-all duration-200 hover:border-slate-300 hover:bg-slate-50"
+                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-6 py-4 text-sm font-bold text-[#0B132A] shadow-sm transition-all duration-200 hover:border-slate-300 hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0B132A]"
               >
                 🔍 Track Package
               </a>
             </div>
-
           </div>
 
           <div className="w-full max-w-md justify-self-center md:justify-self-end">
@@ -101,7 +177,7 @@ export default function Home() {
               <div className="relative h-52 w-full overflow-hidden">
                 <img
                   src={LOGISTICS_IMAGES.heroVan}
-                  alt="DFL Express Fleet"
+                  alt="DFL Express Fleet Vehicles"
                   className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0B132A]/80 via-transparent to-transparent" />
@@ -135,7 +211,10 @@ export default function Home() {
 
                 <div className="flex items-center justify-between rounded-xl bg-[#F8FAFC] p-3 text-xs">
                   <span className="flex items-center gap-2 font-bold text-[#E66E19]">
-                    <span className="h-2 w-2 rounded-full animate-ping bg-[#E66E19]" />
+                    <span className="relative flex h-2.5 w-2.5">
+                      <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#E66E19]/80" />
+                      <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-[#E66E19]" />
+                    </span>
                     In Transit - Fast Track
                   </span>
                   <span className="font-extrabold text-[#0B132A]">ETA: 1h 45m</span>
@@ -146,24 +225,76 @@ export default function Home() {
         </div>
       </section>
 
-      {/* STATS */}
-      <section className="border-y border-slate-200 bg-white px-6 py-10 md:px-8">
-        <div className="mx-auto grid max-w-7xl grid-cols-2 divide-y divide-slate-100 sm:grid-cols-4 sm:divide-x sm:divide-y-0">
-          {stats.map((stat) => (
-            <div key={stat.label} className="flex flex-col items-center justify-center p-4 text-center">
-              <span className="text-3xl font-extrabold tracking-tight text-[#0B132A] md:text-4xl">
-                <Counter value={stat?.value} suffix={stat?.suffix} />
-              </span>
-              <span className="mt-1 text-xs font-semibold text-[#64748B]">{stat.label}</span>
+      {/* PARTNERS MARQUEE */}
+      <section className="overflow-hidden border-t border-slate-200 bg-slate-50/80 py-10">
+        <div className="mx-auto mb-6 max-w-7xl px-6 text-center md:px-8">
+          <p className="text-xs font-extrabold uppercase tracking-widest text-[#E66E19]">
+            Trusted Integration & Global Carrier Network
+          </p>
+        </div>
+
+        <div className="relative flex w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+          <div className="flex w-max shrink-0 items-center gap-10 sm:gap-16 animate-marquee py-2 pr-10">
+            {partners.map((partner, i) => (
+              <div key={`set1-${partner.name}-${i}`} className="flex items-center justify-center cursor-pointer">
+                {partner.icon}
+              </div>
+            ))}
+          </div>
+          
+          <div className="flex w-max shrink-0 items-center gap-10 sm:gap-16 animate-marquee py-2 pr-10" aria-hidden="true">
+            {partners.map((partner, i) => (
+              <div key={`set2-${partner.name}-${i}`} className="flex items-center justify-center cursor-pointer">
+                {partner.icon}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* OUR NETWORK */}
+      <section className="bg-white py-12 px-6 md:px-16">
+        <div className="mx-auto max-w-7xl flex flex-col lg:flex-row items-center gap-8">
+          <div className="lg:w-5/12 space-y-6">
+            <div>
+              <span className="text-xs font-bold uppercase tracking-wider text-[#FF6B35]">OUR NETWORK</span>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-[#0B132A] mt-1">A Global Presence</h2>
+              <p className="mt-3 text-sm text-[#64748B] leading-relaxed">
+                With a strong international network and strategic partners, we connect businesses to markets across the globe.
+              </p>
             </div>
-          ))}
+
+            <div className="flex gap-3 pt-2">
+              {stats.map(({ label, value, suffix }) => (
+                <div key={label} className="flex-1 flex flex-col p-3 rounded-xl bg-white border border-slate-100 shadow-sm">
+                  <span className="text-xl md:text-2xl font-extrabold text-[#0B132A]">
+                    <Counter value={value} suffix={suffix} />
+                  </span>
+                  <span className="mt-1 text-[11px] font-semibold text-[#64748B]">{label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="lg:w-7/12 relative">
+            <img src={mapImage} alt="Global Map Network" className="w-full h-auto object-contain" />
+
+            <div className="absolute -bottom-10 -right-7 bg-white p-3 rounded-xl shadow-lg border border-slate-100 flex items-center gap-4 max-w-xs">
+              <div className="text-xs font-semibold text-[#0B132A] leading-tight">
+                <p>Global Reach</p>
+                <p>Local Expertise</p>
+                <p className="text-[#64748B]">Your Growth Partner</p>
+              </div>
+              <button className="h-8 w-8 rounded-full bg-[#FF6B35] text-white flex items-center justify-center shrink-0">➔</button>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* SERVICES */}
-      <section id="services" className="border-t border-slate-200 bg-white px-6 py-10 md:px-8">
+      <section id="services" className="border-t border-slate-200 bg-white px-6 pt-10 pb-4 md:px-8">
         <div className="mx-auto max-w-7xl">
-          <div className="mb-10 flex flex-col justify-between gap-4 md:flex-row md:items-end">
+          <div className="mb-6 flex flex-col justify-between gap-4 md:flex-row md:items-end">
             <div>
               <div className="inline-block rounded-md bg-[#E66E19]/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-[#E66E19]">
                 Our Services
@@ -171,7 +302,7 @@ export default function Home() {
               <h2 className="mt-2 text-3xl font-extrabold tracking-tight text-[#0B132A] md:text-4xl">
                 Comprehensive Shipping & <br /> Freight Solutions
               </h2>
-              <p className="mt-5 max-w-md text-sm text-[#64748B]">
+              <p className="mt-3 max-w-md text-sm text-[#64748B]">
                 Tailored logistics services built to handle individual parcels,
                 high-volume e-commerce orders, or enterprise heavy cargo.
               </p>
@@ -181,154 +312,157 @@ export default function Home() {
         </div>
       </section>
 
-      {/* TRACKING */}
-      <section id="tracking" className="bg-[#0B132A] px-6 py-20 text-white md:px-8">
-        <div className="mx-auto max-w-4xl rounded-3xl border border-slate-700/60 bg-[#1E293B]/80 p-8 shadow-2xl backdrop-blur-md md:p-12">
-          <div className="text-center">
-            <span className="rounded-full bg-[#E66E19]/20 px-3 py-1 text-xs font-bold uppercase tracking-wider text-[#E66E19]">
-              Real-Time Telematics
-            </span>
-            <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-white md:text-4xl">
-              Track Your DFL Express Shipment
-            </h2>
-            <p className="mt-2 text-sm text-slate-300">
-              Enter your tracking code or airway bill number below for live status
-              updates.
-            </p>
+      {/* HOW IT WORKS */}
+      <section className="border-t border-slate-200 bg-white px-6 pt-4 pb-8 md:px-8 relative">
+        <div className="mx-auto max-w-6xl">
+          <h2 className="font-display text-3xl font-bold tracking-tight text-[#0B132A] md:text-4xl">
+            How it Works
+          </h2>
+          <p className="mt-2 text-slate-600">
+            From booking to payment—manage your shipment with ease and tech-driven precision.
+          </p>
+
+          <div className="mt-6 border-t border-slate-200">
+            {working.map((work, i) => (
+              <details
+                key={work.name}
+                className="group border-b border-slate-200 rounded-lg transition-all duration-300 hover:bg-slate-50 [&[open]]:bg-slate-50"
+              >
+                <summary className="grid grid-cols-[auto_1fr_auto] items-center gap-6 py-7 px-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden outline-none">
+                  <span className="font-display text-sm font-semibold text-slate-400">
+                    0{i + 1}
+                  </span>
+
+                  <div>
+                    <h3 className="font-display text-xl font-bold text-[#0B132A] md:text-2xl transition-colors group-hover:text-[#E66E19] group-[&[open]]:text-[#E66E19]">
+                      {work.name}
+                    </h3>
+
+                    <div className="hidden [@media(hover:hover)]:grid grid-rows-[0fr] opacity-0 transition-all duration-500 group-hover:grid-rows-[1fr] group-hover:opacity-100 group-hover:mt-2">
+                      <p className="overflow-hidden text-sm leading-relaxed text-slate-600 max-w-md">
+                        {work.description}
+                      </p>
+                    </div>
+                  </div>
+
+                  <span className="font-display text-lg text-slate-400 transition-all duration-300 group-hover:translate-x-1 group-hover:text-[#E66E19] group-[&[open]]:translate-x-1 group-[&[open]]:text-[#E66E19]">
+                    →
+                  </span>
+                </summary>
+
+                <div className="px-4 pb-7 pl-[calc(1rem+2.25rem)] [@media(hover:hover)]:hidden">
+                  <p className="text-sm leading-relaxed text-slate-600 max-w-md">
+                    {work.description}
+                  </p>
+                </div>
+              </details>
+            ))}
           </div>
-
-          <form onSubmit={handleTrackSubmit} className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <input
-              type="text"
-              value={trackingId}
-              onChange={(e) => setTrackingId(e.target.value)}
-              placeholder="Enter Tracking ID (e.g. DFL-9982)"
-              className="flex-1 rounded-xl border border-slate-700 bg-slate-900/90 px-5 py-4 text-sm text-white placeholder-slate-400 focus:border-[#E66E19] focus:outline-none"
-            />
-            <button
-              type="submit"
-              className="rounded-xl bg-[#E66E19] px-8 py-4 text-sm font-bold text-white transition-all hover:bg-[#d55f0f] active:scale-95"
-            >
-              Track Package
-            </button>
-          </form>
-
-          {trackingResult && (
-            <div className="mt-6 rounded-2xl border border-[#E66E19]/30 bg-slate-900/90 p-6">
-              <div className="flex flex-wrap items-center justify-between gap-4 border-b border-slate-800 pb-4">
-                <div>
-                  <span className="text-xs font-semibold text-slate-400">Waybill ID:</span>
-                  <div className="text-lg font-bold text-[#E66E19]">{trackingResult.code}</div>
-                </div>
-                <div className="rounded-full bg-emerald-500/20 px-3 py-1 text-xs font-bold text-emerald-400">
-                  {trackingResult.status}
-                </div>
-              </div>
-              <div className="mt-4 grid grid-cols-2 gap-4 text-xs">
-                <div>
-                  <span className="text-slate-400">Current Facility:</span>
-                  <div className="font-semibold text-white">{trackingResult.location}</div>
-                </div>
-                <div>
-                  <span className="text-slate-400">Estimated Delivery:</span>
-                  <div className="font-semibold text-white">{trackingResult.eta}</div>
-                </div>
-              </div>
-            </div>
-          )}
         </div>
       </section>
-{/* ================= How it work ================= */}
-<section
-  className="border-t border-slate-200 bg-white px-6 py-28 md:px-8"
->
-  <div className="mx-auto max-w-6xl">
-    <h2 className="font-display text-3xl font-bold tracking-tight text-[#0B132A] md:text-4xl">
-      How it Work
-    </h2>
-    <dl className="mt-2">From booking to payment—manage your shipment with ease and tech-driven precision.</dl>
 
-    <div className="mt-10 border-t border-slate-200">
-      {working.map((work, i) => (
-        <details
-          key={work.name}
-          className="group border-b border-slate-200 rounded-lg transition-all duration-300 hover:bg-slate-50 [&[open]]:bg-slate-50"
-        >
-          <summary className="grid grid-cols-[auto_1fr_auto] items-center gap-6 py-7 px-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden outline-none [@media(hover:hover)]:pointer-events-none">
-            <span className="font-display text-sm font-semibold text-slate-400">
-              0{i + 1}
-            </span>
+      {/* ADVANCED TECH FEATURES */}
+      <section className="min-h-screen bg-[#0B132A]">
+        <FeaturesCards features={techFeaturesData} />
+      </section>
 
-            <div>
-              <h3 className="font-display text-xl font-bold text-[#0B132A] md:text-2xl transition-colors group-hover:text-[#E66E19] group-[&[open]]:text-[#E66E19]">
-                {work.name}
-              </h3>
+      {/* //////////////// */}
 
-              {/* Desktop hover animation (only on hover-capable screens) */}
-              <div className="hidden [@media(hover:hover)]:grid grid-rows-[0fr] opacity-0 transition-all duration-500 group-hover:grid-rows-[1fr] group-hover:opacity-100 group-hover:mt-2">
-                <p className="overflow-hidden text-sm leading-relaxed text-slate-600 max-w-md">
-                  {work.description}
-                </p>
+      {/* CLIENT TESTIMONIALS & STATS */}
+    <section className="mx-auto max-w-7xl bg-white px-4 py-10 md:px-8">
+  <div className="relative flex flex-col lg:flex-row overflow-hidden rounded-3xl shadow-xl bg-[#E66E19]">
+    
+    {/* LEFT TESTIMONIAL SLIDER */}
+    <div className="flex flex-col justify-between p-8 md:p-12 lg:w-7/12 text-white">
+      <div>
+        <span className="text-xs font-bold uppercase tracking-wider text-orange-200">
+          CLIENT SUCCESS STORIES
+        </span>
+        <h2 className="text-2xl md:text-3xl font-extrabold mt-1">What Our Clients Say</h2>
+        <p className="mt-2 text-xs md:text-sm text-orange-100 max-w-lg">
+          Real businesses. Real results. Here's what our clients have to say about working with DFL Group.
+        </p>
+      </div>
+
+      {/* DYNAMIC CARD (Height fix kar di hai `min-h-[160px]` ke sath) */}
+      {current && (
+        <div className="my-6 flex items-center gap-2">
+          <button 
+            onClick={prev} 
+            className="h-8 w-8 rounded-full bg-white text-[#E65100] flex items-center justify-center font-bold shadow hover:bg-orange-50 shrink-0"
+          >
+            ‹
+          </button>
+
+          {/* min-h-[160px] flex flex-col justify-between add karne se layout stable rahega */}
+          <div className="bg-white text-[#0B132A] p-5 rounded-2xl shadow-md w-full min-h-[160px] flex flex-col justify-between">
+            <p className="text-xs md:text-sm text-slate-700 font-medium leading-relaxed">
+              "{current.quote}"
+            </p>
+            <div className="mt-4 flex items-center gap-3">
+              <img
+                src={current.avatar}
+                alt={current.name}
+                className="h-9 w-9 rounded-full object-cover border"
+              />
+              <div>
+                <h4 className="text-xs font-bold">{current.name}</h4>
+                <p className="text-[11px] text-slate-500">{current.role}</p>
               </div>
             </div>
-
-            <span className="font-display text-lg text-slate-400 transition-all duration-300 group-hover:translate-x-1 group-hover:text-[#E66E19] group-[&[open]]:translate-x-1 group-[&[open]]:text-[#E66E19]">
-              →
-            </span>
-          </summary>
-
-          {/* Mobile click description (hidden on desktop hover screens) */}
-          <div className="px-4 pb-7 pl-[calc(1rem+2.25rem)] [@media(hover:hover)]:hidden">
-            <p className="text-sm leading-relaxed text-slate-600 max-w-md">
-              {work.description}
-            </p>
           </div>
-        </details>
-      ))}
+
+          <button 
+            onClick={next} 
+            className="h-8 w-8 rounded-full bg-white text-[#E65100] flex items-center justify-center font-bold shadow hover:bg-orange-50 shrink-0"
+          >
+            ›
+          </button>
+        </div>
+      )}
+
+      {/* DOTS */}
+      <div className="flex justify-center gap-1.5">
+        {testimonials.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setIndex(i)}
+            className={`h-2 rounded-full transition-all ${
+              i === index ? "w-6 bg-white" : "w-2 bg-white/40"
+            }`}
+          />
+        ))}
+      </div>
     </div>
+
+    {/* RIGHT SIDE IMAGE & DYNAMIC STATS */}
+    {/* min-h ko stretch karke ensure kar diya hai ki height jump na ho */}
+    <div className="relative lg:w-5/12 bg-slate-900 min-h-[350px] lg:min-h-full flex items-center justify-center p-6">
+      <img
+        src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80"
+        alt="Cargo Ship"
+        className="absolute inset-0 h-full w-full object-cover opacity-50"
+      />
+
+      {/* STATS OVERLAY CARD */}
+      <div className="relative z-10 w-full max-w-xs bg-slate-900/70 backdrop-blur-md p-4 rounded-2xl border border-white/10 text-white space-y-3">
+        {bottomstats.map((item, idx) => (
+          <React.Fragment key={item.id || idx}>
+            <div className="flex items-center gap-3">
+              <span className="text-lg">{item.icon}</span>
+              <div>
+                <p className="text-base font-extrabold leading-none">{item.value}</p>
+                <p className="text-[11px] text-slate-300">{item.label}</p>
+              </div>
+            </div>
+            {idx !== bottomstats.length - 1 && <hr className="border-white/10" />}
+          </React.Fragment>
+        ))}
+      </div>
+    </div>
+
   </div>
 </section>
-
- {/* Advanced driven tech features */}
-
- <section className="bg-[#0B132A] min-h-screen">
-  <FeaturesCards features={techFeaturesData} />
- </section>
-
-      {/* HIGHLIGHTS */}
-      <section className="bg-gradient-to-r from-[#E66E19] via-[#ea580c] to-[#E66E19] px-6 py-16 text-white shadow-inner md:px-8">
-        <div className="mx-auto max-w-4xl text-center">
-          <div className="mb-2 text-xs font-bold uppercase tracking-widest text-white/80">
-            Why Shippers Choose DFL Express
-          </div>
-          <div className="relative flex min-h-[80px] items-center justify-center">
-            {highlights.map((text, i) => (
-              <p
-                key={text}
-                className={`absolute inset-0 flex items-center justify-center px-4 text-2xl font-extrabold transition-all duration-500 md:text-3xl ${
-                  i === activeSlide ? "scale-100 opacity-100" : "pointer-events-none scale-95 opacity-0"
-                }`}
-              >
-                "{text}"
-              </p>
-            ))}
-          </div>
-
-          <div className="mt-6 flex items-center justify-center gap-2">
-            {highlights.map((_, i) => (
-              <button
-                key={i}
-                aria-label={`Show slide ${i + 1}`}
-                onClick={() => setActiveSlide(i)}
-                className={`h-2.5 rounded-full transition-all duration-300 ${
-                  i === activeSlide ? "w-8 bg-white" : "w-2.5 bg-white/40 hover:bg-white/70"
-                }`}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
     </>
   );
 }
-

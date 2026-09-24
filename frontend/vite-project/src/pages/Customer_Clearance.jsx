@@ -5,7 +5,6 @@ import {
   FiShield,
   FiZap,
   FiAward,
-  FiCheckCircle,
   FiArrowRight,
   FiPercent,
   FiClock,
@@ -15,104 +14,102 @@ import {
   FiActivity,
 } from "react-icons/fi";
 
-export default function Customs_Clearance() {
-  const whyChooseUs = [
-    {
-      icon: <FiZap className="h-6 w-6 text-[#E66E19] transition-colors duration-300 group-hover:text-white" />,
-      title: "Fast Documentation",
-      description:
-        "We recognize the urgency of import and export operations, ensuring prompt documentation arrangements so you can focus on core business.",
-    },
-    {
-      icon: <FiAward className="h-6 w-6 text-[#E66E19] transition-colors duration-300 group-hover:text-white" />,
-      title: "Expert Broker Associates",
-      description:
-        "Highly experienced in clearing all types of goods: garments, leather, automobiles, pharmaceuticals, perishables, pets, and more.",
-    },
-    {
-      icon: <FiCpu className="h-6 w-6 text-[#E66E19] transition-colors duration-300 group-hover:text-white" />,
-      title: "Automated Documentation",
-      description:
-        "Instant online platform generation of invoices, airway bills, bills of lading, bills of exchange, and shipping bills in seconds.",
-    },
-    {
-      icon: <FiShield className="h-6 w-6 text-[#E66E19] transition-colors duration-300 group-hover:text-white" />,
-      title: "Trade Compliance Solutions",
-      description:
-        "Assistance with obtaining government incentives, rebates, license preparation, and approvals from global trade authorities.",
-    },
-  ];
+// Static Data Definitions
+const WHY_CHOOSE_US = [
+  {
+    icon: <FiZap className="h-6 w-6 text-[#E66E19] group-hover:text-white transition-colors" />,
+    title: "Fast Documentation",
+    description:
+      "We recognize the urgency of import and export operations, ensuring prompt documentation arrangements so you can focus on core business.",
+  },
+  {
+    icon: <FiAward className="h-6 w-6 text-[#E66E19] group-hover:text-white transition-colors" />,
+    title: "Expert Broker Associates",
+    description:
+      "Highly experienced in clearing all types of goods: garments, leather, automobiles, pharmaceuticals, perishables, pets, and more.",
+  },
+  {
+    icon: <FiCpu className="h-6 w-6 text-[#E66E19] group-hover:text-white transition-colors" />,
+    title: "Automated Documentation",
+    description:
+      "Instant online platform generation of invoices, airway bills, bills of lading, bills of exchange, and shipping bills in seconds.",
+  },
+  {
+    icon: <FiShield className="h-6 w-6 text-[#E66E19] group-hover:text-white transition-colors" />,
+    title: "Trade Compliance Solutions",
+    description:
+      "Assistance with obtaining government incentives, rebates, license preparation, and approvals from global trade authorities.",
+  },
+];
 
-  const valueProps = [
-    {
-      icon: <FiPercent className="h-5 w-5 text-[#E66E19]" />,
-      title: "Reduced Costs",
-      desc: "Minimize duty payments and avoid demurrage or fines through proper documentation and accurate HS-code classification.",
-    },
-    {
-      icon: <FiClock className="h-5 w-5 text-[#E66E19]" />,
-      title: "Speed & Predictability",
-      desc: "Faster customs clearance means better supply chain reliability and significantly reduced lead times.",
-    },
-    {
-      icon: <FiShield className="h-5 w-5 text-[#E66E19]" />,
-      title: "Regulatory Peace of Mind",
-      desc: "Stay fully compliant even as global customs rules evolve, with proactive expert guidance.",
-    },
-    {
-      icon: <FiLayers className="h-5 w-5 text-[#E66E19]" />,
-      title: "Operational Efficiency",
-      desc: "Offloading the customs burden frees your team to focus on business growth rather than paperwork.",
-    },
-  ];
+const VALUE_PROPS = [
+  {
+    icon: <FiPercent className="h-5 w-5 text-[#E66E19]" />,
+    title: "Reduced Costs",
+    desc: "Minimize duty payments and avoid demurrage or fines through proper documentation and accurate HS-code classification.",
+  },
+  {
+    icon: <FiClock className="h-5 w-5 text-[#E66E19]" />,
+    title: "Speed & Predictability",
+    desc: "Faster customs clearance means better supply chain reliability and significantly reduced lead times.",
+  },
+  {
+    icon: <FiShield className="h-5 w-5 text-[#E66E19]" />,
+    title: "Regulatory Peace of Mind",
+    desc: "Stay fully compliant even as global customs rules evolve, with proactive expert guidance.",
+  },
+  {
+    icon: <FiLayers className="h-5 w-5 text-[#E66E19]" />,
+    title: "Operational Efficiency",
+    desc: "Offloading the customs burden frees your team to focus on business growth rather than paperwork.",
+  },
+];
 
-  const industriesSupported = [
-    "Manufacturing & Machinery",
-    "Retail & E-commerce",
-    "Pharma & Healthcare",
-    "Electronics & Technology",
-    "Automotive Components",
-    "Perishables & Consumer Goods",
-  ];
+const INDUSTRIES_SUPPORTED = [
+  "Manufacturing & Machinery",
+  "Retail & E-commerce",
+  "Pharma & Healthcare",
+  "Electronics & Technology",
+  "Automotive Components",
+  "Perishables & Consumer Goods",
+];
 
+// Reusable UI Components
+const Badge = ({ children, className = "" }) => (
+  <span className={`inline-flex items-center gap-2 rounded-full bg-orange-50 border border-orange-200 px-3.5 py-1 text-xs font-extrabold uppercase tracking-wider text-[#E66E19] ${className}`}>
+    {children}
+  </span>
+);
+
+const SectionHeader = ({ badge, title, subtitle }) => (
+  <div className="text-center max-w-2xl mx-auto space-y-3">
+    <Badge>{badge}</Badge>
+    <h2 className="text-3xl font-black text-slate-900">{title}</h2>
+    {subtitle && <p className="text-sm text-slate-600 font-medium">{subtitle}</p>}
+  </div>
+);
+
+export default function CustomsClearance() {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-800 pt-28 pb-20 px-4 sm:px-6 md:px-12 font-sans">
-      {/* KEYFRAME ANIMATION FOR DOCUMENT SCANNING */}
-      <style>{`
-        @keyframes documentScan {
-          0% {
-            left: 0%;
-          }
-          100% {
-            left: 86%;
-          }
-        }
-        .animate-scan {
-          animation: documentScan 5s linear infinite alternate;
-        }
-      `}</style>
-
       <div className="mx-auto max-w-7xl space-y-16">
         
-        {/* TOP CUSTOMS CLEARANCE MONITOR STRIP */}
+        {/* MONITOR STRIP */}
         <div className="relative w-full rounded-2xl bg-white p-4 text-slate-700 shadow-md border border-slate-200">
           <div className="flex items-center justify-between text-xs font-semibold text-slate-500 mb-2 px-2">
             <span className="flex items-center gap-1.5 text-[#E66E19]">
               <span className="relative flex h-2.5 w-2.5">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#E66E19]"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75" />
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#E66E19]" />
               </span>
               Digital Customs Portal
             </span>
             <span className="font-bold text-slate-600">Automated e-Customs & Duty Clearance Status: Active</span>
           </div>
 
-          {/* ANIMATION TRACK */}
           <div className="relative h-9 w-full rounded-xl bg-orange-50/60 border border-orange-100 overflow-hidden flex items-center px-3">
-            <div className="w-full border-b border-dashed border-orange-300 absolute left-0 top-1/2 -translate-y-1/2"></div>
-            
-            {/* MOVING DOCUMENT ELEMENT */}
-            <div className="absolute top-1/2 -translate-y-1/2 animate-scan z-10 flex items-center gap-2 bg-[#E66E19] text-white px-3 py-1 rounded-full text-xs font-bold shadow-md shadow-orange-500/20 whitespace-nowrap">
+            <div className="w-full border-b border-dashed border-orange-300 absolute left-0 top-1/2 -translate-y-1/2" />
+            <div className="absolute top-7  -translate-y-1/2 animate-scan z-10 flex items-center gap-2 bg-[#E66E19] text-white px-3 py-1 rounded-full text-xs font-bold shadow-md shadow-orange-500/20 whitespace-nowrap">
               <FiFileText className="h-3.5 w-3.5" />
               <span>Verifying Shipping Bills</span>
             </div>
@@ -126,14 +123,13 @@ export default function Customs_Clearance() {
 
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:items-center relative z-10">
             <div className="lg:col-span-7 space-y-6">
-              <span className="inline-flex items-center gap-2 rounded-full bg-orange-50 border border-orange-200 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-[#E66E19]">
+              <Badge>
                 <FiShield className="h-3.5 w-3.5" />
                 Customs Clearance Services
-              </span>
+              </Badge>
 
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight leading-tight text-slate-900">
-                Seamless Compliance for Global Trade with{" "}
-                <span className="text-[#E66E19]">The DFL Group</span>
+                Seamless Compliance for Global Trade with <span className="text-[#E66E19]">The DFL Group</span>
               </h1>
 
               <p className="text-sm md:text-base leading-relaxed text-slate-600 font-medium">
@@ -151,7 +147,6 @@ export default function Customs_Clearance() {
               </div>
             </div>
 
-            {/* HERO IMAGE CONTAINER */}
             <div className="lg:col-span-5">
               <div className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 p-3 shadow-md transition-all duration-500 hover:border-[#E66E19] hover:shadow-xl">
                 <div className="overflow-hidden rounded-xl">
@@ -173,22 +168,16 @@ export default function Customs_Clearance() {
           </div>
         </section>
 
-        {/* SECTION 2: WHY CHOOSE DFL GROUP */}
+        {/* WHY CHOOSE DFL GROUP */}
         <section className="space-y-10">
-          <div className="text-center max-w-2xl mx-auto space-y-3">
-            <span className="rounded-full bg-orange-100 border border-orange-200 px-3.5 py-1 text-xs font-extrabold uppercase tracking-wider text-[#E66E19]">
-              Customs Capabilities
-            </span>
-            <h2 className="text-3xl font-black text-slate-900">
-              Why Choose The DFL Group?
-            </h2>
-            <p className="text-sm text-slate-600 font-medium">
-              We leverage experienced trade specialists and automated platforms to expedite your port clearance.
-            </p>
-          </div>
+          <SectionHeader
+            badge="Customs Capabilities"
+            title="Why Choose The DFL Group?"
+            subtitle="We leverage experienced trade specialists and automated platforms to expedite your port clearance."
+          />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {whyChooseUs.map((item, idx) => (
+            {WHY_CHOOSE_US.map((item, idx) => (
               <div
                 key={idx}
                 className="group relative flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-[#E66E19] hover:bg-[#E66E19] hover:shadow-xl"
@@ -209,12 +198,10 @@ export default function Customs_Clearance() {
           </div>
         </section>
 
-        {/* SECTION 3: THE VALUE WE PROVIDE */}
+        {/* VALUE PROPOSITION */}
         <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center rounded-3xl bg-white border border-slate-200 p-6 sm:p-10 md:p-12 shadow-sm">
           <div className="lg:col-span-5 space-y-5">
-            <span className="rounded-full bg-orange-100 border border-orange-200 px-3.5 py-1 text-xs font-extrabold uppercase tracking-wider text-[#E66E19]">
-              Tangible Benefits
-            </span>
+            <Badge>Tangible Benefits</Badge>
             <h2 className="text-2xl sm:text-3xl font-black text-slate-900 leading-snug">
               The Strategic Value We Provide to Your Business
             </h2>
@@ -233,7 +220,7 @@ export default function Customs_Clearance() {
           </div>
 
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {valueProps.map((val, i) => (
+            {VALUE_PROPS.map((val, i) => (
               <div
                 key={i}
                 className="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2 hover:border-[#E66E19] transition-colors"
@@ -250,22 +237,16 @@ export default function Customs_Clearance() {
           </div>
         </section>
 
-        {/* SECTION 4: INDUSTRIES WE SUPPORT */}
+        {/* INDUSTRIES SUPPORTED */}
         <section className="space-y-8">
-          <div className="text-center max-w-2xl mx-auto space-y-3">
-            <span className="rounded-full bg-orange-100 border border-orange-200 px-3.5 py-1 text-xs font-extrabold uppercase tracking-wider text-[#E66E19]">
-              Specialized Clearance
-            </span>
-            <h2 className="text-3xl font-black text-slate-900">
-              Industries We Support
-            </h2>
-            <p className="text-sm text-slate-600 font-medium">
-              Customized clearance protocols tailored for commodity-specific regulations and trade licenses.
-            </p>
-          </div>
+          <SectionHeader
+            badge="Specialized Clearance"
+            title="Industries We Support"
+            subtitle="Customized clearance protocols tailored for commodity-specific regulations and trade licenses."
+          />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
-            {industriesSupported.map((ind, idx) => (
+            {INDUSTRIES_SUPPORTED.map((ind, idx) => (
               <div
                 key={idx}
                 className="group flex items-center gap-3.5 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:border-[#E66E19] hover:shadow-md"

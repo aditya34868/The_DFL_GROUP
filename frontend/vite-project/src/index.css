@@ -5,12 +5,123 @@
   --font-body: "IBM Plex Sans", sans-serif;
 
   /* DFL Express Light Theme Palette */
-  --color-ink: #f8fafc;       /* Light Page Background */
-  --color-panel: #ffffff;     /* White Card Background */
-  --color-ivory: #0b132a;     /* Main Dark Navy Text */
-  --color-slate: #64748b;     /* Subtitle & Muted Text */
-  --color-brass: #e66e19;     /* Primary Brand Orange Accent */
-  --color-ember: #238b9b;     /* Ocean Teal Footer Accent */
+  --color-ink: #f8fafc;
+  --color-panel: #ffffff;
+  --color-ivory: #0b132a;
+  --color-slate: #64748b;
+  --color-brass: #e66e19;
+  --color-ember: #238b9b;
+
+  /* Custom Animations & Keyframes */
+  --animate-fade-up: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  --animate-line-draw: lineDraw 0.6s ease-out forwards;
+  --animate-gradient-flow: gradientFlow 6s ease infinite;
+  --animate-cta-pulse: ctaPulse 6s ease-in-out infinite;
+  --animate-arrow-nudge: arrowNudge 2s ease-in-out infinite;
+  --animate-shipment-move: shipmentMove 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  --animate-float: float 8s ease-in-out infinite;
+  --animate-scan: documentScan 5s linear infinite alternate;
+
+  /* 🚀 MARQUEE ANIMATION ADDED HERE */
+  --animate-marquee: marquee 25s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes lineDraw {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+  @keyframes gradientFlow {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  @keyframes ctaPulse {
+    0%, 100% {
+      opacity: 0.25;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.6;
+      transform: scale(1.06);
+    }
+  }
+
+  @keyframes arrowNudge {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(4px);
+    }
+  }
+
+  @keyframes shipmentMove {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: 86%;
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+@keyframes documentScan {
+  0% {
+    left: 0%;
+    transform: translateY(-50%) translateX(0%);
+  }
+  100% {
+    left: 100%;
+    transform: translateY(-50%) translateX(-100%); 
+  }
+}
+
+@keyframes cardStack {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.96);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
 }
 
 html {
@@ -27,96 +138,12 @@ body {
   color: #ffffff;
 }
 
-/* Jab user keyboard se Tab key press karke kisi button, link, input etc. par pahunchta hai, tab us element ke around ye outline dikhegi. */
 :focus-visible {
   outline: 2px solid var(--color-brass);
   outline-offset: 1px;
 }
 
-/* ===== Animations (used across Navbar, Home hero, tracker & CTAs) ===== */
-
-
-/* Element neeche se upar aayega aur saath mein visible hoga. */
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(18px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Ye horizontal line ko draw hone jaisa effect deta hai. */
-@keyframes lineDraw {
-  from {
-    transform: scaleX(0);
-  }
-  to {
-    transform: scaleX(1);
-  }
-}
-
-
-/* Ye gradient ko horizontally move karata hai. */
-@keyframes gradientFlow {
-  0%, 100% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-}
-
-
-/* Ye CTA ke around glow/pulse effect ke liye hai. */
-@keyframes ctaPulse {
-  0%, 100% {
-    opacity: 0.25;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.6;
-    transform: scale(1.06);
-  }
-}
-
-/* Ye arrow ko thoda right move karata hai. */
-@keyframes arrowNudge {
-  0%, 100% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(4px);
-  }
-}
-/* Element ko left side se right side move karata hai. */
-@keyframes shipmentMove {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 86%;
-  }
-}
-
-.animate-shipment {
-     animation: shipmentMove 6s linear infinite alternate;
-     }
-
-/* Ye element ko upar-neeche floating effect deta hai. */
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-
-/* jin users ne apne device mein animations kam/disable karne ki preference set ki hai, unke liye website ki animations almost band kar dena. */
+/* Accessibility: Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -127,5 +154,3 @@ body {
     scroll-behavior: auto !important;
   }
 }
-
-
