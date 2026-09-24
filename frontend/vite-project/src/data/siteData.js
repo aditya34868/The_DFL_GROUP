@@ -168,25 +168,25 @@ export const working = [
     id: "01",
     name: "Book Your Shipment",
     description:
-      "Quick online booking with instant quotes and real-time pricing for all your logistics.",
+      "Book your shipment online quickly and easily with instant quotes, flexible scheduling, and real-time pricing. Enter your shipment details, choose the right service, and confirm your booking in just a few simple steps.",
    },
     {
     id: "02",
-    name: "Best Pricing",
+    name: "Get Competitive Rates",
     description:
-      "Real-time monitoring throughout transit with detailed updates and milestone notifications.",
+      "Compare available shipping options and select a solution that fits your budget and delivery requirements. Get competitive, transparent pricing with clear shipment costs, helping you plan your logistics with confidence and avoid unexpected charges.",
    },
     {
     id: "03",
-    name: "Manage Payment",
+    name: "Track Your Shipment",
     description:
-      "Flexible payment options including Pay Later terms and automated invoicing systems.",
+      "Stay informed throughout the entire delivery journey with real-time shipment tracking. Monitor important milestones, receive timely status updates, and know exactly where your shipment is from pickup to final delivery.",
    },
     {
     id: "04",
-    name: "Shipment Delivered",
+    name: "Hassle Free Delivery",
     description:
-      "Quick online booking with instant quotes and real-time pricing for all your logistics.",
+      "Experience a smooth and reliable delivery process with timely updates until your shipment reaches its destination. From last-mile handling to final delivery confirmation, stay informed and enjoy greater visibility throughout the shipment journey.",
    }
 ]
 
