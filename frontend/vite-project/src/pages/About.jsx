@@ -10,10 +10,10 @@ export default function About() {
   return (
     <section id="about" className="relative overflow-hidden bg-white px-6 py-24 text-slate-700 md:px-8">
       {/* Background Decorative Gradient Blobs with Glow Animations */}
-      <div className="pointer-events-none absolute -left-20 top-20 h-96 w-96 rounded-full bg-orange-100/50 blur-3xl animate-pulse-glow" />
+      <div className="pointer-events-none absolute -left-20 top-20 h-96 w-96 rounded-full bg-orange-100/50 blur-3xl animate-pulse-glow " />
       <div className="pointer-events-none absolute -right-20 bottom-20 h-96 w-96 rounded-full bg-amber-50/80 blur-3xl animate-pulse-glow" />
 
-      <div className="relative z-10 mx-auto max-w-7xl space-y-24">
+      <div className="relative z-10 mx-auto max-w-7xl space-y-24 ">
         
         {/* 1. HERO / OVERVIEW SECTION */}
         <div className="grid items-center gap-12 md:grid-cols-2 md:gap-16">

@@ -14,7 +14,31 @@ import member11 from "../assets/Deepanshi-Shrivastava-HR-Manager.webp";
 import mainpageg  from "../assets/Gemini_Generated_Image_ro5a4kro5a4kro5a.png";
 
 
+import { FiShield, FiFileText, FiAnchor, FiCheckSquare, FiTruck, FiZap,
+   FiGlobe,FiBox,FiLock,FiServer,FiPackage,FiNavigation,FiMapPin,FiTrendingUp,
+  FiDollarSign,FiCode,FiCloud,FiHeadphones,FiBarChart2,FiBriefcase,FiCpu,
+   FiLayers,FiPercent,FiAward,FiClock, 
+ } from "react-icons/fi";
+
+import { BsStars } from "react-icons/bs";
+import { SiDhl, SiShopify, SiFedex, SiUps, SiUsps, SiEbay } from "react-icons/si";
+
 ////////////////// home.jsx ///////////////////
+
+
+// Dynamic Brand Partners List
+export const partners = [
+  { name: "DHL", icon: SiDhl },
+  { name: "Shopify", icon: SiShopify },
+  { name: "FedEx", icon: SiFedex },
+  { name: "Aramex", text: "aramex" },
+  { name: "USPS", icon: SiUsps },
+  { name: "BlueDart", text: "BLUE DART" },
+  { name: "DTDC", text: "DTDC" },
+  { name: "eBay", icon: SiEbay },
+];
+
+
 export const testimonials = [
   {
     id: 1,
@@ -45,17 +69,11 @@ export const bottomstats = [
 
 
 
+
+
+
+
 ////////////////////////////////////////////////
-
-
-// ✅ SAHI (FiShieldCheck ko FiShield se replace karein)
-import { FiShield, FiFileText, FiAnchor, FiCheckSquare, FiTruck, FiZap,
-   FiGlobe,FiBox,FiLock,FiServer,FiPackage,FiNavigation,FiMapPin,FiTrendingUp,
-  FiDollarSign,FiCode,FiCloud,FiHeadphones,FiBarChart2,FiBriefcase,FiCpu,
-   FiLayers,FiPercent,FiAward,FiClock, 
- } from "react-icons/fi";
-
- import { BsStars } from "react-icons/bs";
 
 export const LOGISTICS_IMAGES = {
   about:mainpageg,
@@ -905,6 +923,22 @@ export const branchOffices = [
     address: "D/1001, 10th Floor Titanium City Centre, Prahladnagar, 100 FT Road, Satellite, Ahmedabad, Gujarat - 380015",
     phone: "+91 9319524092",
     email: "ts@dflindia.in"
+  },
+    {
+    id: "nagima",
+    countryId: "india",
+    city: "NAGIMA",
+    address: "Shop No 8, Ganna Samiti Road, Muneem Chowk, Lal Sarai...",
+    phone: "+91 9999309839",
+    email: "sales@dflindia.in"
+  },
+    {
+    id: "vadodara",
+    countryId: "india",
+    city: "VADODARA",
+    address: "LR-412, 04th Floor, Park Paradise Building, Vadsar, Vadodara, Near...",
+    phone: "+91 9999309839",
+    email: "sales@dflindia.in"
   },
   {
     id: "london",

@@ -3,7 +3,7 @@ import { teamMembers } from "../data/siteData";
 
 const Team = () => {
   return (
-    <section className="bg-slate-50/50 py-16 px-6 md:px-8">
+    <section className="bg-white mt-8 py-16 px-6 md:px-8">
       <div className="mx-auto max-w-7xl">
         
         {/* HEADER SECTION */}
