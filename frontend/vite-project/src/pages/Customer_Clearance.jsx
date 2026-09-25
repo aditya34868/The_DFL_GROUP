@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useTalkModal } from "../context/TalkModalContext";
 import {
   FiFileText,
   FiShield,
@@ -90,6 +91,11 @@ const SectionHeader = ({ badge, title, subtitle }) => (
 );
 
 export default function CustomsClearance() {
+      const homepage = () => {
+    window.location.href = "https://thedflexpress.in/";
+  };
+
+  const {openModal} = useTalkModal();
   return (
     <div className="min-h-screen bg-slate-50 text-slate-800 pt-28 pb-20 px-4 sm:px-6 md:px-12 font-sans">
       <div className="mx-auto max-w-7xl space-y-16">
@@ -137,13 +143,13 @@ export default function CustomsClearance() {
               </p>
 
               <div className="pt-2 flex flex-wrap gap-4">
-                <Link
-                  to="/contact"
+                <button
+                 onClick={homepage}
                   className="inline-flex items-center gap-2.5 rounded-xl bg-[#E66E19] px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-orange-600/20 transition-all duration-300 hover:bg-[#d55f0f] hover:scale-105 active:scale-95"
                 >
                   <span>Consult Brokerage Expert</span>
                   <FiArrowRight className="h-4 w-4" />
-                </Link>
+                </button>
               </div>
             </div>
 
@@ -270,12 +276,11 @@ export default function CustomsClearance() {
               Generate shipping documentation and clear port duties without delays.
             </p>
           </div>
-          <Link
-            to="/contact"
-            className="shrink-0 rounded-xl bg-[#E66E19] px-7 py-3.5 text-xs font-extrabold uppercase tracking-wider text-white transition-all duration-300 hover:bg-[#d55f0f] hover:scale-105 active:scale-95 shadow-lg shadow-orange-600/20"
-          >
+          <button
+            className="shrink-0 rounded-xl bg-[#E66E19] px-7 py-3.5 text-xs font-extrabold uppercase tracking-wider text-white transition-all duration-300 hover:bg-[#d55f0f] hover:scale-105 active:scale-95 shadow-lg shadow-orange-600/20 cursor-pointer"
+           onClick={openModal}>
             Clear Shipment Now →
-          </Link>
+          </button>
         </section>
 
       </div>

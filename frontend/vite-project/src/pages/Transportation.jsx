@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useTalkModal } from "../context/TalkModalContext";
 import {TransportKeyAdvantages,serviceModels} from "../data/siteData"
 import {
   FiTruck,
@@ -11,6 +12,8 @@ import {
 } from "react-icons/fi";
 
 export default function Transportation() {
+
+  const {openModel} = useTalkModal();
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-800 pt-28 pb-20 px-4 sm:px-6 md:px-12 font-sans">
@@ -229,12 +232,13 @@ export default function Transportation() {
               Book instant pickups and get competitive FTL & LTL freight rates today.
             </p>
           </div>
-          <Link
-            to="/contact"
-            className="shrink-0 rounded-xl bg-[#E66E19] px-7 py-3.5 text-xs font-extrabold uppercase tracking-wider text-white transition-all duration-300 hover:bg-[#d55f0f] hover:scale-105 active:scale-95 shadow-lg shadow-orange-600/20"
+          <button
+           type="button"
+            className="shrink-0 rounded-xl bg-[#E66E19] px-7 py-3.5 text-xs font-extrabold uppercase tracking-wider text-white transition-all duration-300 hover:bg-[#d55f0f] hover:scale-105 active:scale-95 shadow-lg shadow-orange-600/20 cursor-pointer"
+            onClick={openModel}
           >
             Get Freight Quote →
-          </Link>
+          </button>
         </section>
 
       </div>

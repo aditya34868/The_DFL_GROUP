@@ -10,6 +10,9 @@ import {
 } from "react-icons/fi";
 
 export default function Warehousing() {
+     const homepage = () => {
+    window.location.href = "https://thedflexpress.in/";
+  };
   const { openModal } = useTalkModal();
 
   return (
@@ -72,7 +75,7 @@ export default function Warehousing() {
               <div className="pt-2 flex flex-wrap gap-4">
                 <button
                   type="button"
-                  onClick={() => openModal()}
+                  onClick={homepage}
                   className="inline-flex items-center gap-2.5 rounded-xl bg-[#E66E19] px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-orange-600/20 transition-all duration-300 hover:bg-[#d55f0f] hover:scale-105 active:scale-95"
                 >
                   <span>Get Started with DFL</span>
@@ -210,8 +213,8 @@ export default function Warehousing() {
           </div>
           <button
             type="button"
-            onClick={() => openModal()}
-            className="shrink-0 rounded-xl bg-[#E66E19] px-7 py-3.5 text-xs font-extrabold uppercase tracking-wider text-white transition-all duration-300 hover:bg-[#d55f0f] hover:scale-105 active:scale-95 shadow-lg shadow-orange-600/20"
+            onClick={openModal}
+            className="shrink-0 rounded-xl bg-[#E66E19] px-7 py-3.5 text-xs font-extrabold uppercase tracking-wider text-white transition-all duration-300 hover:bg-[#d55f0f] hover:scale-105 active:scale-95 shadow-lg shadow-orange-600/20 cursor-pointer"
           >
             Contact Us →
           </button>

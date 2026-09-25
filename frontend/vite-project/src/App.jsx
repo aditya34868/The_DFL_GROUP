@@ -15,10 +15,10 @@ import Transportation from "./pages/Transportation";
 import Ocean_Freight_Forwarding from "./pages/Ocean_Freight_Forwarding";
 import Customer_Clearance from "./pages/Customer_Clearance";
 import Warehousing from "./pages/Warehousing";
-import AirFreight from "./pages/AirFreight";
 import InlandTransport from "./pages/InlandTransport";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermAndCondition from "./pages/TermAndCondition";
+import NotFound from "./pages/NotFound";
 
 export default function App() {
   return (
@@ -39,9 +39,9 @@ export default function App() {
           <Route path='/services/custom-clearance' element={<Customer_Clearance/>}/>
           <Route path='/services/warehousing' element={<Warehousing/>}/>
           <Route path='/inland-transport' element={<InlandTransport/>}/>
-          <Route path='/air-freight-forwarding' element={<AirFreight/>}/>
           <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
           <Route path='/terms-conditions' element={<TermAndCondition/>}/>
+          <Route path='*' element={<NotFound/>}/>
 
         </Routes>
         <Footer/>

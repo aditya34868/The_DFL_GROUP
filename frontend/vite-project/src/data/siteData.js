@@ -46,17 +46,21 @@ export const partners = [
 export const testimonials = [
   {
     id: 1,
-    quote: "DFL Group has been an incredible partner for our business. Their reliability, communication and on-time delivery are unmatched. We highly recommend them!",
-    name: "Rahul Sharma",
-    role: "Operations Manager, TechCorp",
+    quote: "Excellent delivery service! They took care of all the complexity involved in delivery and customs and made it extremely easy for our goods to reach their international destination. Highly recommended.",
+    name: "Abi Chatterjee",
     avatar: "https://i.pravatar.cc/150?img=12",
   },
   {
     id: 2,
-    quote: "Exceptional logistics support and seamless tracking. Their dedicated team ensures our cargo reaches safely every single time.",
-    name: "Ananya Patel",
-    role: "Supply Chain Lead, GlobalTrade",
-    avatar: "https://i.pravatar.cc/150?img=47",
+    quote: "Demira Freigt Linkers India Pvt. Ltd. is very good company with excellent coordination and management services.I am, Really happy to work with!",
+    name: "Pradeep Maurya",
+    avatar: "https://i.pravatar.cc/150?img=14",
+  },
+    {
+    id: 3,
+    quote: "Safe, timely, transparent, and hassle-free cargo movement with complete ownership and proactive communication.",
+    name: "suresh kumar",
+    avatar: "https://i.pravatar.cc/150?img=13",
   },
 ];
 
@@ -909,7 +913,7 @@ export const branchOffices = [
     countryId: "india",
     city: "Noida",
     address: "B 331, Logix Technova, Block B, Sector 132, Noida, Uttar Pradesh 201305",
-    phone: "+91 9999309839",
+    phone: "+91 9355151122",
     email: "sales@dflindia.in"
   },
   {
@@ -933,40 +937,40 @@ export const branchOffices = [
     countryId: "india",
     city: "NAGINA",
     address: "Shop No 8, Ganna Samiti Road, Muneem Chowk, Lal Sarai...",
-    phone: "+91 9999309839",
-    email: "sales@dflindia.in"
+    phone: "+91 9355037796",
+    email: "ts@dflindia.in"
   },
     {
     id: "vadodara",
     countryId: "india",
     city: "VADODARA",
     address: "LR-412, 04th Floor, Park Paradise Building, Vadsar, Vadodara, Near...",
-    phone: "+91 9999309839",
-    email: "sales@dflindia.in"
+    phone: "+91 7874088394",
+    email: "baroda@dflindia.in"
   },
   {
-    id: "london",
-    countryId: "uk",
-    city: "London Hub",
-    address: "Unit 4, Heathrow Cargo Park, Colnbrook, Slough, UK",
-    phone: "+44 20 8123 4567",
-    email: "uk@dflindia.in"
+    id: "uk",
+    countryId: "united kingdom",
+    city: "United Kingdom",
+    address: "DFL international Logistics UK LTD ,400 Thames Valley park,Reading, United Kingdom, RG6 1PT,",
+    phone: "+44 7388653479",
+    email: "sales.uk@dflindia.in"
   },
   {
     id: "bangkok",
-    countryId: "thailand",
+    countryId: "bangkok",
     city: "Bangkok Gateway",
-    address: "88/12 Suvarnabhumi Port & Cargo Complex, Bangkok, Thailand",
-    phone: "+66 2 123 4567",
-    email: "thailand@dflindia.in"
+    address: "DFL International Co. Ltd,169 Soi Udomsuk 58, Nuer,Bangkok 10260 Bangna",
+    phone: "+66 81 812 6021",
+    email: "sangam.s@dflindia.in"
   },
   {
     id: "dubai-central",
     countryId: "dubai",
     city: "Dubai World Central",
-    address: "Suite 502, Logistics City, DWC, Jebel Ali, Dubai, UAE",
-    phone: "+971 4 800 3355",
-    email: "dubai@dflindia.in"
+    address: "DFL International Logistics LLC,Office Number 102-11,CBD bank building,Next to Alain Center Al Mankhool Rd, Bur Dubai,",
+    phone: "+97 1503998139",
+    email: "sales@dflindia.in"
   }
 ];
 

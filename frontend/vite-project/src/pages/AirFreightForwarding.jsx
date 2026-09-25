@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {useTalkModal} from "../context/TalkModalContext"
 import { AirEndToEndServices, smartFeatures } from "../data/siteData";
 import {
   FiSend,
@@ -40,7 +40,16 @@ const ImageCard = ({ src, alt, tag, title, icon: Icon = FiTrendingUp }) => (
   </div>
 );
 
+
+
+
 export default function AirFreightForwarding() {
+
+    const homepage = () => {
+    window.location.href = "https://thedflexpress.in/";
+  };
+   const { openModal } = useTalkModal();
+
   return (
     <div className="bg-white text-slate-800 pt-20 pb-16 px-4 md:px-8">
       <div className="mx-auto max-w-7xl space-y-12">
@@ -85,13 +94,12 @@ export default function AirFreightForwarding() {
                 Air freight is the ultimate solution for time-sensitive logistics. With guaranteed schedules, high-security airport hubs, and express customs processing, we keep your supply chain moving seamlessly across continents.
               </p>
               <div className="pt-1">
-                <Link
-                  to="/contact"
-                  className="inline-flex items-center gap-2 rounded-lg bg-[#E66E19] px-5 py-2.5 text-xs font-bold text-white transition hover:bg-[#d55f0f]"
+                <button
+                  className="inline-flex items-center gap-2 rounded-lg bg-[#E66E19] px-5 py-2.5 text-xs font-bold text-white transition hover:bg-[#d55f0f]" onClick={homepage}
                 >
                   <span>Book Air Shipment</span>
                   <FiArrowRight className="h-3.5 w-3.5 animate-arrow-nudge" />
-                </Link>
+                </button>
               </div>
             </div>
             <div className="lg:col-span-5">
@@ -234,9 +242,9 @@ export default function AirFreightForwarding() {
             <h3 className="text-lg font-black text-slate-900">Ready to dispatch your time-sensitive cargo?</h3>
             <p className="text-xs text-slate-600 mt-0.5 font-medium">Get customized air cargo quotes and instant flight transit schedules.</p>
           </div>
-          <Link to="/contact" className="shrink-0 rounded-lg bg-[#E66E19] px-5 py-2.5 text-xs font-bold uppercase text-white transition hover:bg-[#d55f0f]">
+          <button className="shrink-0 rounded-lg bg-[#E66E19] px-5 py-2.5 text-xs font-bold uppercase text-white transition hover:bg-[#d55f0f] cursor-pointer" onClick={openModal}>
             Get Custom Quote →
-          </Link>
+          </button>
         </section>
       </div>
     </div>

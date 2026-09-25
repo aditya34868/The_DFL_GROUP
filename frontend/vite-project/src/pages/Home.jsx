@@ -287,7 +287,6 @@ export default function Home() {
                     <img src={current.avatar} alt={current.name} className="h-9 w-9 rounded-full object-cover border" />
                     <div>
                       <h4 className="text-xs font-bold">{current.name}</h4>
-                      <p className="text-[11px] text-slate-500">{current.role}</p>
                     </div>
                   </div>
                 </div>
