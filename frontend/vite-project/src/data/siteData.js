@@ -12,6 +12,10 @@ import member9 from "../assets/Sachin-Jagannath-Vast.webp";
 import member10 from "../assets/Himani-Dwivedi-Sales-Manager.webp";
 import member11 from "../assets/Deepanshi-Shrivastava-HR-Manager.webp";
 import mainpageg  from "../assets/Gemini_Generated_Image_ro5a4kro5a4kro5a.png";
+import CustomerClerance from "../assets/customerClerance.png"
+import InlandTransport from "../assets/inlandTransport.png"
+import OceanFright from "../assets/ocean-freight.png"
+import AirFreight from "../assets/AirFreight.png"
 
 
 import { FiShield, FiFileText, FiAnchor, FiCheckSquare, FiTruck, FiZap,
@@ -99,7 +103,7 @@ export const services = [
     description:
       "Fast, Secure air cargo services for time-sensitive shipments worldwide with realtime tracking.",
     tag: "Priority Air & Land",
-    image: LOGISTICS_IMAGES.heroVan,
+    image:AirFreight,
     features: [
       "Express",
       "Global coverage",
@@ -114,7 +118,7 @@ export const services = [
     description:
       "Cost-effective sea freight solutions for large volume shipments with container & LCL options.",
     tag: "Ocean & Air Cargo",
-    image: LOGISTICS_IMAGES.cargoAir,
+    image: OceanFright,
     features: [
       "Cost-effective",
       "Large capacity",
@@ -129,7 +133,7 @@ export const services = [
     description:
       "Reliable ground transportation services covering major routes with flexible scheduling.",
     tag: "inland transportation",
-    image: LOGISTICS_IMAGES.containerShip,
+    image:InlandTransport,
     features: [
       "Flexible scheduling",
       "Door-to-door service",
@@ -144,7 +148,7 @@ export const services = [
     description:
       "Fast courier services for urgent deliveries with same-day and next-day delivery options.",
     tag: "Customs Express",
-    image: LOGISTICS_IMAGES.containerShip,
+    image: CustomerClerance,
     features: [
       "Same-day delivery",
       "Express options",
@@ -237,7 +241,7 @@ export const footerData = {
 export const teamMembers = [
   {
     id: 1,
-    name: "Rajesh Sharma",
+    name: "Dinesh Kumar Tiwari",
     role: "Founder & CEO",
     image: member1,
     bio: "15+ years of strategic leadership in global logistics & supply chain management.",
@@ -248,7 +252,7 @@ export const teamMembers = [
   },
   {
     id: 2,
-    name: "Priya Verma",
+    name: "Kamlesh Kumar Pandey",
     role: "Chief Operating Officer (COO)",
     image: member2,
     bio: "Specializes in operational scaling, fleet logistics, and client relations.",
@@ -259,7 +263,7 @@ export const teamMembers = [
   },
   {
     id: 3,
-    name: "Amit Patel",
+    name: "Jagat Kishore Parsad",
     role: "Head of Freight & Cargo",
     image: member3,
     bio: "Expert in air & sea freight forwarding with focus on cross-border transport.",
@@ -270,7 +274,7 @@ export const teamMembers = [
   },
   {
     id: 4,
-    name: "Sneha Gupta",
+    name: "Akash Kumar",
     role: "Chief Financial Officer (CFO)",
     image: member4,
     bio: "Manages financial strategy, risk management, and corporate investments.",
@@ -281,7 +285,7 @@ export const teamMembers = [
   },
   {
     id: 5,
-    name: "Vikram Singh",
+    name: "Sangam Shahi",
     role: "Supply Chain Director",
     image: member5,
     bio: "Optimizing end-to-end supply chain processes and warehouse systems.",
@@ -292,7 +296,7 @@ export const teamMembers = [
   },
   {
     id: 6,
-    name: "Ananya Roy",
+    name: "Sarvesh ",
     role: "Head of Customs & Compliance",
     image: member6,
     bio: "Ensures legal clearances, international trade regulations, and documentation.",
@@ -303,8 +307,8 @@ export const teamMembers = [
   },
   {
     id: 7,
-    name: "Rohan Malhotra",
-    role: "IT & Tracking Systems Lead",
+    name: "Tajinder Saini",
+    role: "General Manager",
     image: member7,
     bio: "Architect behind the real-time package tracking and digital dashboard.",
     socials: {
@@ -314,8 +318,8 @@ export const teamMembers = [
   },
   {
     id: 8,
-    name: "Kavita Rao",
-    role: "Client Success Manager",
+    name: "Paras",
+    role: "Sales Head",
     image: member8,
     bio: "Dedicated to enterprise client relationships and 24/7 support execution.",
     socials: {
@@ -325,7 +329,7 @@ export const teamMembers = [
   },
   {
     id: 9,
-    name: "Suresh Menon",
+    name: "Sachin Jagannath Vast",
     role: "Warehouse Operations Head",
     image: member9,
     bio: "Overlooking inventory control, fulfillment centers, and safety standards.",
@@ -336,8 +340,8 @@ export const teamMembers = [
   },
   {
     id: 10,
-    name: "Pooja Joshi",
-    role: "HR & Talent Director",
+    name: "Himani Dwivedi",
+    role: "Sales Manager",
     image: member10,
     bio: "Building strong corporate culture and managing logistics staff nationwide.",
     socials: {
@@ -347,8 +351,8 @@ export const teamMembers = [
   },
   {
     id: 11,
-    name: "Manish Reddy",
-    role: "Fleet & Transport Manager",
+    name: "Deepanshi Shrivastava",
+    role: "HR Manager[",
     image: member11,
     bio: "In charge of ground vehicle logistics, route planning, and fuel efficiency.",
     socials: {
@@ -925,9 +929,9 @@ export const branchOffices = [
     email: "ts@dflindia.in"
   },
     {
-    id: "nagima",
+    id: "nagina",
     countryId: "india",
-    city: "NAGIMA",
+    city: "NAGINA",
     address: "Shop No 8, Ganna Samiti Road, Muneem Chowk, Lal Sarai...",
     phone: "+91 9999309839",
     email: "sales@dflindia.in"

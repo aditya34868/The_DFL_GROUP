@@ -3,14 +3,10 @@ import { Link } from "react-router-dom";
 import {TransportKeyAdvantages,serviceModels} from "../data/siteData"
 import {
   FiTruck,
-  FiMapPin,
   FiCheckCircle,
   FiShield,
   FiArrowRight,
   FiBox,
-  FiClock,
-  FiDollarSign,
-  FiNavigation,
   FiActivity,
 } from "react-icons/fi";
 
@@ -144,42 +140,48 @@ export default function Transportation() {
             </div>
           </div>
         </section>
+{/* SECTION 3: KEY ADVANTAGES (FIXED ICONS & HOVER) */}
+<section className="space-y-10">
+  <div className="text-center max-w-2xl mx-auto space-y-3">
+    <span className="rounded-full bg-orange-100 border border-orange-200 px-3.5 py-1 text-xs font-extrabold uppercase tracking-wider text-[#E66E19]">
+      Key Advantages
+    </span>
+    <h2 className="text-3xl font-black text-slate-900">
+      Why Transport with The DFL Group?
+    </h2>
+    <p className="text-sm text-slate-600 font-medium">
+      We eliminate the need for multiple local transport providers by providing a single, highly reliable inland transit network.
+    </p>
+  </div>
 
-        {/* SECTION 3: KEY ADVANTAGES (HOVER BUGS FIXED) */}
-        <section className="space-y-10">
-          <div className="text-center max-w-2xl mx-auto space-y-3">
-            <span className="rounded-full bg-orange-100 border border-orange-200 px-3.5 py-1 text-xs font-extrabold uppercase tracking-wider text-[#E66E19]">
-              Key Advantages
-            </span>
-            <h2 className="text-3xl font-black text-slate-900">
-              Why Transport with The DFL Group?
-            </h2>
-            <p className="text-sm text-slate-600 font-medium">
-              We eliminate the need for multiple local transport providers by providing a single, highly reliable inland transit network.
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    {TransportKeyAdvantages.map((item, idx) => {
+      // Dynamic Component Check for icon
+      const IconComponent = typeof item.icon === "function" ? item.icon : null;
+
+      return (
+        <div
+          key={idx}
+          className="group relative flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-[#E66E19] hover:bg-[#E66E19] hover:shadow-xl"
+        >
+          <div>
+            {/* Icon Container with explicit text color fix */}
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-100/70 border border-orange-200 text-[#E66E19] group-hover:bg-white/20 group-hover:border-white/30 group-hover:text-white transition-all text-xl">
+              {IconComponent ? <IconComponent className="h-6 w-6" /> : item.icon}
+            </div>
+            
+            <h3 className="mt-5 text-base font-bold text-slate-800 group-hover:text-white transition-colors">
+              {item.title}
+            </h3>
+            <p className="mt-2 text-xs leading-relaxed text-slate-600 group-hover:text-orange-50 font-medium transition-colors">
+              {item.description}
             </p>
           </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {TransportKeyAdvantages.map((item, idx) => (
-              <div
-                key={idx}
-                className="group relative flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-[#E66E19] hover:bg-[#E66E19] hover:shadow-xl"
-              >
-                <div>
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-50 border border-orange-100 group-hover:bg-white/20 group-hover:border-white/30 transition-colors">
-                    {item.icon}
-                  </div>
-                  <h3 className="mt-5 text-base font-bold text-slate-800 group-hover:text-white transition-colors">
-                    {item.title}
-                  </h3>
-                  <p className="mt-2 text-xs leading-relaxed text-slate-600 group-hover:text-orange-50 font-medium transition-colors">
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
+        </div>
+      );
+    })}
+  </div>
+</section>
 
         {/* SECTION 4: FLEXIBLE SERVICE MODELS */}
         <section className="rounded-3xl border border-slate-200 bg-white p-6 sm:p-10 md:p-12 shadow-sm">

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from "react";
 
 import faq1 from "../assets/faq1.png";
 import faq2 from "../assets/faq2.png";
@@ -101,42 +101,60 @@ const faqData = [
 ];
 
 const Faq = () => {
+  const [openId, setOpenId] = useState(null);
+
+  const toggleFaq = (id) => {
+    setOpenId(openId === id ? null : id);
+  };
+
   return (
-    <section className="py-12 px-4 max-w-7xl mx-auto bg-white">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
-        {faqData.map((item) => (
-          <div
-            key={item.id}
-            className="relative bg-white rounded-2xl border border-sky-100 p-6 flex flex-col justify-between overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 min-h-[280px]"
-          >
-            {/* Top Content (Badge, Question, Answer) */}
-            <div className="z-10 max-w-[60%] flex flex-col items-start">
-              {/* Number Badge */}
-              <span className="inline-block bg-sky-200/60 text-sky-800 text-xs font-bold px-3 py-1 rounded-full mb-3">
-                {item.num}
-              </span>
+    <section className="py-10 px-4 max-w-5xl mx-auto bg-white">
+      <div className="divide-y divide-slate-200">
+        {faqData.map((item) => {
+          const isOpen = openId === item.id;
+          return (
+            <div key={item.id} className="py-5">
+              <button
+                onClick={() => toggleFaq(item.id)}
+                className="w-full flex items-center justify-between text-left group"
+              >
+                <div className="flex items-center gap-4">
+                  <span className="bg-sky-100 text-sky-800 text-sm font-bold px-3 py-1 rounded-full shrink-0">
+                    {item.num}
+                  </span>
+                  {/* Bada Question Text */}
+                  <h3 className="text-xl font-bold text-slate-900 group-hover:text-[#E66E19] transition-colors cursor-pointer">
+                    {item.question}
+                  </h3>
+                </div>
 
-              {/* Question */}
-              <h3 className="text-lg font-bold text-slate-900 leading-snug mb-3">
-                {item.question}
-              </h3>
+                <span className="text-2xl font-bold text-slate-400 group-hover:text-sky-600 ml-4 shrink-0 cursor-pointer">
+                  {isOpen ? "−" : "+"}
+                </span>
+              </button>
 
-              {/* Answer */}
-              <p className="text-xs text-slate-600 leading-relaxed font-normal">
-                {item.answer}
-              </p>
+              {isOpen && (
+                <div className="mt-5 pl-14 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                  {/* Bada Content/Answer Text */}
+                  <p className="text-base text-slate-700 leading-relaxed flex-1" onClick={() => toggleFaq(item.id)}>
+                    {item.answer}
+                  </p>
+
+                  {/* Badi Image Layout */}
+                  {item.image && (
+                    <div className="w-full md:w-48 h-36 shrink-0 bg-slate-50 p-2 rounded-xl border border-slate-100 flex items-center justify-center">
+                      <img
+                        src={item.image}
+                        alt={item.question}
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                  )}
+                </div>
+              )}
             </div>
-
-            {/* Fixed Right Side Image Wrapper */}
-            <div className="absolute right-0 bottom-0 h-48 w-[40%] flex items-end justify-end pointer-events-none p-2">
-              <img
-                src={item.image}
-                alt={item.question}
-                className="h-full w-full object-contain object-right-bottom transition-transform duration-300 hover:scale-105"
-              />
-            </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </section>
   );
