@@ -142,7 +142,7 @@ const Faq = () => {
 
                   {/* Badi Image Layout */}
                   {item.image && (
-                    <div className="w-full md:w-48 h-36 shrink-0 bg-slate-50 p-2 rounded-xl border border-slate-100 flex items-center justify-center">
+                    <div className="w-full md:w-48 h-36 shrink-0 bg-white p-2 rounded-xl flex items-center justify-center">
                       <img
                         src={item.image}
                         alt={item.question}

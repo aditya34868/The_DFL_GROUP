@@ -21,108 +21,64 @@
   --animate-shipment-move: shipmentMove 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
   --animate-float: float 8s ease-in-out infinite;
   --animate-scan: documentScan 5s linear infinite alternate;
-
-  /* 🚀 MARQUEE ANIMATION ADDED HERE */
   --animate-marquee: marquee 25s linear infinite;
 
   @keyframes marquee {
-    from {
-      transform: translateX(0%);
-    }
-    to {
-      transform: translateX(-100%);
-    }
+    from { transform: translateX(0%); }
+    to { transform: translateX(-100%); }
   }
 
   @keyframes fadeUp {
-    from {
-      opacity: 0;
-      transform: translateY(18px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0px);
-    }
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: translateY(0px); }
+  }
+
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(40px); }
+    100% { opacity: 1; transform: translateY(0); }
   }
 
   @keyframes lineDraw {
-    from {
-      transform: scaleX(0);
-    }
-    to {
-      transform: scaleX(1);
-    }
+    from { transform: scaleX(0); }
+    to { transform: scaleX(1); }
   }
 
   @keyframes gradientFlow {
-    0%, 100% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
   }
 
   @keyframes ctaPulse {
-    0%, 100% {
-      opacity: 0.25;
-      transform: scale(1);
-    }
-    50% {
-      opacity: 0.6;
-      transform: scale(1.06);
-    }
+    0%, 100% { opacity: 0.25; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(1.06); }
   }
 
   @keyframes arrowNudge {
-    0%, 100% {
-      transform: translateX(0);
-    }
-    50% {
-      transform: translateX(4px);
-    }
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(4px); }
   }
 
   @keyframes shipmentMove {
-    0% {
-      left: 0;
-    }
-    100% {
-      left: 86%;
-    }
+    0% { left: 0; }
+    100% { left: 86%; }
   }
 
   @keyframes float {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
   }
 
-@keyframes documentScan {
-  0% {
-    left: 0%;
-    transform: translateY(-50%) translateX(0%);
+  @keyframes documentScan {
+    0% { left: 0%; transform: translateY(-50%) translateX(0%); }
+    100% { left: 100%; transform: translateY(-50%) translateX(-100%); }
   }
-  100% {
-    left: 100%;
-    transform: translateY(-50%) translateX(-100%); 
+
+  @keyframes cardStack {
+    0% { opacity: 0; transform: translateY(40px) scale(0.96); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
   }
 }
 
-@keyframes cardStack {
-  0% {
-    opacity: 0;
-    transform: translateY(40px) scale(0.96);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-}
 
 html {
   scroll-behavior: smooth;

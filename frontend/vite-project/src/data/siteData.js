@@ -199,10 +199,10 @@ export const working = [
 ]
 
 export const stats = [
-  { value: 40, suffix: "K+", label: "Daily Express Parcels" },
-  { value: 5000, suffix: "K+", label: "Satisfied Customers" },
-  { value: 500, suffix: "+", label: "Regional Hubs & Hub-Stores" },
-  { value: 99.8, suffix: "%", label: "On-Time Delivery Rate" },
+  { value: 50, suffix: "K+", label: "Orders Delivered" },
+  { value: 45, suffix: "K+", label: "Satisfied Customers" },
+  { value: 500, suffix: "+", label: "Regional Hubs & Stores" },
+  { value: 4.9, suffix: "/5", label: "Customer Rating" },
 ];
 
 export const highlights = [
@@ -920,7 +920,7 @@ export const branchOffices = [
     id: "mumbai",
     countryId: "india",
     city: "Mumbai",
-    address: "231 Sai Chambers, B Wings, Sector 11, CBD Belapur, Navi Mumbai - 400614",
+    address: "136, AGRAWAL TRADE CENTRE, PLOT No. 62, SECTOR 11, CBD BELAPUR 400614",
     phone: "+91 9971076083",
     email: "kp@dflindia.in"
   },
