@@ -44,7 +44,7 @@ const SURFACE_TRANSPORT_HIGHLIGHTS = [
 ];
 
 export default function Transportation() {
-  const { openModel } = useTalkModal();
+  const { openModal } = useTalkModal();
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-800 pt-28 pb-20 px-4 sm:px-6 md:px-12 font-sans">
@@ -350,7 +350,7 @@ export default function Transportation() {
           <button
             type="button"
             className="shrink-0 rounded-xl bg-[#E66E19] px-7 py-3.5 text-xs font-extrabold uppercase tracking-wider text-white transition-all duration-300 hover:bg-[#d55f0f] hover:scale-105 active:scale-95 shadow-lg shadow-orange-600/20 cursor-pointer"
-            onClick={openModel}
+            onClick={openModal}
           >
             Get Freight Quote →
           </button>
