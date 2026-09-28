@@ -33,7 +33,7 @@ export default function App() {
           <Route path="/team" element={<Team/>}/>
           <Route path='/ourPresence' element={<OurPresence/>}/>
           <Route path='/dflit' element={<Dfl_It/>}/>
-          <Route path='/services/freight-forwarding' element={<AirFreightForwarding/>}/>
+          <Route path='/services/air-freight-forwarding' element={<AirFreightForwarding/>}/>
           <Route path='/services/transportation' element={<Transportation/>}/>
           <Route path='/services/ocean-freight' element={<Ocean_Freight_Forwarding/>}/>
           <Route path='/services/custom-clearance' element={<Customer_Clearance/>}/>

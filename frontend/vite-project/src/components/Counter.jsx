@@ -3,7 +3,7 @@ import CountUpModule from "react-countup";
 import { useInView } from "react-intersection-observer";
 
 // Handle both Default and Named Module Exports safely
-const CountUp = CountUpModule.default || CountUpModule;
+const CountUp = CountUpModule.default
 
 export default function Counter({ value = 0, suffix = "", duration = 3, decimals = 0 }) {
   const { ref, inView } = useInView({ threshold: 0.3, triggerOnce: true });

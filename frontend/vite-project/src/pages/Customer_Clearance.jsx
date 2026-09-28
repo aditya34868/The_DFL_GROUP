@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useTalkModal } from "../context/TalkModalContext";
+import Faq from "../components/Faq";
+import { Customer_clearance } from "../data/siteData";
 import {
   FiFileText,
   FiShield,
@@ -13,30 +15,56 @@ import {
   FiLayers,
   FiBriefcase,
   FiActivity,
-} from "react-icons/fi";
+  FiGlobe,
+  FiCheckCircle,
+} from "react-icons/fi"; // <-- Yahan "react-icons/fi" fix kar diya hai
 
-// Static Data Definitions
+// Content Highlights (Clean Icon References)
+const CUSTOMS_HIGHLIGHTS = [
+  {
+    id: 1,
+    icon: FiShield,
+    title: "Customs Clearance & Documentation Services",
+    description:
+      "Customs is an important part of any international shipment. Before goods can enter or leave a country, the right documents need to be submitted and the required customs procedures need to be completed. If any information is missing or incorrect, it can hold up the shipment. At The DFL Group, we help businesses handle these requirements and coordinate the clearance process from the shipment stage to final delivery.",
+  },
+  {
+    id: 2,
+    icon: FiGlobe,
+    title: "Support for Import & Export Shipments",
+    description:
+      "We handle customs clearance support for both import and export shipments. Our team works with the shipment details and required documents to complete the necessary customs formalities. We also coordinate with the relevant parties during the clearance process whenever additional information or documents are required. This helps businesses avoid unnecessary back-and-forth and keep their shipments moving.",
+  },
+  {
+    id: 3,
+    icon: FiFileText,
+    title: "Documentation Support for International Trade",
+    description:
+      "Good paperwork makes the customs process much easier. Depending on the shipment, documents such as commercial invoices, packing lists, shipping documents, licences or certificates may be required. Our team helps organise and coordinate these documents and makes sure the required information is available for the clearance process.",
+  },
+];
+
 const WHY_CHOOSE_US = [
   {
-    icon: <FiZap className="h-6 w-6 text-[#E66E19] group-hover:text-white transition-colors" />,
+    icon: FiZap,
     title: "Fast Documentation",
     description:
       "We recognize the urgency of import and export operations, ensuring prompt documentation arrangements so you can focus on core business.",
   },
   {
-    icon: <FiAward className="h-6 w-6 text-[#E66E19] group-hover:text-white transition-colors" />,
+    icon: FiAward,
     title: "Expert Broker Associates",
     description:
       "Highly experienced in clearing all types of goods: garments, leather, automobiles, pharmaceuticals, perishables, pets, and more.",
   },
   {
-    icon: <FiCpu className="h-6 w-6 text-[#E66E19] group-hover:text-white transition-colors" />,
+    icon: FiCpu,
     title: "Automated Documentation",
     description:
       "Instant online platform generation of invoices, airway bills, bills of lading, bills of exchange, and shipping bills in seconds.",
   },
   {
-    icon: <FiShield className="h-6 w-6 text-[#E66E19] group-hover:text-white transition-colors" />,
+    icon: FiShield,
     title: "Trade Compliance Solutions",
     description:
       "Assistance with obtaining government incentives, rebates, license preparation, and approvals from global trade authorities.",
@@ -45,22 +73,22 @@ const WHY_CHOOSE_US = [
 
 const VALUE_PROPS = [
   {
-    icon: <FiPercent className="h-5 w-5 text-[#E66E19]" />,
+    icon: FiPercent,
     title: "Reduced Costs",
     desc: "Minimize duty payments and avoid demurrage or fines through proper documentation and accurate HS-code classification.",
   },
   {
-    icon: <FiClock className="h-5 w-5 text-[#E66E19]" />,
+    icon: FiClock,
     title: "Speed & Predictability",
     desc: "Faster customs clearance means better supply chain reliability and significantly reduced lead times.",
   },
   {
-    icon: <FiShield className="h-5 w-5 text-[#E66E19]" />,
+    icon: FiShield,
     title: "Regulatory Peace of Mind",
     desc: "Stay fully compliant even as global customs rules evolve, with proactive expert guidance.",
   },
   {
-    icon: <FiLayers className="h-5 w-5 text-[#E66E19]" />,
+    icon: FiLayers,
     title: "Operational Efficiency",
     desc: "Offloading the customs burden frees your team to focus on business growth rather than paperwork.",
   },
@@ -77,7 +105,9 @@ const INDUSTRIES_SUPPORTED = [
 
 // Reusable UI Components
 const Badge = ({ children, className = "" }) => (
-  <span className={`inline-flex items-center gap-2 rounded-full bg-orange-50 border border-orange-200 px-3.5 py-1 text-xs font-extrabold uppercase tracking-wider text-[#E66E19] ${className}`}>
+  <span
+    className={`inline-flex items-center gap-2 rounded-full bg-orange-50 border border-orange-200 px-3.5 py-1 text-xs font-extrabold uppercase tracking-wider text-[#E66E19] ${className}`}
+  >
     {children}
   </span>
 );
@@ -86,20 +116,22 @@ const SectionHeader = ({ badge, title, subtitle }) => (
   <div className="text-center max-w-2xl mx-auto space-y-3">
     <Badge>{badge}</Badge>
     <h2 className="text-3xl font-black text-slate-900">{title}</h2>
-    {subtitle && <p className="text-sm text-slate-600 font-medium">{subtitle}</p>}
+    {subtitle && (
+      <p className="text-sm text-slate-600 font-medium">{subtitle}</p>
+    )}
   </div>
 );
 
 export default function CustomsClearance() {
-      const homepage = () => {
+  const homepage = () => {
     window.location.href = "https://thedflexpress.in/";
   };
 
-  const {openModal} = useTalkModal();
+  const { openModal } = useTalkModal();
+
   return (
     <div className="min-h-screen bg-slate-50 text-slate-800 pt-28 pb-20 px-4 sm:px-6 md:px-12 font-sans">
       <div className="mx-auto max-w-7xl space-y-16">
-        
         {/* MONITOR STRIP */}
         <div className="relative w-full rounded-2xl bg-white p-4 text-slate-700 shadow-md border border-slate-200">
           <div className="flex items-center justify-between text-xs font-semibold text-slate-500 mb-2 px-2">
@@ -110,12 +142,14 @@ export default function CustomsClearance() {
               </span>
               Digital Customs Portal
             </span>
-            <span className="font-bold text-slate-600">Automated e-Customs & Duty Clearance Status: Active</span>
+            <span className="font-bold text-slate-600">
+              Automated e-Customs & Duty Clearance Status: Active
+            </span>
           </div>
 
           <div className="relative h-9 w-full rounded-xl bg-orange-50/60 border border-orange-100 overflow-hidden flex items-center px-3">
             <div className="w-full border-b border-dashed border-orange-300 absolute left-0 top-1/2 -translate-y-1/2" />
-            <div className="absolute top-7  -translate-y-1/2 animate-scan z-10 flex items-center gap-2 bg-[#E66E19] text-white px-3 py-1 rounded-full text-xs font-bold shadow-md shadow-orange-500/20 whitespace-nowrap">
+            <div className="absolute top-7 -translate-y-1/2 animate-scan z-10 flex items-center gap-2 bg-[#E66E19] text-white px-3 py-1 rounded-full text-xs font-bold shadow-md shadow-orange-500/20 whitespace-nowrap">
               <FiFileText className="h-3.5 w-3.5" />
               <span>Verifying Shipping Bills</span>
             </div>
@@ -135,7 +169,8 @@ export default function CustomsClearance() {
               </Badge>
 
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight leading-tight text-slate-900">
-                Seamless Compliance for Global Trade with <span className="text-[#E66E19]">The DFL Group</span>
+                Seamless Compliance for Global Trade with{" "}
+                <span className="text-[#E66E19]">The DFL Group</span>
               </h1>
 
               <p className="text-sm md:text-base leading-relaxed text-slate-600 font-medium">
@@ -144,7 +179,7 @@ export default function CustomsClearance() {
 
               <div className="pt-2 flex flex-wrap gap-4">
                 <button
-                 onClick={homepage}
+                  onClick={homepage}
                   className="inline-flex items-center gap-2.5 rounded-xl bg-[#E66E19] px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-orange-600/20 transition-all duration-300 hover:bg-[#d55f0f] hover:scale-105 active:scale-95"
                 >
                   <span>Consult Brokerage Expert</span>
@@ -164,13 +199,50 @@ export default function CustomsClearance() {
                 </div>
                 <div className="mt-4 flex items-center justify-between px-2 pb-1">
                   <div>
-                    <span className="block text-xs font-bold text-slate-800">Trade Compliance Portal</span>
-                    <span className="text-[11px] text-slate-500 font-medium">Instant Duty & Incentive Assessment</span>
+                    <span className="block text-xs font-bold text-slate-800">
+                      Trade Compliance Portal
+                    </span>
+                    <span className="text-[11px] text-slate-500 font-medium">
+                      Instant Duty & Incentive Assessment
+                    </span>
                   </div>
                   <FiActivity className="h-5 w-5 text-[#E66E19]" />
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* CUSTOMS HIGHLIGHTS */}
+        <section className="space-y-10">
+          <SectionHeader
+            badge="Clearance & Support"
+            title="Comprehensive Customs & Trade Documentation"
+            subtitle="Simplifying international procedures, import/export duties, and regulatory compliance."
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {CUSTOMS_HIGHLIGHTS.map((item) => {
+              const Icon = item.icon;
+              return (
+                <div
+                  key={item.id}
+                  className="group relative flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-[#E66E19] hover:shadow-xl"
+                >
+                  <div>
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-50 border border-orange-100 text-[#E66E19] group-hover:bg-[#E66E19] group-hover:text-white transition-colors mb-5">
+                      <Icon className="h-6 w-6" />
+                    </div>
+                    <h3 className="text-lg font-bold text-slate-900 mb-3 group-hover:text-[#E66E19] transition-colors">
+                      {item.title}
+                    </h3>
+                    <p className="text-xs sm:text-sm leading-relaxed text-slate-600 font-medium">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </section>
 
@@ -183,24 +255,27 @@ export default function CustomsClearance() {
           />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {WHY_CHOOSE_US.map((item, idx) => (
-              <div
-                key={idx}
-                className="group relative flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-[#E66E19] hover:bg-[#E66E19] hover:shadow-xl"
-              >
-                <div>
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-50 border border-orange-100 group-hover:bg-white/20 group-hover:border-white/30 transition-colors">
-                    {item.icon}
+            {WHY_CHOOSE_US.map((item, idx) => {
+              const Icon = item.icon;
+              return (
+                <div
+                  key={idx}
+                  className="group relative flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-[#E66E19] hover:bg-[#E66E19] hover:shadow-xl"
+                >
+                  <div>
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-50 border border-orange-100 text-[#E66E19] group-hover:bg-white/20 group-hover:border-white/30 group-hover:text-white transition-colors">
+                      <Icon className="h-6 w-6" />
+                    </div>
+                    <h3 className="mt-5 text-base font-bold text-slate-800 group-hover:text-white transition-colors">
+                      {item.title}
+                    </h3>
+                    <p className="mt-2 text-xs leading-relaxed text-slate-600 group-hover:text-orange-50 font-medium transition-colors">
+                      {item.description}
+                    </p>
                   </div>
-                  <h3 className="mt-5 text-base font-bold text-slate-800 group-hover:text-white transition-colors">
-                    {item.title}
-                  </h3>
-                  <p className="mt-2 text-xs leading-relaxed text-slate-600 group-hover:text-orange-50 font-medium transition-colors">
-                    {item.description}
-                  </p>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </section>
 
@@ -226,20 +301,27 @@ export default function CustomsClearance() {
           </div>
 
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {VALUE_PROPS.map((val, i) => (
-              <div
-                key={i}
-                className="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2 hover:border-[#E66E19] transition-colors"
-              >
-                <div className="flex items-center gap-2.5">
-                  <div className="p-2 rounded-lg bg-white border border-slate-200 shadow-sm">
-                    {val.icon}
+            {VALUE_PROPS.map((val, i) => {
+              const Icon = val.icon;
+              return (
+                <div
+                  key={i}
+                  className="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2 hover:border-[#E66E19] transition-colors"
+                >
+                  <div className="flex items-center gap-2.5">
+                    <div className="p-2 rounded-lg bg-white border border-slate-200 shadow-sm">
+                      <Icon className="h-5 w-5 text-[#E66E19]" />
+                    </div>
+                    <h4 className="font-bold text-sm text-slate-800">
+                      {val.title}
+                    </h4>
                   </div>
-                  <h4 className="font-bold text-sm text-slate-800">{val.title}</h4>
+                  <p className="text-xs text-slate-500 font-medium leading-relaxed">
+                    {val.desc}
+                  </p>
                 </div>
-                <p className="text-xs text-slate-500 font-medium leading-relaxed">{val.desc}</p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </section>
 
@@ -268,21 +350,37 @@ export default function CustomsClearance() {
           </div>
         </section>
 
+        {/* FAQ SECTION */}
+        <section className="py-16 bg-white rounded-3xl border border-slate-200 shadow-sm">
+          <div className="max-w-7xl mx-auto px-4 text-center">
+            <h2 className="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight mb-4">
+              Frequently Asked <span className="text-[#E66E19]">Questions</span>
+            </h2>
+
+            <p className="text-slate-600 text-base sm:text-lg max-w-xl mx-auto mb-12">
+              Everything you need to know about our logistics services and shipping.
+            </p>
+            <Faq data={Customer_clearance} />
+          </div>
+        </section>
+
         {/* BOTTOM CTA BAR */}
         <section className="rounded-3xl bg-orange-50 border border-orange-200 text-slate-800 p-8 sm:p-12 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-md">
           <div>
-            <h3 className="text-xl sm:text-2xl font-black text-slate-900">Ready for hassle-free customs clearance?</h3>
+            <h3 className="text-xl sm:text-2xl font-black text-slate-900">
+              Ready for hassle-free customs clearance?
+            </h3>
             <p className="text-xs sm:text-sm text-slate-600 mt-1 font-medium">
               Generate shipping documentation and clear port duties without delays.
             </p>
           </div>
           <button
             className="shrink-0 rounded-xl bg-[#E66E19] px-7 py-3.5 text-xs font-extrabold uppercase tracking-wider text-white transition-all duration-300 hover:bg-[#d55f0f] hover:scale-105 active:scale-95 shadow-lg shadow-orange-600/20 cursor-pointer"
-           onClick={openModal}>
+            onClick={openModal}
+          >
             Clear Shipment Now →
           </button>
         </section>
-
       </div>
     </div>
   );

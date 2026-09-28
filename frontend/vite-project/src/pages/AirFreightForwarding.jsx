@@ -1,6 +1,7 @@
 import React from "react";
-import {useTalkModal} from "../context/TalkModalContext"
-import { AirEndToEndServices, smartFeatures } from "../data/siteData";
+import { useTalkModal } from "../context/TalkModalContext";
+import Faq from "../components/Faq";
+import { AirEndToEndServices, smartFeatures, airFreightForwarding } from "../data/siteData";
 import {
   FiSend,
   FiClock,
@@ -11,9 +12,36 @@ import {
   FiPackage,
   FiNavigation,
   FiZap,
+  FiBox,
+  FiGlobe,
+  FiLayers,
 } from "react-icons/fi";
 
-// Reusable Styles & Components
+// Air Freight Core Solutions Content (3 Main Highlights)
+const airFreightHighlights = [
+  {
+    id: 1,
+    icon: FiGlobe,
+    title: "Reliable Air Freight Forwarding Solutions",
+    description:
+      "The DFL Group helps businesses move their cargo quickly and smoothly through reliable air freight forwarding services. We manage the entire shipping process, starting from cargo pickup and shipment planning to airline coordination, customs clearance and final delivery. Our services are designed for exporters, importers, manufacturers, e-commerce businesses and companies that need to move time-sensitive cargo safely and efficiently.",
+  },
+  {
+    id: 2,
+    icon: FiBox,
+    title: "Fast & Efficient International Air Cargo",
+    description:
+      "When your shipment needs to reach its destination faster, air freight can be a practical and efficient shipping option. We coordinate with airlines and logistics partners to ensure your cargo moves smoothly from origin to destination. Whether you are sending commercial goods, product samples, spare parts, high-value items or urgent shipments, our team takes care of the documentation, coordination and handling involved in the shipping process.",
+  },
+  {
+    id: 3,
+    icon: FiLayers,
+    title: "End-to-End Air Freight Management",
+    description:
+      "Air freight involves more than simply transporting cargo from one airport to another. At The DFL Group, we support you throughout the shipping process, including documentation, customs clearance, cargo handling, shipment tracking and delivery coordination. Our team works to keep the process simple and provide clear shipment updates, helping you stay informed about your cargo from pickup to final delivery.",
+  },
+];
+
 const BADGE_CLS =
   "inline-flex items-center gap-1.5 rounded-full bg-orange-50 border border-orange-200 px-3 py-1 text-xs font-bold uppercase tracking-wider text-[#E66E19]";
 const CARD_HOVER_CLS =
@@ -40,15 +68,11 @@ const ImageCard = ({ src, alt, tag, title, icon: Icon = FiTrendingUp }) => (
   </div>
 );
 
-
-
-
 export default function AirFreightForwarding() {
-
-    const homepage = () => {
+  const homepage = () => {
     window.location.href = "https://thedflexpress.in/";
   };
-   const { openModal } = useTalkModal();
+  const { openModal } = useTalkModal();
 
   return (
     <div className="bg-white text-slate-800 pt-20 pb-16 px-4 md:px-8">
@@ -70,8 +94,6 @@ export default function AirFreightForwarding() {
 
           <div className="relative h-8 w-full rounded-lg bg-orange-50 border border-orange-100 overflow-hidden flex items-center px-3">
             <div className="w-full border-b border-dashed border-orange-300 absolute left-0 top-1/2 -translate-y-1/2" />
-            
-            {/* Live Moving Flight Indicator using standard global animation class */}
             <div className="absolute top-6 -translate-y-1/2 animate-scan z-10 flex items-center gap-1.5 bg-[#E66E19] text-white px-2.5 py-0.5 rounded-full text-xs font-bold shadow-sm whitespace-nowrap">
               <FiNavigation className="h-3 w-3 rotate-45 animate-pulse" />
               <span>In-Flight Freight</span>
@@ -95,7 +117,8 @@ export default function AirFreightForwarding() {
               </p>
               <div className="pt-1">
                 <button
-                  className="inline-flex items-center gap-2 rounded-lg bg-[#E66E19] px-5 py-2.5 text-xs font-bold text-white transition hover:bg-[#d55f0f]" onClick={homepage}
+                  className="inline-flex items-center gap-2 rounded-lg bg-[#E66E19] px-5 py-2.5 text-xs font-bold text-white transition hover:bg-[#d55f0f]"
+                  onClick={homepage}
                 >
                   <span>Book Air Shipment</span>
                   <FiArrowRight className="h-3.5 w-3.5 animate-arrow-nudge" />
@@ -110,6 +133,39 @@ export default function AirFreightForwarding() {
                 title="Guaranteed 24-48 hr transit times"
               />
             </div>
+          </div>
+        </section>
+
+        {/* NEW SECTION: CORE AIR FREIGHT SERVICES CONTENT */}
+        <section className="space-y-6">
+          <div className="text-center max-w-2xl mx-auto space-y-2">
+            <Badge>Core Capabilities</Badge>
+            <h2 className="text-2xl sm:text-3xl font-black text-slate-900">
+              Complete Air Freight Solutions
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {airFreightHighlights.map((item) => {
+              const Icon = item.icon;
+              return (
+                <div
+                  key={item.id}
+                  className="rounded-xl border border-slate-200 bg-slate-50/50 p-6 transition duration-300 hover:border-[#E66E19] hover:bg-white hover:shadow-md flex flex-col justify-between"
+                >
+                  <div>
+                    <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-orange-100 text-[#E66E19] mb-4">
+                      <Icon className="h-6 w-6" />
+                    </div>
+                    <h3 className="text-lg font-bold text-slate-900 mb-2.5">
+                      {item.title}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </section>
 
@@ -233,6 +289,19 @@ export default function AirFreightForwarding() {
                 </div>
               );
             })}
+          </div>
+        </section>
+
+        {/* FAQ SECTION */}
+        <section className="py-16 bg-white">
+          <div className="max-w-7xl mx-auto px-4 text-center">
+            <h2 className="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight mb-4">
+              Frequently Asked <span className="text-[#E66E19]">Questions</span>
+            </h2>
+            <p className="text-slate-600 text-base sm:text-lg max-w-xl mx-auto mb-12">
+              Everything you need to know about our logistics services and shipping.
+            </p>
+            <Faq data={airFreightForwarding} />
           </div>
         </section>
 

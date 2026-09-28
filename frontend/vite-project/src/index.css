@@ -60,8 +60,9 @@
 
   @keyframes shipmentMove {
     0% { left: 0; }
-    100% { left: 86%; }
+    100% { left: 95%; }
   }
+
 
   @keyframes float {
     0%, 100% { transform: translateY(0); }

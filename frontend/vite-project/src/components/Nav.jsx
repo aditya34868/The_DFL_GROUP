@@ -3,7 +3,7 @@ import logoImg from "../assets/logo.webp";
 import { NavLink, Link } from "react-router-dom";
 
 const serviceDropdownItems = [
-  { name: "Freight Forwarding", path: "/services/freight-forwarding" },
+  { name: "Air Freight Forwarding", path: "/services/air-freight-forwarding" },
   { name: "Transportation", path: "/services/transportation" },
   { name: "Ocean Freight Forwarding", path: "/services/ocean-freight" },
   { name: "Custom Clearance", path: "/services/custom-clearance" },

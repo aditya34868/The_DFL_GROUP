@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useTalkModal } from "../context/TalkModalContext";
-import { oceanFeatures, serviceHighlights } from "../data/siteData";
+import Faq from "../components/Faq";
+import { oceanFeatures, serviceHighlights, FaqOceanFright } from "../data/siteData";
 import {
   FiAnchor,
   FiBox,
@@ -9,13 +10,42 @@ import {
   FiArrowRight,
   FiNavigation,
   FiLayers,
+  FiGlobe,
+  FiFileText,
+  FiTruck,
 } from "react-icons/fi";
 
+// Detailed Highlights Content based on requested text
+const OCEAN_HIGHLIGHTS = [
+  {
+    id: 1,
+    icon: FiAnchor,
+    title: "Reliable Ocean Freight Forwarding Services",
+    description:
+      "Shipping goods by sea can involve a lot of planning and coordination. At The DFL Group, we help businesses manage their international ocean shipments from start to finish. Whether you are moving a full container or a smaller shipment, our team handles important parts of the process such as booking, documentation, cargo handling, customs clearance, and delivery. Our aim is to make ocean shipping simple, organised, and hassle-free.",
+  },
+  {
+    id: 2,
+    icon: FiBox,
+    title: "FCL & LCL Shipping Options",
+    description:
+      "Different businesses have different shipping requirements. That’s why we offer both FCL (Full Container Load) and LCL (Less than Container Load) services. If you have enough cargo to fill a complete container, FCL can be the right choice. For smaller shipments, LCL allows you to share container space with other cargo. Our team helps you choose the right option based on your shipment size, destination, and requirements.",
+  },
+  {
+    id: 3,
+    icon: FiGlobe,
+    title: "Complete Support for International Ocean Shipments",
+    description:
+      "An ocean shipment involves much more than simply moving cargo from one port to another. From arranging pickup and booking the shipment to documentation, port handling, customs clearance, and final delivery, there are several steps involved. Our team coordinates these activities with shipping and logistics partners to keep everything on track while providing regular updates.",
+  },
+];
+
 export default function Ocean_Freight_Forwarding() {
-     const homepage = () => {
+  const homepage = () => {
     window.location.href = "https://thedflexpress.in/";
   };
-  const {openModal} = useTalkModal()
+  const { openModal } = useTalkModal();
+
   return (
     <div className="min-h-screen bg-slate-50 text-slate-800 pt-28 pb-20 px-4 sm:px-6 md:px-12 font-sans">
       <div className="mx-auto max-w-7xl space-y-16">
@@ -59,12 +89,12 @@ export default function Ocean_Freight_Forwarding() {
               </span>
 
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight leading-tight text-slate-900">
-                Smart & Efficient Ocean Freight Logistics with{" "}
+                Reliable Ocean Freight Forwarding Services with{" "}
                 <span className="text-[#E66E19]">The DFL Group</span>
               </h1>
 
               <p className="text-sm md:text-base leading-relaxed text-slate-600 font-medium">
-                Optimize your ocean freight shipments with The DFL Group’s reliable and cost-effective logistics solutions. Our expert team ensures timely, safe deliveries across global routes with advanced technology and a strong network.
+                Shipping goods by sea can involve a lot of planning and coordination. At The DFL Group, we help businesses manage their international ocean shipments from start to finish with reliable, cost-effective logistics solutions.
               </p>
 
               <div className="pt-2 flex flex-wrap gap-4">
@@ -94,13 +124,52 @@ export default function Ocean_Freight_Forwarding() {
                       Global Carrier Network
                     </span>
                     <span className="text-[11px] text-slate-500 font-medium">
-                      FCL & LCL Sea Freight
+                      FCL & LCL Sea Freight Solutions
                     </span>
                   </div>
                   <FiNavigation className="h-5 w-5 text-[#E66E19]" />
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* NEW SECTION: DETAILED OCEAN FREIGHT HIGHLIGHTS */}
+        <section className="space-y-10">
+          <div className="text-center max-w-2xl mx-auto space-y-3">
+            <span className="rounded-full bg-orange-100 border border-orange-200 px-3.5 py-1 text-xs font-extrabold uppercase tracking-wider text-[#E66E19]">
+              Overview & Support
+            </span>
+            <h2 className="text-3xl font-black text-slate-900">
+              End-to-End Maritime Shipping Solutions
+            </h2>
+            <p className="text-sm text-slate-600 font-medium">
+              We make ocean shipping simple, organized, and hassle-free for businesses across the globe.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {OCEAN_HIGHLIGHTS.map((item) => {
+              const Icon = item.icon;
+              return (
+                <div
+                  key={item.id}
+                  className="group relative flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-[#E66E19] hover:shadow-xl"
+                >
+                  <div>
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-50 border border-orange-100 text-[#E66E19] group-hover:bg-[#E66E19] group-hover:text-white transition-colors mb-5">
+                      <Icon className="h-6 w-6" />
+                    </div>
+                    <h3 className="text-lg font-bold text-slate-900 mb-3 group-hover:text-[#E66E19] transition-colors">
+                      {item.title}
+                    </h3>
+                    <p className="text-xs sm:text-sm leading-relaxed text-slate-600 font-medium">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </section>
 
@@ -114,7 +183,7 @@ export default function Ocean_Freight_Forwarding() {
               Cost-Effective Transport for Large & Bulky Goods
             </h2>
             <p className="text-sm md:text-base leading-relaxed text-slate-600 font-medium">
-              Ocean freight is the most cost-effective method for transporting large quantities of goods over long distances. Ideal for heavy, bulky, or non-time-sensitive items like machinery or defense equipment, ocean freight offers two main shipping options:
+              Ocean freight is the most cost-effective method for transporting large quantities of goods over long distances. Ideal for heavy, bulky, or non-time-sensitive items, ocean freight offers two main flexible shipping options:
             </p>
 
             <div className="grid grid-cols-2 gap-4 pt-2">
@@ -124,7 +193,7 @@ export default function Ocean_Freight_Forwarding() {
                   Full Container Load (FCL)
                 </h4>
                 <p className="text-xs text-slate-500 mt-1">
-                  Entire container dedicated to a single shipment.
+                  Entire container dedicated exclusively to your shipment.
                 </p>
               </div>
               <div className="p-4 rounded-xl border border-slate-200 bg-white shadow-sm hover:border-[#E66E19] transition-colors">
@@ -133,7 +202,7 @@ export default function Ocean_Freight_Forwarding() {
                   Less than Container Load (LCL)
                 </h4>
                 <p className="text-xs text-slate-500 mt-1">
-                  Multiple shipments combined into one shared container.
+                  Shared container space for smaller, cost-conscious cargo.
                 </p>
               </div>
             </div>
@@ -325,6 +394,20 @@ export default function Ocean_Freight_Forwarding() {
           </div>
         </section>
 
+        {/* FAQ SECTION */}
+        <section className="py-16 bg-white rounded-3xl border border-slate-200 shadow-sm">
+          <div className="max-w-7xl mx-auto px-4 text-center">
+            <h2 className="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight mb-4">
+              Frequently Asked <span className="text-[#E66E19]">Questions</span>
+            </h2>
+
+            <p className="text-slate-600 text-base sm:text-lg max-w-xl mx-auto mb-12">
+              Everything you need to know about our logistics services and shipping.
+            </p>
+            <Faq data={FaqOceanFright} />
+          </div>
+        </section>
+
         {/* BOTTOM CTA BAR */}
         <section className="rounded-3xl bg-orange-50 border border-orange-200 text-slate-800 p-8 sm:p-12 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-md">
           <div>
@@ -336,7 +419,8 @@ export default function Ocean_Freight_Forwarding() {
             </p>
           </div>
           <button
-            className="shrink-0 rounded-xl bg-[#E66E19] px-7 py-3.5 text-xs font-extrabold uppercase tracking-wider text-white transition-all duration-300 hover:bg-[#d55f0f] hover:scale-105 active:scale-95 shadow-lg shadow-orange-600/20 cursor-pointer" onClick={openModal}
+            className="shrink-0 rounded-xl bg-[#E66E19] px-7 py-3.5 text-xs font-extrabold uppercase tracking-wider text-white transition-all duration-300 hover:bg-[#d55f0f] hover:scale-105 active:scale-95 shadow-lg shadow-orange-600/20 cursor-pointer"
+            onClick={openModal}
           >
             Request Freight Quote →
           </button>

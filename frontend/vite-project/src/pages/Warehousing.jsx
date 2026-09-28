@@ -1,24 +1,51 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useTalkModal } from "../context/TalkModalContext";
-import { warehouseWhyChooseUs, commitments } from "../data/siteData";
+import Faq from "../components/Faq";
+import { warehouseWhyChooseUs, commitments, FaqWarehousing } from "../data/siteData";
 import {
   FiPackage,
   FiBox,
   FiArrowRight,
   FiActivity,
+  FiLayers,
+  FiTruck,
+  FiCheckCircle,
 } from "react-icons/fi";
 
+// Detailed Highlights Content based on provided information
+const WAREHOUSING_HIGHLIGHTS = [
+  {
+    id: 1,
+    icon: FiPackage,
+    title: "Warehousing Solutions",
+    description:
+      "Finding the right place to store your goods is an important part of managing your supply chain. At The DFL Group, we provide warehousing support for businesses that need a safe and organized place to keep their goods before they are shipped or distributed. Our team helps with receiving cargo, storing goods, handling inventory and preparing shipments for their next destination.",
+  },
+  {
+    id: 2,
+    icon: FiLayers,
+    title: "Flexible Storage & Inventory Management",
+    description:
+      "Every business has different storage needs. Some may need space for regular stock, while others may need to store larger quantities of goods for a longer period. Our warehousing services can be arranged according to your requirements. We can help with receiving goods, putting them into storage, managing stock, preparing orders and dispatching shipments when they are ready.",
+  },
+  {
+    id: 3,
+    icon: FiTruck,
+    title: "Warehousing & Distribution Support",
+    description:
+      "A warehouse is not just a place to keep goods. It also plays an important role in getting products to the right place at the right time. We can connect our warehousing services with transportation, freight forwarding and distribution requirements. Once goods arrive at the warehouse, our team can help manage them until they are ready to move to their next destination.",
+  },
+];
+
 export default function Warehousing() {
-     const homepage = () => {
+  const homepage = () => {
     window.location.href = "https://thedflexpress.in/";
   };
   const { openModal } = useTalkModal();
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-800 pt-28 pb-20 px-4 sm:px-6 md:px-12 font-sans">
-    
-
       <div className="mx-auto max-w-7xl space-y-16">
         {/* TOP WAREHOUSE MONITOR STRIP */}
         <div className="relative w-full rounded-2xl bg-white p-4 text-slate-700 shadow-md border border-slate-200">
@@ -110,6 +137,45 @@ export default function Warehousing() {
           </div>
         </section>
 
+        {/* DETAILED WAREHOUSING HIGHLIGHTS SECTION */}
+        <section className="space-y-10">
+          <div className="text-center max-w-2xl mx-auto space-y-3">
+            <span className="rounded-full bg-orange-100 border border-orange-200 px-3.5 py-1 text-xs font-extrabold uppercase tracking-wider text-[#E66E19]">
+              Services Overview
+            </span>
+            <h2 className="text-3xl font-black text-slate-900">
+              End-to-End Warehousing & Distribution
+            </h2>
+            <p className="text-sm text-slate-600 font-medium">
+              A complete look at how we safely store, manage, and dispatch your goods.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {WAREHOUSING_HIGHLIGHTS.map((item) => {
+              const Icon = item.icon;
+              return (
+                <div
+                  key={item.id}
+                  className="group relative flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-[#E66E19] hover:shadow-xl"
+                >
+                  <div>
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-50 border border-orange-100 text-[#E66E19] group-hover:bg-[#E66E19] group-hover:text-white transition-colors mb-5">
+                      <Icon className="h-6 w-6" />
+                    </div>
+                    <h3 className="text-lg font-bold text-slate-900 mb-3 group-hover:text-[#E66E19] transition-colors">
+                      {item.title}
+                    </h3>
+                    <p className="text-xs sm:text-sm leading-relaxed text-slate-600 font-medium">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+
         {/* SECTION 2: WHY CHOOSE DFL GROUP */}
         <section className="space-y-10">
           <div className="text-center max-w-2xl mx-auto space-y-3">
@@ -197,6 +263,20 @@ export default function Warehousing() {
                 </div>
               );
             })}
+          </div>
+        </section>
+
+        {/* FAQ SECTION */}
+        <section className="py-16 bg-white rounded-3xl border border-slate-200 shadow-sm">
+          <div className="max-w-7xl mx-auto px-4 text-center">
+            <h2 className="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight mb-4">
+              Frequently Asked <span className="text-[#E66E19]">Questions</span>
+            </h2>
+
+            <p className="text-slate-600 text-base sm:text-lg max-w-xl mx-auto mb-12">
+              Everything you need to know about our logistics services and shipping.
+            </p>
+            <Faq data={FaqWarehousing} />
           </div>
         </section>
 

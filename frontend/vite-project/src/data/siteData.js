@@ -1078,5 +1078,257 @@ export const branchOffices = [
         desc: "Minimizing risks of spoilage, mishandling, and unwanted delays through climate and handling control protocols.",
       },
     ];
+
+
+    //////////////////// Faq.jsx /////////////////
+
+    export const HomeFaqData = [
+      {
+        id: 1,
+        num: "01",
+        question: "What services does The DFL Group provide?",
+        answer: "The DFL Group provides end-to-end logistics and supply chain solutions, including air freight, ocean freight, inland transportation, customs clearance, warehousing, international courier and cargo services.",
+      },
+      {
+        id: 2,
+        num: "02",
+        question: "Does The DFL Group provide international shipping?",
+        answer: "Yes. We provide international logistics solutions for businesses, including air and ocean freight, international courier, customs clearance and door-to-door shipment support.",
+      },
+      {
+        id: 3,
+        num: "03",
+        question: "What is the difference between Air Freight and Ocean Freight?",
+        answer: "Air Freight is generally suitable for time-sensitive shipments, while Ocean Freight is commonly used for larger or heavier cargo where cost efficiency and higher capacity are important.",
+      },
+      {
+        id: 4,
+        num: "04",
+        question: "Do you offer FCL and LCL ocean freight services?",
+        answer: "Yes. The DFL Group provides both FCL (Full Container Load) and LCL (Less than Container Load) ocean freight solutions based on shipment requirements.",
+      },
+      {
+        id: 5,
+        num: "05",
+        question: "Does The DFL Group provide customs clearance services?",
+        answer: "Yes. We provide customs clearance support to help businesses manage documentation and customs procedures for their shipments.",
+      },
+      {
+        id: 6,
+        num: "06",
+        question: "Do you provide door-to-door delivery?",
+        answer: "Yes. Depending on the service and destination, door-to-door transportation and delivery solutions are available.",
+      },
+      {
+        id: 7,
+        num: "07",
+        question: "Can I track my shipment?",
+        answer: "Yes. Shipment tracking is available for applicable services, allowing customers to monitor shipment movement and delivery updates.",
+      },
+      {
+        id: 8,
+        num: "08",
+        question: "Do you provide warehousing services?",
+        answer: "Yes. The DFL Group provides warehousing and logistics support to help businesses manage storage, handling and shipment movement.",
+      },
+      {
+        id: 9,
+        num: "09",
+        question: "Can you handle large or special cargo?",
+        answer: "Yes. Our logistics solutions can be tailored to different cargo types, shipment sizes and transportation requirements.",
+      },
+      {
+        id: 10,
+        num: "10",
+        question: "How can I get a quote for my shipment?",
+        answer: "You can contact The DFL Group with your origin, destination, cargo details, weight/volume and preferred mode of transport to receive a suitable quotation.",
+      },
+      {
+        id: 11,
+        num: "11",
+        question: "Which countries does The DFL Group serve?",
+        answer: "The DFL Group supports international logistics requirements across multiple global trade lanes through its international network and logistics partners.",
+      },
+      {
+        id: 12,
+        num: "12",
+        question: "How can I contact The DFL Group?",
+        answer: "You can contact our team through the Contact Us section of the website for shipment enquiries, quotations and logistics support.",
+      }
+    ];
+
+    export const airFreightForwarding = [
+    {
+      id:1,
+      num:"1",
+      question:"What is air freight forwarding?",
+      answer:"Air freight forwarding is the process of arranging and managing the transportation of goods by air. It can include cargo pickup, documentation, airline booking, customs clearance, shipment tracking and final delivery."
+    },
+       {
+      id:2,
+      num:"2",
+      question:"What types of goods can be shipped by air?",
+      answer:"Many types of eligible goods can be shipped by air, including commercial products, samples, electronics, machinery parts, e-commerce products, high-value goods and urgent shipments. The shipment must meet the applicable airline, customs and regulatory requirements."
+    },
+       {
+      id:3,
+      num:"3",
+      question:"Do you provide customs clearance for air freight shipments?",
+      answer:"Yes. We provide customs clearance support and documentation assistance for eligible air freight shipments, helping businesses manage the import and export process more smoothly."
+    },
+       {
+      id:4,
+      num:"4",
+      question:"Can I track my air freight shipment?",
+      answer:"Yes. Shipment tracking and regular updates allow you to stay informed about the movement and status of your cargo during transit."
+    },
+       {
+      id:5,
+      num:"5",
+      question:"Why choose air freight instead of sea freight?",
+      answer:"Air freight is generally chosen when faster delivery is important. It is particularly useful for urgent shipments, product samples, time-sensitive goods and shipments that need to reach international destinations within a shorter transit time."
+    }
+    ]
+
+
+
+    
+    export const transportation = [
+    {
+      id:1,
+      num:"1",
+      question:"What is surface transport service?",
+      answer:"Surface transport is the movement of goods by road using trucks and other suitable transportation vehicles. It can be used for short, medium and long-distance shipments."
+    },
+       {
+      id:2,
+      num:"2",
+      question:"What is the difference between FTL and LTL transportation?",
+      answer:"FTL (Full Truckload) means the truck is used for a single shipment. LTL (Less-than-Truckload) allows different shipments to share the available truck space. The right option usually depends on the size and volume of your shipment."
+    },
+       {
+      id:3,
+      num:"3",
+      question:"Does The DFL Group provide door-to-door transportation?",
+      answer:"Yes. We provide door-to-door transportation along with door-to-hub and hub-to-door options, depending on the shipment and delivery requirements."
+    },
+       {
+      id:4,
+      num:"4",
+      question:"Can I track my road transportation shipment?",
+      answer:"Yes. Shipment tracking helps you stay updated on your cargo while it is being transported and provides better visibility of the shipment's progress."
+    },
+       {
+      id:5,
+      num:"5",
+      question:"What types of surface transportation services do you provide?",
+      answer:"Our surface transportation services include FTL and LTL transportation, first-mile and last-mile delivery, long-distance transportation, route planning, vehicle coordination and door-to-door cargo movement."
+    }
+    ]
+
+     export const FaqOceanFright = [
+    {
+      id:1,
+      num:"1",
+      question:"What is ocean freight forwarding?",
+      answer:"Ocean freight forwarding means arranging the transportation of goods by sea from one country to another. It can include booking the shipment, preparing documents, handling customs and coordinating delivery."
+    },
+       {
+      id:2,
+      num:"2",
+      question:"What is FCL and LCL shipping?",
+      answer:"FCL means Full Container Load, where a container is used for one shipment. LCL means Less than Container Load, where smaller shipments share space in the same container."
+    },
+       {
+      id:3,
+      num:"3",
+      question:"What type of goods can be shipped by sea?",
+      answer:"Many types of business cargo can be transported by ocean, including machinery, raw materials, industrial products, equipment, consumer goods and other eligible commercial shipments."
+    },
+       {
+      id:4,
+      num:"4",
+      question:"Can The DFL Group help with customs clearance?",
+      answer:"Yes. Our team can coordinate customs clearance and documentation as part of the overall ocean freight process, helping make import and export shipments easier to manage."
+    },
+       {
+      id:5,
+      num:"5",
+      question:"When should I choose ocean freight?",
+      answer:"Ocean freight is generally a good option for large, heavy or bulky shipments. It is especially useful when you are moving a larger quantity of goods and delivery speed is not the main priority."
+    }
+    ]
+    
+    
+     export const Customer_clearance = [
+    {
+      id:1,
+      num:"1",
+      question:"What is customs clearance?",
+      answer:"Customs clearance is the process of getting goods cleared by customs when they are being imported or exported. It involves submitting the required documents and completing the formalities before the goods can move ahead."
+    },
+       {
+      id:2,
+      num:"2",
+      question:"What documents are required for customs clearance?",
+      answer:"It depends on the type of goods, shipment and destination. Generally, documents such as a commercial invoice, packing list and shipping documents are required. Some products may also need additional licences, certificates or approvals."
+    },
+       {
+      id:3,
+      num:"3",
+      question:"Do you provide customs clearance for imports and exports?",
+      answer:"Yes. The DFL Group provides customs clearance support for both import and export shipments. The exact requirements depend on the cargo and the regulations applicable to the shipment."
+    },
+       {
+      id:4,
+      num:"4",
+      question:" Can you help with customs documentation?",
+      answer:"Yes. We help businesses organise and coordinate the documents needed for customs clearance. If additional documents or information are required during the process, our team helps coordinate them as well."
+    },
+       {
+      id:5,
+      num:"5",
+      question:"What happens if there is an error in the customs documents?",
+      answer:"If the documents are incomplete or contain incorrect information, customs may ask for clarification or additional documents. This can delay the shipment and may sometimes result in additional charges. That is why it is important to prepare the documentation correctly before the shipment reaches customs."
+    }
+    ]
+
+
+    
+     export const FaqWarehousing = [
+    {
+      id:1,
+      num:"1",
+      question:"What is warehousing in logistics?",
+      answer:"Warehousing means storing goods safely at a designated facility until they are ready to be shipped, distributed or delivered. It is an important part of managing the movement of goods."
+    },
+       {
+      id:2,
+      num:"2",
+      question:" What types of goods can be stored in a warehouse?",
+      answer:"Different types of commercial and business goods can be stored, depending on their size, quantity, nature and storage requirements. The suitable storage arrangement may vary from one product to another."
+    },
+       {
+      id:3,
+      num:"3",
+      question:"Do you provide inventory management support?",
+      answer:"Yes. Our warehousing operations can include receiving goods, storing inventory, handling stock, preparing orders and arranging dispatch. This helps businesses keep better track of their goods."
+    },
+       {
+      id:4,
+      num:"4",
+      question:" Can warehousing be combined with transportation?",
+      answer:"Yes. Warehousing can be connected with transportation, freight forwarding and distribution services. This allows goods to be stored at the warehouse and then moved to their next destination when required."
+    },
+       {
+      id:5,
+      num:"5",
+      question:"How can warehousing help my business?",
+      answer:"Good warehousing helps businesses keep their stock organized and reduces the difficulty of managing goods at different stages of the supply chain. It also makes it easier to prepare and dispatch goods when they are needed."
+    }
+    ]
+    
+    
+    
   
 

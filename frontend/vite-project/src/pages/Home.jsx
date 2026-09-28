@@ -15,7 +15,8 @@ import {
   techFeaturesData, 
   bottomstats, 
   testimonials,
-  partners
+  partners,
+  HomeFaqData
 } from "../data/siteData";
 
 export default function Home() {
@@ -29,7 +30,7 @@ export default function Home() {
   const current = testimonials[index];
 
   useEffect(() => {
-    const id = setInterval(() => setActiveSlide((i) => (i + 1) % highlights.length), 3000);
+    const id = setInterval(() => setActiveSlide((i) => (i + 1) % highlights.length), 1000);
     return () => clearInterval(id);
   }, []);
 
@@ -91,7 +92,7 @@ export default function Home() {
                 <div className="relative my-6 h-1.5 w-full rounded-full bg-slate-100">
                   <span className="absolute -left-1 -top-1 h-3.5 w-3.5 rounded-full bg-[#0B132A]" />
                   <span className="absolute -right-1 -top-1 h-3.5 w-3.5 rounded-full border-2 border-[#0B132A] bg-white" />
-                  <div className="absolute -top-2.5 flex h-6 w-6 items-center justify-center rounded-lg bg-[#E66E19] shadow-md shadow-[#E66E19]/40 [animation:shipmentMove_3.5s_linear_infinite]">
+                  <div className="absolute -top-2.5 flex h-6 w-6 items-center justify-center rounded-lg bg-[#E66E19] shadow-md shadow-[#E66E19]/40 animate-shipment-move">
                     <span className="-scale-x-100 text-[10px] text-white">🚚</span>
                   </div>
                 </div>
@@ -262,7 +263,7 @@ export default function Home() {
         <p className="text-slate-600 text-base sm:text-lg max-w-xl mx-auto mb-12">
           Everything you need to know about our logistics services and shipping.
         </p>
-        <Faq />
+        <Faq data={HomeFaqData} />
       </div>
     </section>
 
