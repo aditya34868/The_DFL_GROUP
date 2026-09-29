@@ -1,8 +1,8 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FiFacebook, FiInstagram, FiLinkedin, FiTwitter } from "react-icons/fi";
-import { useTalkModal } from "../context/TalkModalContext";
 import { footerData } from "../data/siteData";
+import logoImg from "../assets/logo.webp";
 
 const SOCIAL_ICONS = {
   Facebook: FiFacebook,
@@ -18,7 +18,6 @@ export function SocialIcon({ name, className = "h-4 w-4" }) {
 }
 
 export default function Footer() {
-  const { openModal } = useTalkModal();
   const navigate = useNavigate();
 
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
@@ -31,9 +30,7 @@ export default function Footer() {
           {/* Column 1: Branding & Socials */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#E66E19] text-sm font-black shadow-md">
-                DFL
-              </span>
+              <img src={logoImg} alt="logo.png" className="w-12" />
               <div>
                 <h3 className="text-lg font-bold leading-tight">{footerData.companyInfo.brandName}</h3>
                 <p className="text-[11px] text-slate-400">{footerData.companyInfo.legalName}</p>
@@ -89,9 +86,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <button type="button" onClick={openModal} className="hover:text-white">
+                <Link to="/contactUs" className="hover:text-white">
                   Contact Us
-                </button>
+                </Link>
               </li>
             </ul>
           </div>

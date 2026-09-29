@@ -8,7 +8,6 @@ import member5 from "../assets/Sangam-Shahi.webp";
 import member6 from "../assets/Sarvesh-Kumar-Shukla.webp";
 import member7 from "../assets/Tajinder-Saini.webp";
 import member8 from "../assets/Paras-Sales-Head-1236x1236-1.webp";
-import member9 from "../assets/Sachin-Jagannath-Vast.webp";
 import member10 from "../assets/Himani-Dwivedi-Sales-Manager.webp";
 import member11 from "../assets/Deepanshi-Shrivastava-HR-Manager.webp";
 import mainpageg  from "../assets/Gemini_Generated_Image_ro5a4kro5a4kro5a.png";
@@ -213,17 +212,17 @@ export const highlights = [
 ];
 export const footerData = {
   companyInfo: {
-    brandName: "DFL Express",
+    brandName: "The DFL Group",
     legalName: "Demira Freight Linkers India Pvt Ltd",
     tagline: "Tailored for speed, reliability, and precision—your trusted partner in global freight forwarding and express delivery.",
     website: "www.thedflexpress.com",
     websiteUrl: "https://www.thedflexpress.com"
   },
   socialLinks: [
-    { name: "Facebook", url: "https://facebook.com", icon: "facebook" },
-    { name: "Instagram", url: "https://instagram.com", icon: "instagram" },
-    { name: "LinkedIn", url: "https://linkedin.com", icon: "linkedin" },
-    { name: "X", url: "https://x.com", icon: "x" }
+    { name: "Facebook", url: "https://www.facebook.com/profile.php?id=61571763203265", icon: "facebook" },
+    { name: "Instagram", url: "https://www.instagram.com/demirafreightlinkers/", icon: "instagram" },
+    { name: "LinkedIn", url: "https://www.linkedin.com/company/the-dfl-group/", icon: "linkedin" },
+    { name: "X", url: "https://x.com/the_dfl_group", icon: "x" }
   ],
   globalOffices: [
     { country: "India", phone: "+91 93551 51122" },

@@ -18,7 +18,7 @@ const navItems = [
   { name: "DFL ITSolution", path: "/dflit" },
   { name: "Our Presence", path: "/ourPresence" },
   { name: "Team", path: "/team" },
-  { name: "ContactUs" , path:"/contactUs"}
+  { name: "Contact Us" , path:"/contactUs"}
 ];
 
 
