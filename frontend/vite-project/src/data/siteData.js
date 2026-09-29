@@ -216,7 +216,7 @@ export const footerData = {
     legalName: "Demira Freight Linkers India Pvt Ltd",
     tagline: "Tailored for speed, reliability, and precision—your trusted partner in global freight forwarding and express delivery.",
     website: "www.thedflexpress.com",
-    websiteUrl: "https://www.thedflexpress.com"
+    websiteUrl: "https://express.thedflgroup.com/"
   },
   socialLinks: [
     { name: "Facebook", url: "https://www.facebook.com/profile.php?id=61571763203265", icon: "facebook" },
@@ -233,7 +233,9 @@ export const footerData = {
   servicesList: [
     { label: "Air Freight", path: "/services/freight-forwarding" },
     { label: "Ocean Freight", path: "/services/ocean-freight" },
-    { label: "Customs Clearance", path: "/services/custom-clearance" }
+    { label: "Customs Clearance", path: "/services/custom-clearance" },
+    { label: "Transportation", path: "/services/transportation" },
+    { label: "Warehousing", path: "/services/warehousing" }
   ],
   legalLinks: [
     { label: "Privacy Policy", path: "/privacy-policy" },

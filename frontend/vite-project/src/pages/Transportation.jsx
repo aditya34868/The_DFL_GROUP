@@ -46,7 +46,7 @@ export default function Transportation() {
   const { openModal } = useTalkModal();
 
    const homepage = () => {
-    window.location.href = "https://thedflexpress.in/";
+    window.location.href = "https://express.thedflgroup.com/";
   };
 
   return (

@@ -40,7 +40,7 @@ const WAREHOUSING_HIGHLIGHTS = [
 
 export default function Warehousing() {
   const homepage = () => {
-    window.location.href = "https://thedflexpress.in/";
+    window.location.href = "https://express.thedflgroup.com/";
   };
   const { openModal } = useTalkModal();
 

@@ -123,7 +123,7 @@ const SectionHeader = ({ badge, title, subtitle }) => (
 
 export default function CustomsClearance() {
   const homepage = () => {
-    window.location.href = "https://thedflexpress.in/";
+    window.location.href = "https://express.thedflgroup.com/";
   };
 
   const { openModal } = useTalkModal();

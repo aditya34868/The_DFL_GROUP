@@ -1,5 +1,6 @@
 import React from "react";
 import { teamMembers } from "../data/siteData";
+import { RiH1 } from "react-icons/ri";
 
 const Team = () => {
   return (
@@ -11,9 +12,9 @@ const Team = () => {
           <span className="inline-block rounded-full border border-[#E66E19]/30 bg-[#E66E19]/10 px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-[#E66E19]">
             Our Leadership
           </span>
-          <h2 className="mt-4 font-display text-3xl font-extrabold tracking-tight text-[#0B132A] sm:text-4xl">
+          <h1 className="mt-4 font-display text-3xl font-extrabold tracking-tight text-[#0B132A] sm:text-4xl">
             Meet The Minds Behind <span className="text-[#E66E19]">DFL Group</span>
-          </h2>
+          </h1>
           <p className="mt-3 text-sm leading-relaxed text-slate-600 md:text-base">
             At <span className="font-semibold text-[#0B132A]">The DFL Group</span>, we bring together a diverse team of supply chain strategists, trade compliance officers, and logistics veterans ensuring seamless global trade operations.
           </p>

@@ -70,7 +70,7 @@ const ImageCard = ({ src, alt, tag, title, icon: Icon = FiTrendingUp }) => (
 
 export default function AirFreightForwarding() {
   const homepage = () => {
-    window.location.href = "https://thedflexpress.in/";
+    window.location.href = "https://express.thedflgroup.com/";
   };
   const { openModal } = useTalkModal();
 
