@@ -324,16 +324,6 @@ export const teamMembers = [
     },
   },
   {
-    id: 9,
-    name: "Sachin Jagannath Vast",
-    role: "Warehouse Operations Head",
-    image: member9,
-    bio: "Overlooking inventory control, fulfillment centers, and safety standards.",
-    socials: {
-      linkedin: "https://linkedin.com",
-    },
-  },
-  {
     id: 10,
     name: "Himani Dwivedi",
     role: "Sales Manager",
