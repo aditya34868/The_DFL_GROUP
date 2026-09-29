@@ -250,8 +250,7 @@ export const teamMembers = [
     image: member1,
     bio: "15+ years of strategic leadership in global logistics & supply chain management.",
     socials: {
-      linkedin: "https://linkedin.com",
-      email: "rajesh@thedflgroup.com",
+      linkedin: "https://www.linkedin.com/in/dinesh-kumar-tiwari-34379513/",
     },
   },
   {
@@ -261,8 +260,7 @@ export const teamMembers = [
     image: member2,
     bio: "Specializes in operational scaling, fleet logistics, and client relations.",
     socials: {
-      linkedin: "https://linkedin.com",
-      email: "priya@thedflgroup.com",
+      linkedin: "https://www.linkedin.com/in/kamlesh-pandey-562b1117/",
     },
   },
   {
@@ -273,7 +271,6 @@ export const teamMembers = [
     bio: "Expert in air & sea freight forwarding with focus on cross-border transport.",
     socials: {
       linkedin: "https://linkedin.com",
-      email: "amit@thedflgroup.com",
     },
   },
   {
@@ -283,8 +280,7 @@ export const teamMembers = [
     image: member4,
     bio: "Manages financial strategy, risk management, and corporate investments.",
     socials: {
-      linkedin: "https://linkedin.com",
-      email: "sneha@thedflgroup.com",
+      linkedin: "http://linkedin.com/in/akash-kumar-5a6b6363/",
     },
   },
   {
@@ -295,18 +291,16 @@ export const teamMembers = [
     bio: "Optimizing end-to-end supply chain processes and warehouse systems.",
     socials: {
       linkedin: "https://linkedin.com",
-      email: "vikram@thedflgroup.com",
     },
   },
   {
     id: 6,
-    name: "Sarvesh ",
+    name: "Sarvesh Shukla ",
     role: "Head of Customs & Compliance",
     image: member6,
     bio: "Ensures legal clearances, international trade regulations, and documentation.",
     socials: {
-      linkedin: "https://linkedin.com",
-      email: "ananya@thedflgroup.com",
+      linkedin: "https://www.linkedin.com/in/sarvesh-shukla-80484235/",
     },
   },
   {
@@ -316,8 +310,7 @@ export const teamMembers = [
     image: member7,
     bio: "Architect behind the real-time package tracking and digital dashboard.",
     socials: {
-      linkedin: "https://linkedin.com",
-      email: "rohan@thedflgroup.com",
+      linkedin: "https://www.linkedin.com/in/tajinder-saini-43a338321/",
     },
   },
   {
@@ -328,7 +321,6 @@ export const teamMembers = [
     bio: "Dedicated to enterprise client relationships and 24/7 support execution.",
     socials: {
       linkedin: "https://linkedin.com",
-      email: "kavita@thedflgroup.com",
     },
   },
   {
@@ -339,7 +331,6 @@ export const teamMembers = [
     bio: "Overlooking inventory control, fulfillment centers, and safety standards.",
     socials: {
       linkedin: "https://linkedin.com",
-      email: "suresh@thedflgroup.com",
     },
   },
   {
@@ -349,8 +340,7 @@ export const teamMembers = [
     image: member10,
     bio: "Building strong corporate culture and managing logistics staff nationwide.",
     socials: {
-      linkedin: "https://linkedin.com",
-      email: "pooja@thedflgroup.com",
+      linkedin: "https://www.linkedin.com/in/himaanie-dwivedi-b50a5ab2/",
     },
   },
   {
@@ -360,8 +350,7 @@ export const teamMembers = [
     image: member11,
     bio: "In charge of ground vehicle logistics, route planning, and fuel efficiency.",
     socials: {
-      linkedin: "https://linkedin.com",
-      email: "manish@thedflgroup.com",
+      linkedin: "https://www.linkedin.com/in/deepanshi-shrivastava-67b9b21ba/",
     },
   },
 ];

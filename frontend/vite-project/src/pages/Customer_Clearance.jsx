@@ -16,7 +16,6 @@ import {
   FiBriefcase,
   FiActivity,
   FiGlobe,
-  FiCheckCircle,
 } from "react-icons/fi"; // <-- Yahan "react-icons/fi" fix kar diya hai
 
 // Content Highlights (Clean Icon References)

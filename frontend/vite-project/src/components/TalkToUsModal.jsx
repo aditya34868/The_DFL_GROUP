@@ -5,7 +5,7 @@ export default function TalkToUsModal() {
   const { isOpen, closeModal } = useTalkModal();
 
   // Target WhatsApp Number (Country code bina '+' ke)
-  const TARGET_PHONE_NUMBER = "9355029321";
+  const TARGET_PHONE_NUMBER = "9355376634";
 
   if (!isOpen) return null;
 

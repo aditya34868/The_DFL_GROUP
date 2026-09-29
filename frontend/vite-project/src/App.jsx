@@ -19,6 +19,7 @@ import InlandTransport from "./pages/InlandTransport";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermAndCondition from "./pages/TermAndCondition";
 import NotFound from "./pages/NotFound";
+import Contact from "./pages/Contact";
 
 export default function App() {
   return (
@@ -41,6 +42,7 @@ export default function App() {
           <Route path='/inland-transport' element={<InlandTransport/>}/>
           <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
           <Route path='/terms-conditions' element={<TermAndCondition/>}/>
+          <Route path='/contactUs' element={<Contact/>}/>
           <Route path='*' element={<NotFound/>}/>
 
         </Routes>

@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { useTalkModal } from "../context/TalkModalContext";
-import Counter from "../components/Counter";
+// import Counter from "../components/Counter";
 import Cards from "../components/Cards";
 import FeaturesCards from "../components/FeaturesCards";
 import Faq from "../components/Faq";
-import mapImage from "../assets/Country-Location-Banner.png";
+import mapImage from "../assets/Country-Loaction-Banner.png";
 import { 
   LOGISTICS_IMAGES, 
   services, 
-  working, 
-  stats, 
+  working,  
   highlights, 
   techFeaturesData, 
   bottomstats, 
@@ -172,7 +171,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="flex gap-3 pt-2">
+            {/* <div className="flex gap-3 pt-2">
               {stats.map(({ label, value, suffix }) => (
                 <div key={label} className="flex-1 flex flex-col p-3 rounded-xl bg-white border border-slate-100 shadow-sm">
                   <span className="text-xl md:text-2xl font-extrabold text-[#0B132A]">
@@ -181,7 +180,7 @@ export default function Home() {
                   <span className="mt-1 text-[11px] font-semibold text-[#64748B]">{label}</span>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
 
           <div className="lg:w-7/12 relative">

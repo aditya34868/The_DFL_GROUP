@@ -1,24 +1,22 @@
 import React from "react";
 import { useTalkModal } from "../context/TalkModalContext";
-import { LOGISTICS_IMAGES , aboutCoreValues ,aboutHighlights } from "../data/siteData";
-import {  FiEye, FiTarget,  FiUsers, FiCheckCircle, FiArrowRight } from "react-icons/fi";
-
+import { LOGISTICS_IMAGES, aboutCoreValues, aboutHighlights } from "../data/siteData";
 
 export default function About() {
   const { openModal } = useTalkModal();
 
   return (
     <section id="about" className="relative overflow-hidden bg-white px-6 py-24 text-slate-700 md:px-8">
-      {/* Background Decorative Gradient Blobs with Glow Animations */}
-      <div className="pointer-events-none absolute -left-20 top-20 h-96 w-96 rounded-full bg-orange-100/50 blur-3xl animate-pulse-glow " />
+      {/* Background Decorative Gradient Blobs */}
+      <div className="pointer-events-none absolute -left-20 top-20 h-96 w-96 rounded-full bg-orange-100/50 blur-3xl animate-pulse-glow" />
       <div className="pointer-events-none absolute -right-20 bottom-20 h-96 w-96 rounded-full bg-amber-50/80 blur-3xl animate-pulse-glow" />
 
-      <div className="relative z-10 mx-auto max-w-7xl space-y-24 ">
+      <div className="relative z-10 mx-auto max-w-7xl space-y-24">
         
         {/* 1. HERO / OVERVIEW SECTION */}
         <div className="grid items-center gap-12 md:grid-cols-2 md:gap-16">
           
-          {/* Images Layout with Hover Scale & Floating Animation */}
+          {/* Images Layout */}
           <div className="group relative cursor-pointer animate-fade-in-up">
             <div className="relative overflow-hidden rounded-3xl border border-slate-200/80 bg-slate-100 shadow-xl transition-all duration-500 hover:shadow-2xl hover:shadow-orange-500/20">
               <img
@@ -59,27 +57,25 @@ export default function About() {
               At The Dfl Group., we go beyond simply providing logistics services — we become an integral extension of your business, offering the expertise and support needed to navigate the complexities of global shipping. Our mission is to be your trusted logistics partner, delivering reliable, comprehensive, and fully customizable solutions that are designed to meet the ever-evolving demands of today’s global marketplace.
             </p>
 
-            {/* Highlights Grid with Hover Effects */}
+            {/* Highlights Grid without Icons */}
             <div className="grid grid-cols-2 gap-3 pt-2">
               {aboutHighlights.map((item) => (
                 <div
                   key={item}
-                  className="group flex cursor-pointer items-center gap-2.5 rounded-xl border border-slate-200/80 bg-slate-50 p-3 text-xs font-bold text-slate-800 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#E66E19] hover:bg-orange-50/50 hover:shadow-md hover:shadow-orange-500/10"
+                  className="group flex cursor-pointer items-center justify-center rounded-xl border border-slate-200/80 bg-slate-50 p-3 text-xs font-bold text-slate-800 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#E66E19] hover:bg-orange-50/50 hover:shadow-md hover:shadow-orange-500/10 text-center"
                 >
-                  <FiCheckCircle className="h-4 w-4 shrink-0 text-[#E66E19] transition-transform duration-300 group-hover:scale-125" />
                   <span>{item}</span>
                 </div>
               ))}
             </div>
 
-            {/* CTA Button with Hover Animation */}
+            {/* CTA Button */}
             <div className="pt-4">
               <button
                 onClick={openModal}
-                className="group flex items-center gap-3 rounded-xl bg-[#E66E19] px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-orange-500/25 transition-all duration-300 hover:-translate-y-1 hover:bg-[#d55f0f] hover:shadow-2xl hover:shadow-orange-500/40 active:translate-y-0"
+                className="group inline-flex items-center justify-center rounded-xl bg-[#E66E19] px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-orange-500/25 transition-all duration-300 hover:-translate-y-1 hover:bg-[#d55f0f] hover:shadow-2xl hover:shadow-orange-500/40 active:translate-y-0"
               >
                 <span>Talk to a Specialist</span>
-                <FiArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-2" />
               </button>
             </div>
           </div>
@@ -107,10 +103,10 @@ export default function About() {
           
           {/* Vision Card */}
           <div className="group relative cursor-pointer overflow-hidden rounded-3xl border border-slate-200 bg-white p-8 shadow-lg transition-all duration-500 hover:-translate-y-3 hover:border-[#E66E19] hover:shadow-2xl hover:shadow-orange-500/20">
-            <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-orange-100 bg-orange-50 text-[#E66E19] transition-all duration-500 group-hover:scale-110 group-hover:bg-[#E66E19] group-hover:text-white group-hover:shadow-lg group-hover:shadow-orange-500/30">
-              <FiEye className="h-7 w-7 transition-transform duration-500 group-hover:rotate-12" />
-            </div>
-            <h3 className="mt-6 text-2xl font-bold text-slate-900 transition-colors duration-300 group-hover:text-[#E66E19]">
+            <span className="text-xs font-extrabold uppercase tracking-widest text-[#E66E19]">
+              Perspective
+            </span>
+            <h3 className="mt-2 text-2xl font-bold text-slate-900 transition-colors duration-300 group-hover:text-[#E66E19]">
               OUR Vision
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-slate-600">
@@ -123,10 +119,10 @@ export default function About() {
 
           {/* Mission Card */}
           <div className="group relative cursor-pointer overflow-hidden rounded-3xl border border-slate-200 bg-white p-8 shadow-lg transition-all duration-500 hover:-translate-y-3 hover:border-[#E66E19] hover:shadow-2xl hover:shadow-orange-500/20">
-            <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-orange-100 bg-orange-50 text-[#E66E19] transition-all duration-500 group-hover:scale-110 group-hover:bg-[#E66E19] group-hover:text-white group-hover:shadow-lg group-hover:shadow-orange-500/30">
-              <FiTarget className="h-7 w-7 transition-transform duration-500 group-hover:rotate-12" />
-            </div>
-            <h3 className="mt-6 text-2xl font-bold text-slate-900 transition-colors duration-300 group-hover:text-[#E66E19]">
+            <span className="text-xs font-extrabold uppercase tracking-widest text-[#E66E19]">
+              Commitment
+            </span>
+            <h3 className="mt-2 text-2xl font-bold text-slate-900 transition-colors duration-300 group-hover:text-[#E66E19]">
               OUR Mission
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-slate-600">
@@ -152,7 +148,7 @@ export default function About() {
             </p>
           </div>
 
-          {/* Core Values Cards Grid & Description */}
+          {/* Core Values Cards Grid */}
           <div className="space-y-6">
             <div className="rounded-2xl border border-orange-100 bg-orange-50/40 p-6">
               <h3 className="text-xl font-bold text-slate-900 mb-2">Core Values</h3>
@@ -162,65 +158,88 @@ export default function About() {
             </div>
 
             <div className="grid grid-cols-2 gap-4">
-              {aboutCoreValues.map((val) => {
-                const IconComp = val.icon;
-                return (
-                  <div
-                    key={val.title}
-                    className="group cursor-pointer rounded-2xl border border-slate-200 bg-slate-50/80 p-5 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#E66E19] hover:bg-white hover:shadow-xl hover:shadow-orange-500/15"
-                  >
-                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-orange-100/60 text-[#E66E19] transition-all duration-300 group-hover:bg-[#E66E19] group-hover:text-white group-hover:shadow-md group-hover:shadow-orange-500/30">
-                      <IconComp className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
-                    </div>
-                    <h4 className="mt-3 text-sm font-bold text-slate-900 transition-colors duration-300 group-hover:text-[#E66E19]">
-                      {val.title}
-                    </h4>
-                    <p className="mt-1 text-xs leading-relaxed text-slate-500">{val.desc}</p>
-                  </div>
-                );
-              })}
+              {aboutCoreValues.map((val) => (
+                <div
+                  key={val.title}
+                  className="group cursor-pointer rounded-2xl border border-slate-200 bg-slate-50/80 p-5 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#E66E19] hover:bg-white hover:shadow-xl hover:shadow-orange-500/15"
+                >
+                  <span className="text-xs font-bold text-[#E66E19] uppercase tracking-wider">Value</span>
+                  <h4 className="mt-1 text-sm font-bold text-slate-900 transition-colors duration-300 group-hover:text-[#E66E19]">
+                    {val.title}
+                  </h4>
+                  <p className="mt-1 text-xs leading-relaxed text-slate-500">{val.desc}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
 
-        {/* 5. DETAILED SERVICES & EXTENDED PHILOSOPHY SECTION */}
-        <div className="rounded-3xl border border-slate-200 bg-slate-50/50 p-8 shadow-sm space-y-6 md:p-12 animate-fade-in-up">
-          <h2 className="text-2xl font-bold text-slate-900 md:text-3xl">
-            Together We Grow with <span className="text-[#E66E19]">The Dfl Group</span>
-          </h2>
+        {/* 5. REDESIGNED "TOGETHER WE GROW" SECTION (ICON-LESS) */}
+        <div className="relative overflow-hidden rounded-3xl border border-slate-200/80 bg-gradient-to-b from-slate-50/80 via-white to-slate-50/50 p-8 shadow-xl backdrop-blur-md md:p-12 animate-fade-in-up">
+          <div className="pointer-events-none absolute -right-20 -top-20 h-80 w-80 rounded-full bg-orange-100/60 blur-3xl" />
 
-          <div className="space-y-4 text-sm leading-relaxed text-slate-600 md:text-base">
-            <p>
-              At The Dfl Group, we go beyond simply providing logistics services. We become an integral extension of your business, offering the expertise and support needed to navigate the complexities of global shipping. Our mission is to be your trusted logistics partner, delivering reliable, comprehensive, and fully customizable solutions designed to meet the ever evolving demands of today’s global marketplace.
-            </p>
-            <p>
-              As a leading international freight forwarder, we pride ourselves on offering seamless end to end logistics services tailored specifically to address the unique needs of your business. Whether you are a small startup or an established global corporation, we have the resources, knowledge, and global presence to optimize your supply chain and help drive your business toward success.
-            </p>
-            <p>
-              We understand that businesses today operate in an increasingly interconnected world where challenges are as diverse and dynamic as the markets they serve. This is why we offer not only traditional shipping methods but also innovative forward thinking solutions that anticipate and overcome logistics hurdles before they arise. From air freight to sea freight, courier services to multimodal transportation, our solutions are designed with efficiency, reliability, and cost effectiveness in mind. Every service we offer is customized to your specific business requirements, ensuring that your supply chain operates at its highest potential regardless of the scale or complexity of the task.
-            </p>
-            <p>
-              Our global expertise spans various transportation methods. Whether you need the speed and precision of air freight, the cost efficiency of sea freight, or the urgent reliability of courier services, we have a solution to meet your needs. Our multimodal transportation options combine air, sea, and land transport to create a seamless and integrated supply chain, optimizing both transit time and costs for maximum efficiency.
-            </p>
-            <p>
-              Furthermore, we recognize that logistics is not just about moving goods from one point to another. It is about handling your shipments with the utmost care, attention, and compliance. Our team’s expertise in navigating complex customs procedures and understanding the regulatory landscapes of different countries ensures that every aspect of your logistics process is in full compliance with international standards. We take care of the intricate details of paperwork, clearance, and documentation so you do not have to worry about delays or disruptions in your supply chain.
-            </p>
-            <p>
-              We take great pride in managing every phase of your logistics journey, ensuring that each stage from initial planning to final delivery is executed with precision and dedication. Our focus is always on your business’s specific needs, helping you maintain an efficient, effective, and timely operation. With a commitment to excellence, reliability, and customer satisfaction, we ensure that your logistics operations run smoothly and without interruption.
-            </p>
-            <p>
-              At The Dfl Group, we do not just move cargo. We move your business forward. From the very first step to the last, we stand by your side, providing you with the guidance, expertise, and resources you need to enhance your logistics strategy and drive your business to new heights. We understand that each business is unique, and we are committed to creating personalized logistics solutions that enable you to thrive in a competitive and fast paced market.
-            </p>
-            <p>
-              With our guiding principle of <strong>Together We Grow</strong>, we aim to build long lasting partnerships that foster mutual success. Through our innovative and dependable logistics solutions, we will help you overcome challenges, seize new opportunities, and achieve your business goals while we grow alongside you.
-            </p>
-            <p className="font-semibold text-slate-800">
-              Let us handle the complexities of logistics so you can focus on what matters most, achieving your business growth and success.
-            </p>
+          <div className="relative z-10 space-y-10">
+            <div className="max-w-3xl space-y-3">
+              <span className="inline-block rounded-full border border-[#E66E19]/30 bg-[#E66E19]/10 px-4 py-1.5 text-xs font-black uppercase tracking-wider text-[#E66E19]">
+                Our Core Strategic Advantage
+              </span>
+              <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 md:text-4xl">
+                Together We Grow with <span className="text-[#E66E19]">The DFL Group</span>
+              </h2>
+              <p className="text-base font-medium leading-relaxed text-slate-600">
+                At The DFL Group, we go beyond simply providing logistics services. We become an integral extension of your business, offering the expertise and support needed to navigate the complexities of global shipping.
+              </p>
+            </div>
+
+            <div className="grid gap-6 md:grid-cols-3">
+              <div className="rounded-2xl border border-slate-200/80 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#E66E19]/40 hover:shadow-lg">
+                <h3 className="text-lg font-bold text-slate-900">End-to-End Solutions</h3>
+                <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                  As a leading international freight forwarder, we offer seamless end-to-end logistics tailored specifically for startups and established global corporations alike.
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-slate-200/80 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#E66E19]/40 hover:shadow-lg">
+                <h3 className="text-lg font-bold text-slate-900">Multimodal Transportation</h3>
+                <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                  Combining air, sea, and land transport to create integrated supply chains that optimize transit time, costs, and overall delivery efficiency.
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-slate-200/80 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#E66E19]/40 hover:shadow-lg">
+                <h3 className="text-lg font-bold text-slate-900">Customs & Compliance</h3>
+                <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                  Expert navigating of complex global regulatory landscapes, ensuring every detail of paperwork, clearance, and documentation is handled seamlessly.
+                </p>
+              </div>
+            </div>
+
+            <div className="space-y-4 text-sm leading-relaxed text-slate-600 md:text-base border-t border-slate-200/80 pt-8">
+              <p>
+                We understand that businesses today operate in an increasingly interconnected world where challenges are as diverse and dynamic as the markets they serve. This is why we offer not only traditional shipping methods but also innovative forward-thinking solutions that anticipate and overcome logistics hurdles before they arise.
+              </p>
+              <p>
+                We take great pride in managing every phase of your logistics journey, ensuring that each stage from initial planning to final delivery is executed with precision and dedication. With a commitment to excellence, reliability, and customer satisfaction, we ensure that your logistics operations run smoothly without interruption.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-orange-200 bg-orange-50/60 p-6 md:p-8">
+              <div className="space-y-2">
+                <p className="text-xs font-black uppercase tracking-widest text-[#E66E19]">
+                  Guiding Principle
+                </p>
+                <h4 className="text-xl font-extrabold text-slate-900 md:text-2xl">
+                  Together We Grow
+                </h4>
+                <p className="text-sm leading-relaxed text-slate-700 md:text-base font-medium">
+                  Let us handle the complexities of logistics so you can focus on what matters most — achieving your business growth and long-term success.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
-        {/* 6. SISTER CONCERN HIGHLIGHT CARD */}
+        {/* 6. SISTER CONCERN HIGHLIGHT CARD (ICON-LESS) */}
         <div className="group relative cursor-pointer overflow-hidden rounded-3xl border border-orange-200 bg-gradient-to-r from-orange-50 via-amber-50/50 to-white p-8 shadow-xl transition-all duration-500 hover:-translate-y-2 hover:border-[#E66E19] hover:shadow-2xl hover:shadow-orange-500/20 md:p-12 animate-fade-in-up">
           <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
             <div className="max-w-3xl space-y-3">
@@ -235,8 +254,8 @@ export default function About() {
               </p>
             </div>
             <div className="shrink-0">
-              <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-[#E66E19] text-white shadow-lg shadow-orange-500/20 transition-all duration-500 group-hover:scale-110 group-hover:rotate-12 group-hover:shadow-xl group-hover:shadow-orange-500/40">
-                <FiUsers className="h-8 w-8" />
+              <div className="flex h-16 px-6 items-center justify-center rounded-2xl bg-[#E66E19] text-white font-extrabold text-sm uppercase tracking-wider shadow-lg shadow-orange-500/20 transition-all duration-500 group-hover:scale-105">
+                DFL Sister Concern
               </div>
             </div>
           </div>

@@ -131,14 +131,6 @@ const Team = () => {
                           LinkedIn
                         </a>
                       )}
-                      {member.socials.email && (
-                        <a
-                          href={`mailto:${member.socials.email}`}
-                          className="text-slate-400 transition-colors hover:text-[#E66E19]"
-                        >
-                          Email
-                        </a>
-                      )}
                     </div>
                   )}
                 </div>
