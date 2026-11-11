@@ -87,7 +87,7 @@ export default function Home() {
           </div>
 
           <div className="w-full max-w-lg sm:max-w-xl lg:max-w-none flex flex-col items-center justify-center">
-            {/* Balanced Artwork & Dots Group - Shifted gently downward */}
+            {/* Balanced Artwork Display - Shifted gently downward */}
             <div className="w-full flex flex-col items-center translate-y-1 sm:translate-y-2 lg:translate-y-3 xl:translate-y-4 2xl:translate-y-5">
               {/* Pure PNG Display - Responsive Aspect Ratio */}
               <div className="relative w-full aspect-[16/10] max-h-[360px] sm:max-h-[420px] lg:max-h-[500px] xl:max-h-[560px] flex items-center justify-center">
@@ -103,20 +103,6 @@ export default function Home() {
                         : "opacity-0 pointer-events-none z-0"
                     }`}
                     loading={idx === 0 ? "eager" : "lazy"}
-                  />
-                ))}
-              </div>
-
-              {/* Slide Dots Indicator - Cleanly positioned directly below the artwork */}
-              <div className="mt-2 sm:mt-3 flex items-center justify-center gap-2">
-                {heroSlideImages.map((_, i) => (
-                  <button
-                    key={i}
-                    onClick={() => setActiveSlide(i)}
-                    aria-label={`Go to slide ${i + 1}`}
-                    className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${
-                      i === activeSlide ? "w-8 bg-[#E66E19] shadow-sm shadow-[#E66E19]/30" : "w-2.5 bg-slate-200 hover:bg-slate-300"
-                    }`}
                   />
                 ))}
               </div>
