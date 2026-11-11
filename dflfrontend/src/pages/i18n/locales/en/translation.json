@@ -1,0 +1,1204 @@
+{
+  "common": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "contact": "Contact Us",
+    "readMore": "Read More",
+    "learnMore": "Learn More",
+    "submit": "Submit",
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel",
+    "getStarted": "Get Started",
+    "talkToSpecialist": "Talk to a Specialist",
+    "getCustomQuote": "Get a Custom Quote",
+    "faqTitle": "Frequently Asked",
+    "faqTitleHighlight": "Questions",
+    "faqSubtitle": "Everything you need to know about our logistics services and shipping."
+  },
+  "navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "ourPresence": "Our Presence",
+    "dflIt": "DFL IT Solutions",
+    "team": "Team",
+    "contact": "Contact Us",
+    "talkToUs": "Talk to Us",
+    "login": "Login",
+    "logistics": "Logistics",
+    "airFreight": "Air Freight Forwarding",
+    "transportation": "Transportation",
+    "oceanFreight": "Ocean Freight Forwarding",
+    "customClearance": "Customs Clearance",
+    "warehousing": "Warehousing"
+  },
+  "cards": {
+    "explore_service": "Explore Service →",
+    "get_quote": "Get an Instant Quote"
+  },
+  "services": {
+    "01": {
+      "name": "Air Freight",
+      "tag": "Priority Air & Ground",
+      "description": "Fast and secure air cargo services for time-sensitive shipments, with real-time tracking worldwide.",
+      "features": [
+        "Express",
+        "Global Coverage",
+        "Secure Handling",
+        "Real-Time Tracking"
+      ]
+    },
+    "02": {
+      "name": "Ocean Freight",
+      "tag": "Sea & Air Cargo",
+      "description": "Cost-effective ocean freight solutions for large shipments, with container and LCL options.",
+      "features": [
+        "Affordable & Economical",
+        "Huge Capacity",
+        "FCL & LCL Options",
+        "Port-to-Port Service"
+      ]
+    },
+    "03": {
+      "name": "Inland Transport",
+      "tag": "Domestic Transport",
+      "description": "Reliable road and ground transport services covering major routes with flexible schedules.",
+      "features": [
+        "Flexible Schedule",
+        "Door-to-Door Service",
+        "Regional Coverage",
+        "Various Vehicle Sizes"
+      ]
+    },
+    "04": {
+      "name": "Customs Clearance",
+      "tag": "Customs Express",
+      "description": "Fast courier services for urgent delivery, with same-day and next-day delivery options.",
+      "features": [
+        "Same-Day Delivery",
+        "Express Options",
+        "Document Delivery",
+        "Proof of Delivery"
+      ]
+    }
+  },
+  "working": {
+    "01": {
+      "name": "Book Your Shipment",
+      "description": "Book your shipment online quickly and easily, with instant quotes, flexible timing and real-time pricing."
+    },
+    "02": {
+      "name": "Get Better Rates",
+      "description": "Compare available shipping options and choose the solution that fits your budget and delivery needs."
+    },
+    "03": {
+      "name": "Track Your Shipment",
+      "description": "Stay updated throughout the entire delivery journey with real-time shipment tracking."
+    },
+    "04": {
+      "name": "Hassle-Free Delivery",
+      "description": "Experience a smooth and reliable delivery process with timely updates until your shipment reaches its destination."
+    }
+  },
+  "techFeatures": {
+    "tech-1": {
+      "title": "Global Logistics Pro Assure",
+      "description": "Premium shipping guarantee with comprehensive protection and insurance coverage for peace of mind.",
+      "tag": "Secure"
+    },
+    "tech-2": {
+      "title": "Freight Contracts",
+      "description": "Long-term partnerships with competitive rates, priority service and dedicated account management.",
+      "tag": "Enterprise"
+    },
+    "tech-3": {
+      "title": "NVOCC Services",
+      "description": "Instant booking for urgent shipments with real-time pricing and immediate capacity confirmation.",
+      "tag": "Instant Spot"
+    },
+    "tech-4": {
+      "title": "Customs Clearance",
+      "description": "Flexible payment terms with extended credit options and customizable billing cycles for better cash flow.",
+      "tag": "Hassle-Free"
+    },
+    "tech-5": {
+      "title": "RORO Services",
+      "description": "Earn points on every shipment for future discounts, upgrades and special service benefits.",
+      "tag": "Rewards"
+    },
+    "tech-6": {
+      "title": "Priority Access Points",
+      "description": "VIP service benefits including fast handling, priority scheduling and dedicated support channels.",
+      "tag": "VIP Access"
+    }
+  },
+  "featuresSection": {
+    "badge": "Next-Generation Operations",
+    "titlePart1": "Advanced",
+    "titleHighlight": "Technology-Driven",
+    "titlePart2": "Features",
+    "subtitle": "Innovative solutions designed to streamline your logistics operations",
+    "integratedLabel": "DFL Technology Integrated"
+  },
+  "faqs": {
+    "01": {
+      "question": "What services does The DFL Group provide?",
+      "answer": "The DFL Group provides end-to-end logistics and supply chain solutions, including air freight, ocean freight, inland transportation, customs clearance, warehousing, international courier and cargo services."
+    },
+    "02": {
+      "question": "Does The DFL Group provide international shipping?",
+      "answer": "Yes. We provide international logistics solutions for businesses, including air and ocean freight, international courier, customs clearance and door-to-door shipment support."
+    },
+    "03": {
+      "question": "What is the difference between air freight and ocean freight?",
+      "answer": "Air freight is generally suited to time-sensitive shipments, while ocean freight is commonly used for large or heavy cargo where cost efficiency and higher capacity matter more."
+    },
+    "04": {
+      "question": "Do you offer FCL and LCL ocean freight services?",
+      "answer": "Yes. The DFL Group provides both FCL (Full Container Load) and LCL (Less than Container Load) ocean freight solutions, depending on your shipment requirements."
+    },
+    "05": {
+      "question": "Does The DFL Group provide customs clearance services?",
+      "answer": "Yes. We provide customs clearance support to help businesses manage documentation and customs procedures for their shipments."
+    },
+    "06": {
+      "question": "Do you provide door-to-door delivery?",
+      "answer": "Yes. Door-to-door transportation and delivery solutions are available, depending on the service and destination."
+    },
+    "07": {
+      "question": "Can I track my shipment?",
+      "answer": "Yes. Shipment tracking is available for applicable services, so customers can monitor shipment movement and delivery updates."
+    },
+    "08": {
+      "question": "Do you provide warehousing services?",
+      "answer": "Yes. The DFL Group provides warehousing and logistics support to help businesses manage storage, handling and shipment movement."
+    },
+    "09": {
+      "question": "Can you handle large or special cargo?",
+      "answer": "Yes. Our logistics solutions can be customized for different cargo types, shipment sizes and transportation requirements."
+    },
+    "10": {
+      "question": "How can I get a quote for my shipment?",
+      "answer": "To get a suitable quote, you can contact The DFL Group with your origin, destination, cargo details, weight/volume and preferred mode of transport."
+    },
+    "11": {
+      "question": "Which countries does The DFL Group serve?",
+      "answer": "The DFL Group supports international logistics requirements across many global trade lanes through its international network and logistics partners."
+    },
+    "12": {
+      "question": "How can I contact The DFL Group?",
+      "answer": "For shipment inquiries, quotes and logistics support, you can reach our team through the 'Contact Us' section of the website."
+    },
+    "airFreight": {
+      "1": {
+        "question": "What is air forwarding (air freight)?",
+        "answer": "Air forwarding is the process of arranging and managing the transport of goods by air. It may include cargo pickup, documentation, airline booking, customs clearance, shipment tracking and final delivery."
+      },
+      "2": {
+        "question": "What types of cargo can be sent by air?",
+        "answer": "Many types of eligible goods can be sent by air, including commercial products, samples, electronics, machinery parts, e-commerce products, high-value goods and urgent shipments. Shipments must meet the requirements of the applicable airline, customs and regulatory authorities."
+      },
+      "3": {
+        "question": "Do you provide customs clearance for air shipments?",
+        "answer": "Yes. We provide customs clearance and documentation support for eligible air shipments, helping businesses manage import and export procedures more smoothly."
+      },
+      "4": {
+        "question": "Can I track my air shipment?",
+        "answer": "Yes. Shipment tracking and regular updates keep you informed about the movement and status of your cargo during transit."
+      },
+      "5": {
+        "question": "Why choose air freight over ocean freight?",
+        "answer": "Air freight is generally chosen when fast delivery is important. It is especially useful for urgent shipments, product samples, time-sensitive goods and shipments to international destinations that require short transit times."
+      }
+    },
+    "transportation": {
+      "1": {
+        "question": "What is surface transport (road transport) service?",
+        "answer": "Surface transport is the movement of goods by road using trucks and other suitable vehicles. It can be used for short, medium and long-distance shipments."
+      },
+      "2": {
+        "question": "What is the difference between FTL and LTL transport?",
+        "answer": "FTL (Full Truckload) means a full truck is used for a single shipment. LTL (Less Than Truckload) allows multiple shipments to share available truck space. The right choice usually depends on the size and volume of your shipment."
+      },
+      "3": {
+        "question": "Does The DFL Group provide door-to-door transport?",
+        "answer": "Yes. We provide complete door-to-door transport with door-to-hub and hub-to-door options, based on your shipment and delivery requirements."
+      },
+      "4": {
+        "question": "Can I track my road transport shipment?",
+        "answer": "Yes. Shipment tracking helps you stay updated on your cargo during transport and provides better visibility into the progress of your shipment."
+      },
+      "5": {
+        "question": "What types of surface transportation services do you provide?",
+        "answer": "Our surface transportation services include FTL and LTL transport, first-mile and last-mile delivery, long-distance transport, route planning, vehicle coordination and door-to-door cargo movement."
+      }
+    },
+    "oceanFreight": {
+      "1": {
+        "question": "What is ocean freight?",
+        "answer": "Ocean freight means arranging the transport of goods by sea from one country to another. It may include booking the shipment, preparing documents, handling customs and coordinating delivery."
+      },
+      "2": {
+        "question": "What are FCL and LCL shipping?",
+        "answer": "FCL means Full Container Load, where a complete container is used for one shipment. LCL means Less than Container Load, where smaller shipments share space in the same container."
+      },
+      "3": {
+        "question": "What types of cargo can be shipped by sea?",
+        "answer": "Many types of commercial cargo can be transported by ocean, including machinery, raw materials, industrial products, equipment, consumer goods and other eligible commercial shipments."
+      },
+      "4": {
+        "question": "Can The DFL Group help with customs clearance?",
+        "answer": "Yes. Our team can coordinate customs clearance and documentation as part of the overall ocean freight process, making import and export shipments easier to manage."
+      },
+      "5": {
+        "question": "When should I choose ocean freight?",
+        "answer": "Ocean freight is generally a good option for large, heavy or bulky shipments. It is especially useful when you are moving large volumes of goods and speed of delivery is not the main priority."
+      }
+    },
+    "customs": {
+      "1": {
+        "question": "What is customs clearance?",
+        "answer": "Customs clearance is the process of getting goods cleared by the customs department when they are imported or exported. It involves submitting the required documents and completing formalities, after which the goods can move forward."
+      },
+      "2": {
+        "question": "Which documents are required for customs clearance?",
+        "answer": "This depends on the type of goods, the shipment and the destination. Generally, documents such as a commercial invoice, packing list and shipping documents are required. Some products may also need additional licenses, certificates or approvals."
+      },
+      "3": {
+        "question": "Do you provide customs clearance for both imports and exports?",
+        "answer": "Yes. The DFL Group provides customs clearance support for both import and export shipments. Exact requirements depend on the cargo and the rules applicable to the shipment."
+      },
+      "4": {
+        "question": "Can you help with customs documentation?",
+        "answer": "Yes. We help businesses organize and coordinate the documents needed for customs clearance. If additional documents or information are required during the process, our team also coordinates them."
+      },
+      "5": {
+        "question": "What happens if there is an error in customs documents?",
+        "answer": "If documents are incomplete or contain incorrect information, customs may ask for clarifications or additional documents. This can delay the shipment and sometimes lead to extra charges. That is why it is important to prepare documents correctly before the shipment reaches customs."
+      }
+    },
+    "warehousing": {
+      "1": {
+        "question": "What is warehousing in logistics?",
+        "answer": "Warehousing means storing goods safely in a designated facility until they are ready to be shipped, distributed or delivered. It is an important part of managing the movement of goods."
+      },
+      "2": {
+        "question": "What types of goods can be stored in a warehouse?",
+        "answer": "Various types of commercial and business goods can be stored depending on their size, quantity, nature and storage requirements. The suitable storage arrangement can vary from one product to another."
+      },
+      "3": {
+        "question": "Do you provide inventory management support?",
+        "answer": "Yes. Our warehousing operations may include receiving goods, storing inventory, handling stock, preparing orders and arranging dispatch. This helps businesses keep better track of their goods."
+      },
+      "4": {
+        "question": "Can warehousing be combined with transportation?",
+        "answer": "Yes. Warehousing can be combined with transportation, freight forwarding and distribution services. This allows goods to be stored in a warehouse and moved to their next destination when needed."
+      },
+      "5": {
+        "question": "How can warehousing help my business?",
+        "answer": "Good warehousing helps businesses keep their stock organized and reduces the difficulty of managing goods across different stages of the supply chain. It also makes it easier to prepare and dispatch goods when needed."
+      }
+    }
+  },
+  "testimonials": {
+    "1": {
+      "quote": "Excellent delivery service! They handled all the complexities of delivery and customs, and made getting our goods to their international destination very easy. Highly recommended."
+    },
+    "2": {
+      "quote": "Demira Freight Linkers India Private Limited is a very good company with excellent coordination and management services. It was truly a pleasure to work with them!"
+    },
+    "3": {
+      "quote": "Safe, timely, transparent and hassle-free cargo movement with complete ownership and active communication."
+    }
+  },
+  "companyInfo": {
+    "brandName": "The DFL Group",
+    "legalName": "Demira Freight Linkers India Private Limited",
+    "tagline": "Built for speed, reliability and precision - your trusted partner in global freight forwarding and express delivery.",
+    "website": "www.thedflexpress.com",
+    "websiteUrl": "https://express.thedflgroup.com/"
+  },
+  "socialLinks": [
+    { "name": "Facebook", "url": "https://www.facebook.com/profile.php?id=61571763203265", "icon": "facebook" },
+    { "name": "Instagram", "url": "https://www.instagram.com/demirafreightlinkers/", "icon": "instagram" },
+    { "name": "LinkedIn", "url": "https://www.linkedin.com/company/the-dfl-group/", "icon": "linkedin" },
+    { "name": "X", "url": "https://x.com/the_dfl_group", "icon": "x" }
+  ],
+  "globalOffices": [
+    { "country": "India", "phone": "+91 93551 51122" },
+    { "country": "Thailand", "phone": "+66 623657862" },
+    { "country": "UAE", "phone": "+97 150 399 8139" },
+    { "country": "UK", "phone": "+44 7388 653479" }
+  ],
+  "servicesList": [
+    { "label": "Air Freight", "path": "/services/air-freight-forwarding" },
+    { "label": "Ocean Freight", "path": "/services/ocean-freight" },
+    { "label": "Customs Clearance", "path": "/services/custom-clearance" },
+    { "label": "Transportation", "path": "/services/transportation" },
+    { "label": "Warehousing", "path": "/services/warehousing" }
+  ],
+  "legalLinks": [
+    { "label": "Privacy Policy", "path": "/privacy-policy" },
+    { "label": "Terms & Conditions", "path": "/terms-conditions" }
+  ],
+  "footer": {
+    "company": "Company",
+    "services": "Services",
+    "legalPolicies": "Legal Policies",
+    "globalOffices": "Global Offices",
+    "connectWithUs": "Connect With Us",
+    "backToTop": "Back to Top",
+    "privacyPolicy": "Privacy Policy",
+    "termsConditions": "Terms & Conditions",
+    "home": "Home",
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us",
+    "followOn": "Follow us on {{name}} at DFL Express",
+    "copyright": "Copyright © {{year}} All Rights Reserved, The DFL Group | DFL Express | {{legalName}}."
+  },
+  "home": {
+    "title": "Global Logistics Solutions",
+    "subtitle": "Your trusted partner for seamless logistics and transportation.",
+    "heroBadge": "Express Courier & Cargo Operations Active Across the Country",
+    "highlights": [
+      "MOVING YOUR BUSINESS FORWARD.",
+      "UNMATCHED LOGISTICS GLOBAL REACH",
+      "24/7 DEDICATED CUSTOMER SUPPORT TEAM",
+      "SECURE HANDLING FOR HIGH_VALUE ASSETS"
+    ],
+    "heroSubtitle": "DFL Express delivers time-sensitive packages, heavy cargo and global supply chain solutions with real-time GPS precision.",
+    "liveDispatch": "Live Dispatch Tracker",
+    "expressFleetActive": "Express Fleet Active",
+    "origin": "Origin: Central Hub",
+    "destination": "Destination: Metro Direct",
+    "inTransit": "In Transit - Fast Track",
+    "trustedNetwork": "Trusted Integrations & Global Carrier Network",
+    "ourNetwork": "Our Network",
+    "globalPresence": "Global Presence",
+    "networkDesc": "With a strong international network and strategic partners, we connect businesses with markets around the world.",
+    "ourServices": "Our Services",
+    "comprehensiveShipping": "Comprehensive Shipping & Freight Solutions",
+    "shippingDesc": "Logistics services tailored for individual parcels, high-volume e-commerce orders or enterprise heavy cargo.",
+    "howItWorks": "How It Works",
+    "howItWorksDesc": "From booking to payment, manage your shipments with ease and technology-driven precision.",
+    "clientSuccess": "Client Success Stories",
+    "whatClientsSay": "What Our Clients Say",
+    "clientsDesc": "Real businesses. Real results. Here is what our clients say about working with The DFL Group.",
+    "stats": {
+      "1": "Satisfied Clients",
+      "2": "On-Time Deliveries",
+      "3": "Years of Excellence"
+    }
+  },
+  "about": {
+    "badge": "About The DFL Group",
+    "heroTitle": "Expanding Your Business",
+    "heroTitleHighlight": "in Global Logistics",
+    "heroPara": "At The DFL Group, we go beyond providing logistics services - we become an integral extension of your business.",
+    "yearsExperience": "Years of Global Excellence",
+    "talkSpecialist": "Talk to a Specialist",
+    "imageAboutAlt": "DFL Cargo Aviation",
+    "imageWarehouseAlt": "Automated Fulfillment",
+    "generalInfoBadge": "General Information",
+    "generalInfoTitle": "Global Presence with Local Insight",
+    "generalInfoDesc": "With offices in India, UAE, Thailand and the UK, The DFL Group is strategically positioned to deliver reliable logistics solutions around the world.",
+    "perspectiveBadge": "Perspective",
+    "visionTitle": "Our Vision",
+    "visionPara": "To become the top choice in global logistics, known for innovation, excellence and a customer-first mindset.",
+    "visionExtraPara": "The DFL Group's vision: we aim to become a preferred global logistics partner, recognized for innovation, quality service and customer focus. By adopting new technologies and sustainable practices, we strive to lead the logistics industry and deliver the best solutions for your business.",
+    "commitmentBadge": "Commitment",
+    "missionTitle": "Our Mission",
+    "missionPara": "To become a customer-focused project logistics expert, with a flexible and adaptive approach.",
+    "journeyBadge": "Our Journey",
+    "historyTitle": "Our History",
+    "historyPara1": "At The DFL Group, we do not just carry cargo - we help your business grow.",
+    "historyPara2": "With our guiding principle of \"Together We Grow,\" we aim to build long-term partnerships.",
+    "coreValuesTitle": "Core Values",
+    "coreValuesPara": "We uphold integrity, transparency and ethical standards.",
+    "coreValueLabel": "Value",
+    "strategicBadge": "Our Key Strategic Advantage",
+    "togetherWeGrow": "Together We Grow",
+    "togetherWeGrowHighlight": "with The DFL Group",
+    "togetherPara": "At The DFL Group, we go beyond providing logistics services.",
+    "endToEndTitle": "End-to-End Solutions",
+    "endToEndDesc": "As a leading international freight forwarder, we provide logistics tailored for all types of businesses.",
+    "multimodalTitle": "Multimodal Transportation",
+    "multimodalDesc": "A combination of air, sea and land transport to optimize transit time.",
+    "customsTitle": "Customs & Compliance",
+    "customsDesc": "Expertise in navigating complex global regulatory environments.",
+    "strategicPara1": "Businesses today operate in an increasingly connected world, where challenges are as diverse and dynamic as the markets they serve. That is why we offer not only traditional shipping methods, but also innovative and forward-looking solutions that anticipate and remove logistics barriers.",
+    "strategicPara2": "We take pride in handling every stage of your logistics journey, from initial planning to final delivery, so that every step is completed with precision and dedication. With our commitment to excellence, reliability and customer satisfaction, we ensure your logistics operations run smoothly without interruption.",
+    "guidingPrinciple": "Guiding Principle",
+    "togetherTitle": "Together We Grow",
+    "togetherDesc": "We handle the complexities of logistics so you can focus on growing your business.",
+    "affiliatedBadge": "Affiliated Organization",
+    "delishaTitle": "Delisha International",
+    "delishaDesc": "Delisha International is an associate company of The DFL Group, operating within the same logistics ecosystem.",
+    "sisterConcern": "DFL Sister Concern",
+    "coreValues": [
+      { "title": "Integrity & Transparency", "desc": "We follow the highest ethical standards in all our global operations." },
+      { "title": "Innovation & Excellence", "desc": "Going beyond expectations with reliable, timely and smart logistics." },
+      { "title": "Sustainability", "desc": "Adopting green practices and sustainable logistics solutions around the world." },
+      { "title": "Growing Together", "desc": "Building long-term and mutually beneficial partnerships with our clients." }
+    ],
+    "highlights": [
+      "Air Freight & Sea Freight",
+      "Customs Clearance Experts",
+      "Multimodal Transportation",
+      "Customized Courier Services"
+    ]
+  },
+  "it": {
+    "badge": "DFL IT Solutions",
+    "heroTitle": "Empowering Businesses Through Advanced IT",
+    "heroTitleHighlight": "Empowering",
+    "heroPara": "In today's fast-paced digital landscape, keeping up with change is not enough to stay ahead - you need innovation, efficiency and reliability. At The DFL Group, we provide comprehensive IT services designed to grow your business, streamline operations and boost productivity.",
+    "cloudServer": "Cloud Server",
+    "liveDataStream": "Live Data Stream",
+    "clientEndpoint": "Client Endpoint",
+    "getStarted": "Get Started",
+    "teamBadge": "Leadership & Talent",
+    "teamTitle": "Meet the Architects of Innovation",
+    "teamDesc": "A team of experienced engineers, domain architects and UI/UX strategists building scalable software solutions.",
+    "teamRoles": [
+      "Director",
+      "Mentor",
+      "Mentor",
+      "Mentor"
+    ],
+    "coreContributor": "Core Contributor",
+    "connect": "Connect",
+    "servicesBadge": "What We Do",
+    "servicesTitle": "Our Expertise & Services",
+    "servicesDesc": "Customized digital solutions built on cutting-edge technologies to give your business a competitive edge.",
+    "exploreSolution": "Explore Solution",
+    "services": [
+      {
+        "title": "Custom Software Development",
+        "description": "From idea to deployment, we build scalable, secure and easy-to-use applications that match your business goals."
+      },
+      {
+        "title": "Cloud Solutions",
+        "description": "Optimize your infrastructure with cloud migration, integration and management services, so operations run smoothly and costs go down."
+      },
+      {
+        "title": "IT Support & Maintenance",
+        "description": "Stay worry-free with our proactive IT support, so your systems keep running smoothly and efficiently 24/7."
+      },
+      {
+        "title": "Cybersecurity Services",
+        "description": "Protect your business from evolving threats with advanced security solutions, including vulnerability assessment, data encryption and monitoring."
+      },
+      {
+        "title": "Data Analytics & BI",
+        "description": "Make better decisions with data-driven insights from our advanced analytics and business intelligence tools."
+      },
+      {
+        "title": "Managed IT Services",
+        "description": "Leave the responsibility of your IT infrastructure to us, and focus on growing your business."
+      }
+    ],
+    "whyBadge": "Why Choose Us",
+    "whyTitle": "Building High-Performance IT Infrastructure",
+    "whyDesc": "We combine deep technical expertise with business understanding to build secure, scalable and customized software ecosystems that accelerate digital transformation.",
+    "uptimeLabel": "Service Uptime",
+    "supportLabel": "Dedicated Support",
+    "whyItems": [
+      {
+        "title": "Experienced Professionals",
+        "description": "Our certified team of experts ensures quality solutions and dedicated support for all your IT needs."
+      },
+      {
+        "title": "Customized Solutions",
+        "description": "No two businesses are the same. We tailor our services to your unique needs and goals."
+      },
+      {
+        "title": "Scalable Services",
+        "description": "Whether you are a startup or a large enterprise, our solutions grow with your business."
+      },
+      {
+        "title": "Proven Track Record",
+        "description": "Our portfolio reflects successful collaborations with businesses across various industries."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "submit": "Submit",
+    "badge": "Contact Us",
+    "pageTitle": "How can we",
+    "pageTitleHighlight": "help you?",
+    "subtitle": "Fill out the form below and our support team will get back to you within 24 hours.",
+    "fullName": "Full Name",
+    "namePlaceholder": "John Doe",
+    "emailAddress": "Email Address",
+    "emailPlaceholder": "john@example.com",
+    "mobileNumber": "Mobile Number",
+    "phonePlaceholder": "+91 98765 43210",
+    "describeConcern": "Describe your requirement",
+    "messagePlaceholder": "Tell us more about your requirements or shipment...",
+    "submitInquiry": "Submit Inquiry",
+    "successMessage": "Thank you! Your message has been sent successfully.",
+    "invalidEmail": "Please enter a valid email address (e.g. john@example.com).",
+    "invalidPhone": "Please enter a valid phone number (e.g. +91 9876543210)."
+  },
+  "airFreight": {
+    "badge": "Air Freight Forwarding",
+    "heroTitle": "Find the Fastest and Most Reliable Air Freight Solutions with The DFL Group",
+    "heroTitleHighlight": "The DFL Group",
+    "heroDesc": "Air freight is the best solution for time-sensitive logistics. With guaranteed schedules, high-security airport hubs and express customs processing, we keep your supply chain running smoothly across continents.",
+    "bookShipment": "Book an Air Shipment",
+    "liveTransitMonitor": "Live Transit Monitor",
+    "routeLabel": "Active Route: DEL → JFK (Express Air Freight)",
+    "inFlightFreight": "In-Flight Freight",
+    "expressAirCharter": "Express Air Charter",
+    "guaranteedTransit": "Guaranteed 24-48 hour transit time",
+    "coreCapabilities": "Core Capabilities",
+    "completeSolutions": "Complete Air Freight Solutions",
+    "highlights": [
+      {
+        "title": "Reliable Air Freight Forwarding Solutions",
+        "description": "The DFL Group helps businesses move their cargo quickly and smoothly through reliable air freight forwarding services. We manage the entire shipping process, from cargo pickup and shipment planning to airline coordination, customs clearance and final delivery."
+      },
+      {
+        "title": "Fast & Efficient International Air Cargo",
+        "description": "When your shipment needs to reach its destination quickly, air freight is a practical and efficient choice. We coordinate with airlines and logistics partners to ensure your cargo moves smoothly from origin to destination."
+      },
+      {
+        "title": "End-to-End Air Freight Management",
+        "description": "Air freight involves much more than moving cargo from one airport to another. At The DFL Group, we support you throughout the process, including documentation, customs clearance, cargo handling, tracking and delivery coordination."
+      }
+    ],
+    "trustedPartner": "Trusted Logistics Partner",
+    "dedicatedForwarder": "The DFL Group as Your Dedicated Air Freight Forwarder",
+    "dedicatedDesc": "We manage every layer of global air operations, from consolidated air cargo shipments to dedicated temperature-controlled charter solutions.",
+    "highValueCargo": "High-Value Cargo",
+    "highValueDesc": "Tamper-evident packaging and tracked transit.",
+    "perishableLogistics": "Perishable Logistics",
+    "perishableDesc": "Cold-chain solutions for pharmaceuticals and food products.",
+    "airportOps": "Airport Operations",
+    "tarmacHandling": "Direct tarmac and runway cargo handling",
+    "airFacilities": "Air Freight Facilities",
+    "globalTerminals": "Global Terminals & Express Hubs",
+    "facilitiesDesc": "Take a closer look at our dedicated air cargo infrastructure and smart handling facilities.",
+    "facilities": [
+      {
+        "tag": "Integrated Hubs",
+        "title": "Smart Airport Cargo Terminals",
+        "desc": "High-capacity warehouses built right next to major international runways to reduce loading turnaround."
+      },
+      {
+        "tag": "First & Last Mile",
+        "title": "Express Airport Feeder Fleet",
+        "desc": "A dedicated road-feeder service connecting local manufacturing units directly to airport cargo bays."
+      }
+    ],
+    "completeWorkflow": "Complete Workflow",
+    "comprehensiveExecution": "Comprehensive End-to-End Execution",
+    "endToEnd": [
+      { "title": "Cargo Pick-up & Transport", "detail": "Doorstep pickup with GPS tracking" },
+      { "title": "Professional Packaging", "detail": "IATA-standard packing for temperature-sensitive and fragile goods" },
+      { "title": "Loading & Unloading", "detail": "Automated warehouse pallet handling" },
+      { "title": "Secure Storage", "detail": "24/7 CCTV-monitored airport holding bay" },
+      { "title": "Airport Warehouse Services", "detail": "Express processing near the runway" },
+      { "title": "Customs Clearance Support", "detail": "Fast-track document verification" }
+    ],
+    "techDriven": "Technology-Driven Operations",
+    "smartFaster": "Smart, Faster & Efficient Air Freight",
+    "smartFeatures": [
+      {
+        "title": "Strategic Airport Warehousing",
+        "description": "Located near major airport hubs to eliminate transport delays and optimize cargo loading time."
+      },
+      {
+        "title": "Digitized Documentation",
+        "description": "Automated customs filing and digital air waybills (e-AWB) that remove the hassle of manual paperwork."
+      },
+      {
+        "title": "Direct Airline Network",
+        "description": "Priority belly capacity and dedicated charter slots on top global air routes."
+      },
+      {
+        "title": "AI Route Optimization",
+        "description": "Smart engines that predict real-time flight schedules for cost and time efficiency."
+      }
+    ],
+    "ctaTitle": "Ready to Send Your Time-Sensitive Cargo?",
+    "ctaDesc": "Get a customized air cargo quote and instant flight transit schedule.",
+    "ctaButton": "Get a Custom Quote →"
+  },
+  "transportation": {
+    "monitorTitle": "Surface Transit Monitor",
+    "activeRoute": "Active Route: Delhi NCR → Mumbai Freight Corridor",
+    "inTransit": "Trucks Loaded & In Transit",
+    "badge": "Surface Transport Service",
+    "heroTitle": "Upgrade Your Logistics with Expert Inland Transport from The DFL Group",
+    "heroTitleHighlight": "The DFL Group",
+    "heroDesc": "Road transport is a key component of inland logistics, allowing cargo to be moved over land using an extensive road network. With maximum flexibility and minimal geographic limits, we handle both small and large shipments with ease.",
+    "bookButton": "Book Road Freight",
+    "fleetBadge": "Express Highway Fleet",
+    "fleetCoverage": "Pan-India Network Coverage",
+    "overviewBadge": "Overview",
+    "overviewTitle": "End-to-End Surface Transportation",
+    "overviewSubtitle": "Learn how we connect cities, distribution centers and businesses with efficient road logistics.",
+    "highlights": [
+      {
+        "title": "Reliable Surface Transport Solutions",
+        "description": "The DFL Group provides reliable surface transportation services for businesses that need to move goods safely and efficiently by road. We handle all types of shipments between cities, states and distribution centers, from small parcels to full truckloads."
+      },
+      {
+        "title": "Flexible Road Transport Requirements",
+        "description": "Every shipment has different requirements. That is why we offer both Full Truckload (FTL) and Less-Than-Truckload (LTL) options. Whether you need a full truck or a small shipment, we help you choose the right solution."
+      },
+      {
+        "title": "Seamless Cargo Movement",
+        "description": "We manage the various stages of road transport to make the shipping process easier for businesses, including pickup coordination, route planning, cargo handling and delivery. With our tracking facility, you always stay updated during transit."
+      }
+    ],
+    "whyBadge": "Why Choose Road Logistics?",
+    "whyTitle": "Flexible & Cost-Effective Inland Freight Solutions",
+    "whyDesc": "Road logistics offers the ideal balance between cost and speed. Whether you need a full vehicle or just shared space, our specialized solutions keep your supply chain running smoothly.",
+    "ftlTitle": "Full Truckload (FTL)",
+    "ftlDesc": "Exclusive use of the full truck capacity by a single shipper.",
+    "ltlTitle": "Less-Than-Truckload (LTL)",
+    "ltlDesc": "Shared truck space that reduces total transit cost.",
+    "seamlessOps": "Seamless Operations",
+    "doorToDoorPickup": "Integrated Door-to-Door Pickup & Dispatch",
+    "advantagesBadge": "Key Advantages",
+    "advantagesTitle": "Why Transport with The DFL Group?",
+    "advantagesSubtitle": "We eliminate the need for multiple local transporters by providing a single, highly reliable inland transit network.",
+    "advantagesItems": [
+      {
+        "title": "Wide Connectivity",
+        "description": "Direct access to both remote and urban locations with minimal geographic limits."
+      },
+      {
+        "title": "Flexible Routes & Schedules",
+        "description": "Departure times and transit routes that can be adapted to your delivery urgency."
+      },
+      {
+        "title": "Door-to-Door Delivery",
+        "description": "Single-point pickup and direct delivery to the final destination without extra hassle."
+      },
+      {
+        "title": "Cost-Effective Solutions",
+        "description": "Optimized FTL and LTL freight pricing to reduce operational costs."
+      }
+    ],
+    "modelsBadge": "Customized Options",
+    "modelsTitle": "Versatile Road Transport Models",
+    "modelsSubtitle": "Choose flexible logistics execution options: door-to-door, door-to-hub, or hub-to-door.",
+    "modelsItems": [
+      {
+        "title": "Full Truckload (FTL)",
+        "detail": "Ideal for large shipments that require a full truck for maximum security and speed."
+      },
+      {
+        "title": "Less-Than-Truckload (LTL)",
+        "detail": "A cost-sharing model for small cargo by consolidating shipments on shared routes."
+      },
+      {
+        "title": "Door-to-Door Service",
+        "detail": "End-to-end management from the seller's warehouse directly to the customer's door."
+      },
+      {
+        "title": "Door-to-Hub Logistics",
+        "detail": "Pickup from the factory location and drop-off at a central regional distribution hub."
+      },
+      {
+        "title": "Hub-to-Door Express",
+        "detail": "Fast-track movement from the primary transit hub to individual customer locations."
+      },
+      {
+        "title": "GPS-Tracked Fleet",
+        "detail": "Real-time route monitoring and speed tracking for complete shipment visibility."
+      }
+    ],
+    "ctaTitle": "Ready to Streamline Your Road Logistics?",
+    "ctaDesc": "Book a pickup instantly and get competitive FTL and LTL freight rates today.",
+    "ctaButton": "Get a Freight Quote →"
+  },
+  "oceanFreight": {
+    "monitorTitle": "Maritime Transit Monitor",
+    "activeVessel": "Active Vessel: Nhava Sheva → Rotterdam Port",
+    "inTransit": "Ocean Vessel Freight",
+    "badge": "Ocean Freight Forwarding",
+    "heroTitle": "Reliable Ocean Freight Forwarding Services with The DFL Group",
+    "heroTitleHighlight": "The DFL Group",
+    "heroDesc": "Shipping cargo by sea requires extensive planning and coordination. At The DFL Group, we help businesses manage their international ocean shipments from start to finish with reliable, cost-effective logistics solutions.",
+    "bookButton": "Book Sea Container",
+    "globalCarrier": "Global Carrier Network",
+    "fclLclSolutions": "FCL & LCL Sea Freight Solutions",
+    "overviewBadge": "Overview & Support",
+    "overviewTitle": "End-to-End Sea Shipping Solutions",
+    "overviewSubtitle": "We make sea shipping simple, organized and hassle-free for businesses around the world.",
+    "highlights": [
+      {
+        "title": "Reliable Ocean Freight Forwarding Services",
+        "description": "Shipping by sea involves a lot of planning and coordination. At The DFL Group, we help businesses manage the entire shipment, including booking, documentation, cargo handling, customs clearance and delivery."
+      },
+      {
+        "title": "FCL & LCL Shipping Options",
+        "description": "Every business has different needs. That is why we offer both FCL (Full Container Load) and LCL (Less than Container Load) services. Our team helps you choose the right option based on your shipment size."
+      },
+      {
+        "title": "Complete Support for International Sea Shipments",
+        "description": "A sea shipment involves much more than moving cargo from one port to another. From arranging pickup to port handling and final delivery, our team coordinates every step with shipping partners."
+      }
+    ],
+    "whyBadge": "Why Choose Ocean Freight?",
+    "whyTitle": "Cost-Effective Transport for Large & Heavy Cargo",
+    "whyDesc": "Sea freight is the most cost-effective way to transport large volumes of goods over long distances. Ideal for heavy, oversized or non-time-sensitive goods, ocean freight offers two main flexible shipping options:",
+    "fclTitle": "Full Container Load (FCL)",
+    "fclDesc": "A full container dedicated exclusively to your shipment.",
+    "lclTitle": "Less Than Container Load (LCL)",
+    "lclDesc": "Shared container space for smaller, cost-conscious cargo.",
+    "portOps": "Port Operations",
+    "portPartnerships": "Direct port-to-port and NVOCC carrier partnerships",
+    "specsBadge": "Specifications Guide",
+    "specsTitle": "Ocean Freight Container Specifications",
+    "specsSubtitle": "Compare dimensions, tare weight and payload capacities for standard container sizes.",
+    "tableHeaders": {
+      "containerType": "Container Type",
+      "c20ft": "20 ft",
+      "c40ft": "40 ft",
+      "c40ftHc": "40 ft High Cube",
+      "externalDim": "External Dimensions (L x W x H)",
+      "internalDim": "Internal Dimensions (L x W x H)",
+      "doorOpening": "Door Opening (W x H)",
+      "tareWeight": "Tare Weight (Empty Weight)",
+      "payload": "Payload (Net Load)",
+      "maxGross": "Maximum Gross Weight"
+    },
+    "whyUsBadge": "Why Choose Us",
+    "whyUsTitle": "Why The DFL Group for Ocean Freight?",
+    "whyUsSubtitle": "We streamline sea freight operations with digital logistics services and experienced global logistics professionals.",
+    "features": [
+      {
+        "title": "Global Carrier Network",
+        "description": "Direct contracts with top global sea carriers, port handlers and NVOCCs around the world."
+      },
+      {
+        "title": "Safe & Compliant Handling",
+        "description": "Specialist handling for heavy, oversized cargo, machinery and special equipment."
+      },
+      {
+        "title": "Flexible FCL & LCL Options",
+        "description": "Full-container and shared-container options tailored to your budget."
+      },
+      {
+        "title": "Digital Tracking & Schedules",
+        "description": "Advanced technology to streamline vessel tracking and port documentation."
+      }
+    ],
+    "servicesBadge": "Comprehensive Services",
+    "servicesTitle": "End-to-End Sea Logistics Capabilities",
+    "servicesSubtitle": "From cargo consolidation to port customs, we manage every stage of your sea logistics cycle.",
+    "serviceList": [
+      { "title": "Full Container Load (FCL)", "detail": "Dedicated container space for high-volume or single-owner shipments." },
+      { "title": "Less Than Container Load (LCL)", "detail": "Consolidated freight space to reduce shipping costs for small volumes." },
+      { "title": "NVOCC & Carrier Alliances", "detail": "Priority booking slots and competitive sea freight rates." },
+      { "title": "Port-to-Port & Door-to-Door", "detail": "End-to-end logistics coordination from factory origin to the sea destination port." },
+      { "title": "Customs & Port Handling", "detail": "Quick port clearance support with digital shipping bill processing." },
+      { "title": "Heavy & Project Cargo", "detail": "Specialist handling for oversized machinery, industrial goods and heavy units." }
+    ],
+    "ctaTitle": "Need Competitive Sea Freight Rates?",
+    "ctaDesc": "Get customized FCL/LCL sea freight quotes and vessel route schedules today.",
+    "ctaButton": "Request a Freight Quote →"
+  },
+  "customClearance": {
+    "monitorTitle": "Digital Customs Portal",
+    "activeStatus": "Automated e-Customs & Duty Clearance Status: Active",
+    "verifying": "Verifying shipping bills in progress",
+    "badge": "Customs Clearance Services",
+    "heroTitle": "Seamless Compliance for Global Trade with The DFL Group",
+    "heroTitleHighlight": "The DFL Group",
+    "heroDesc": "Choosing the right customs broker can be a complex and demanding task for shippers, importers and exporters. The DFL Group simplifies this by providing direct customs brokerage services through our platform, offering fast solutions at competitive rates.",
+    "consultButton": "Consult a Brokerage Expert",
+    "compliancePortal": "Trade Compliance Portal",
+    "dutyAssessment": "Quick Duty & Incentive Assessment",
+    "overviewBadge": "Clearance & Support",
+    "overviewTitle": "Comprehensive Customs & Trade Documentation",
+    "overviewSubtitle": "Simplifying international procedures, import/export duties and regulatory compliance.",
+    "highlights": [
+      {
+        "title": "Customs Clearance & Documentation Services",
+        "description": "Customs is a vital part of any international shipment. Before goods can enter or leave a country, the right documents must be submitted and the required customs procedures completed. At The DFL Group, we handle these requirements for you."
+      },
+      {
+        "title": "Support for Import & Export Shipments",
+        "description": "We handle customs clearance support for both import and export shipments. Our team works with shipment details and the necessary documents to complete the required customs formalities, avoiding unnecessary delays."
+      },
+      {
+        "title": "Documentation Support for International Trade",
+        "description": "Accurate paperwork makes the customs process much easier. Depending on the shipment, commercial invoices, packing lists, shipping documents, licenses or certificates may be required. Our team prepares and verifies these documents efficiently."
+      }
+    ],
+    "whyBadge": "Customs Capabilities",
+    "whyTitle": "Why Choose The DFL Group?",
+    "whySubtitle": "We use experienced trade specialists and automated platforms to speed up your port clearance.",
+    "whyItems": [
+      {
+        "title": "Fast Documentation",
+        "description": "We understand the urgency of import and export operations and ensure prompt documentation so you can focus on your core business."
+      },
+      {
+        "title": "Expert Broker Partners",
+        "description": "Highly experienced in clearing all types of goods: textiles, leather, automobiles, pharmaceuticals, perishable goods and much more."
+      },
+      {
+        "title": "Automated Documentation",
+        "description": "Quick online platform generation of invoices, airway bills, bills of lading, bills of exchange and shipping bills, in seconds."
+      },
+      {
+        "title": "Trade Compliance Solutions",
+        "description": "Assistance with obtaining government incentives and exemptions, preparing licenses and obtaining approvals from global trade authorities."
+      }
+    ],
+    "benefitsBadge": "Tangible Benefits",
+    "benefitsTitle": "The Strategic Value We Provide to Your Business",
+    "benefitsDesc": "Customs compliance is not just about avoiding penalties - it is a competitive advantage that accelerates your entire supply chain.",
+    "talkCompliance": "Talk to the Compliance Team",
+    "valueProps": [
+      {
+        "title": "Lower Costs",
+        "desc": "Reduce duty payments through proper documentation and accurate HS code classification, and avoid late fees and penalties."
+      },
+      {
+        "title": "Speed & Predictability",
+        "desc": "Faster customs clearance means better supply chain reliability and a significant reduction in transit time."
+      },
+      {
+        "title": "Regulatory Peace of Mind",
+        "desc": "With proactive expert guidance, stay fully compliant even as global customs regulations evolve."
+      },
+      {
+        "title": "Operational Efficiency",
+        "desc": "By offloading customs burdens, your team is free to focus on growing the business instead of paperwork."
+      }
+    ],
+    "industriesBadge": "Specialized Clearance",
+    "industriesTitle": "Industries We Support",
+    "industriesSubtitle": "Customized clearance protocols tailored to commodity-specific rules and trade licenses.",
+    "industries": [
+      "Manufacturing & Machinery",
+      "Retail & E-Commerce",
+      "Pharma & Healthcare",
+      "Electronics & Technology",
+      "Automotive Components",
+      "Perishable & Consumer Goods"
+    ],
+    "ctaTitle": "Ready for Hassle-Free Customs Clearance?",
+    "ctaDesc": "Prepare your shipping documents and pay port charges without any delay.",
+    "ctaButton": "Clear Your Shipment Now →"
+  },
+  "warehousing": {
+    "badge": "Warehouse Services",
+    "heroTitle": "Smart Warehousing Solutions with The DFL Group",
+    "heroTitleHighlight": "The DFL Group",
+    "heroDesc": "Optimize your supply chain with The DFL Group's all-inclusive inventory management solutions. In our drive for a digitally integrated supply chain, we provide warehousing services with complete transparency and real-time stock updates.",
+    "getStarted": "Get Started with DFL",
+    "smartWarehouseNetwork": "Smart Warehouse Network",
+    "realtimeInventory": "Real-Time Inventory Node: Active",
+    "automatedTracking": "Automated Stock Tracking",
+    "smartStorageControl": "Smart Storage Control",
+    "securityMonitoring": "24/7 Security & Inventory Monitoring",
+    "servicesOverview": "Services Overview",
+    "endToEnd": "End-to-End Warehousing & Distribution",
+    "endToEndDesc": "A complete look at how we securely store, manage and dispatch your goods.",
+    "highlights": [
+      {
+        "title": "Warehousing Solutions",
+        "description": "Finding the right place to store your goods is an important part of managing your supply chain. At The DFL Group, we provide warehousing support for businesses that need safe and organized storage."
+      },
+      {
+        "title": "Flexible Storage & Inventory Management",
+        "description": "Every business has different storage needs. Some may need space for regular stock, while others need to hold larger quantities for longer periods. Our services are arranged according to your requirements."
+      },
+      {
+        "title": "Warehousing & Distribution Support",
+        "description": "A warehouse is more than just a place to keep goods. It also plays an important role in delivering products to the right place at the right time. We seamlessly connect warehousing with transportation and distribution requirements."
+      }
+    ],
+    "coreCapabilities": "Core Capabilities",
+    "whyChoose": "Why Choose The DFL Group?",
+    "whyChooseDesc": "Smart warehousing solutions tested and customized by professionals for secure management.",
+    "whyItems": [
+      {
+        "title": "Inventory Management",
+        "description": "Our warehouses provide a controlled environment to manage and monitor stock levels, track product movements and ensure inventory matches customer demand."
+      },
+      {
+        "title": "Order Fulfillment",
+        "description": "Serving as strategic distribution centers, our warehouses ensure quick and accurate picking, packing and shipping of your products."
+      },
+      {
+        "title": "Risk Reduction",
+        "description": "We provide safe spaces for goods, protecting them from potential damage, theft or spoilage, which significantly lowers supply chain risks."
+      },
+      {
+        "title": "Logistics Optimization",
+        "description": "Strategically located warehouses help optimize overall logistics operations, reduce transportation costs and minimize total lead time."
+      }
+    ],
+    "uncompromising": "Uncompromising Quality",
+    "commitmentTitle": "Our Commitment to Supply Chain Security",
+    "commitmentDesc": "The DFL Group's commitment to providing reliable warehousing solutions strengthens the overall supply chain experience through modern facilities and seamless connectivity.",
+    "speakTeam": "Talk to the Warehouse Team",
+    "commitments": [
+      {
+        "title": "Advanced Security Systems",
+        "desc": "24/7 monitoring, multi-layer security and strict access control to prioritize the safety of your high-value inventory."
+      },
+      {
+        "title": "Strategic Node Locations",
+        "desc": "Smooth coordination between air, sea and road transport networks to streamline multi-modal freight transitions."
+      },
+      {
+        "title": "Digital Transparency",
+        "desc": "Real-time inventory status updates through our integrated platform for continuous monitoring and control."
+      },
+      {
+        "title": "Reduced Transit Risk",
+        "desc": "Minimizing the risks of spoilage, mishandling and unwanted delays through climate and handling control protocols."
+      }
+    ],
+    "ctaTitle": "Get Started with DFL's Smart Warehousing",
+    "ctaDesc": "Ready to make your inventory smarter? Let us help you transform your warehousing operations.",
+    "ctaButton": "Contact Us →"
+  },
+  "inlandTransport": {
+    "badge": "Surface Transport Services",
+    "heroTitle": "Upgrade Your Logistics Operations with Expert Inland Transport",
+    "heroTitleHighlight": "Inland Transport",
+    "heroDesc": "Road transport is the lifeline of inland logistics, offering unmatched flexibility and nationwide connectivity. At The DFL Group, we provide robust, door-to-door surface transport solutions.",
+    "consignmentHub": "Consignment Hub",
+    "activeRoute": "Active Route",
+    "destinationTerminal": "Destination Terminal",
+    "bookConsignment": "Book a Consignment",
+    "requestQuote": "Request a Quote",
+    "galleryLabels": [
+      "Highway Freight Transit",
+      "Smart Hub Consignments",
+      "Nationwide Express Fleet"
+    ],
+    "overviewBadge": "Inland Advantage",
+    "overviewTitle": "Why Road Transport Is Essential for Modern Businesses",
+    "overviewPara1": "Road transport allows goods to be moved seamlessly over land using an extensive highway network. This mode offers unmatched flexibility with minimal geographic limits.",
+    "overviewPara2": "Whether sending small consignments or heavy industrial materials, road freight provides direct access to places where rail, sea or air freight cannot reach directly.",
+    "statDoorToDoor": "100%",
+    "statDoorToDoorLabel": "Door-to-Door Access",
+    "statDispatch": "24/7",
+    "statDispatchLabel": "On-Demand Dispatch",
+    "ftlOptimization": "FTL & LTL Optimization",
+    "ftlOptimizationDesc": "Custom load-balancing for every shipment scale",
+    "modesBadge": "Flexible Capacity",
+    "modesTitle": "Customized Road Transport Options",
+    "modes": [
+      {
+        "badge": "Maximum Priority",
+        "title": "Full Truckload (FTL)",
+        "subtitle": "Dedicated fleet capacity",
+        "description": "Ideal for large shipments that require a full truck. Provides fast transit, direct delivery and maximum cargo security without any intermediate handling.",
+        "features": [
+          "Dedicated point-to-point transit",
+          "Zero intermediate offloading",
+          "Custom temperature control options",
+          "Real-time GPS fleet tracking"
+        ]
+      },
+      {
+        "badge": "Cost Saving",
+        "title": "Less-Than-Truckload (LTL)",
+        "subtitle": "Shared space & cost efficiency",
+        "description": "Perfect for smaller shipments where consignments from multiple customers share truck capacity, significantly reducing overall transit costs.",
+        "features": [
+          "Pay only for the volume used",
+          "Regular scheduled departures",
+          "Consolidated hub handling",
+          "Flexible volume adjustment"
+        ]
+      }
+    ],
+    "featuresBadge": "Key Features",
+    "featuresTitle": "Key Benefits of Road Freight",
+    "advantages": [
+      {
+        "title": "Access & Connectivity",
+        "description": "Extensive coverage across urban, suburban and rural areas ensures seamless supply chain movement."
+      },
+      {
+        "title": "Flexible Routes & Schedules",
+        "description": "Dynamic routing algorithms to optimize delivery routes, avoid traffic jams and speed up transit time."
+      },
+      {
+        "title": "Convenient Door-to-Door",
+        "description": "Direct end-to-end pickup and drop-off at your designated warehouse, retail point or hub."
+      },
+      {
+        "title": "Affordable Solutions",
+        "description": "Optimized load management and route efficiency to maximize freight budget efficiency."
+      }
+    ],
+    "whyUsBadge": "Why The DFL Group?",
+    "whyUsTitle": "Seamless & Simple Road Transport Logistics",
+    "whyUsDesc": "The DFL Group provides seamless, door-to-door road transport services, simplifying the entire supply chain process for our clients.",
+    "routingOptions": [
+      { "title": "Door-to-Door", "desc": "Direct pickup from the sender's address and delivery to the final destination without hub delays." },
+      { "title": "Door-to-Hub", "desc": "Consolidated drop at a regional logistics hub for convenient pickup and distribution." },
+      { "title": "Hub-to-Door", "desc": "Smooth terminal dispatch from the primary transit hub directly to the buyer's warehouse or retail centers." }
+    ],
+    "verifiedFleet": "Verified Fleet & Driver Standards",
+    "verifiedFleetDesc": "Eliminate the need for multiple local transport providers with DFL's integrated nationwide network."
+  },
+  "presence": {
+    "badge": "Our Presence",
+    "heroTitle": "Local Expertise, Global Reach",
+    "heroDesc": "At The DFL Group, our presence defines our strength, reliability and commitment to delivering exceptional logistics solutions around the world. We are more than just a logistics provider - we are a trusted partner ensuring seamless connectivity and operational excellence across industries and borders.",
+    "strategicTitle": "Strategic Locations Driving Operations",
+    "strategicDesc": "Our operations span multiple regions, blending global standards with local insight to create logistics solutions that meet diverse market needs. From bustling metropolises to remote industrial hubs, The DFL Group ensures your cargo reaches its destination, wherever it needs to go.",
+    "highlights": [
+      {
+        "title": "Global Network",
+        "description": "Serving clients across continents, we connect you to opportunities in international markets through strong supply chain management."
+      },
+      {
+        "title": "Advanced Infrastructure",
+        "description": "Our state-of-the-art warehouses and distribution centers ensure secure storage and efficient handling of goods."
+      },
+      {
+        "title": "Dedicated On-the-Ground Teams",
+        "description": "Local teams with specialized knowledge provide real-time support and insights, ensuring smooth logistics operations."
+      },
+      {
+        "title": "Customs & Compliance",
+        "description": "Our presence at major ports and trade zones simplifies international shipping with seamless customs clearance."
+      }
+    ],
+    "localTouch": "Local Touch",
+    "officesTitle": "Our Offices & Branches",
+    "officesSubtitle": "Dedicated to serving you at selected locations",
+    "countries": {
+      "all": "All Locations",
+      "india": "India",
+      "uk": "UK",
+      "thailand": "Thailand",
+      "dubai": "Dubai"
+    },
+    "cities": {
+      "noida": "Noida",
+      "mumbai": "Mumbai",
+      "ahmedabad": "Ahmedabad",
+      "nagina": "Nagina",
+      "vadodara": "Vadodara",
+      "uk": "United Kingdom",
+      "thailand": "Thailand",
+      "bangkok": "Bangkok Gateway",
+      "dubai-central": "Dubai World Central"
+    },
+    "addresses": {
+      "noida": "B 331, Logix Technova, Block B, Sector 132, Noida, Uttar Pradesh 201305",
+      "mumbai": "136, AGRAWAL TRADE CENTRE, PLOT No. 62, SECTOR 11, CBD BELAPUR 400614",
+      "ahmedabad": "D/1001, 10th Floor Titanium City Centre, Prahladnagar, 100 FT Road, Satellite, Ahmedabad, Gujarat - 380015",
+      "nagina": "Shop No 8, Ganna Samiti Road, Muneem Chowk, Lal Sarai...",
+      "vadodara": "LR-412, 04th Floor, Park Paradise Building, Vadsar, Vadodara, Near...",
+      "uk": "DFL international Logistics UK LTD ,400 Thames Valley park,Reading, United Kingdom, RG6 1PT,",
+      "thailand": "169 Soi Udomsuk 58, Nuer, Bangna, Bangkok 10260, Thailand",
+      "bangkok": "DFL International Co. Ltd,169 Soi Udomsuk 58, Nuer,Bangkok 10260 Bangna",
+      "dubai-central": "DFL International Logistics LLC,Office Number 102-11,CBD bank building,Next to Alain Center Al Mankhool Rd, Bur Dubai,"
+    }
+  },
+  "team": {
+    "badge": "Our Leadership",
+    "heroTitle": "Meet the Visionaries Behind The DFL Group",
+    "heroTitleHighlight": "The DFL Group",
+    "heroDesc": "At The DFL Group, we bring together a diverse team of supply chain strategists, trade compliance officers and logistics experts who ensure seamless global trade operations.",
+    "cards": [
+      {
+        "exp": "30+ Years of Experience",
+        "title": "Senior Leadership",
+        "desc": "Guiding long-term strategic growth and regulatory vision with three decades of freight mastery."
+      },
+      {
+        "exp": "10-20 Years of Experience",
+        "title": "Industry Experts",
+        "desc": "Managing complex customs clearance, air charters and multi-modal transit networks."
+      },
+      {
+        "exp": "5+ Years of Experience",
+        "title": "Operations Specialists",
+        "desc": "Executing daily dispatch routing, live cargo tracking and warehouse operations."
+      },
+      {
+        "exp": "Emerging Innovators",
+        "title": "Associate Collaborators",
+        "desc": "Bringing in technical automation, modern data analytics and responsive customer communication."
+      }
+    ],
+    "boardTitle": "Executive & Operations Board",
+    "boardSubtitle": "A dedicated team delivering logistics precision across global trade routes.",
+    "members": {
+      "1": {
+        "role": "Founder & CEO",
+        "bio": "15+ years of strategic leadership in global logistics and supply chain management."
+      },
+      "2": {
+        "role": "Chief Operating Officer (COO)",
+        "bio": "Expertise in operational scaling, fleet logistics and customer relationships."
+      },
+      "3": {
+        "role": "Head of Freight & Cargo",
+        "bio": "Specialist in air and sea freight forwarding with a focus on cross-border transport."
+      },
+      "4": {
+        "role": "Chief Financial Officer (CFO)",
+        "bio": "Manages financial strategy, risk management and corporate investment."
+      },
+      "5": {
+        "role": "Supply Chain Director",
+        "bio": "Optimizes end-to-end supply chain processes and warehouse systems."
+      },
+      "6": {
+        "role": "Head of Customs & Compliance",
+        "bio": "Ensures legal clearance, international trade regulations and documentation accuracy."
+      },
+      "7": {
+        "role": "General Manager",
+        "bio": "The driving force behind real-time package tracking and digital dashboards."
+      },
+      "8": {
+        "role": "Head of Sales",
+        "bio": "Dedicated to enterprise client relationships and 24/7 support execution."
+      },
+      "10": {
+        "role": "Sales Manager",
+        "bio": "Building a strong corporate culture and managing nationwide logistics staff."
+      },
+      "11": {
+        "role": "HR Manager",
+        "bio": "In charge of road vehicle logistics, route planning and fuel efficiency."
+      }
+    }
+  },
+  "modal": {
+    "title": "Talk to DFL Express",
+    "responseTime": "Quick response in about 2 minutes",
+    "whatsappTitle": "Chat on WhatsApp",
+    "whatsappSubtitle": "Connect directly with our 24/7 express dispatch desk.",
+    "openWhatsapp": "Open WhatsApp Chat →",
+    "ariaWhatsapp": "Open WhatsApp chat"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "goHome": "Go to Home Page"
+  },
+  "language": {
+    "selectLanguage": "Select Language"
+  }
+}

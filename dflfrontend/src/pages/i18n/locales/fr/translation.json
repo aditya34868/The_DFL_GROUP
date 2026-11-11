@@ -1,0 +1,1204 @@
+{
+  "common": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "contact": "Nous contacter",
+    "readMore": "Lire la suite",
+    "learnMore": "En savoir plus",
+    "submit": "Envoyer",
+    "close": "Fermer",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "getStarted": "Commencer",
+    "talkToSpecialist": "Parler à un spécialiste",
+    "getCustomQuote": "Obtenir un devis personnalisé",
+    "faqTitle": "Questions",
+    "faqTitleHighlight": "fréquentes",
+    "faqSubtitle": "Tout ce qu'il faut savoir sur nos services logistiques et l'expédition."
+  },
+  "navbar": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "ourPresence": "Notre présence",
+    "dflIt": "Solutions IT DFL",
+    "team": "Équipe",
+    "contact": "Nous contacter",
+    "talkToUs": "Parlez-nous",
+    "login": "Connexion",
+    "logistics": "Logistique",
+    "airFreight": "Fret aérien et transit",
+    "transportation": "Transport",
+    "oceanFreight": "Fret maritime et transit",
+    "customClearance": "Dédouanement",
+    "warehousing": "Entreposage"
+  },
+  "cards": {
+    "explore_service": "Découvrir le service →",
+    "get_quote": "Obtenir un devis instantané"
+  },
+  "services": {
+    "01": {
+      "name": "Fret aérien (transport aérien de marchandises)",
+      "tag": "Priorité aérienne et terrestre",
+      "description": "Services de fret aérien rapides et sécurisés dans le monde entier, avec suivi en temps réel pour les expéditions urgentes.",
+      "features": [
+        "Express",
+        "Couverture mondiale",
+        "Manutention sécurisée",
+        "Suivi en temps réel"
+      ]
+    },
+    "02": {
+      "name": "Fret maritime (transport maritime de marchandises)",
+      "tag": "Fret maritime et aérien",
+      "description": "Solutions de fret maritime économiques pour les expéditions volumineuses, avec options conteneur complet (FCL) et groupage (LCL).",
+      "features": [
+        "Économique et abordable",
+        "Grande capacité",
+        "Options FCL et LCL",
+        "Service de port à port"
+      ]
+    },
+    "03": {
+      "name": "Transport intérieur",
+      "tag": "Transport terrestre intérieur",
+      "description": "Services de transport routier et terrestre fiables couvrant les principaux axes, avec des horaires flexibles.",
+      "features": [
+        "Planning flexible",
+        "Service porte-à-porte",
+        "Couverture régionale",
+        "Véhicules de différentes tailles"
+      ]
+    },
+    "04": {
+      "name": "Dédouanement",
+      "tag": "Douane express",
+      "description": "Services de coursier rapides pour une livraison immédiate, avec options de livraison le jour même et le lendemain.",
+      "features": [
+        "Livraison le jour même",
+        "Options express",
+        "Livraison de documents",
+        "Preuve de livraison"
+      ]
+    }
+  },
+  "working": {
+    "01": {
+      "name": "Réservez votre expédition",
+      "description": "Réservez votre expédition en ligne rapidement et facilement, avec devis instantané, délais flexibles et tarifs en temps réel."
+    },
+    "02": {
+      "name": "Obtenez de meilleurs tarifs",
+      "description": "Comparez les options d'expédition disponibles et choisissez la solution adaptée à votre budget et à vos exigences de livraison."
+    },
+    "03": {
+      "name": "Suivez votre expédition",
+      "description": "Restez informé tout au long du trajet de livraison grâce au suivi d'expédition en temps réel."
+    },
+    "04": {
+      "name": "Livraison sans souci",
+      "description": "Profitez d'un processus de livraison fluide et fiable, avec des mises à jour régulières jusqu'à l'arrivée de votre expédition à destination."
+    }
+  },
+  "techFeatures": {
+    "tech-1": {
+      "title": "Global Logistics Pro Assured",
+      "description": "Garanties d'expédition premium avec protection complète et couverture d'assurance pour votre tranquillité d'esprit.",
+      "tag": "Sécurisé"
+    },
+    "tech-2": {
+      "title": "Contrats de fret",
+      "description": "Partenariats à long terme avec des tarifs compétitifs, un service prioritaire et une gestion de compte dédiée.",
+      "tag": "Entreprise"
+    },
+    "tech-3": {
+      "title": "Services NVOCC",
+      "description": "Réservation instantanée pour les expéditions urgentes, avec tarifs en temps réel et confirmation immédiate de la capacité.",
+      "tag": "Spot instantané"
+    },
+    "tech-4": {
+      "title": "Dédouanement",
+      "description": "Conditions de paiement flexibles avec options de crédit étendues et cycles de facturation personnalisables pour une meilleure trésorerie.",
+      "tag": "Sans souci"
+    },
+    "tech-5": {
+      "title": "Services RORO",
+      "description": "Cumulez des points sur chaque expédition pour de futures remises, des surclassements et des avantages de service exclusifs.",
+      "tag": "Récompenses"
+    },
+    "tech-6": {
+      "title": "Points d'accès prioritaires",
+      "description": "Avantages de service VIP, dont un traitement accéléré, une planification prioritaire et des canaux d'assistance dédiés.",
+      "tag": "Accès VIP"
+    }
+  },
+  "featuresSection": {
+    "badge": "Opérations de nouvelle génération",
+    "titlePart1": "Fonctionnalités",
+    "titleHighlight": "technologiques",
+    "titlePart2": "avancées",
+    "subtitle": "Des solutions innovantes conçues pour optimiser vos opérations logistiques",
+    "integratedLabel": "Technologie DFL intégrée"
+  },
+  "faqs": {
+    "01": {
+      "question": "Quels services The DFL Group propose-t-il ?",
+      "answer": "The DFL Group propose des solutions logistiques et de chaîne d'approvisionnement de bout en bout, notamment le fret aérien, le fret maritime, le transport intérieur, le dédouanement, l'entreposage, le courrier international et les services de fret."
+    },
+    "02": {
+      "question": "The DFL Group propose-t-il l'expédition internationale ?",
+      "answer": "Oui. Nous proposons aux entreprises des solutions logistiques internationales, notamment le fret aérien et maritime, le courrier international, le dédouanement et l'assistance pour les expéditions porte-à-porte."
+    },
+    "03": {
+      "question": "Quelle est la différence entre le fret aérien et le fret maritime ?",
+      "answer": "Le fret aérien convient généralement aux expéditions urgentes, tandis que le fret maritime est souvent utilisé pour les marchandises volumineuses ou lourdes, lorsque l'efficacité des coûts et une grande capacité sont essentielles."
+    },
+    "04": {
+      "question": "Proposez-vous des services de fret maritime FCL et LCL ?",
+      "answer": "Oui. The DFL Group propose des solutions de fret maritime FCL (conteneur complet) et LCL (groupage) selon les besoins de l'expédition."
+    },
+    "05": {
+      "question": "The DFL Group fournit-il des services de dédouanement ?",
+      "answer": "Oui. Nous assistons les entreprises dans la gestion de la documentation et des procédures douanières de leurs expéditions."
+    },
+    "06": {
+      "question": "Proposez-vous la livraison porte-à-porte ?",
+      "answer": "Oui. Selon le service et la destination, des solutions de transport et de livraison porte-à-porte sont disponibles."
+    },
+    "07": {
+      "question": "Puis-je suivre mon expédition ?",
+      "answer": "Oui. Le suivi des expéditions est disponible pour les services concernés, ce qui permet aux clients de suivre le déplacement de leur envoi et les mises à jour de livraison."
+    },
+    "08": {
+      "question": "Proposez-vous des services d'entreposage ?",
+      "answer": "Oui. The DFL Group fournit des services d'entreposage et un soutien logistique pour aider les entreprises à gérer le stockage, la manutention et le déplacement des expéditions."
+    },
+    "09": {
+      "question": "Pouvez-vous prendre en charge des marchandises volumineuses ou spéciales ?",
+      "answer": "Oui. Nos solutions logistiques peuvent être adaptées à différents types de marchandises, tailles d'expédition et exigences de transport."
+    },
+    "10": {
+      "question": "Comment obtenir un devis pour mon expédition ?",
+      "answer": "Pour obtenir un devis adapté, vous pouvez contacter The DFL Group en indiquant votre origine, votre destination, la description de la marchandise, le poids/volume et le mode de transport souhaité."
+    },
+    "11": {
+      "question": "Quels pays The DFL Group dessert-il ?",
+      "answer": "The DFL Group répond aux besoins logistiques internationaux sur de nombreux axes commerciaux mondiaux grâce à son réseau international et à ses partenaires logistiques."
+    },
+    "12": {
+      "question": "Comment contacter The DFL Group ?",
+      "answer": "Pour toute demande d'expédition, de devis ou d'assistance logistique, vous pouvez contacter notre équipe via la section « Nous contacter » (Contact Us) du site web."
+    },
+    "airFreight": {
+      "1": {
+        "question": "Qu'est-ce que le transit aérien (fret aérien) ?",
+        "answer": "Le transit aérien est le processus d'organisation et de gestion du transport de marchandises par voie aérienne. Il peut comprendre l'enlèvement de la marchandise, la documentation, la réservation auprès de la compagnie aérienne, le dédouanement, le suivi de l'expédition et la livraison finale."
+      },
+      "2": {
+        "question": "Quels types de marchandises peut-on expédier par avion ?",
+        "answer": "De nombreuses marchandises admissibles peuvent être expédiées par avion, notamment les produits commerciaux, les échantillons, l'électronique, les pièces de machines, les produits e-commerce, les biens de grande valeur et les expéditions urgentes. L'expédition doit respecter les exigences applicables des compagnies aériennes, de la douane et de la réglementation."
+      },
+      "3": {
+        "question": "Proposez-vous le dédouanement pour les expéditions aériennes ?",
+        "answer": "Oui. Nous fournissons une assistance au dédouanement et une aide à la documentation pour les expéditions aériennes admissibles, aidant les entreprises à gérer plus facilement le processus d'importation et d'exportation."
+      },
+      "4": {
+        "question": "Puis-je suivre mon expédition aérienne ?",
+        "answer": "Oui. Le suivi de l'expédition et les mises à jour régulières vous permettent de rester informé du déplacement et du statut de votre marchandise en transit."
+      },
+      "5": {
+        "question": "Pourquoi choisir le fret aérien plutôt que le fret maritime ?",
+        "answer": "Le fret aérien est généralement choisi lorsque la rapidité de livraison est essentielle. Il est particulièrement utile pour les expéditions urgentes, les échantillons de produits, les marchandises sensibles au temps et les envois devant atteindre des destinations internationales dans un délai court."
+      }
+    },
+    "transportation": {
+      "1": {
+        "question": "Qu'est-ce qu'un service de transport terrestre (routier) ?",
+        "answer": "Le transport terrestre est le déplacement de marchandises par la route, à l'aide de camions et d'autres véhicules de transport adaptés. Il peut être utilisé pour les expéditions sur courte, moyenne et longue distance."
+      },
+      "2": {
+        "question": "Quelle est la différence entre le transport FTL et LTL ?",
+        "answer": "FTL (camion complet) signifie que tout le camion est utilisé pour une seule expédition. LTL (groupage routier) permet à plusieurs expéditions de partager l'espace disponible dans un camion. Le bon choix dépend généralement de la taille et du volume de votre expédition."
+      },
+      "3": {
+        "question": "The DFL Group propose-t-il le transport porte-à-porte ?",
+        "answer": "Oui. Nous proposons un transport porte-à-porte complet, ainsi que des options porte-à-hub et hub-à-porte selon les besoins d'expédition et de livraison."
+      },
+      "4": {
+        "question": "Puis-je suivre mon expédition routière ?",
+        "answer": "Oui. Le suivi de l'expédition vous aide à rester informé de votre marchandise en transit et offre une meilleure visibilité sur la progression de l'envoi."
+      },
+      "5": {
+        "question": "Quels types de services de transport terrestre proposez-vous ?",
+        "answer": "Nos services de transport terrestre comprennent le transport FTL et LTL, la livraison du premier et du dernier kilomètre, le transport longue distance, la planification d'itinéraires, la coordination des véhicules et l'acheminement de marchandises porte-à-porte."
+      }
+    },
+    "oceanFreight": {
+      "1": {
+        "question": "Qu'est-ce que le fret maritime (transport maritime de marchandises) ?",
+        "answer": "Le fret maritime consiste à organiser le transport de marchandises par mer d'un pays à un autre. Il peut comprendre la réservation de l'expédition, la préparation des documents, la gestion des formalités douanières et la coordination de la livraison."
+      },
+      "2": {
+        "question": "Qu'est-ce que l'expédition FCL et LCL ?",
+        "answer": "FCL signifie Full Container Load (conteneur complet) : un conteneur entier est utilisé pour une seule expédition. LCL signifie Less than Container Load (groupage) : de petites expéditions se partagent l'espace d'un même conteneur."
+      },
+      "3": {
+        "question": "Quels types de marchandises peut-on expédier par voie maritime ?",
+        "answer": "De nombreux types de marchandises commerciales peuvent être transportés par mer, notamment les machines, les matières premières, les produits industriels, les équipements, les biens de consommation et d'autres expéditions commerciales admissibles."
+      },
+      "4": {
+        "question": "The DFL Group peut-il aider pour le dédouanement ?",
+        "answer": "Oui. Notre équipe peut coordonner le dédouanement et la documentation dans le cadre du processus global de fret maritime, ce qui facilite la gestion des expéditions à l'import et à l'export."
+      },
+      "5": {
+        "question": "Quand dois-je choisir le fret maritime ?",
+        "answer": "Le fret maritime est généralement un bon choix pour les expéditions volumineuses, lourdes ou encombrantes. Il est particulièrement utile lorsque vous transportez de grandes quantités de marchandises et que la rapidité de livraison n'est pas la priorité principale."
+      }
+    },
+    "customs": {
+      "1": {
+        "question": "Qu'est-ce que le dédouanement ?",
+        "answer": "Le dédouanement est le processus d'obtention de l'autorisation des autorités douanières pour l'entrée ou la sortie de marchandises lors d'une importation ou d'une exportation. Il comprend le dépôt des documents requis et l'accomplissement des formalités, après quoi les marchandises peuvent poursuivre leur acheminement."
+      },
+      "2": {
+        "question": "Quels documents sont nécessaires pour le dédouanement ?",
+        "answer": "Cela dépend du type de marchandise, de l'expédition et de la destination. En général, des documents tels que la facture commerciale, la liste de colisage et les documents d'expédition sont requis. Certains produits peuvent aussi nécessiter des licences, certificats ou autorisations supplémentaires."
+      },
+      "3": {
+        "question": "Proposez-vous le dédouanement à l'import comme à l'export ?",
+        "answer": "Oui. The DFL Group fournit une assistance au dédouanement pour les expéditions à l'import comme à l'export. Les exigences exactes dépendent de la marchandise et des règles applicables à l'expédition."
+      },
+      "4": {
+        "question": "Pouvez-vous aider pour la documentation douanière ?",
+        "answer": "Oui. Nous aidons les entreprises à organiser et à coordonner les documents nécessaires au dédouanement. Si des documents ou informations supplémentaires sont requis pendant le processus, notre équipe les coordonne également."
+      },
+      "5": {
+        "question": "Que se passe-t-il en cas d'erreur dans les documents douaniers ?",
+        "answer": "Si les documents sont incomplets ou contiennent des informations incorrectes, la douane peut demander des éclaircissements ou des documents supplémentaires. Cela peut retarder l'expédition et entraîner parfois des frais supplémentaires. C'est pourquoi il est important de préparer correctement les documents avant que l'expédition n'atteigne la douane."
+      }
+    },
+    "warehousing": {
+      "1": {
+        "question": "Qu'est-ce que l'entreposage en logistique ?",
+        "answer": "L'entreposage consiste à stocker des marchandises en toute sécurité dans une installation dédiée jusqu'à ce qu'elles soient prêtes à être expédiées, distribuées ou livrées. C'est une part importante de la gestion des flux de marchandises."
+      },
+      "2": {
+        "question": "Quels types de marchandises peut-on stocker dans un entrepôt ?",
+        "answer": "Divers biens commerciaux et professionnels peuvent être stockés selon leur taille, leur quantité, leur nature et leurs exigences de stockage. Les conditions de stockage appropriées peuvent varier d'un produit à l'autre."
+      },
+      "3": {
+        "question": "Proposez-vous un soutien à la gestion des stocks ?",
+        "answer": "Oui. Nos opérations d'entreposage peuvent comprendre la réception des marchandises, le stockage des inventaires, la gestion des stocks, la préparation des commandes et l'organisation des expéditions. Cela aide les entreprises à mieux suivre leurs marchandises."
+      },
+      "4": {
+        "question": "L'entreposage peut-il être combiné au transport ?",
+        "answer": "Oui. L'entreposage peut être combiné au transport, au transit et aux services de distribution. Cela permet de stocker les marchandises dans l'entrepôt et de les acheminer vers leur prochaine destination en cas de besoin."
+      },
+      "5": {
+        "question": "Comment l'entreposage peut-il aider mon entreprise ?",
+        "answer": "Un bon entreposage aide les entreprises à garder leurs stocks organisés et réduit la complexité de la gestion des marchandises aux différentes étapes de la chaîne d'approvisionnement. Il facilite aussi la préparation et l'expédition des marchandises selon les besoins."
+      }
+    }
+  },
+  "testimonials": {
+    "1": {
+      "quote": "Excellent service de livraison ! Ils ont géré toutes les complexités de la livraison et des douanes et ont rendu l'envoi de nos marchandises vers leur destination internationale extrêmement simple. Vivement recommandé."
+    },
+    "2": {
+      "quote": "Demira Freight Linkers India Private Limited est une très bonne entreprise, avec d'excellents services de coordination et de gestion. Travailler avec eux a vraiment été un plaisir !"
+    },
+    "3": {
+      "quote": "Un transport de marchandises sûr, ponctuel, transparent et sans souci, avec une responsabilité totale et une communication proactive."
+    }
+  },
+  "companyInfo": {
+    "brandName": "The DFL Group",
+    "legalName": "Demira Freight Linkers India Private Limited",
+    "tagline": "Conçu pour la rapidité, la fiabilité et la précision — votre partenaire de confiance en transit international et livraison express.",
+    "website": "www.thedflexpress.com",
+    "websiteUrl": "https://express.thedflgroup.com/"
+  },
+  "socialLinks": [
+    { "name": "Facebook", "url": "https://www.facebook.com/profile.php?id=61571763203265", "icon": "facebook" },
+    { "name": "Instagram", "url": "https://www.instagram.com/demirafreightlinkers/", "icon": "instagram" },
+    { "name": "LinkedIn", "url": "https://www.linkedin.com/company/the-dfl-group/", "icon": "linkedin" },
+    { "name": "X", "url": "https://x.com/the_dfl_group", "icon": "x" }
+  ],
+  "globalOffices": [
+    { "country": "Inde", "phone": "+91 93551 51122" },
+    { "country": "Thaïlande", "phone": "+66 623657862" },
+    { "country": "Émirats arabes unis", "phone": "+97 150 399 8139" },
+    { "country": "Royaume-Uni", "phone": "+44 7388 653479" }
+  ],
+  "servicesList": [
+    { "label": "Fret aérien", "path": "/services/air-freight-forwarding" },
+    { "label": "Fret maritime", "path": "/services/ocean-freight" },
+    { "label": "Dédouanement", "path": "/services/custom-clearance" },
+    { "label": "Transport", "path": "/services/transportation" },
+    { "label": "Entreposage", "path": "/services/warehousing" }
+  ],
+  "legalLinks": [
+    { "label": "Politique de confidentialité", "path": "/privacy-policy" },
+    { "label": "Conditions générales", "path": "/terms-conditions" }
+  ],
+  "footer": {
+    "company": "Entreprise",
+    "services": "Services",
+    "legalPolicies": "Politiques légales",
+    "globalOffices": "Bureaux dans le monde",
+    "connectWithUs": "Restez en contact",
+    "backToTop": "Haut de page",
+    "privacyPolicy": "Politique de confidentialité",
+    "termsConditions": "Conditions générales",
+    "home": "Accueil",
+    "aboutUs": "À propos",
+    "contactUs": "Nous contacter",
+    "followOn": "Suivez DFL Express sur {{name}}",
+    "copyright": "Copyright © {{year}} Tous droits réservés, The DFL Group | DFL Express | {{legalName}}."
+  },
+  "home": {
+    "title": "Solutions logistiques mondiales",
+    "subtitle": "Votre partenaire de confiance pour une logistique et un transport sans accroc.",
+    "heroBadge": "Opérations de coursier express et de fret actives dans tout le pays",
+    "highlights": [
+      "FAIRE AVANCER VOTRE ENTREPRISE.",
+      "UNE PORTÉE LOGISTIQUE MONDIALE INÉGALÉE",
+      "ÉQUIPE DE SUPPORT CLIENT DÉDIÉE 24/7",
+      "MANUTENTION SÉCURISÉE DES BIENS DE GRANDE VALEUR"
+    ],
+    "heroSubtitle": "DFL Express livre colis urgents, fret lourd et solutions de chaîne d'approvisionnement mondiales avec une précision GPS en temps réel.",
+    "liveDispatch": "Suivi d'expédition en direct",
+    "expressFleetActive": "Flotte express active",
+    "origin": "Origine : Hub central",
+    "destination": "Destination : Metro Direct",
+    "inTransit": "En transit - Voie rapide",
+    "trustedNetwork": "Intégrations de confiance et réseau mondial de transporteurs",
+    "ourNetwork": "Notre réseau",
+    "globalPresence": "Présence mondiale",
+    "networkDesc": "Grâce à un solide réseau international et à des partenaires stratégiques, nous connectons les entreprises aux marchés du monde entier.",
+    "ourServices": "Nos services",
+    "comprehensiveShipping": "Solutions complètes d'expédition et de fret",
+    "shippingDesc": "Services logistiques adaptés aux colis individuels, aux commandes e-commerce à grand volume ou au fret lourd des entreprises.",
+    "howItWorks": "Comment ça marche",
+    "howItWorksDesc": "De la réservation au paiement — gérez votre expédition en toute simplicité et avec une précision pilotée par la technologie.",
+    "clientSuccess": "Témoignages de réussite clients",
+    "whatClientsSay": "Ce que disent nos clients",
+    "clientsDesc": "De vraies entreprises. De vrais résultats. Voici ce que nos clients disent de leur collaboration avec DFL Group.",
+    "stats": {
+      "1": "Clients satisfaits",
+      "2": "Livraisons à l'heure",
+      "3": "Années d'excellence"
+    }
+  },
+  "about": {
+    "badge": "À propos de DFL Group",
+    "heroTitle": "Le prolongement de votre entreprise",
+    "heroTitleHighlight": "dans la logistique mondiale",
+    "heroPara": "Chez The Dfl Group, nous allons au-delà de la simple fourniture de services logistiques — nous devenons un prolongement à part entière de votre entreprise.",
+    "yearsExperience": "Années d'excellence mondiale",
+    "talkSpecialist": "Parler à un spécialiste",
+    "imageAboutAlt": "Aviation cargo DFL",
+    "imageWarehouseAlt": "Exécution automatisée des commandes",
+    "generalInfoBadge": "Informations générales",
+    "generalInfoTitle": "Présence mondiale, connaissance locale",
+    "generalInfoDesc": "Avec des bureaux en Inde, aux Émirats arabes unis, en Thaïlande et au Royaume-Uni, DFL Group est stratégiquement positionné pour fournir des solutions logistiques fiables dans le monde entier.",
+    "perspectiveBadge": "Perspective",
+    "visionTitle": "Notre vision",
+    "visionPara": "Devenir le premier choix de la logistique mondiale, reconnu pour l'innovation, l'excellence et une mentalité axée sur le client.",
+    "visionExtraPara": "La vision de The DFL Group : nous aspirons à devenir un partenaire logistique mondial de choix, reconnu pour l'innovation, la qualité de service et l'attention portée aux clients. En adoptant de nouvelles technologies et des pratiques durables, nous nous efforçons de mener le secteur de la logistique et de proposer les meilleures solutions pour votre entreprise.",
+    "commitmentBadge": "Engagement",
+    "missionTitle": "Notre mission",
+    "missionPara": "Devenir un expert de la logistique de projet centré sur le client, avec une approche flexible et adaptable.",
+    "journeyBadge": "Notre parcours",
+    "historyTitle": "Notre histoire",
+    "historyPara1": "Chez The Dfl Group, nous ne transportons pas seulement des marchandises — nous faisons avancer votre entreprise.",
+    "historyPara2": "Guidés par notre principe « Ensemble, nous grandissons », nous visons à bâtir des partenariats durables.",
+    "coreValuesTitle": "Valeurs fondamentales",
+    "coreValuesPara": "Nous respectons l'intégrité, la transparence et les normes éthiques.",
+    "coreValueLabel": "Valeur",
+    "strategicBadge": "Notre principal avantage stratégique",
+    "togetherWeGrow": "Ensemble, nous grandissons",
+    "togetherWeGrowHighlight": "avec The DFL Group",
+    "togetherPara": "Chez The DFL Group, nous allons au-delà de la simple fourniture de services logistiques.",
+    "endToEndTitle": "Solutions de bout en bout",
+    "endToEndDesc": "En tant que transitaire international de premier plan, nous fournissons une logistique adaptée à toutes les entreprises.",
+    "multimodalTitle": "Transport multimodal",
+    "multimodalDesc": "Combinaison des transports aérien, maritime et terrestre pour optimiser les délais d'acheminement.",
+    "customsTitle": "Douane et conformité",
+    "customsDesc": "Expertise pour naviguer dans des environnements réglementaires mondiaux complexes.",
+    "strategicPara1": "Les entreprises d'aujourd'hui évoluent dans un monde de plus en plus connecté, où les défis sont aussi variés et dynamiques que les marchés qu'elles servent. C'est pourquoi nous proposons non seulement des méthodes d'expédition traditionnelles, mais aussi des solutions innovantes et visionnaires qui anticipent les obstacles logistiques et les surmontent.",
+    "strategicPara2": "Nous sommes fiers de prendre en charge chaque étape de votre parcours logistique, de la planification initiale à la livraison finale, afin que chaque étape soit réalisée avec précision et dévouement. Grâce à notre engagement envers l'excellence, la fiabilité et la satisfaction client, nous veillons à ce que vos opérations logistiques se déroulent sans interruption.",
+    "guidingPrinciple": "Principe directeur",
+    "togetherTitle": "Ensemble, nous grandissons",
+    "togetherDesc": "Nous gérons les complexités de la logistique pour que vous puissiez vous concentrer sur la croissance de votre entreprise.",
+    "affiliatedBadge": "Entité affiliée",
+    "delishaTitle": "Delisha International",
+    "delishaDesc": "Delisha International est une société sœur de The DFL Group, opérant au sein du même écosystème logistique.",
+    "sisterConcern": "Société sœur de DFL",
+    "coreValues": [
+      { "title": "Intégrité et transparence", "desc": "Nous respectons les normes éthiques les plus élevées dans l'ensemble de nos opérations mondiales." },
+      { "title": "Innovation et excellence", "desc": "Aller au-delà des attentes grâce à une logistique fiable, ponctuelle et intelligente." },
+      { "title": "Durabilité", "desc": "Adopter des pratiques écologiques et des solutions logistiques durables dans le monde entier." },
+      { "title": "Avancer ensemble", "desc": "Établir des partenariats durables et mutuellement bénéfiques avec nos clients." }
+    ],
+    "highlights": [
+      "Fret aérien et maritime",
+      "Experts en dédouanement",
+      "Transport multimodal",
+      "Services de coursier personnalisés"
+    ]
+  },
+  "it": {
+    "badge": "Solutions IT DFL",
+    "heroTitle": "Donner aux entreprises les moyens d'agir grâce à des technologies IT avancées",
+    "heroTitleHighlight": "les moyens d'agir",
+    "heroPara": "Pour garder une longueur d'avance dans le paysage numérique rapide d'aujourd'hui, il ne suffit pas de suivre le changement : il faut de l'innovation, de l'efficacité et de la fiabilité. Chez The DFL Group, nous proposons des services IT complets conçus pour faire progresser votre entreprise, rationaliser vos opérations et améliorer votre productivité.",
+    "cloudServer": "Serveur cloud",
+    "liveDataStream": "Flux de données en direct",
+    "clientEndpoint": "Point de terminaison client",
+    "getStarted": "Commencer",
+    "teamBadge": "Direction et ressources humaines",
+    "teamTitle": "Rencontrez les architectes de l'innovation",
+    "teamDesc": "Une équipe d'ingénieurs expérimentés, d'architectes métier et de stratèges UI/UX qui conçoivent des solutions logicielles évolutives.",
+    "teamRoles": [
+      "Directeur",
+      "Mentor",
+      "Mentor",
+      "Mentor"
+    ],
+    "coreContributor": "Contributeur principal",
+    "connect": "Se connecter",
+    "servicesBadge": "Ce que nous faisons",
+    "servicesTitle": "Notre expertise et nos services",
+    "servicesDesc": "Des solutions numériques sur mesure, conçues avec des technologies de pointe pour donner un avantage concurrentiel à votre entreprise.",
+    "exploreSolution": "Découvrir la solution",
+    "services": [
+      {
+        "title": "Développement de logiciels sur mesure",
+        "description": "De l'idée au déploiement, nous créons des applications évolutives, sécurisées et faciles à utiliser, alignées sur vos objectifs commerciaux."
+      },
+      {
+        "title": "Solutions cloud",
+        "description": "Optimisez votre infrastructure grâce à des services de migration, d'intégration et de gestion cloud, pour des opérations fluides et des coûts réduits."
+      },
+      {
+        "title": "Support et maintenance IT",
+        "description": "Gardez l'esprit tranquille grâce à notre support IT proactif, qui assure le fonctionnement fluide et efficace de vos systèmes 24h/24 et 7j/7."
+      },
+      {
+        "title": "Services de cybersécurité",
+        "description": "Protégez votre entreprise contre les menaces en constante évolution grâce à des solutions de sécurité avancées, incluant évaluation des vulnérabilités, chiffrement des données et surveillance."
+      },
+      {
+        "title": "Analyse de données et BI",
+        "description": "Prenez de meilleures décisions grâce à des analyses basées sur les données, issues de nos outils de pointe d'analyse et de business intelligence."
+      },
+      {
+        "title": "Services IT managés",
+        "description": "Confiez-nous la responsabilité de votre infrastructure IT et concentrez-vous sur le développement de votre entreprise."
+      }
+    ],
+    "whyBadge": "Pourquoi nous choisir",
+    "whyTitle": "Construire une infrastructure IT haute performance",
+    "whyDesc": "Nous associons une expertise technique approfondie à une compréhension des enjeux métier pour créer des écosystèmes logiciels sécurisés, évolutifs et personnalisés qui accélèrent la transformation numérique.",
+    "uptimeLabel": "Disponibilité du service",
+    "supportLabel": "Support dédié",
+    "whyItems": [
+      {
+        "title": "Professionnels expérimentés",
+        "description": "Notre équipe d'experts certifiés garantit des solutions de qualité et un support dédié pour tous vos besoins IT."
+      },
+      {
+        "title": "Solutions sur mesure",
+        "description": "Deux entreprises ne sont jamais identiques. Nous adaptons nos services à vos besoins et objectifs uniques."
+      },
+      {
+        "title": "Services évolutifs",
+        "description": "Que vous soyez une start-up ou une grande entreprise, nos solutions évoluent avec votre activité."
+      },
+      {
+        "title": "Références éprouvées",
+        "description": "Notre portefeuille témoigne de collaborations réussies avec des entreprises de divers secteurs."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Nous contacter",
+    "name": "Nom",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "message": "Message",
+    "submit": "Envoyer",
+    "badge": "Nous contacter",
+    "pageTitle": "Comment pouvons-nous",
+    "pageTitleHighlight": "vous aider ?",
+    "subtitle": "Remplissez le formulaire ci-dessous et notre équipe d'assistance vous répondra dans les 24 heures.",
+    "fullName": "Nom complet",
+    "namePlaceholder": "John Doe",
+    "emailAddress": "Adresse e-mail",
+    "emailPlaceholder": "john@example.com",
+    "mobileNumber": "Numéro de mobile",
+    "phonePlaceholder": "+91 98765 43210",
+    "describeConcern": "Décrivez votre demande",
+    "messagePlaceholder": "Dites-nous en plus sur vos besoins ou votre expédition...",
+    "submitInquiry": "Envoyer la demande",
+    "successMessage": "Merci ! Votre message a bien été envoyé.",
+    "invalidEmail": "Veuillez saisir une adresse e-mail valide (par ex. john@example.com).",
+    "invalidPhone": "Veuillez saisir un numéro de téléphone valide (par ex. +91 9876543210)."
+  },
+  "airFreight": {
+    "badge": "Transit aérien",
+    "heroTitle": "Découvrez les solutions de fret aérien les plus rapides et les plus fiables avec The DFL Group",
+    "heroTitleHighlight": "The DFL Group",
+    "heroDesc": "Le fret aérien est la meilleure solution pour une logistique sensible au temps. Avec des horaires garantis, des hubs aéroportuaires hautement sécurisés et un traitement douanier express, nous maintenons votre chaîne d'approvisionnement en mouvement d'un continent à l'autre.",
+    "bookShipment": "Réserver une expédition aérienne",
+    "liveTransitMonitor": "Suivi du transit en direct",
+    "routeLabel": "Itinéraire actif : DEL → JFK (fret aérien express)",
+    "inFlightFreight": "Fret en vol",
+    "expressAirCharter": "Affrètement aérien express",
+    "guaranteedTransit": "Délai de transit garanti de 24 à 48 heures",
+    "coreCapabilities": "Capacités principales",
+    "completeSolutions": "Solutions complètes de fret aérien",
+    "highlights": [
+      {
+        "title": "Solutions fiables de transit aérien",
+        "description": "The DFL Group aide les entreprises à acheminer leurs marchandises rapidement et sans accroc grâce à des services de transit aérien fiables. Nous gérons l'ensemble du processus d'expédition, de l'enlèvement et de la planification à la coordination avec les compagnies aériennes, au dédouanement et à la livraison finale."
+      },
+      {
+        "title": "Fret aérien international rapide et efficace",
+        "description": "Lorsque votre expédition doit arriver rapidement à destination, le fret aérien est une option pratique et efficace. Nous coordonnons avec les compagnies aériennes et les partenaires logistiques pour que votre marchandise circule sans encombre de l'origine à la destination."
+      },
+      {
+        "title": "Gestion du fret aérien de bout en bout",
+        "description": "Le fret aérien ne se limite pas à déplacer des marchandises d'un aéroport à un autre. Chez The DFL Group, nous vous accompagnons tout au long du processus, notamment pour la documentation, le dédouanement, la manutention, le suivi et la coordination de la livraison."
+      }
+    ],
+    "trustedPartner": "Partenaire logistique de confiance",
+    "dedicatedForwarder": "The DFL Group, votre transitaire aérien dédié",
+    "dedicatedDesc": "Nous gérons chaque niveau des opérations aériennes mondiales, du fret aérien en groupage aux solutions d'affrètement dédiées à température contrôlée.",
+    "highValueCargo": "Fret de grande valeur",
+    "highValueDesc": "Emballage inviolable et transit suivi.",
+    "perishableLogistics": "Logistique des denrées périssables",
+    "perishableDesc": "Solutions de chaîne du froid pour les produits pharmaceutiques et alimentaires.",
+    "airportOps": "Opérations aéroportuaires",
+    "tarmacHandling": "Manutention directe du fret sur le tarmac et la piste",
+    "airFacilities": "Installations de fret aérien",
+    "globalTerminals": "Terminaux mondiaux et hubs express",
+    "facilitiesDesc": "Découvrez de plus près nos infrastructures dédiées au fret aérien et nos installations de manutention intelligentes.",
+    "facilities": [
+      {
+        "tag": "Hubs intégrés",
+        "title": "Terminaux cargo aéroportuaires intelligents",
+        "desc": "Entrepôts de grande capacité construits juste à côté des grandes pistes internationales pour réduire les délais de chargement."
+      },
+      {
+        "tag": "Premier et dernier kilomètre",
+        "title": "Flotte de rabattement express vers l'aéroport",
+        "desc": "Service routier dédié reliant directement les unités de production locales aux baies de fret de l'aéroport."
+      }
+    ],
+    "completeWorkflow": "Flux de travail complet",
+    "comprehensiveExecution": "Exécution complète de bout en bout",
+    "endToEnd": [
+      { "title": "Enlèvement et transport de la marchandise", "detail": "Enlèvement à domicile avec suivi GPS" },
+      { "title": "Emballage professionnel", "detail": "Emballage aux normes IATA pour marchandises sensibles à la température ou fragiles" },
+      { "title": "Chargement et déchargement", "detail": "Manutention automatisée des palettes en entrepôt" },
+      { "title": "Stockage sécurisé", "detail": "Zones de stockage aéroportuaires sous vidéosurveillance 24h/24 et 7j/7" },
+      { "title": "Services d'entrepôt aéroportuaire", "detail": "Traitement express à proximité de la piste" },
+      { "title": "Assistance au dédouanement", "detail": "Vérification accélérée des documents" }
+    ],
+    "techDriven": "Opérations pilotées par la technologie",
+    "smartFaster": "Fret aérien intelligent, rapide et efficace",
+    "smartFeatures": [
+      {
+        "title": "Entreposage aéroportuaire stratégique",
+        "description": "Situé près des principaux hubs aéroportuaires pour éliminer les retards de transport et optimiser les temps de chargement du fret."
+      },
+      {
+        "title": "Documentation numérisée",
+        "description": "Dépôts douaniers automatisés et lettre de transport aérien numérique (e-AWB) qui suppriment les tracas de la paperasse manuelle."
+      },
+      {
+        "title": "Réseau direct de compagnies aériennes",
+        "description": "Capacité prioritaire en soute et créneaux d'affrètement dédiés sur les grandes routes aériennes mondiales."
+      },
+      {
+        "title": "Optimisation des itinéraires par IA",
+        "description": "Moteurs intelligents qui prévoient les horaires de vol en temps réel pour optimiser les coûts et les délais."
+      }
+    ],
+    "ctaTitle": "Prêt à expédier votre fret urgent ?",
+    "ctaDesc": "Obtenez un devis personnalisé de fret aérien et des horaires de vol immédiats.",
+    "ctaButton": "Obtenir un devis personnalisé →"
+  },
+  "transportation": {
+    "monitorTitle": "Suivi du transit terrestre",
+    "activeRoute": "Itinéraire actif : Delhi NCR → corridor de fret Mumbai",
+    "inTransit": "Camions chargés en transit",
+    "badge": "Service de transport terrestre",
+    "heroTitle": "Améliorez votre logistique grâce au transport intérieur expert de The DFL Group",
+    "heroTitleHighlight": "The DFL Group",
+    "heroDesc": "Le transport routier est un élément essentiel de la logistique intérieure : il permet d'acheminer les marchandises sur terre grâce à un vaste réseau routier. Avec une flexibilité maximale et des limites géographiques minimales, nous gérons sans effort les petites comme les grandes expéditions.",
+    "bookButton": "Réserver un transport routier",
+    "fleetBadge": "Flotte express sur autoroute",
+    "fleetCoverage": "Couverture du réseau dans toute l'Inde",
+    "overviewBadge": "Aperçu",
+    "overviewTitle": "Transport terrestre de bout en bout",
+    "overviewSubtitle": "Découvrez comment nous relions villes, centres de distribution et entreprises grâce à une logistique routière efficace.",
+    "highlights": [
+      {
+        "title": "Solutions fiables de transport terrestre",
+        "description": "The DFL Group propose des services de transport terrestre fiables aux entreprises qui doivent acheminer leurs marchandises par la route de façon sûre et efficace. Nous gérons tous types d'expéditions, des petits colis aux camions complets, entre villes, États et centres de distribution."
+      },
+      {
+        "title": "Besoins flexibles en transport routier",
+        "description": "Chaque expédition a des besoins différents. C'est pourquoi nous proposons des options FTL (camion complet) et LTL (groupage routier). Que vous ayez besoin d'un camion entier ou d'une petite expédition, nous vous aidons à choisir la solution adaptée."
+      },
+      {
+        "title": "Acheminement fluide des marchandises",
+        "description": "Nous gérons les différentes étapes du transport routier pour faciliter le processus d'expédition des entreprises. Cela comprend la coordination de l'enlèvement, la planification d'itinéraire, la manutention et la livraison. Grâce au suivi, vous restez informé tout au long du transit."
+      }
+    ],
+    "whyBadge": "Pourquoi choisir la logistique routière ?",
+    "whyTitle": "Solutions de fret intérieur flexibles et économiques",
+    "whyDesc": "La logistique routière offre un équilibre idéal entre coût et rapidité. Que vous ayez besoin d'un véhicule entier ou seulement d'un espace partagé, nos solutions spécialisées maintiennent votre chaîne d'approvisionnement en mouvement.",
+    "ftlTitle": "Camion complet (FTL)",
+    "ftlDesc": "Utilisation exclusive de toute la capacité du camion par un seul expéditeur.",
+    "ltlTitle": "Groupage routier (LTL)",
+    "ltlDesc": "Espace de camion partagé qui réduit le coût global du transit.",
+    "seamlessOps": "Opérations fluides",
+    "doorToDoorPickup": "Enlèvement et expédition porte-à-porte intégrés",
+    "advantagesBadge": "Principaux avantages",
+    "advantagesTitle": "Pourquoi transporter avec The DFL Group ?",
+    "advantagesSubtitle": "Nous supprimons le besoin de multiples transporteurs locaux en offrant un réseau de transit intérieur unique et très fiable.",
+    "advantagesItems": [
+      {
+        "title": "Connectivité étendue",
+        "description": "Accès direct aux zones reculées comme urbaines, avec des limites géographiques minimales."
+      },
+      {
+        "title": "Itinéraires et horaires flexibles",
+        "description": "Horaires de départ et itinéraires de transit personnalisables selon l'urgence de la livraison."
+      },
+      {
+        "title": "Livraison porte-à-porte",
+        "description": "Enlèvement en un seul point et livraison directe à la destination finale, sans tracas supplémentaires."
+      },
+      {
+        "title": "Solutions économiques",
+        "description": "Tarification FTL et LTL optimisée pour réduire les dépenses opérationnelles."
+      }
+    ],
+    "modelsBadge": "Options sur mesure",
+    "modelsTitle": "Modèles de transport routier polyvalents",
+    "modelsSubtitle": "Choisissez des options d'exécution logistique flexibles : porte-à-porte, porte-à-hub ou hub-à-porte.",
+    "modelsItems": [
+      {
+        "title": "Camion complet (FTL)",
+        "detail": "Idéal pour les expéditions volumineuses nécessitant un camion entier dédié, pour une sécurité et une rapidité maximales."
+      },
+      {
+        "title": "Groupage routier (LTL)",
+        "detail": "Modèle de partage des coûts pour les petites marchandises, en combinant les expéditions sur des itinéraires partagés."
+      },
+      {
+        "title": "Service porte-à-porte",
+        "detail": "Gestion de bout en bout, de l'entrepôt du vendeur directement à la porte du client."
+      },
+      {
+        "title": "Logistique porte-à-hub",
+        "detail": "Enlèvement sur le site de l'usine et dépôt dans un hub de distribution régional central."
+      },
+      {
+        "title": "Express hub-à-porte",
+        "detail": "Acheminement rapide depuis le hub de transit principal vers les adresses des clients."
+      },
+      {
+        "title": "Flotte suivie par GPS",
+        "detail": "Surveillance de l'itinéraire et suivi de la vitesse en temps réel pour une visibilité complète de l'expédition."
+      }
+    ],
+    "ctaTitle": "Prêt à optimiser votre logistique routière ?",
+    "ctaDesc": "Réservez un enlèvement immédiatement et obtenez dès aujourd'hui des tarifs FTL et LTL compétitifs.",
+    "ctaButton": "Obtenir un devis de fret →"
+  },
+  "oceanFreight": {
+    "monitorTitle": "Suivi du transit maritime",
+    "activeVessel": "Navire actif : Nhava Sheva → port de Rotterdam",
+    "inTransit": "Fret en navire océanique",
+    "badge": "Transit maritime",
+    "heroTitle": "Services fiables de transit maritime avec The DFL Group",
+    "heroTitleHighlight": "The DFL Group",
+    "heroDesc": "L'expédition de marchandises par mer exige une planification et une coordination approfondies. Chez The DFL Group, nous aidons les entreprises à gérer leurs expéditions maritimes internationales de bout en bout, avec des solutions logistiques fiables et rentables.",
+    "bookButton": "Réserver un conteneur maritime",
+    "globalCarrier": "Réseau mondial de transporteurs",
+    "fclLclSolutions": "Solutions de fret maritime FCL et LCL",
+    "overviewBadge": "Aperçu et assistance",
+    "overviewTitle": "Solutions d'expédition maritime de bout en bout",
+    "overviewSubtitle": "Nous rendons l'expédition maritime simple, organisée et sans souci pour les entreprises du monde entier.",
+    "highlights": [
+      {
+        "title": "Services fiables de transit maritime",
+        "description": "L'expédition de marchandises par mer demande beaucoup de planification et de coordination. Chez The DFL Group, nous aidons les entreprises à gérer l'ensemble de l'expédition, y compris la réservation, la documentation, la manutention, le dédouanement et la livraison."
+      },
+      {
+        "title": "Options d'expédition FCL et LCL",
+        "description": "Chaque entreprise a des besoins différents. C'est pourquoi nous proposons les services FCL (conteneur complet) et LCL (groupage). Notre équipe vous aide à choisir la bonne option selon la taille de votre expédition."
+      },
+      {
+        "title": "Assistance complète pour les expéditions maritimes internationales",
+        "description": "Une expédition maritime ne se limite pas à déplacer la marchandise d'un port à un autre. De l'organisation de l'enlèvement à la manutention portuaire et à la livraison finale, notre équipe coordonne chaque étape avec les partenaires d'expédition."
+      }
+    ],
+    "whyBadge": "Pourquoi choisir le fret maritime ?",
+    "whyTitle": "Un transport économique pour les marchandises volumineuses et lourdes",
+    "whyDesc": "Le fret maritime est le moyen le plus rentable de transporter de grandes quantités de marchandises sur de longues distances. Idéal pour les biens lourds, volumineux ou non urgents, il offre deux principales options d'expédition flexibles :",
+    "fclTitle": "Conteneur complet (FCL)",
+    "fclDesc": "Un conteneur entier réservé exclusivement à votre expédition.",
+    "lclTitle": "Groupage (LCL)",
+    "lclDesc": "Espace de conteneur partagé pour les petites marchandises soucieuses des coûts.",
+    "portOps": "Opérations portuaires",
+    "portPartnerships": "Partenariats directs de port à port et avec des transporteurs NVOCC",
+    "specsBadge": "Guide des spécifications",
+    "specsTitle": "Spécifications des conteneurs de fret maritime",
+    "specsSubtitle": "Comparez les dimensions, les poids à vide et les charges utiles des tailles de conteneurs standard.",
+    "tableHeaders": {
+      "containerType": "Type de conteneur",
+      "c20ft": "20 pieds",
+      "c40ft": "40 pieds",
+      "c40ftHc": "40 pieds High Cube",
+      "externalDim": "Dimensions extérieures (L x l x H)",
+      "internalDim": "Dimensions intérieures (L x l x H)",
+      "doorOpening": "Dimensions de la porte (l x H)",
+      "tareWeight": "Poids à vide (tare)",
+      "payload": "Charge utile (poids net)",
+      "maxGross": "Poids brut maximal"
+    },
+    "whyUsBadge": "Pourquoi nous choisir",
+    "whyUsTitle": "Pourquoi The DFL Group pour le fret maritime ?",
+    "whyUsSubtitle": "Nous rationalisons les opérations de fret maritime grâce à des services logistiques numériques et à des professionnels de la logistique mondiale expérimentés.",
+    "features": [
+      {
+        "title": "Réseau mondial de transporteurs",
+        "description": "Contrats directs avec les principaux transporteurs maritimes mondiaux, manutentionnaires portuaires et NVOCC dans le monde entier."
+      },
+      {
+        "title": "Manutention sécurisée et conforme",
+        "description": "Manutention experte pour les marchandises lourdes, hors gabarit, les machines et les équipements spéciaux."
+      },
+      {
+        "title": "Options FCL et LCL flexibles",
+        "description": "Options de conteneur complet et de conteneur partagé adaptées à votre budget."
+      },
+      {
+        "title": "Suivi numérique et horaires",
+        "description": "Technologie avancée pour le suivi des navires et la simplification de la documentation portuaire."
+      }
+    ],
+    "servicesBadge": "Services complets",
+    "servicesTitle": "Capacités logistiques maritimes de bout en bout",
+    "servicesSubtitle": "De la consolidation du fret à la douane portuaire, nous gérons toutes les étapes de votre cycle logistique maritime.",
+    "serviceList": [
+      { "title": "Conteneur complet (FCL)", "detail": "Espace de conteneur dédié pour les expéditions à gros volume ou à propriétaire unique." },
+      { "title": "Groupage (LCL)", "detail": "Espace de fret consolidé pour réduire les coûts d'expédition des petits volumes." },
+      { "title": "NVOCC et alliances de transporteurs", "detail": "Créneaux de réservation prioritaires et tarifs de fret maritime compétitifs." },
+      { "title": "De port à port et porte-à-porte", "detail": "Coordination logistique de bout en bout, de l'usine d'origine au port de destination." },
+      { "title": "Douane et manutention portuaire", "detail": "Assistance rapide au dédouanement portuaire avec traitement numérique des déclarations d'expédition." },
+      { "title": "Fret lourd et de projet", "detail": "Manutention experte pour les machines hors gabarit, les biens industriels et les unités lourdes." }
+    ],
+    "ctaTitle": "Besoin de tarifs de fret maritime compétitifs ?",
+    "ctaDesc": "Obtenez dès aujourd'hui des devis maritimes FCL/LCL personnalisés et les horaires des navires.",
+    "ctaButton": "Demander un devis de fret →"
+  },
+  "customClearance": {
+    "monitorTitle": "Portail douanier numérique",
+    "activeStatus": "Statut du dédouanement électronique automatisé et des droits : actif",
+    "verifying": "Vérification des déclarations d'expédition en cours",
+    "badge": "Services de dédouanement",
+    "heroTitle": "Une conformité sans faille pour le commerce mondial avec The DFL Group",
+    "heroTitleHighlight": "The DFL Group",
+    "heroDesc": "Choisir le bon courtier en douane peut être une tâche complexe et fastidieuse pour les expéditeurs, importateurs et exportateurs. The DFL Group simplifie les choses grâce à des services de courtage en douane directement via notre plateforme — des solutions rapides à des tarifs compétitifs.",
+    "consultButton": "Consulter un expert en courtage",
+    "compliancePortal": "Portail de conformité commerciale",
+    "dutyAssessment": "Évaluation rapide des droits et incitations",
+    "overviewBadge": "Dédouanement et assistance",
+    "overviewTitle": "Documentation douanière et commerciale complète",
+    "overviewSubtitle": "Simplifier les procédures internationales, les droits d'importation/exportation et la conformité réglementaire.",
+    "highlights": [
+      {
+        "title": "Services de dédouanement et de documentation",
+        "description": "La douane est un élément essentiel de toute expédition internationale. Avant que les marchandises puissent entrer dans un pays ou en sortir, il faut déposer les bons documents et accomplir les procédures douanières requises. Chez The DFL Group, nous prenons en charge ces exigences."
+      },
+      {
+        "title": "Assistance pour les expéditions à l'import et à l'export",
+        "description": "Nous gérons l'assistance au dédouanement des expéditions à l'import comme à l'export. Notre équipe travaille avec les détails de l'expédition et les documents nécessaires pour accomplir les formalités douanières requises, afin d'éviter les retards inutiles."
+      },
+      {
+        "title": "Aide à la documentation pour le commerce international",
+        "description": "Des documents précis facilitent grandement le processus douanier. Selon l'expédition, des factures commerciales, listes de colisage, documents d'expédition, licences ou certificats peuvent être nécessaires. Notre équipe prépare et vérifie ces documents efficacement."
+      }
+    ],
+    "whyBadge": "Capacités douanières",
+    "whyTitle": "Pourquoi choisir The DFL Group ?",
+    "whySubtitle": "Nous mobilisons des experts du commerce expérimentés et des plateformes automatisées pour accélérer votre dédouanement portuaire.",
+    "whyItems": [
+      {
+        "title": "Documentation rapide",
+        "description": "Nous comprenons l'urgence des opérations d'import et d'export et assurons un traitement rapide des documents pour que vous puissiez vous concentrer sur votre cœur de métier."
+      },
+      {
+        "title": "Partenaires courtiers experts",
+        "description": "Grande expérience du dédouanement de tous types de marchandises : textiles, cuir, automobiles, produits pharmaceutiques, denrées périssables, et bien plus encore."
+      },
+      {
+        "title": "Documentation automatisée",
+        "description": "Génération instantanée en ligne, en quelques secondes, de factures, lettres de transport aérien, connaissements, lettres de change et déclarations d'expédition."
+      },
+      {
+        "title": "Solutions de conformité commerciale",
+        "description": "Aide pour obtenir des incitations et remises gouvernementales, préparer des licences et obtenir les autorisations des autorités commerciales mondiales."
+      }
+    ],
+    "benefitsBadge": "Avantages concrets",
+    "benefitsTitle": "La valeur stratégique que nous apportons à votre entreprise",
+    "benefitsDesc": "La conformité douanière ne consiste pas seulement à éviter les pénalités : c'est un avantage concurrentiel qui accélère toute votre chaîne d'approvisionnement.",
+    "talkCompliance": "Parler à l'équipe conformité",
+    "valueProps": [
+      {
+        "title": "Coûts réduits",
+        "desc": "Réduisez le paiement des droits et évitez les frais de retard ou les pénalités grâce à une documentation correcte et à un classement précis par code SH."
+      },
+      {
+        "title": "Rapidité et prévisibilité",
+        "desc": "Un dédouanement rapide signifie une meilleure fiabilité de la chaîne d'approvisionnement et une réduction significative des délais de transit."
+      },
+      {
+        "title": "Sécurité réglementaire",
+        "desc": "Grâce à un accompagnement expert proactif, restez en pleine conformité même lorsque les règles douanières mondiales évoluent."
+      },
+      {
+        "title": "Efficacité opérationnelle",
+        "desc": "En nous confiant la charge douanière, votre équipe peut se consacrer à la croissance de l'entreprise plutôt qu'à la paperasse."
+      }
+    ],
+    "industriesBadge": "Dédouanement spécialisé",
+    "industriesTitle": "Secteurs que nous accompagnons",
+    "industriesSubtitle": "Protocoles de dédouanement sur mesure, adaptés aux réglementations propres à chaque marchandise et aux licences commerciales.",
+    "industries": [
+      "Fabrication et machines",
+      "Commerce de détail et e-commerce",
+      "Pharmacie et santé",
+      "Électronique et technologie",
+      "Composants automobiles",
+      "Denrées périssables et biens de consommation"
+    ],
+    "ctaTitle": "Prêt pour un dédouanement sans souci ?",
+    "ctaDesc": "Préparez vos documents d'expédition et payez les frais portuaires sans retard.",
+    "ctaButton": "Dédouaner l'expédition maintenant →"
+  },
+  "warehousing": {
+    "badge": "Services d'entreposage",
+    "heroTitle": "Solutions d'entreposage intelligentes avec The DFL Group",
+    "heroTitleHighlight": "The DFL Group",
+    "heroDesc": "Optimisez votre chaîne d'approvisionnement grâce aux solutions complètes de gestion des stocks de The DFL Group. Dans notre démarche de chaîne d'approvisionnement numériquement intégrée, nous proposons des services d'entreposage avec une transparence totale et des mises à jour des stocks en temps réel.",
+    "getStarted": "Commencer avec DFL",
+    "smartWarehouseNetwork": "Réseau d'entrepôts intelligents",
+    "realtimeInventory": "Nœud d'inventaire en temps réel : actif",
+    "automatedTracking": "Suivi automatisé des stocks",
+    "smartStorageControl": "Contrôle intelligent du stockage",
+    "securityMonitoring": "Surveillance de la sécurité et des stocks 24h/24 et 7j/7",
+    "servicesOverview": "Aperçu des services",
+    "endToEnd": "Entreposage et distribution de bout en bout",
+    "endToEndDesc": "Un aperçu complet de la façon dont nous stockons, gérons et expédions vos marchandises en toute sécurité.",
+    "highlights": [
+      {
+        "title": "Solutions d'entreposage",
+        "description": "Trouver le bon endroit pour stocker vos marchandises est un élément essentiel de la gestion de votre chaîne d'approvisionnement. Chez The DFL Group, nous proposons un soutien en entreposage aux entreprises qui ont besoin d'un stockage sûr et organisé."
+      },
+      {
+        "title": "Stockage flexible et gestion des stocks",
+        "description": "Chaque entreprise a des besoins de stockage différents. Certaines ont besoin d'espace pour des stocks courants, d'autres pour conserver de gros volumes pendant de longues périodes. Nos services sont organisés selon vos besoins."
+      },
+      {
+        "title": "Soutien à l'entreposage et à la distribution",
+        "description": "Un entrepôt n'est pas qu'un lieu où conserver des marchandises. Il joue aussi un rôle important pour acheminer les produits au bon endroit au bon moment. Nous relions l'entreposage de manière fluide à vos besoins de transport et de distribution."
+      }
+    ],
+    "coreCapabilities": "Capacités principales",
+    "whyChoose": "Pourquoi choisir The DFL Group ?",
+    "whyChooseDesc": "Des solutions d'entreposage intelligentes, éprouvées par des professionnels et adaptées à une gestion sécurisée.",
+    "whyItems": [
+      {
+        "title": "Gestion des stocks",
+        "description": "Nos entrepôts offrent des environnements contrôlés pour gérer et surveiller les niveaux de stock, suivre les mouvements de produits et assurer que les stocks répondent aux demandes des clients."
+      },
+      {
+        "title": "Préparation des commandes",
+        "description": "Servant de centres de distribution stratégiques, nos entrepôts garantissent un prélèvement, un emballage et une expédition rapides et précis de vos produits."
+      },
+      {
+        "title": "Réduction des risques",
+        "description": "Nous offrons un lieu sûr pour les marchandises, les protégeant des dommages, du vol ou de la détérioration, ce qui réduit considérablement les risques de la chaîne d'approvisionnement."
+      },
+      {
+        "title": "Optimisation logistique",
+        "description": "Des entrepôts stratégiquement situés aident à optimiser l'ensemble des opérations logistiques, à réduire les coûts de transport et à minimiser les délais globaux."
+      }
+    ],
+    "uncompromising": "Qualité sans compromis",
+    "commitmentTitle": "Notre engagement pour la sécurité de la chaîne d'approvisionnement",
+    "commitmentDesc": "L'engagement de The DFL Group à fournir des solutions d'entreposage fiables renforce l'expérience globale de la chaîne d'approvisionnement grâce à des installations modernes et une connectivité sans faille.",
+    "speakTeam": "Parler à l'équipe entrepôt",
+    "commitments": [
+      {
+        "title": "Systèmes de sécurité avancés",
+        "desc": "Surveillance 24h/24 et 7j/7, sécurité multicouche et contrôles d'accès stricts pour protéger en priorité vos stocks de grande valeur."
+      },
+      {
+        "title": "Emplacements stratégiques des nœuds",
+        "desc": "Coordination fluide entre les réseaux de transport aérien, maritime et routier pour simplifier les transitions de fret multimodal."
+      },
+      {
+        "title": "Transparence numérique",
+        "desc": "Mises à jour du statut des stocks en temps réel via notre plateforme intégrée, pour une surveillance et un contrôle continus."
+      },
+      {
+        "title": "Réduction des risques en transit",
+        "desc": "Réduction au minimum des risques de détérioration, de mauvaise manipulation et de retards indésirables grâce à des protocoles de contrôle climatique et de manutention."
+      }
+    ],
+    "ctaTitle": "Démarrez avec l'entreposage intelligent de DFL",
+    "ctaDesc": "Prêt à rendre vos stocks plus intelligents ? Laissez-nous vous aider à transformer vos opérations d'entreposage.",
+    "ctaButton": "Nous contacter →"
+  },
+  "inlandTransport": {
+    "badge": "Services de transport terrestre",
+    "heroTitle": "Améliorez vos opérations logistiques grâce au transport intérieur expert",
+    "heroTitleHighlight": "transport intérieur",
+    "heroDesc": "Le transport routier est le moteur de la logistique intérieure, offrant une flexibilité inégalée et une connectivité à l'échelle nationale. Chez The DFL Group, nous proposons des solutions de transport terrestre robustes, porte-à-porte.",
+    "consignmentHub": "Hub d'expédition",
+    "activeRoute": "Itinéraire actif",
+    "destinationTerminal": "Terminal de destination",
+    "bookConsignment": "Réserver un envoi",
+    "requestQuote": "Demander un devis",
+    "galleryLabels": [
+      "Transit de fret sur autoroute",
+      "Envois via hub intelligent",
+      "Flotte express à l'échelle nationale"
+    ],
+    "overviewBadge": "Avantage du transport intérieur",
+    "overviewTitle": "Pourquoi le transport routier est essentiel pour les entreprises modernes",
+    "overviewPara1": "Le transport routier permet de déplacer les marchandises sur terre sans interruption grâce à un vaste réseau autoroutier. Ce mode offre une flexibilité inégalée avec des limites géographiques minimales.",
+    "overviewPara2": "Qu'il s'agisse d'expédier de petits envois ou des matériaux industriels lourds, le fret routier offre un accès direct à des lieux que le rail, la mer ou l'air ne peuvent pas atteindre directement.",
+    "statDoorToDoor": "100%",
+    "statDoorToDoorLabel": "Accès porte-à-porte",
+    "statDispatch": "24/7",
+    "statDispatchLabel": "Expédition à la demande",
+    "ftlOptimization": "Optimisation FTL et LTL",
+    "ftlOptimizationDesc": "Équilibrage de charge sur mesure pour toutes les tailles d'expédition",
+    "modesBadge": "Capacité flexible",
+    "modesTitle": "Options de transport routier sur mesure",
+    "modes": [
+      {
+        "badge": "Priorité maximale",
+        "title": "Camion complet (FTL)",
+        "subtitle": "Capacité de flotte dédiée",
+        "description": "Idéal pour les expéditions volumineuses nécessitant un camion entier. Offre un transit rapide, une livraison directe et une protection maximale de la marchandise, sans manutention intermédiaire.",
+        "features": [
+          "Transit dédié de point à point",
+          "Aucun déchargement intermédiaire",
+          "Options de contrôle de température personnalisées",
+          "Suivi GPS de la flotte en temps réel"
+        ]
+      },
+      {
+        "badge": "Économies de coûts",
+        "title": "Groupage routier (LTL)",
+        "subtitle": "Espace partagé et efficacité des coûts",
+        "description": "Parfait pour les petites expéditions, où les envois de plusieurs clients se partagent la capacité d'un camion, ce qui réduit considérablement les frais de transit globaux.",
+        "features": [
+          "Paiement uniquement du volume utilisé",
+          "Départs réguliers programmés",
+          "Manutention consolidée en hub",
+          "Ajustement flexible du volume"
+        ]
+      }
+    ],
+    "featuresBadge": "Caractéristiques principales",
+    "featuresTitle": "Principaux avantages du fret routier",
+    "advantages": [
+      {
+        "title": "Accessibilité et connectivité",
+        "description": "Une large portée dans les zones urbaines, périurbaines et rurales assure un déplacement fluide de la chaîne d'approvisionnement."
+      },
+      {
+        "title": "Itinéraires et horaires flexibles",
+        "description": "Algorithmes de routage dynamiques pour optimiser les itinéraires de livraison, éviter les embouteillages et accélérer les délais de transit."
+      },
+      {
+        "title": "Porte-à-porte pratique",
+        "description": "Enlèvement et dépose de bout en bout directement à l'entrepôt, au point de vente ou au hub de votre choix."
+      },
+      {
+        "title": "Solutions économiques",
+        "description": "Gestion de charge optimisée et efficacité des itinéraires pour maximiser l'efficacité de votre budget de fret."
+      }
+    ],
+    "whyUsBadge": "Pourquoi The DFL Group ?",
+    "whyUsTitle": "Une logistique de transport routier fluide et simple",
+    "whyUsDesc": "The DFL Group fournit des services de transport routier porte-à-porte sans accroc, simplifiant l'ensemble du processus de chaîne d'approvisionnement pour nos clients.",
+    "routingOptions": [
+      { "title": "Porte-à-porte", "desc": "Enlèvement direct à l'adresse de l'expéditeur et livraison à la destination finale, sans retard en hub." },
+      { "title": "Porte-à-hub", "desc": "Enlèvement sur site et dépôt consolidé dans un hub logistique régional pour distribution." },
+      { "title": "Hub-à-porte", "desc": "Expédition fluide depuis le hub de transit principal directement vers l'entrepôt de l'acheteur ou les centres de vente." }
+    ],
+    "verifiedFleet": "Flotte vérifiée et normes pour les conducteurs",
+    "verifiedFleetDesc": "Éliminez le besoin de multiples transporteurs locaux grâce au réseau national intégré de DFL."
+  },
+  "presence": {
+    "badge": "Notre présence",
+    "heroTitle": "Expertise locale, portée mondiale",
+    "heroDesc": "Chez The DFL Group, notre présence définit notre force, notre fiabilité et notre engagement à fournir des solutions logistiques exceptionnelles dans le monde entier. Nous sommes bien plus qu'un prestataire logistique : nous sommes un partenaire de confiance, garantissant une connectivité fluide et une excellence opérationnelle à travers les secteurs et les frontières.",
+    "strategicTitle": "Des emplacements stratégiques au service de vos opérations",
+    "strategicDesc": "Nos opérations couvrent de nombreuses régions, alliant connaissance locale et normes mondiales pour créer des solutions logistiques répondant à des besoins de marché variés. Des métropoles animées aux pôles industriels reculés, The DFL Group veille à ce que votre marchandise arrive à destination, où qu'elle doive aller.",
+    "highlights": [
+      {
+        "title": "Réseau mondial",
+        "description": "Au service de clients sur plusieurs continents, nous vous connectons aux opportunités des marchés internationaux grâce à une gestion solide de la chaîne d'approvisionnement."
+      },
+      {
+        "title": "Infrastructure avancée",
+        "description": "Nos entrepôts et centres de distribution de pointe garantissent un stockage sûr et une manutention efficace des marchandises."
+      },
+      {
+        "title": "Équipes dédiées sur le terrain",
+        "description": "Des équipes locales dotées de connaissances spécialisées offrent un soutien et des analyses en temps réel, pour des opérations logistiques fluides."
+      },
+      {
+        "title": "Douane et conformité",
+        "description": "Notre présence dans les principaux ports et zones commerciales simplifie l'expédition internationale grâce à un dédouanement sans accroc."
+      }
+    ],
+    "localTouch": "Touche locale",
+    "officesTitle": "Nos bureaux et succursales",
+    "officesSubtitle": "À votre service dans des lieux sélectionnés",
+    "countries": {
+      "all": "Tous les sites",
+      "india": "Inde",
+      "uk": "Royaume-Uni",
+      "thailand": "Thaïlande",
+      "dubai": "Dubaï"
+    },
+    "cities": {
+      "noida": "Noida",
+      "mumbai": "Mumbai",
+      "ahmedabad": "Ahmedabad",
+      "nagina": "Nagina",
+      "vadodara": "Vadodara",
+      "uk": "Royaume-Uni",
+      "thailand": "Thaïlande",
+      "bangkok": "Porte de Bangkok",
+      "dubai-central": "Dubai World Central"
+    },
+    "addresses": {
+      "noida": "B 331, Logix Technova, Bloc B, Secteur 132, Noida, Uttar Pradesh 201305",
+      "mumbai": "136, Agrawal Trade Centre, Parcelle n° 62, Secteur 11, CBD Belapur 400614",
+      "ahmedabad": "D/1001, 10e étage Titanium City Centre, Prahladnagar, 100 FT Road, Satellite, Ahmedabad, Gujarat - 380015",
+      "nagina": "Boutique n° 8, Ganna Samiti Road, Muneem Chowk, Lal Sarai...",
+      "vadodara": "LR-412, 4e étage, Park Paradise Building, Vadsar, Vadodara, Près de...",
+      "uk": "DFL international Logistics UK LTD, 400 Thames Valley Park, Reading, Royaume-Uni, RG6 1PT,",
+      "thailand": "169 Soi Udomsuk 58, Nuer, Bangna, Bangkok 10260, Thaïlande",
+      "bangkok": "DFL International Co. Ltd, 169 Soi Udomsuk 58, Nuer, Bangkok 10260 Bangna",
+      "dubai-central": "DFL International Logistics LLC, Bureau n° 102-11, CBD Bank Building, à côté du centre Al Ain, Al Mankhool Rd, Bur Dubai,"
+    }
+  },
+  "team": {
+    "badge": "Notre direction",
+    "heroTitle": "Rencontrez les visionnaires derrière DFL Group",
+    "heroTitleHighlight": "DFL Group",
+    "heroDesc": "Chez The DFL Group, nous réunissons une équipe diversifiée de stratèges de la chaîne d'approvisionnement, de responsables de la conformité commerciale et d'experts en logistique qui assurent des opérations commerciales mondiales fluides.",
+    "cards": [
+      {
+        "exp": "Plus de 30 ans d'expérience",
+        "title": "Direction générale",
+        "desc": "Guide la croissance stratégique à long terme et la vision réglementaire, forte de trois décennies de maîtrise du fret."
+      },
+      {
+        "exp": "10 à 20 ans d'expérience",
+        "title": "Experts du secteur",
+        "desc": "Gèrent le dédouanement complexe, les affrètements aériens et les réseaux de transit multimodaux."
+      },
+      {
+        "exp": "Plus de 5 ans d'expérience",
+        "title": "Spécialistes des opérations",
+        "desc": "Exécutent le routage quotidien des expéditions, le suivi du fret en direct et les opérations d'entrepôt."
+      },
+      {
+        "exp": "Explorateurs innovants",
+        "title": "Collaborateurs associés",
+        "desc": "Intègrent l'automatisation technologique, l'analyse de données moderne et une communication client réactive."
+      }
+    ],
+    "boardTitle": "Conseil exécutif et opérationnel",
+    "boardSubtitle": "Une équipe dévouée qui assure la précision logistique sur les routes commerciales mondiales.",
+    "members": {
+      "1": {
+        "role": "Fondateur et PDG",
+        "bio": "Plus de 15 ans de leadership stratégique dans la logistique mondiale et la gestion de la chaîne d'approvisionnement."
+      },
+      "2": {
+        "role": "Directeur des opérations (COO)",
+        "bio": "Spécialisé dans la montée en charge opérationnelle, la logistique de flotte et les relations clients."
+      },
+      "3": {
+        "role": "Responsable fret et cargo",
+        "bio": "Expert en transit aérien et maritime, avec un accent sur le transport transfrontalier."
+      },
+      "4": {
+        "role": "Directeur financier (CFO)",
+        "bio": "Gère la stratégie financière, la gestion des risques et les investissements de l'entreprise."
+      },
+      "5": {
+        "role": "Directeur de la chaîne d'approvisionnement",
+        "bio": "Optimise les processus de chaîne d'approvisionnement de bout en bout et les systèmes d'entrepôt."
+      },
+      "6": {
+        "role": "Responsable douane et conformité",
+        "bio": "Garantit le dédouanement légal, le respect des règles du commerce international et la documentation."
+      },
+      "7": {
+        "role": "Directeur général",
+        "bio": "L'artisan du suivi de colis en temps réel et des tableaux de bord numériques."
+      },
+      "8": {
+        "role": "Responsable des ventes",
+        "bio": "Dédié aux relations avec les clients grands comptes et à l'exécution du support 24h/24 et 7j/7."
+      },
+      "10": {
+        "role": "Responsable commercial",
+        "bio": "Construit une culture d'entreprise solide et encadre le personnel logistique à l'échelle nationale."
+      },
+      "11": {
+        "role": "Responsable des ressources humaines",
+        "bio": "En charge de la logistique des véhicules routiers, de la planification des itinéraires et de l'efficacité énergétique."
+      }
+    }
+  },
+  "modal": {
+    "title": "Parler à DFL Express",
+    "responseTime": "Réponse rapide en ~2 minutes",
+    "whatsappTitle": "Discuter sur WhatsApp",
+    "whatsappSubtitle": "Connectez-vous directement à notre bureau d'expédition express disponible 24h/24 et 7j/7.",
+    "openWhatsapp": "Ouvrir le chat WhatsApp →",
+    "ariaWhatsapp": "Ouvrir le chat WhatsApp"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "goHome": "Aller à la page d'accueil"
+  },
+  "language": {
+    "selectLanguage": "Choisir la langue"
+  }
+}
