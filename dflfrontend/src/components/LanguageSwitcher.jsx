@@ -59,14 +59,14 @@ export default function LanguageSwitcher({ inline = false }) {
       <button
         type="button"
         onClick={() => setOpen((prev) => !prev)}
-        className={`flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-2.5 py-1.5 text-sm font-semibold text-[#0B132A] shadow-sm transition-all hover:border-[#E66E19] hover:text-[#E66E19] ${
+        className={`flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-2.5 xl:px-3 py-1.5 xl:py-2 text-xs xl:text-sm font-bold text-[#0B132A] shadow-sm transition-all hover:border-[#E66E19] hover:text-[#E66E19] ${
           inline ? "w-full justify-between" : ""
         }`}
         aria-expanded={open}
         aria-haspopup="true"
       >
         <span className="flex items-center gap-1.5">
-          <span className="text-xs font-bold uppercase tracking-wider">
+          <span className="text-xs xl:text-sm font-bold uppercase tracking-wider">
             {currentLanguage.code}
           </span>
         </span>

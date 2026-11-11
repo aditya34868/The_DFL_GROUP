@@ -56,10 +56,10 @@ export default function Cards({ services = [], onInquire }) {
             }}
           >
             {/* Card Main Container */}
-            <div className="mx-auto w-full max-w-6xl 2xl:max-w-7xl overflow-hidden rounded-[2rem] bg-white shadow-2xl">
+            <div className="mx-auto w-full max-w-7xl xl:max-w-[1520px] 2xl:max-w-[1680px] overflow-hidden rounded-[2rem] bg-white shadow-2xl">
 
               {/* Header Tab */}
-              <div className="flex items-center justify-between bg-white px-6 py-3.5">
+              <div className="flex flex-wrap items-center justify-between gap-2 bg-white px-6 py-3.5">
                 <div className="flex items-center gap-3">
                   <span className="rounded-lg bg-slate-100 px-2.5 py-1 font-mono text-xs font-black text-slate-800">
                     {index + 1}/{services.length || 4}
@@ -95,8 +95,8 @@ export default function Cards({ services = [], onInquire }) {
                       <ul className="mt-5 grid grid-cols-1 gap-2 text-xs font-bold text-slate-700 sm:grid-cols-2 md:text-sm">
                         {service.features.map((feat, idx) => (
                           <li key={idx} className="flex items-center gap-2">
-                            <span className="flex h-4 w-4 items-center justify-center rounded-full bg-[#E66E19]/10 text-[10px] font-black text-[#E66E19]">✓</span>
-                            <span className="truncate">
+                            <span className="flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-[#E66E19]/10 text-[10px] font-black text-[#E66E19]">✓</span>
+                            <span className="break-words">
                               {t(`services.${service.id}.features.${idx}`, feat)}
                             </span>
                           </li>

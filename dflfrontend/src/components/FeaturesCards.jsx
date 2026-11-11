@@ -5,25 +5,25 @@ export default function FeaturesCards({ features }) {
   const { t } = useTranslation();
 
   return (
-    <section className="relative overflow-hidden bg-white px-4 sm:px-6 py-20 text-[#0B132A] md:px-8 lg:px-12 xl:px-16 2xl:px-20 font-sans">
+    <section className="relative overflow-hidden bg-white px-4 sm:px-6 lg:px-8 xl:px-10 py-20 text-[#0B132A] font-sans">
       {/* BACKGROUND BRAND GLOW */}
       <div className="absolute -top-24 left-1/2 -translate-x-1/2 h-96 w-96 rounded-full bg-[#E66E19]/10 blur-3xl pointer-events-none" />
       <div className="absolute top-1/2 -right-20 h-80 w-80 rounded-full bg-[#E66E19]/5 blur-3xl pointer-events-none" />
 
-      <div className="relative mx-auto max-w-7xl 2xl:max-w-[1536px]">
+      <div className="relative mx-auto max-w-7xl xl:max-w-[1520px] 2xl:max-w-[1680px]">
         {/* SECTION HEADER */}
         <div className="mb-16 text-center">
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-[#E66E19]/10 border border-[#E66E19]/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-[#E66E19]">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-[#E66E19]/10 border border-[#E66E19]/20 px-4 py-1.5 text-xs sm:text-sm font-bold uppercase tracking-wider text-[#E66E19]">
             {t("featuresSection.badge", "Next-Gen Operations")}
           </span>
-          <h2 className="mt-4 text-3xl font-black tracking-tight text-slate-900 md:text-5xl">
+          <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-black tracking-tight text-slate-900">
             {t("featuresSection.titlePart1", "Advanced")}{" "}
             <span className="text-[#E66E19]">
               {t("featuresSection.titleHighlight", "Tech-Driven")}
             </span>{" "}
             {t("featuresSection.titlePart2", "Features")}
           </h2>
-          <p className="mt-3 text-base font-medium text-slate-600 max-w-xl mx-auto">
+          <p className="mt-4 text-base sm:text-lg md:text-xl font-medium text-slate-600 max-w-2xl mx-auto leading-relaxed">
             {t(
               "featuresSection.subtitle",
               "Innovative solutions designed to streamline your logistics operations"

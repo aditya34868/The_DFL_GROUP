@@ -43,7 +43,7 @@ const Faq = ({ data, category }) => {
         : []);
 
   return (
-    <div className="w-full max-w-4xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-6xl mx-auto text-left">
+    <div className="w-full max-w-5xl lg:max-w-6xl xl:max-w-7xl 2xl:max-w-[1520px] mx-auto text-left">
       <div className="divide-y divide-slate-200">
         {items.map((item) => {
           const isOpen = openId === item.id;
