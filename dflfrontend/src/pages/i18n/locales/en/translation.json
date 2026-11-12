@@ -33,7 +33,7 @@
     "oceanFreight": "Ocean Freight Forwarding",
     "customClearance": "Customs Clearance",
     "warehousing": "Warehousing",
-    "perishable": "Perishable Cargo"
+    "perishable": "Cold Chain & Perishables"
   },
   "cards": {
     "explore_service": "Explore Service →",
@@ -82,6 +82,17 @@
         "Express Options",
         "Document Delivery",
         "Proof of Delivery"
+      ]
+    },
+    "05": {
+      "name": "Perishable & Temperature-Controlled Cargo",
+      "tag": "Cold Chain & Reefers",
+      "description": "End-to-end cold chain logistics for fresh produce, frozen food, and temperature-sensitive goods with unbroken cold chain integrity.",
+      "features": [
+        "Deep Frozen (-18°C to -25°C)",
+        "Chilled (+2°C to +8°C)",
+        "Air & Ocean Reefers",
+        "24/7 IoT Telemetry"
       ]
     }
   },
@@ -301,6 +312,28 @@
         "question": "How can warehousing help my business?",
         "answer": "Good warehousing helps businesses keep their stock organized and reduces the difficulty of managing goods across different stages of the supply chain. It also makes it easier to prepare and dispatch goods when needed."
       }
+    },
+    "perishable": {
+      "1": {
+        "question": "What temperature ranges do you support for perishable cargo?",
+        "answer": "We support a full multi-temperature spectrum including Deep Frozen (-18°C to -25°C) for seafood, meat, poultry, and processed foods; Chilled (+2°C to +8°C) for fresh fruits, vegetables, dairy, and confectionery; and Controlled Ambient (+15°C to +25°C) for specialized FMCG and healthcare goods."
+      },
+      "2": {
+        "question": "Do you offer both air and ocean reefer shipping?",
+        "answer": "Yes. We provide fast-track air freight with thermal packaging and dry ice for urgent perishables, alongside 20ft and 40ft active refrigerated (Reefer) ocean containers for high-volume cold-chain cargo."
+      },
+      "3": {
+        "question": "How do you prevent customs delays for perishable shipments?",
+        "answer": "We provide priority green-channel customs clearance, phytosanitary inspection coordination, and pre-verified regulatory documentation so your perishable cargo clears borders without breaking the cold chain."
+      },
+      "4": {
+        "question": "Can I monitor my cargo temperature in real time?",
+        "answer": "Yes. Our 24/7 temperature and GPS telemetry uses continuous IoT sensor logging to monitor thermal stability and location throughout the entire transit, ensuring an unbroken chain of custody."
+      },
+      "5": {
+        "question": "What industries use The DFL Group cold-chain logistics?",
+        "answer": "We serve exporters and importers of fresh produce, seafood, meat and poultry, dairy, confectionery, specialized FMCG products, and temperature-sensitive healthcare goods worldwide."
+      }
     }
   },
   "testimonials": {
@@ -338,7 +371,8 @@
     { "label": "Ocean Freight", "path": "/services/ocean-freight" },
     { "label": "Customs Clearance", "path": "/services/custom-clearance" },
     { "label": "Transportation", "path": "/services/transportation" },
-    { "label": "Warehousing", "path": "/services/warehousing" }
+    { "label": "Warehousing", "path": "/services/warehousing" },
+    { "label": "Cold Chain & Perishables", "path": "/services/perishable-cargo" }
   ],
   "legalLinks": [
     { "label": "Privacy Policy", "path": "/privacy-policy" },
@@ -633,6 +667,95 @@
     "ctaTitle": "Ready to Send Your Time-Sensitive Cargo?",
     "ctaDesc": "Get a customized air cargo quote and instant flight transit schedule.",
     "ctaButton": "Get a Custom Quote →"
+  },
+  "perishable": {
+    "metaTitle": "Perishable & Temperature-Controlled Cargo Logistics | DFL Group",
+    "metaDescription": "Reliable cold chain freight forwarding and temperature-controlled air & ocean shipping for fresh produce and frozen food by The DFL Group.",
+    "liveMonitor": "24/7 Cold-Chain Telemetry",
+    "routeLabel": "Route: BOM → DXB (-18°C Reefer Active • Live IoT Tracking)",
+    "activeStatus": "Cold Chain Integrity (-18°C / +4°C)",
+    "badge": "Perishable & Temperature-Controlled Cargo",
+    "heroTitle": "Temperature-Controlled & Perishable Cargo Logistics",
+    "heroTitleHighlight": "by The DFL Group",
+    "subHeadline": "Preserving Freshness, Safety & Quality Worldwide",
+    "heroDesc": "DFL provides specialized, compliant cold-chain freight solutions engineered to protect perishable goods from origin to destination. Leveraging our global air and ocean reefer network, we ensure precise temperature control, expedited customs clearance, and real-time shipment monitoring for fresh, chilled, and frozen cargo.",
+    "quoteButton": "Get Instant Quote",
+    "bookButton": "Book Cold-Chain Shipment",
+    "heroImageTag": "Cold Chain Integrity",
+    "heroImageTitle": "End-to-end temperature protection from -25°C to +25°C",
+    "spectrumBadge": "Multi-Temperature Spectrum",
+    "spectrumTitle": "Precision Thermal Zones for Every Commodity",
+    "spectrum": [
+      {
+        "title": "Deep Frozen (-18°C to -25°C)",
+        "description": "Seafood, meat, poultry, and processed foods."
+      },
+      {
+        "title": "Chilled (+2°C to +8°C)",
+        "description": "Fresh fruits, vegetables, dairy, and confectionery."
+      },
+      {
+        "title": "Controlled Ambient (+15°C to +25°C)",
+        "description": "Specialized FMCG and healthcare goods."
+      }
+    ],
+    "reeferBadge": "Air & Ocean Reefer Solutions",
+    "reeferTitle": "Unbroken Cold Chain Integrity Across Air & Ocean Routes",
+    "reeferDesc": "Fast-track air freight with thermal packaging and dry ice, alongside 20ft & 40ft active refrigerated (Reefer) ocean containers engineered to keep fresh produce, frozen food, and healthcare cargo stable throughout international transit.",
+    "airThermalTitle": "Thermal Air & Dry Ice",
+    "airThermalDesc": "Fast-track air freight with insulated packaging and dry ice.",
+    "oceanReeferTitle": "20ft & 40ft Ocean Reefers",
+    "oceanReeferDesc": "Active refrigerated marine containers for global sea trade.",
+    "harborTag": "HARBOR COLD-CHAIN OPS",
+    "harborTitle": "Direct Port Refrigeration & Cold-Storage Transfers",
+    "facilitiesBadge": "Cold-Chain Facilities",
+    "facilitiesTitle": "Global Reefer Terminals & Priority Clearance",
+    "facilitiesDesc": "Dedicated port-side reefer plugging stations, cold storage bays, and priority customs lanes built for zero thermal drift.",
+    "facilities": [
+      {
+        "tag": "20ft & 40ft Active Reefers",
+        "title": "Global Port & Terminal Reefer Network",
+        "desc": "Continuous power-monitored refrigerated containers maintaining exact humidity and temperature profiles across major shipping lanes."
+      },
+      {
+        "tag": "Green-Channel Clearance",
+        "title": "Expedited Phytosanitary & Cold Inspection",
+        "desc": "Accelerated customs release and climate-controlled inspection coordination to eliminate tarmac or port waiting times."
+      }
+    ],
+    "workflowBadge": "Complete Workflow",
+    "workflowTitle": "Comprehensive End-to-End Cold-Chain Execution",
+    "endToEnd": [
+      { "title": "Pre-Cooling & Thermal Packing", "detail": "Insulated thermal liners, gel packs & dry ice" },
+      { "title": "Multi-Temp Reefer Pickup", "detail": "GPS-tracked refrigerated trucks to port/airport" },
+      { "title": "Air & Ocean Reefer Freight", "detail": "Fast-track air cargo & 20ft/40ft active reefers" },
+      { "title": "Priority Customs Clearance", "detail": "Accelerated green-channel customs clearance" },
+      { "title": "Phytosanitary & Health Compliance", "detail": "Inspection handling & regulatory trade paperwork" },
+      { "title": "24/7 IoT Sensor Telemetry", "detail": "Continuous temperature & GPS chain-of-custody logs" }
+    ],
+    "capabilitiesBadge": "Key Capabilities",
+    "capabilitiesTitle": "Smart, Compliant & Unbroken Cold Chain",
+    "smartFeatures": [
+      {
+        "title": "Multi-Temperature Spectrum",
+        "description": "Deep Frozen (-18°C to -25°C), Chilled (+2°C to +8°C), and Controlled Ambient (+15°C to +25°C) cargo protection."
+      },
+      {
+        "title": "Air & Ocean Reefer Solutions",
+        "description": "Fast-track air freight with thermal packaging/dry ice alongside 20ft & 40ft active refrigerated ocean containers."
+      },
+      {
+        "title": "Priority Customs & Compliance",
+        "description": "Accelerated green-channel customs clearance, phytosanitary inspection handling, and regulatory documentation."
+      },
+      {
+        "title": "24/7 Temperature & GPS Telemetry",
+        "description": "Continuous IoT sensor logging to maintain unbroken chain of custody from origin to destination."
+      }
+    ],
+    "ctaTitle": "Ready to ship your perishable & temperature-controlled cargo?",
+    "ctaDesc": "Get an instant cold-chain quote with end-to-end temperature assurance and priority customs support.",
+    "ctaButton": "Get Custom Quote →"
   },
   "transportation": {
     "monitorTitle": "Surface Transit Monitor",

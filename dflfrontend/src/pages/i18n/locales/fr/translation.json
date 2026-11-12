@@ -33,7 +33,7 @@
     "oceanFreight": "Fret maritime et transit",
     "customClearance": "Dédouanement",
     "warehousing": "Entreposage",
-    "perishable": "Cargaison périssable"
+    "perishable": "Chaîne du froid et denrées périssables"
   },
   "cards": {
     "explore_service": "Découvrir le service →",
@@ -82,6 +82,17 @@
         "Options express",
         "Livraison de documents",
         "Preuve de livraison"
+      ]
+    },
+    "05": {
+      "name": "Fret périssable et sous température dirigée",
+      "tag": "Chaîne du froid & Reefers",
+      "description": "Logistique de chaîne du froid de bout en bout pour produits frais, surgelés et marchandises thermosensibles avec intégrité thermique continue.",
+      "features": [
+        "Surgelé (-18°C à -25°C)",
+        "Réfrigéré (+2°C à +8°C)",
+        "Reefers aériens et maritimes",
+        "Télémétrie IoT 24/7"
       ]
     }
   },
@@ -301,6 +312,28 @@
         "question": "Comment l'entreposage peut-il aider mon entreprise ?",
         "answer": "Un bon entreposage aide les entreprises à garder leurs stocks organisés et réduit la complexité de la gestion des marchandises aux différentes étapes de la chaîne d'approvisionnement. Il facilite aussi la préparation et l'expédition des marchandises selon les besoins."
       }
+    },
+    "perishable": {
+      "1": {
+        "question": "Quelles plages de température prenez-vous en charge pour les denrées périssables ?",
+        "answer": "Nous couvrons un spectre multitempérature complet : Surgelé (-18°C à -25°C) pour les produits de la mer, viandes, volailles et aliments transformés ; Réfrigéré (+2°C à +8°C) pour les fruits, légumes, produits laitiers et confiseries ; Ambiant contrôlé (+15°C à +25°C) pour les produits de grande consommation et de santé."
+      },
+      "2": {
+        "question": "Proposez-vous le transport réfrigéré aérien et maritime ?",
+        "answer": "Oui. Nous assurons un fret aérien rapide avec emballage thermique et glace carbonique pour les produits urgents, ainsi que des conteneurs maritimes réfrigérés actifs (Reefer) de 20 et 40 pieds."
+      },
+      "3": {
+        "question": "Comment évitez-vous les retards douaniers pour les expéditions périssables ?",
+        "answer": "Nous assurons un dédouanement prioritaire en voie verte, la coordination des inspections phytosanitaires et une documentation réglementaire pré-vérifiée afin de ne jamais rompre la chaîne du froid."
+      },
+      "4": {
+        "question": "Puis-je suivre la température de ma cargaison en temps réel ?",
+        "answer": "Oui. Notre télémétrie température et GPS 24/7 utilise des capteurs IoT continus pour surveiller la stabilité thermique et la localisation tout au long du transit."
+      },
+      "5": {
+        "question": "Quels secteurs utilisent la chaîne du froid de The DFL Group ?",
+        "answer": "Nous accompagnons les exportateurs et importateurs de produits frais, fruits de mer, viandes, produits laitiers, confiseries, FMCG spécialisés et produits de santé dans le monde entier."
+      }
     }
   },
   "testimonials": {
@@ -338,7 +371,8 @@
     { "label": "Fret maritime", "path": "/services/ocean-freight" },
     { "label": "Dédouanement", "path": "/services/custom-clearance" },
     { "label": "Transport", "path": "/services/transportation" },
-    { "label": "Entreposage", "path": "/services/warehousing" }
+    { "label": "Entreposage", "path": "/services/warehousing" },
+    { "label": "Denrées périssables", "path": "/services/perishable-cargo" }
   ],
   "legalLinks": [
     { "label": "Politique de confidentialité", "path": "/privacy-policy" },
@@ -632,6 +666,95 @@
     ],
     "ctaTitle": "Prêt à expédier votre fret urgent ?",
     "ctaDesc": "Obtenez un devis personnalisé de fret aérien et des horaires de vol immédiats.",
+    "ctaButton": "Obtenir un devis personnalisé →"
+  },
+  "perishable": {
+    "metaTitle": "Logistique de fret périssable et sous température dirigée | DFL Group",
+    "metaDescription": "Transit de chaîne du froid fiable et transport aérien & maritime sous température dirigée pour produits frais et surgelés par The DFL Group.",
+    "liveMonitor": "Télémétrie chaîne du froid 24/7",
+    "routeLabel": "Itinéraire : BOM → DXB (Reefer -18°C actif • Suivi IoT en direct)",
+    "activeStatus": "Intégrité chaîne du froid (-18°C / +4°C)",
+    "badge": "Fret périssable & sous température dirigée",
+    "heroTitle": "Logistique de fret périssable et sous température dirigée",
+    "heroTitleHighlight": "avec The DFL Group",
+    "subHeadline": "Préserver la fraîcheur, la sécurité et la qualité dans le monde entier",
+    "heroDesc": "DFL propose des solutions spécialisées et conformes pour protéger les marchandises périssables de l'origine à la destination. Grâce à notre réseau mondial aérien et maritime réfrigéré, nous garantissons un contrôle thermique précis, un dédouanement accéléré et un suivi en temps réel.",
+    "quoteButton": "Obtenir un devis instantané",
+    "bookButton": "Réserver un fret réfrigéré",
+    "heroImageTag": "Intégrité chaîne du froid",
+    "heroImageTitle": "Protection thermique continue de -25°C à +25°C",
+    "spectrumBadge": "Spectre multitempérature",
+    "spectrumTitle": "Zones thermiques de précision pour chaque marchandise",
+    "spectrum": [
+      {
+        "title": "Surgelé (-18°C à -25°C)",
+        "description": "Fruits de mer, viandes, volailles et aliments transformés."
+      },
+      {
+        "title": "Réfrigéré (+2°C à +8°C)",
+        "description": "Fruits frais, légumes, produits laitiers et confiseries."
+      },
+      {
+        "title": "Ambiant contrôlé (+15°C à +25°C)",
+        "description": "FMCG spécialisés et produits de santé."
+      }
+    ],
+    "reeferBadge": "Solutions Reefer aériennes et maritimes",
+    "reeferTitle": "Chaîne du froid ininterrompue sur les axes aériens et maritimes",
+    "reeferDesc": "Fret aérien express avec emballage thermique et glace carbonique, accompagné de conteneurs maritimes réfrigérés actifs (Reefer) de 20 et 40 pieds conçus pour maintenir la qualité de vos produits.",
+    "airThermalTitle": "Aérien thermique & glace carbonique",
+    "airThermalDesc": "Fret aérien rapide avec emballage isolant et glace carbonique.",
+    "oceanReeferTitle": "Conteneurs Reefer 20 et 40 pieds",
+    "oceanReeferDesc": "Conteneurs maritimes réfrigérés actifs pour le commerce mondial.",
+    "harborTag": "OPÉRATIONS PORTUAIRES RÉFRIGÉRÉES",
+    "harborTitle": "Réfrigération portuaire directe et transferts en entrepôt froid",
+    "facilitiesBadge": "Installations chaîne du froid",
+    "facilitiesTitle": "Terminaux Reefer mondiaux et dédouanement prioritaire",
+    "facilitiesDesc": "Stations portuaires dédiées aux conteneurs réfrigérés, chambres froides et couloirs douaniers prioritaires sans rupture thermique.",
+    "facilities": [
+      {
+        "tag": "Reefers actifs 20 et 40 pieds",
+        "title": "Réseau mondial de terminaux portuaires réfrigérés",
+        "desc": "Conteneurs réfrigérés sous surveillance électrique continue maintenant l'humidité et la température exactes."
+      },
+      {
+        "tag": "Dédouanement voie verte",
+        "title": "Contrôle phytosanitaire et inspection accélérée",
+        "desc": "Mainlevée douanière rapide et coordination d'inspections sous température dirigée pour éviter toute attente."
+      }
+    ],
+    "workflowBadge": "Flux de travail complet",
+    "workflowTitle": "Exécution intégrale de la chaîne du froid de bout en bout",
+    "endToEnd": [
+      { "title": "Pré-refroidissement et emballage thermique", "detail": "Doublures isolantes, accumulateurs de froid et glace carbonique" },
+      { "title": "Enlèvement réfrigéré multitempérature", "detail": "Camions frigorifiques suivis par GPS vers le port ou l'aéroport" },
+      { "title": "Fret Reefer aérien et maritime", "detail": "Fret aérien prioritaire et conteneurs actifs 20/40 pieds" },
+      { "title": "Dédouanement prioritaire", "detail": "Passage douanier accéléré en voie verte" },
+      { "title": "Conformité phytosanitaire et sanitaire", "detail": "Gestion des inspections et documents réglementaires" },
+      { "title": "Télémétrie IoT 24/7", "detail": "Journalisation continue de la température et du suivi GPS" }
+    ],
+    "capabilitiesBadge": "Capacités clés",
+    "capabilitiesTitle": "Chaîne du froid intelligente, conforme et continue",
+    "smartFeatures": [
+      {
+        "title": "Spectre multitempérature",
+        "description": "Protection Surgelé (-18°C à -25°C), Réfrigéré (+2°C à +8°C) et Ambiant contrôlé (+15°C à +25°C)."
+      },
+      {
+        "title": "Solutions Reefer aériennes et maritimes",
+        "description": "Fret aérien express avec emballage thermique/glace sèche et conteneurs maritimes actifs 20 et 40 pieds."
+      },
+      {
+        "title": "Douanes prioritaires et conformité",
+        "description": "Dédouanement accéléré en voie verte, gestion phytosanitaire et documentation réglementaire."
+      },
+      {
+        "title": "Télémétrie température & GPS 24/7",
+        "description": "Enregistrement continu par capteurs IoT garantissant une chaîne de traçabilité ininterrompue."
+      }
+    ],
+    "ctaTitle": "Prêt à expédier vos marchandises périssables et sous température dirigée ?",
+    "ctaDesc": "Obtenez un devis instantané avec garantie thermique complète et soutien douanier prioritaire.",
     "ctaButton": "Obtenir un devis personnalisé →"
   },
   "transportation": {

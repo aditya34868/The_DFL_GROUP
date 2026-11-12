@@ -3,11 +3,12 @@ import inlandTransportImg from "../assets/businessGroth.webp";
 import oceanFreightImg from "../assets/Global Logistics Network in Motion.png";
 import airFreightImg from "../assets/Global Support Team Banner.png";
 import customerClearanceImg from "../assets/Secure Logistics World in Motion.png";
+import perishableCargoImg from "../assets/Arctic Reefer and Fresh Catch Display.png";
 
 import { FiShield, FiFileText, FiAnchor, FiCheckSquare, FiTruck, FiZap,
    FiGlobe,FiBox,FiLock,FiServer,FiPackage,FiNavigation,FiMapPin,FiTrendingUp,
   FiDollarSign,FiCode,FiCloud,FiHeadphones,FiBarChart2,FiBriefcase,FiCpu,
-   FiLayers,FiPercent,FiAward,FiClock, 
+   FiLayers,FiPercent,FiAward,FiClock,FiThermometer,
  } from "react-icons/fi";
 
 import { BsStars } from "react-icons/bs";
@@ -146,6 +147,21 @@ export const services = [
       "Proof of delivery",
     ],
   },
+  {
+    id: "05",
+    name: "Perishable & Temperature-Controlled Cargo",
+    path: "/services/perishable-cargo",
+    description:
+      "End-to-end cold chain logistics for fresh produce, frozen food, and temperature-sensitive goods with unbroken cold chain integrity.",
+    tag: "Cold Chain & Reefers",
+    image: perishableCargoImg,
+    features: [
+      "Deep Frozen (-18°C to -25°C)",
+      "Chilled (+2°C to +8°C)",
+      "Air & Ocean Reefers",
+      "24/7 IoT Telemetry",
+    ],
+  },
 ];
 
 export const skills = [
@@ -225,11 +241,12 @@ export const footerData = {
     { country: "UK", phone: "+44 7388 653479" }
   ],
   servicesList: [
-    { label: "Air Freight", path: "/services/freight-forwarding" },
+    { label: "Air Freight", path: "/services/air-freight-forwarding" },
     { label: "Ocean Freight", path: "/services/ocean-freight" },
     { label: "Customs Clearance", path: "/services/custom-clearance" },
     { label: "Transportation", path: "/services/transportation" },
-    { label: "Warehousing", path: "/services/warehousing" }
+    { label: "Warehousing", path: "/services/warehousing" },
+    { label: "Cold Chain & Perishables", path: "/services/perishable-cargo" }
   ],
   legalLinks: [
     { label: "Privacy Policy", path: "/privacy-policy" },
@@ -530,6 +547,82 @@ export const galleryImages = [
         title: "AI Route Optimization",
         description:
           "Smart engines predicting real-time flight schedules for cost and time efficiency.",
+      },
+    ];
+
+    /////////////////////  PerishableCargo  //////////////////
+
+    export const perishableEndToEndServices = [
+      { title: "Pre-Cooling & Thermal Packing", detail: "Insulated thermal liners, gel packs & dry ice" },
+      { title: "Multi-Temp Reefer Pickup", detail: "GPS-tracked refrigerated trucks to port/airport" },
+      { title: "Air & Ocean Reefer Freight", detail: "Fast-track air cargo & 20ft/40ft active reefers" },
+      { title: "Priority Customs Clearance", detail: "Accelerated green-channel customs clearance" },
+      { title: "Phytosanitary & Health Compliance", detail: "Inspection handling & regulatory trade paperwork" },
+      { title: "24/7 IoT Sensor Telemetry", detail: "Continuous temperature & GPS chain-of-custody logs" },
+    ];
+
+    export const perishableSmartFeatures = [
+      {
+        icon: FiThermometer,
+        title: "Multi-Temperature Spectrum",
+        description:
+          "Deep Frozen (-18°C to -25°C), Chilled (+2°C to +8°C), and Controlled Ambient (+15°C to +25°C) cargo protection.",
+      },
+      {
+        icon: FiGlobe,
+        title: "Air & Ocean Reefer Solutions",
+        description:
+          "Fast-track air freight with thermal packaging/dry ice alongside 20ft & 40ft active refrigerated ocean containers.",
+      },
+      {
+        icon: FiShield,
+        title: "Priority Customs & Compliance",
+        description:
+          "Accelerated green-channel customs clearance, phytosanitary inspection handling, and regulatory documentation.",
+      },
+      {
+        icon: FiCpu,
+        title: "24/7 Temperature & GPS Telemetry",
+        description:
+          "Continuous IoT sensor logging to maintain unbroken chain of custody from origin to destination.",
+      },
+    ];
+
+    export const perishableCargoFaq = [
+      {
+        id: 1,
+        num: "1",
+        question: "What temperature ranges do you support for perishable cargo?",
+        answer:
+          "We support a full multi-temperature spectrum including Deep Frozen (-18°C to -25°C) for seafood, meat, poultry, and processed foods; Chilled (+2°C to +8°C) for fresh fruits, vegetables, dairy, and confectionery; and Controlled Ambient (+15°C to +25°C) for specialized FMCG and healthcare goods.",
+      },
+      {
+        id: 2,
+        num: "2",
+        question: "Do you offer both air and ocean reefer shipping?",
+        answer:
+          "Yes. We provide fast-track air freight with thermal packaging and dry ice for urgent perishables, alongside 20ft and 40ft active refrigerated (Reefer) ocean containers for high-volume cold-chain cargo.",
+      },
+      {
+        id: 3,
+        num: "3",
+        question: "How do you prevent customs delays for perishable shipments?",
+        answer:
+          "We provide priority green-channel customs clearance, phytosanitary inspection coordination, and pre-verified regulatory documentation so your perishable cargo clears borders without breaking the cold chain.",
+      },
+      {
+        id: 4,
+        num: "4",
+        question: "Can I monitor my cargo temperature in real time?",
+        answer:
+          "Yes. Our 24/7 temperature and GPS telemetry uses continuous IoT sensor logging to monitor thermal stability and location throughout the entire transit, ensuring an unbroken chain of custody.",
+      },
+      {
+        id: 5,
+        num: "5",
+        question: "What industries use The DFL Group cold-chain logistics?",
+        answer:
+          "We serve exporters and importers of fresh produce, seafood, meat and poultry, dairy, confectionery, specialized FMCG products, and temperature-sensitive healthcare goods worldwide.",
       },
     ];
 

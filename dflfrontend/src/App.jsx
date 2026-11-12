@@ -20,6 +20,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermAndCondition from "./pages/TermAndCondition";
 import NotFound from "./pages/NotFound";
 import Contact from "./pages/Contact";
+import PerishableCargo from "./pages/PerishableCargo";
 
 export default function App() {
   return (
@@ -39,6 +40,7 @@ export default function App() {
           <Route path='/services/ocean-freight' element={<Ocean_Freight_Forwarding />} />
           <Route path='/services/custom-clearance' element={<Customer_Clearance />} />
           <Route path='/services/warehousing' element={<Warehousing />} />
+           <Route path='/services/perishable-cargo' element={<PerishableCargo />} />
           <Route path='/inland-transport' element={<InlandTransport />} />
           <Route path='/privacy-policy' element={<PrivacyPolicy />} />
           <Route path='/terms-conditions' element={<TermAndCondition />} />
