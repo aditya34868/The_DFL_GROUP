@@ -32,7 +32,8 @@
     "transportation": "การขนส่ง",
     "oceanFreight": "ขนส่งสินค้าทางทะเล",
     "customClearance": "พิธีการศุลกากร",
-    "warehousing": "บริการคลังสินค้า"
+    "warehousing": "บริการคลังสินค้า",
+    "perishable": "สินค้าเน่าเสียง่าย"
   },
   "cards": {
     "explore_service": "ดูรายละเอียดบริการ →",

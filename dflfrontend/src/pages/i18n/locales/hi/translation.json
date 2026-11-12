@@ -32,7 +32,8 @@
     "transportation": "परिवहन",
     "oceanFreight": "समुद्री फ्रेट फॉरवर्डिंग",
     "customClearance": "कस्टम क्लीयरेंस",
-    "warehousing": "वेयरहाउसिंग"
+    "warehousing": "वेयरहाउसिंग",
+    "perishable": "पेरिशेबल कार्गो"
   },
   "cards": {
     "explore_service": "सेवा देखें →",

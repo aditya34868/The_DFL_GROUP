@@ -25,7 +25,7 @@ export default function App() {
   return (
 
     <TalkModalProvider>
-      <div className="min-h-screen w-full overflow-x-hidden bg-[#F8FAFC] font-sans text-[#0B132A] antialiased selection:bg-[#E66E19]/20 selection:text-[#E66E19]">
+      <div className="min-h-screen w-full overflow-x-clip bg-[#F8FAFC] font-sans text-[#0B132A] antialiased selection:bg-[#E66E19]/20 selection:text-[#E66E19]">
         <ScrollToTop />
         <Navbar />
         <Routes>

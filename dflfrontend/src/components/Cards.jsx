@@ -20,8 +20,8 @@ export default function Cards({ services = [], onInquire }) {
           const nextTop = nextEl.getBoundingClientRect().top;
           const offset = 80 + (i + 1) * 40;
           const dist = nextTop - offset;
-          // Scale 1 se reduce hokar 0.85 tak smooth shrink hoga
-          const scale = dist < 250 ? Math.max(0.85, 0.85 + (dist / 250) * 0.07) : 1;
+          // Scale smoothly from 1.0 down to 0.88 as the next card overlaps
+          const scale = dist < 250 ? Math.max(0.88, 1 - ((250 - dist) / 250) * 0.12) : 1;
           newScales[i] = scale;
         }
       });
@@ -34,7 +34,7 @@ export default function Cards({ services = [], onInquire }) {
   }, [services.length]);
 
   return (
-    <div className="relative my-8 w-full pb-24">
+    <div className="relative my-8 w-full pb-32">
       {services.map((service, index) => {
         const tabOffset = 80 + index * 40;
         const scale = scales[index] ?? 1;

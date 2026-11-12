@@ -32,7 +32,8 @@
     "transportation": "Transport",
     "oceanFreight": "Fret maritime et transit",
     "customClearance": "Dédouanement",
-    "warehousing": "Entreposage"
+    "warehousing": "Entreposage",
+    "perishable": "Cargaison périssable"
   },
   "cards": {
     "explore_service": "Découvrir le service →",

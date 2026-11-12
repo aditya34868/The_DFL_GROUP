@@ -32,7 +32,8 @@
     "transportation": "Транспортировка",
     "oceanFreight": "Морские перевозки и экспедирование",
     "customClearance": "Таможенное оформление",
-    "warehousing": "Складские услуги"
+    "warehousing": "Складские услуги",
+    "perishable": "Скоропортящиеся грузы"
   },
   "cards": {
     "explore_service": "Посмотреть услугу →",

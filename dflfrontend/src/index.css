@@ -2,6 +2,11 @@
 
 html {
   font-size: 16px; /* ya aap jo base scale chahte hain */
+  overflow-x: clip;
+}
+
+body {
+  overflow-x: clip;
 }
 
 @theme {

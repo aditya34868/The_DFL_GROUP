@@ -32,7 +32,8 @@
     "transportation": "النقل",
     "oceanFreight": "شحن الشحنات البحرية",
     "customClearance": "التخليص الجمركي",
-    "warehousing": "التخزين"
+    "warehousing": "التخزين",
+    "perishable": "البضائع القابلة للتلف"
   },
   "cards": {
     "explore_service": "استكشف الخدمة ←",

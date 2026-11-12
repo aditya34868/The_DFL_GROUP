@@ -32,7 +32,8 @@
     "transportation": "Transportation",
     "oceanFreight": "Ocean Freight Forwarding",
     "customClearance": "Customs Clearance",
-    "warehousing": "Warehousing"
+    "warehousing": "Warehousing",
+    "perishable": "Perishable Cargo"
   },
   "cards": {
     "explore_service": "Explore Service →",
