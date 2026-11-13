@@ -10,6 +10,7 @@ import {
 import img1 from "../assets/Arctic Reefer and Fresh Catch Display.png";
 import img2 from "../assets/Frozen Harbor Refrigeration Operations.png";
 import img3 from "../assets/Reefer Container at Golden Harbor Dusk.png";
+import img4 from "../assets/Modern Cold Storage Warehouse.png";
 import {
   FiThermometer,
   FiClock,
@@ -342,7 +343,7 @@ export default function PerishableCargo() {
                 ),
               },
               {
-                src: img2,
+                src: img4,
                 icon: FiZap,
                 tag: t("perishable.facilities.1.tag", "Green-Channel Clearance"),
                 title: t(
