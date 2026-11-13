@@ -156,7 +156,7 @@ export default function DflITSolutions() {
             )}
 
             {/* ROW 2: OTHER MEMBERS - Responsive Grid for consistent card sizing on large screens */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full justify-items-center">
+            <div className="flex flex-wrap justify-center gap-8 w-full ">
               {otherMembers.map((member, idx) => (
                 <div key={idx} className="w-full max-w-md flex justify-center">
                   <MemberCard
