@@ -64,19 +64,28 @@ export default function Home() {
 
             {/* Slide Highlights - Single-cell CSS Grid guarantees stable, unchanging height across all slides & languages */}
             <div className="grid grid-cols-1 grid-rows-1">
-              {highlights.map((_, idx) => (
-                <h1
-                  key={idx}
-                  aria-hidden={idx !== activeSlide}
-                  className={`col-start-1 row-start-1 text-3xl sm:text-4xl md:text-5xl lg:text-[44px] xl:text-[54px] 2xl:text-[64px] font-extrabold leading-[1.22] sm:leading-[1.2] py-1 break-words [text-wrap:balance] bg-gradient-to-r from-[#E66E19] from-20% to-[#000000] to-70% bg-clip-text text-transparent transition-opacity duration-700 ease-in-out ${
-                    idx === activeSlide
-                      ? "opacity-100 z-10"
-                      : "opacity-0 pointer-events-none z-0"
-                  }`}
-                >
-                  {t(`home.highlights.${idx}`, highlights[idx])}
-                </h1>
-              ))}
+              {highlights.map((_, idx) => {
+                const text = t(`home.highlights.${idx}`, highlights[idx]);
+                const lines = typeof text === "string" ? text.split("\n") : [text];
+
+                return (
+                  <h1
+                    key={idx}
+                    aria-hidden={idx !== activeSlide}
+                    className={`col-start-1 row-start-1 text-3xl sm:text-4xl md:text-5xl lg:text-[40px] xl:text-[48px] 2xl:text-[56px] font-extrabold leading-[1.18] sm:leading-[1.16] py-1 bg-gradient-to-r from-[#E66E19] from-20% to-[#000000] to-70% bg-clip-text text-transparent transition-opacity duration-700 ease-in-out ${
+                      idx === activeSlide
+                        ? "opacity-100 z-10"
+                        : "opacity-0 pointer-events-none z-0"
+                    }`}
+                  >
+                    {lines.map((line, lineIdx) => (
+                      <span key={lineIdx} className="block">
+                        {line}
+                      </span>
+                    ))}
+                  </h1>
+                );
+              })}
             </div>
 
             <div className="my-4 sm:my-5 h-1 w-40 origin-left bg-[#E66E19] [animation:lineDraw_2s_0.20s_ease-out_forwards]" />
@@ -95,7 +104,7 @@ export default function Home() {
                   <img
                     key={idx}
                     src={imgSrc}
-                    alt={highlights[idx] || "DFL Express Logistics"}
+                    alt={typeof highlights[idx] === "string" ? highlights[idx].replace(/\n/g, " ") : "DFL Express Logistics"}
                     aria-hidden={idx !== activeSlide}
                     className={`absolute inset-0 h-full w-full object-contain filter drop-shadow-[0_16px_36px_rgba(0,0,0,0.12)] transition-opacity duration-700 ease-in-out ${
                       idx === activeSlide

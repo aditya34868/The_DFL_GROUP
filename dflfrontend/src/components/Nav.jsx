@@ -146,12 +146,12 @@ export default function Navbar() {
       }`}
     >
       {/* MAIN NAVBAR CONTAINER - Responsive width matching page layout */}
-      <div className="mx-auto flex w-full max-w-7xl xl:max-w-[1520px] 2xl:max-w-[1680px] items-center justify-between px-5 sm:px-7 lg:px-9 xl:px-12">
+      <div className="mx-auto flex w-full max-w-7xl xl:max-w-[1520px] 2xl:max-w-[1680px] items-center justify-between px-4 sm:px-6 lg:px-5 xl:px-8 2xl:px-10">
         {/* BRAND LOGO */}
         <Link
           to="/"
           onClick={closeAllMenus}
-          className="flex items-center gap-3 sm:gap-3.5 xl:gap-4 hover:opacity-90 transition-opacity shrink-0"
+          className="flex items-center gap-2.5 sm:gap-3 xl:gap-3.5 hover:opacity-90 transition-opacity shrink-0"
         >
           <img
             src="https://thedflgroup.com/wp-content/uploads/2025/11/Final-LOGO-Dinesh-R1-3.png"
@@ -168,7 +168,7 @@ export default function Navbar() {
         </Link>
 
         {/* DESKTOP NAV - Switches at lg: with perfectly tuned responsive gaps */}
-        <div className="hidden lg:flex items-center gap-2.5 xl:gap-5 2xl:gap-7">
+        <div className="hidden lg:flex items-center gap-3.5 xl:gap-5.5 2xl:gap-7">
           {navItems.map((item) =>
             item.hasDropdown ? (
               // SERVICES WITH DROPDOWN
@@ -179,7 +179,7 @@ export default function Navbar() {
                 onMouseLeave={() => setDesktopDropdownOpen(false)}
               >
                 <div
-                  className={`flex items-center gap-1.5 text-[12.5px] xl:text-[14px] 2xl:text-[15.5px] font-bold transition-colors whitespace-nowrap ${
+                  className={`flex items-center gap-1.5 text-[13px] xl:text-[14px] 2xl:text-[15.5px] font-bold transition-colors whitespace-nowrap ${
                     desktopDropdownOpen
                       ? "text-[#E66E19]"
                       : "text-[#0B132A] hover:text-[#E66E19]"
@@ -216,7 +216,7 @@ export default function Navbar() {
                 key={item.key}
                 to={item.path}
                 className={({ isActive }) =>
-                  `text-[12.5px] xl:text-[14px] 2xl:text-[15.5px] font-bold transition-colors hover:text-[#E66E19] whitespace-nowrap py-1.5 ${
+                  `text-[13px] xl:text-[14px] 2xl:text-[15.5px] font-bold transition-colors hover:text-[#E66E19] whitespace-nowrap py-1.5 ${
                     isActive ? "text-[#E66E19]" : "text-[#0B132A]"
                   }`
                 }
@@ -229,7 +229,7 @@ export default function Navbar() {
         </div>
 
         {/* RIGHT ACTION BUTTONS */}
-        <div className="flex items-center gap-2.5 sm:gap-3 xl:gap-4">
+        <div className="flex items-center gap-2 sm:gap-2.5 xl:gap-3.5">
           {/* DESKTOP LANGUAGE SWITCHER */}
           <div className="hidden lg:block shrink-0">
             <LanguageSwitcher />
