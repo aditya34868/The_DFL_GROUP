@@ -196,7 +196,7 @@ export default function CustomsClearance() {
               return (
                 <div
                   key={idx}
-                  className="group relative flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-[#E66E19] hover:shadow-xl"
+                  className="group relative flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:border-[#E66E19] hover:bg-[#E66E19] hover:shadow-xl cursor-pointer"
                 >
                   <div>
                     <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-50 border border-orange-100 text-[#E66E19] group-hover:bg-white/20 group-hover:border-white/30 group-hover:text-white transition-colors">
