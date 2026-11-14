@@ -1,8 +1,3 @@
-// Step 1: Apne assets folder se 12 images import karein
-import inlandTransportImg from "../assets/businessGroth.webp";
-import oceanFreightImg from "../assets/Global Logistics Network in Motion.png";
-import airFreightImg from "../assets/Global Support Team Banner.png";
-import customerClearanceImg from "../assets/Secure Logistics World in Motion.png";
 import perishableCargoImg from "../assets/Arctic Reefer and Fresh Catch Display.png";
 
 import { FiShield, FiFileText, FiAnchor, FiCheckSquare, FiTruck, FiZap,
@@ -215,10 +210,10 @@ export const highlights = [
 ];
 
 export const heroSlideImages = [
-  inlandTransportImg,
-  oceanFreightImg,
-  airFreightImg,
-  customerClearanceImg,
+  "https://ik.imagekit.io/d4cjfvwoy/businessGroth.webp",
+  "https://ik.imagekit.io/d4cjfvwoy/Global%20Logistics%20Network%20in%20Motion.png",
+  "https://ik.imagekit.io/d4cjfvwoy/Global%20Support%20Team%20Banner.png",
+  "https://ik.imagekit.io/d4cjfvwoy/Secure%20Logistics%20World%20in%20Motion.png",
 ];
 export const footerData = {
   companyInfo: {

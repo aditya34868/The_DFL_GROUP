@@ -7,10 +7,6 @@ import {
   perishableSmartFeatures,
   perishableCargoFaq,
 } from "../data/siteData";
-import img1 from "../assets/Arctic Reefer and Fresh Catch Display.png";
-import img2 from "../assets/Frozen Harbor Refrigeration Operations.png";
-import img3 from "../assets/Reefer Container at Golden Harbor Dusk.png";
-import img4 from "../assets/Modern Cold Storage Warehouse.png";
 import {
   FiThermometer,
   FiClock,
@@ -191,7 +187,7 @@ export default function PerishableCargo() {
             </div>
             <div className="lg:col-span-5">
               <ImageCard
-                src={img1}
+                src="https://ik.imagekit.io/d4cjfvwoy/Arctic%20Reefer%20and%20Fresh%20Catch%20Display.png"
                 alt="Arctic Reefer and Fresh Catch Cold Chain Logistics"
                 tag={t("perishable.heroImageTag", "Cold Chain Integrity")}
                 title={t(
@@ -294,7 +290,7 @@ export default function PerishableCargo() {
           </div>
           <div className="lg:col-span-6">
             <ImageCard
-              src={img2}
+              src="https://ik.imagekit.io/d4cjfvwoy/Frozen%20Harbor%20Refrigeration%20Operations.png"
               alt="Frozen Harbor Refrigeration Operations"
               tag={t("perishable.harborTag", "HARBOR COLD-CHAIN OPS")}
               title={t(
@@ -330,7 +326,7 @@ export default function PerishableCargo() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               {
-                src: img3,
+                src: "https://ik.imagekit.io/d4cjfvwoy/Reefer%20Container%20at%20Golden%20Harbor%20Dusk.png",
                 icon: FiClock,
                 tag: t("perishable.facilities.0.tag", "20ft & 40ft Active Reefers"),
                 title: t(
@@ -343,7 +339,7 @@ export default function PerishableCargo() {
                 ),
               },
               {
-                src: img4,
+                src: "https://ik.imagekit.io/d4cjfvwoy/Modern%20Cold%20Storage%20Warehouse.png",
                 icon: FiZap,
                 tag: t("perishable.facilities.1.tag", "Green-Channel Clearance"),
                 title: t(

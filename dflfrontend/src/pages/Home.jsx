@@ -6,7 +6,6 @@ import { useTalkModal } from "../context/TalkModalContext";
 import Cards from "../components/Cards";
 import FeaturesCards from "../components/FeaturesCards";
 import Faq from "../components/Faq";
-import flight from "../assets/DFL Group Cargo Jet in Flight.png";
 
 import { 
   LOGISTICS_IMAGES,
@@ -124,7 +123,7 @@ export default function Home() {
       <section className="relative w-full h-16 sm:h-20 lg:h-24 -mt-4 sm:-mt-6 lg:-mt-8 bg-white overflow-hidden pointer-events-none select-none">
         <div className="absolute animate-plane-fly">
           <img
-            src={flight}
+            src="https://ik.imagekit.io/d4cjfvwoy/DFL%20Group%20Cargo%20Jet%20in%20Flight.png"
             alt="DFL Cargo Jet Flight"
             className="w-28 sm:w-36 md:w-44 lg:w-52 h-auto object-contain filter drop-shadow-[0_10px_20px_rgba(0,0,0,0.12)]"
             loading="eager"
@@ -202,7 +201,7 @@ export default function Home() {
 
           <div className="lg:w-7/12 relative w-full">
             <img 
-              src="https://ik.imagekit.io/t3zpyptj9/Global%20Locations%20Infographic%20Map.png" 
+              src="https://ik.imagekit.io/d4cjfvwoy/Global%20Locations%20Infographic%20Map.png" 
               alt="Global Map Network"
               className="w-full max-w-full h-auto object-contain"
               loading="lazy"
