@@ -1,4 +1,3 @@
-import perishableCargoImg from "../assets/Arctic Reefer and Fresh Catch Display.png";
 
 import { FiShield, FiFileText, FiAnchor, FiCheckSquare, FiTruck, FiZap,
    FiGlobe,FiBox,FiLock,FiServer,FiPackage,FiNavigation,FiMapPin,FiTrendingUp,
@@ -149,7 +148,7 @@ export const services = [
     description:
       "End-to-end cold chain logistics for fresh produce, frozen food, and temperature-sensitive goods with unbroken cold chain integrity.",
     tag: "Cold Chain & Reefers",
-    image: perishableCargoImg,
+    image: "https://ik.imagekit.io/d4cjfvwoy/Arctic%20Reefer%20and%20Fresh%20Catch%20Display.png",
     features: [
       "Deep Frozen (-18°C to -25°C)",
       "Chilled (+2°C to +8°C)",
