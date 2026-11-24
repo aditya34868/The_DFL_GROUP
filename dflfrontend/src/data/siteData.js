@@ -214,6 +214,7 @@ export const heroSlideImages = [
   "https://ik.imagekit.io/d4cjfvwoy/Global%20Support%20Team%20Banner.png",
   "https://ik.imagekit.io/d4cjfvwoy/Secure%20Logistics%20World%20in%20Motion.png",
 ];
+
 export const footerData = {
   companyInfo: {
     brandName: "The DFL Group",
@@ -1384,9 +1385,87 @@ export const branchOffices = [
       question:"How can warehousing help my business?",
       answer:"Good warehousing helps businesses keep their stock organized and reduces the difficulty of managing goods at different stages of the supply chain. It also makes it easier to prepare and dispatch goods when they are needed."
     }
-    ]
-    
-    
-    
-  
+    ];
+
+// ==========================================
+// DFL IT SOLUTIONS - 5-STEP WORKFLOW ONBOARDING PROCESS
+// ==========================================
+export const itWorkflowSteps = [
+  {
+    id: 1,
+    step: "STEP 1",
+    stepNum: "01",
+    title: "Kickoff Meeting",
+    tagline: "Alignment & Project Launch",
+    description:
+      "We initiate the process with a call to understand your business goals, target audience, and the specific outcomes you aim to achieve. You will join our slack channel, fill out a quick onboarding form and we are ready to start.",
+    highlights: [
+      "Strategic Goal Alignment Call",
+      "Dedicated Client Slack Workspace",
+      "Quick & Simple Onboarding Form",
+      "Defined Milestones & Deliverables",
+    ],
+  },
+  {
+    id: 2,
+    step: "STEP 2",
+    stepNum: "02",
+    title: "Discovery Phase & Wireframing",
+    tagline: "Research & UX Architecture",
+    description:
+      "We will collect initial ideas and concepts. This research forms the foundation to create a design that speaks directly to your audience, setting up the stage for high-conversions.",
+    highlights: [
+      "In-Depth Industry & Competitor Research",
+      "Concept Ideation & Brainstorming",
+      "Conversion-Focused UX Wireframes",
+      "User Journey & Architecture Mapping",
+    ],
+  },
+  {
+    id: 3,
+    step: "STEP 3",
+    stepNum: "03",
+    title: "Design",
+    tagline: "High-Fidelity Visual Systems",
+    description:
+      "We design a visually stunning, professional and user-friendly site that captures attention and keeps your visitors engaged.",
+    highlights: [
+      "Modern & Engaging Visual Aesthetic",
+      "Interactive Figma Prototypes",
+      "Seamless Cross-Device Responsiveness",
+      "Design Systems & Brand Consistency",
+    ],
+  },
+  {
+    id: 4,
+    step: "STEP 4",
+    stepNum: "04",
+    title: "Development",
+    tagline: "Full-Stack & Webflow Engineering",
+    description:
+      "We build your site using Webflow or Wix, ensuring fast load times, seamless functionality, SEO-friendly and third-party integrations.",
+    highlights: [
+      "Webflow / Wix / Custom Web Engineering",
+      "Blazing-Fast Loading Speeds & Core Web Vitals",
+      "SEO-Optimized Structure & Semantic Markup",
+      "CRM, Analytics & Third-Party Integrations",
+    ],
+  },
+  {
+    id: 5,
+    step: "STEP 5",
+    stepNum: "05",
+    title: "Testing & Deployment",
+    tagline: "QA, Cloud Infrastructure & Go-Live",
+    description:
+      "We test, optimize, and deploy your complete digital solution — including web apps, mobile apps, backend APIs, databases, and cloud infrastructure — ensuring a secure, scalable, and reliable launch.",
+    highlights: [
+      "Multi-Device Cross-Browser QA Testing",
+      "Database & Backend API Security Validation",
+      "Cloud Infrastructure & Server Provisioning",
+      "Zero-Downtime Scalable Live Production Launch",
+    ],
+  },
+];
+
 
