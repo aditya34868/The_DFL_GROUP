@@ -1,7 +1,8 @@
-import React, { useRef, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { useTalkModal } from '../context/TalkModalContext';
-import InteractiveLogo from '../components/InteractiveLogo';
+import React, { useRef, useEffect, useState } from 'react';
+import ItHeroSection from '../components/ItHeroSection';
+import DflItFutureReady from '../components/DflItFutureReady';
+import RecommendedBrandsSection from '../components/RecommendedBrandsSection';
+import DflItScrollShowcase from '../components/DflItScrollShowcase';
 import OrbitAnimation from '../components/OrbitAnimation';
 import DocumentSearchAnimation from '../components/DocumentSearchAnimation';
 import DesignWorkspaceAnimation from '../components/DesignWorkspaceAnimation';
@@ -10,25 +11,85 @@ import CloudServerAnimation from '../components/CloudServerAnimation';
 import video1 from "../assets/QB_March6_Final_ compressed.mp4";
 import { itWorkflowSteps } from '../data/siteData';
 import {
-  FiArrowRight,
   FiZap,
   FiShield,
   FiCloud,
 } from 'react-icons/fi';
 
 const Dfl_It = () => {
-  const contactBtnRef = useRef(null);
   const processSectionRef = useRef(null);
+  const stepsContainerRef = useRef(null);
+  const nodeRefs = useRef([]);
+  const [activeStep, setActiveStep] = useState(1);
+  const [scrollProgress, setScrollProgress] = useState(0);
   const videoRef = useRef(null);
-  const { openModal } = useTalkModal();
 
   // Ensure video autoplays continuously and smoothly in muted loop across all browsers
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.defaultMuted = true;
       videoRef.current.muted = true;
-      videoRef.current.play().catch(() => {});
+      videoRef.current.play().catch(() => { });
     }
+  }, []);
+
+  // Butter-smooth 60fps scroll tracking synchronized precisely from Node 1 to Node 5
+  useEffect(() => {
+    let rafId = null;
+
+    const updateTimeline = () => {
+      const n1 = nodeRefs.current[0];
+      const n5 = nodeRefs.current[4];
+      if (!n1 || !n5) return;
+
+      const windowHeight = window.innerHeight;
+      // Focal point in viewport where user reads the card (48% of screen)
+      const focalPoint = windowHeight * 0.48;
+
+      const n1Rect = n1.getBoundingClientRect();
+      const n5Rect = n5.getBoundingClientRect();
+
+      const n1Center = n1Rect.top + n1Rect.height / 2;
+      const n5Center = n5Rect.top + n5Rect.height / 2;
+      const totalDistance = n5Center - n1Center;
+
+      if (totalDistance > 0) {
+        const currentDistance = focalPoint - n1Center;
+        const progress = Math.min(1, Math.max(0, currentDistance / totalDistance));
+        setScrollProgress(progress);
+      }
+
+      // Determine active step based on which node has crossed the focal threshold
+      let currentStep = 1;
+      nodeRefs.current.forEach((el, idx) => {
+        if (el) {
+          const elRect = el.getBoundingClientRect();
+          const center = elRect.top + elRect.height / 2;
+          if (center <= focalPoint + 40) {
+            currentStep = idx + 1;
+          }
+        }
+      });
+      setActiveStep(currentStep);
+    };
+
+    const handleScroll = () => {
+      if (rafId) return;
+      rafId = requestAnimationFrame(() => {
+        updateTimeline();
+        rafId = null;
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('resize', handleScroll, { passive: true });
+    updateTimeline();
+
+    return () => {
+      if (rafId) cancelAnimationFrame(rafId);
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleScroll);
+    };
   }, []);
 
   const scrollToProcess = () => {
@@ -53,64 +114,19 @@ const Dfl_It = () => {
   };
 
   return (
-    <div className="pt-20 min-h-screen bg-white relative overflow-hidden font-sans">
-      
+    <div className="pt-20 min-h-screen bg-white relative overflow-x-clip font-sans">
+
       {/* ======================================================== */}
-      {/* 1. HERO SECTION WITH INTERACTIVE LOGO CANVAS */}
+      {/* 1. TOP HERO SECTION */}
       {/* ======================================================== */}
-      <section className="relative min-h-[calc(100vh-5rem)] flex items-center">
-        {/* Background Interactive Canvas */}
-        <div className="absolute inset-0 top-0 w-full h-full pointer-events-auto">
-          <InteractiveLogo
-            align="right"
-            maxSize={1400}
-            originRef={contactBtnRef}
-          />
-        </div>
-
-        {/* Foreground Content */}
-        <main className="relative z-10 mx-auto max-w-7xl xl:max-w-[1600px] px-6 sm:px-10 lg:px-12 w-full py-12 flex items-center pointer-events-none">
-          <div className="w-full lg:w-1/2 pointer-events-auto py-12 flex flex-col justify-center">
-            
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-widest bg-orange-100 text-[#E66E19] border border-orange-200/80 w-fit mb-5 shadow-sm">
-              <span className="h-2 w-2 rounded-full bg-[#E66E19] animate-pulse" />
-              DFL IT Solutions
-            </span>
-
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-slate-900 tracking-tight leading-[1.12]">
-              Next-Gen <span className="text-[#E66E19]">Tech-Driven</span> Logistics & Software
-            </h1>
-
-            <p className="mt-6 text-base sm:text-lg text-slate-600 leading-relaxed max-w-xl font-medium">
-              Empowering modern supply chains and digital enterprises with cutting-edge IT infrastructure, custom software engineering, and seamless digital transformation.
-            </p>
-
-            <div className="mt-8 flex flex-wrap items-center gap-4">
-              <button
-                onClick={scrollToProcess}
-                className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-2xl bg-[#E66E19] hover:bg-[#d05f12] text-white font-bold text-sm shadow-lg shadow-orange-500/25 transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
-              >
-                <span>Explore Process</span>
-                <FiArrowRight className="w-4 h-4" />
-              </button>
-              <Link
-                to="/contactUs"
-                ref={contactBtnRef}
-                className="px-7 py-3.5 rounded-2xl border border-slate-200 hover:border-slate-300 bg-slate-50 hover:bg-slate-100 text-slate-700 font-bold text-sm transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
-              >
-                Contact Us
-              </Link>
-            </div>
-
-          </div>
-        </main>
-      </section>
+      <ItHeroSection scrollToProcess={scrollToProcess} />
 
       {/* ======================================================== */}
       {/* 2. VISION & CINEMATIC AUTOPLAY VIDEO (MUTED, NO BORDER, WITH SIDE GAPS) */}
       {/* ======================================================== */}
-      <section className="relative z-10 w-full pt-20 sm:pt-28 pb-16 sm:pb-24 bg-white overflow-hidden">
-        
+
+      <section className="relative z-10 w-full pt-4 sm:pt-6 pb-8 sm:pb-12 bg-white overflow-hidden">
+
         {/* Section Header Text */}
         <div className="mx-auto max-w-5xl px-6 sm:px-10 text-center mb-12 sm:mb-16">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-widest bg-orange-100 text-[#E66E19] border border-orange-200/80 mb-5 shadow-sm">
@@ -118,7 +134,10 @@ const Dfl_It = () => {
             The DFL IT Mindset
           </span>
 
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-[1.25]">
+          <h2
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#22150d] tracking-tight leading-[1.25]"
+            style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800 }}
+          >
             At DFL, IT is more than technology — it’s a{" "}
             <span className="text-[#E66E19]">mindset</span> that inspires innovation, cultivates talent, and drives transformative experiences for clients across industries.
           </h2>
@@ -184,14 +203,20 @@ const Dfl_It = () => {
       </section>
 
       {/* ======================================================== */}
-      {/* 3. "HOW IT WORKS" - 5 STEP ONBOARDING PROCESS */}
+      {/* 3. DFL IT CORE SERVICES - STICKY SPLIT-SCREEN SCROLL SHOWCASE */}
+      {/* ======================================================== */}
+      <DflItScrollShowcase />
+
+      {/* ======================================================== */}
+      {/* 4. "HOW IT WORKS" - 5 STEP ONBOARDING PROCESS */}
       {/* ======================================================== */}
       <section
+        id="process"
         ref={processSectionRef}
-        className="relative z-10 py-20 sm:py-28 lg:py-32 bg-slate-50/70 border-t border-slate-200/70 overflow-hidden"
+        className="relative z-10 pt-6 sm:pt-10 lg:pt-12 pb-16 sm:pb-24 lg:pb-28 bg-white border-t border-slate-100/80 overflow-hidden"
       >
         <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-12">
-          
+
           {/* Section Heading */}
           <div className="text-center max-w-3xl mx-auto space-y-4">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-widest bg-orange-100 text-[#E66E19] border border-orange-200/80 shadow-sm">
@@ -208,102 +233,135 @@ const Dfl_It = () => {
             </p>
           </div>
 
-          {/* 5 Step Cards (Compact size & minimal top/bottom padding) */}
-          <div className="mt-12 sm:mt-16 max-w-5xl xl:max-w-6xl mx-auto space-y-5 sm:space-y-6">
-            {itWorkflowSteps.map((step) => (
-              <div
-                key={step.id}
-                className="group relative rounded-2xl sm:rounded-3xl bg-white border border-slate-200/90 py-5 px-5 sm:py-6 sm:px-8 lg:py-6 lg:px-9 shadow-sm hover:shadow-xl hover:border-[#E66E19]/60 transition-all duration-300 min-h-[290px] sm:min-h-[310px] lg:min-h-[300px] flex flex-col justify-center overflow-hidden"
-              >
-                <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center w-full my-auto">
-                  
-                  {/* Left Column: Text Content */}
-                  <div className="lg:col-span-7 xl:col-span-6 flex flex-col justify-center order-2 lg:order-1">
-                    
-                    {/* Badge and Tagline */}
-                    <div className="flex flex-wrap items-center gap-2 mb-2">
-                      <span className="px-2.5 py-0.5 rounded-full text-[11px] font-black uppercase tracking-wider bg-orange-100 text-[#E66E19] border border-orange-200 shadow-xs">
-                        {step.step}
-                      </span>
-                      <span className="text-[11px] sm:text-xs font-bold text-slate-400 uppercase tracking-wider">
-                        {step.tagline}
-                      </span>
+          {/* 5 Step Cards with Scroll-Tracking Interactive Timeline (1, 2, 3, 4, 5) */}
+          <div ref={stepsContainerRef} className="relative mt-14 sm:mt-20 max-w-5xl xl:max-w-6xl mx-auto">
+
+            {/* The Continuous Vertical Background Track Line */}
+            <div className="absolute left-[16px] sm:left-[18px] top-[28px] sm:top-[32px] bottom-[28px] sm:bottom-[32px] w-[2px] bg-slate-200 -translate-x-1/2 rounded-full" />
+
+            {/* The Animated Orange Scroll Progress Line (GPU-accelerated scaleY, 60fps butter-smooth) */}
+            <div
+              className="absolute left-[16px] sm:left-[18px] top-[28px] sm:top-[32px] bottom-[28px] sm:bottom-[32px] w-[2px] bg-[#E66E19] -translate-x-1/2 rounded-full shadow-xs shadow-orange-500/20 pointer-events-none"
+              style={{
+                transformOrigin: 'top',
+                transform: `scaleY(${scrollProgress})`,
+                willChange: 'transform',
+              }}
+            />
+
+            {/* Steps List with Spacious Gaps (Like in reference video) */}
+            <div className="space-y-12 sm:space-y-16 lg:space-y-20">
+              {itWorkflowSteps.map((step, index) => {
+                const isActive = activeStep >= step.id;
+                const isCurrent = activeStep === step.id;
+
+                return (
+                  <div
+                    key={step.id}
+                    className="relative flex items-start gap-3 sm:gap-6 lg:gap-8"
+                  >
+                    {/* Left Timeline Node (1, 2, 3, 4, 5) - Sleek, Professional & Refined */}
+                    <div className="relative z-10 shrink-0 pt-2 sm:pt-3">
+                      <div
+                        ref={(el) => (nodeRefs.current[index] = el)}
+                        className={`w-8 h-8 sm:w-9 sm:h-9 rounded-full flex items-center justify-center text-xs sm:text-[13px] font-black select-none transition-all duration-300 ${isActive
+                          ? 'bg-[#E66E19] text-white shadow-sm shadow-orange-500/25 ring-[3px] ring-orange-100 border border-white'
+                          : 'bg-white text-slate-400 border border-slate-200 shadow-2xs'
+                          } ${isCurrent ? 'scale-105' : 'scale-100'}`}
+                      >
+                        <span>{step.id}</span>
+                      </div>
                     </div>
 
-                    {/* Step Title */}
-                    <h3 className="text-lg sm:text-xl lg:text-2xl font-black text-slate-900 tracking-tight group-hover:text-[#E66E19] transition-colors duration-200">
-                      {step.title}
-                    </h3>
+                    {/* Step Card with Bold Typography & Spacious Padding */}
+                    <div className="flex-1 min-w-0">
+                      <div
+                        className={`group relative rounded-3xl overflow-hidden transition-all duration-300 p-6 sm:p-8 lg:p-10 shadow-xl ${isCurrent
+                          ? 'border border-[#E66E19] ring-2 ring-[#E66E19]/40 shadow-2xl shadow-orange-500/15'
+                          : 'border border-slate-700/60 hover:border-[#E66E19]/60 hover:shadow-2xl hover:shadow-black/30'
+                          }`}
+                        style={{
+                          background: 'linear-gradient(135deg, #0B132A 0%, #0E1A38 52%, #2A1507 100%)',
+                        }}
+                      >
+                        {/* Ambient Orange & Deep Navy Glow Lights inside Card */}
+                        <div className="absolute -top-16 -right-16 w-72 h-72 bg-[#E66E19]/15 rounded-full blur-3xl pointer-events-none" />
+                        <div className="absolute -bottom-10 right-1/4 w-52 h-52 bg-orange-600/10 rounded-full blur-2xl pointer-events-none" />
+                        <div className="absolute top-0 left-0 w-60 h-60 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
 
-                    {/* Description */}
-                    <p className="mt-1.5 text-xs sm:text-[13px] lg:text-sm text-slate-600 font-medium leading-relaxed">
-                      {step.description}
-                    </p>
+                        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center w-full">
 
-                    {/* Highlights bullet chips */}
-                    <div className="mt-3.5 pt-3.5 border-t border-slate-100 grid grid-cols-1 sm:grid-cols-2 gap-2">
-                      {step.highlights.map((item, hIdx) => (
-                        <div
-                          key={hIdx}
-                          className="flex items-center gap-2 text-xs font-semibold text-slate-700 bg-slate-50 border border-slate-100 px-2.5 py-1 rounded-lg"
-                        >
-                          <span className="h-4 w-4 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-[10px] shrink-0 font-black">
-                            ✓
-                          </span>
-                          <span className="truncate">{item}</span>
+                          {/* Left Column: Bold Text Content */}
+                          <div className="lg:col-span-7 xl:col-span-6 flex flex-col justify-center order-2 lg:order-1">
+
+                            {/* Step Tagline / Eyebrow */}
+                            <div className="flex flex-wrap items-center gap-2 mb-2.5">
+                              <span className="px-2.5 py-0.5 rounded-full text-[11px] font-black uppercase tracking-wider bg-[#E66E19]/20 text-[#FF8533] border border-[#E66E19]/40 shadow-xs">
+                                {step.step}
+                              </span>
+                              <span className="text-xs text-slate-500 font-bold">•</span>
+                              <span className="text-xs font-black uppercase tracking-wider text-slate-300">
+                                {step.tagline}
+                              </span>
+                            </div>
+
+                            {/* Step Title (Bold typography) */}
+                            <h3 className="text-xl sm:text-2xl lg:text-3xl font-black text-white tracking-tight group-hover:text-[#FF8533] transition-colors duration-200">
+                              {step.title}
+                            </h3>
+
+                            {/* Description */}
+                            <p className="mt-2.5 text-xs sm:text-sm lg:text-[15px] text-slate-300 font-normal leading-relaxed">
+                              {step.description}
+                            </p>
+
+                            {/* Highlights in 2x2 grid with bold styling */}
+                            <div className="mt-5 sm:mt-6 pt-5 border-t border-white/10 grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3">
+                              {step.highlights.map((item, hIdx) => (
+                                <div
+                                  key={hIdx}
+                                  className="flex items-center gap-2.5 text-xs sm:text-[13px] font-semibold text-slate-200 bg-white/[0.06] hover:bg-white/[0.12] border border-white/10 px-3 py-2 rounded-xl transition-all duration-200 group-hover:border-[#E66E19]/40"
+                                >
+                                  <span className="h-5 w-5 rounded-full bg-[#E66E19]/25 text-[#FF8533] border border-[#E66E19]/40 flex items-center justify-center text-[10px] shrink-0 font-black shadow-xs">
+                                    ✓
+                                  </span>
+                                  <span className="truncate">{item}</span>
+                                </div>
+                              ))}
+                            </div>
+
+                          </div>
+
+                          {/* Right Column: Animation Canvas */}
+                          <div className="lg:col-span-5 xl:col-span-6 flex items-center justify-center order-1 lg:order-2 min-h-[220px] sm:min-h-[250px]">
+                            <div className="w-full h-full flex items-center justify-center scale-90 sm:scale-100 origin-center transition-transform duration-300">
+                              {renderStepAnimation(step.id)}
+                            </div>
+                          </div>
+
                         </div>
-                      ))}
+                      </div>
                     </div>
 
                   </div>
-
-                  {/* Right Column: Animation Canvas (Uniform across all cards) */}
-                  <div className="lg:col-span-5 xl:col-span-6 flex items-center justify-center order-1 lg:order-2 h-[250px] sm:h-[260px] lg:h-[265px]">
-                    <div className="w-full h-full flex items-center justify-center scale-90 sm:scale-100 origin-center transition-transform duration-300">
-                      {renderStepAnimation(step.id)}
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Bottom Interactive CTA Card */}
-          <div className="mt-16 sm:mt-20 max-w-5xl mx-auto rounded-3xl bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white p-8 sm:p-12 shadow-2xl relative overflow-hidden border border-slate-700">
-            <div className="absolute top-0 right-0 w-80 h-80 bg-orange-500/15 rounded-full blur-3xl pointer-events-none" />
-            <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
-              <div className="space-y-2 max-w-xl">
-                <span className="text-xs font-extrabold uppercase tracking-widest text-[#E66E19]">
-                  Ready to Build Something Extraordinary?
-                </span>
-                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight text-white">
-                  Let’s Turn Your Digital Ideas Into Reality
-                </h3>
-                <p className="text-sm text-slate-300 font-medium">
-                  Connect with our lead architects and engineers to kickstart your customized digital solution.
-                </p>
-              </div>
-
-              <div className="flex flex-wrap items-center justify-center gap-4 shrink-0">
-                <button
-                  onClick={openModal}
-                  className="px-7 py-4 rounded-xl bg-[#E66E19] hover:bg-[#d05f12] text-white font-bold text-sm shadow-lg shadow-orange-600/30 transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
-                >
-                  Schedule a Consultation
-                </button>
-                <Link
-                  to="/contactUs"
-                  className="px-7 py-4 rounded-xl bg-white/10 hover:bg-white/15 text-white font-bold text-sm border border-white/20 transition-all duration-200 hover:-translate-y-0.5 cursor-pointer"
-                >
-                  Contact DFL IT
-                </Link>
-              </div>
+                );
+              })}
             </div>
+
           </div>
 
         </div>
       </section>
+
+      {/* ======================================================== */}
+      {/* 5. BRANDS THAT DFL GOT RECOMMENDED                      */}
+      {/* ======================================================== */}
+      <RecommendedBrandsSection />
+
+      {/* ======================================================== */}
+      {/* 6. DFL IT FUTURE-READY INTERACTIVE LOGO FINALE          */}
+      {/* ======================================================== */}
+      <DflItFutureReady />
 
     </div>
   );

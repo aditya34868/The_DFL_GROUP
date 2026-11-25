@@ -45,6 +45,7 @@ export const testimonials = [
   },
 ];
 
+
 export const bottomstats = [
   { id: 1, value: "1000+", label: "Happy Clients", icon: "👥" },
   { id: 2, value: "99.6%", label: "On-Time Delivery", icon: "⏱️" },
@@ -157,6 +158,7 @@ export const services = [
     ],
   },
 ];
+
 
 export const skills = [
   "Air Freight",
@@ -354,6 +356,7 @@ export const teamMembers = [
 
 
 
+
 export const techFeaturesData = [
   {
     id: "tech-1",
@@ -426,6 +429,7 @@ export const aboutCoreValues = [
 ];
 
 
+
 export const aboutHighlights = [
   "Air Freight & Sea Freight",
   "Customs Clearance Expert",
@@ -465,6 +469,7 @@ export const AirFreightkeyAdvantages = [
 ];
 
 
+
 export const endToEndServices = [
   {
     title: "End-to-End Cargo Handling",
@@ -491,6 +496,7 @@ export const endToEndServices = [
     ],
   },
 ];
+
 
 
 export const visionHighlights = [
@@ -770,6 +776,7 @@ export const ItTeamMembers = [
 //     linkedin: "https://linkedin.com",
 //   },
 ];
+
 
 
 
@@ -1467,5 +1474,115 @@ export const itWorkflowSteps = [
     ],
   },
 ];
+
+
+// ========================================================
+// DFL IT SPLIT-SCREEN SCROLL SHOWCASE DATA
+// ========================================================
+export const dflItShowcaseData = [
+  {
+    id: 1,
+    step: "01 / 04",
+    tag: "WEB & APP ENGINEERING",
+    title: "Custom Web & App Development",
+    description:
+      "Scalable, high-performance web applications, enterprise portals, and cross-platform mobile apps engineered with modern full-stack architectures.",
+    features: [
+      "Full-Stack MERN & Next.js Apps",
+      "Enterprise Web Portals",
+      "Progressive Web Apps (PWA)",
+      "REST & GraphQL API Design",
+      "High-Speed UI/UX Engineering",
+      "Legacy System Modernization",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Custom Web and Mobile App Engineering",
+  },
+  {
+    id: 2,
+    step: "02 / 04",
+    tag: "ENTERPRISE PLATFORMS",
+    title: "CRM, HRMS & ERP Systems",
+    description:
+      "Tailor-made internal management platforms to automate workforce attendance, sales pipelines, role-based permissions, and daily operations.",
+    features: [
+      "Multi-Tenant Sales CRM",
+      "HRMS & Geofenced Attendance",
+      "Role-Based Access Control (RBAC)",
+      "Biometric & Device Integration",
+      "Automated Payroll & Onboarding",
+      "Real-Time Analytics Dashboards",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "CRM, HRMS and ERP Systems",
+  },
+  {
+    id: 3,
+    step: "03 / 04",
+    tag: "AI & WORKFLOW AUTOMATION",
+    title: "AI Voice Agents & Automation",
+    description:
+      "Intelligent conversational AI voice bots and workflow automation designed to qualify leads, handle customer queries, and reduce manual effort.",
+    features: [
+      "Automated AI Voice Calling",
+      "24/7 Lead Qualification Bots",
+      "Custom Knowledge Base RAG",
+      "WhatsApp & Email Automation",
+      "CRM Webhook Synchronization",
+      "Smart Call Analytics & Logs",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Conversational AI and Workflow Automation",
+  },
+  {
+    id: 4,
+    step: "04 / 04",
+    tag: "CLOUD & INFRASTRUCTURE",
+    title: "Cloud Infrastructure & Security",
+    description:
+      "Reliable cloud deployment, automated CI/CD pipelines, database optimization, and enterprise-grade security for uninterrupted uptime.",
+    features: [
+      "AWS, Render & VPS Deployment",
+      "CI/CD Pipeline Automation",
+      "Redis Caching & Queue Workers",
+      "JWT Auth & Data Encryption",
+      "Database Scaling & Backups",
+      "24/7 Server Uptime Monitoring",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Cloud Infrastructure and Enterprise Security",
+  },
+];
+
+// ==========================================
+// BRANDS THAT DFL GOT RECOMMENDED
+// ==========================================
+export const dflRecommendedBrands = [
+  "eBay",
+  "Cashfree Payments",
+  "MarkScan",
+  "Meta",
+  "OpenAI",
+  "WhatsApp",
+  "Gofo",
+  "United",
+  "Skynet",
+  "TPL",
+  "Enva",
+  "RSA",
+  "Instagram",
+  "Facebook",
+  "Google",
+  "Amazon",
+  "Shopify",
+  "Etsy",
+];
+
+
+
 
 
