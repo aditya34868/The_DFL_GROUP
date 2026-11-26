@@ -126,24 +126,52 @@ const Dfl_It = () => {
       {/* ======================================================== */}
 
       <section className="relative z-10 w-full pt-4 sm:pt-6 pb-8 sm:pb-12 bg-white overflow-hidden">
+        <style>{`
+          @keyframes sheenFlow {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+          }
+          .sheen-text {
+            background: linear-gradient(
+              90deg,
+              #ff4d00 0%,
+              #ff7a1a 35%,
+              #ffba8a 50%,
+              #ff7a1a 65%,
+              #ff4d00 100%
+            );
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: sheenFlow 6s ease-in-out infinite;
+          }
+        `}</style>
 
         {/* Section Header Text */}
-        <div className="mx-auto max-w-5xl px-6 sm:px-10 text-center mb-12 sm:mb-16">
-          <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-widest bg-orange-100 text-[#E66E19] border border-orange-200/80 mb-5 shadow-sm">
-            <span className="h-2 w-2 rounded-full bg-[#E66E19] animate-pulse" />
-            The DFL IT Mindset
-          </span>
+        <div className="mx-auto max-w-5xl px-6 sm:px-10 text-center mb-10 sm:mb-14">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#fff8f3] text-[#c2540a] border border-[#ff7a1a]/30 shadow-xs mb-5" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#ff7a1a] opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-[#ff7a1a]"></span>
+            </span>
+            <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider">
+              THE DFL IT MINDSET
+            </span>
+          </div>
 
           <h2
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#22150d] tracking-tight leading-[1.25]"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#22150d] tracking-tight leading-[1.2] max-w-4xl mx-auto"
             style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 800 }}
           >
-            At DFL, IT is more than technology — it’s a{" "}
-            <span className="text-[#E66E19]">mindset</span> that inspires innovation, cultivates talent, and drives transformative experiences for clients across industries.
+            At DFL, IT is More Than Technology — It’s an{' '}
+            <span className="sheen-text inline-block">
+              Innovation Mindset
+            </span>
           </h2>
 
-          <p className="mt-4 text-sm sm:text-base text-slate-600 font-medium max-w-2xl mx-auto leading-relaxed">
-            Watch how our cross-functional technology teams turn complex enterprise challenges into intuitive, high-velocity digital solutions.
+          <p className="mt-4 text-sm sm:text-base md:text-lg text-slate-600 font-normal max-w-2xl mx-auto leading-relaxed">
+            Inspiring breakthrough ideas, cultivating top engineering talent, and delivering transformative digital experiences across industries.
           </p>
         </div>
 
