@@ -508,14 +508,6 @@ const ItHeroSection = ({ scrollToProcess }) => {
                 <span>Explore Process</span>
                 <FiArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
               </button>
-
-              {/* Secondary White Outline Button */}
-              <button
-                onClick={() => handleScrollTo('contact')}
-                className="inline-flex items-center justify-center px-6 sm:px-7 py-3.5 rounded-xl bg-white hover:bg-[#fff8f3] text-[#22150d] font-bold text-sm sm:text-base border border-[#ff7a1a]/30 hover:border-[#ff7a1a]/60 shadow-xs hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#ff7a1a]"
-              >
-                Contact Us
-              </button>
             </div>
 
             {/* 6. Trust Row with Green Check Icons */}
