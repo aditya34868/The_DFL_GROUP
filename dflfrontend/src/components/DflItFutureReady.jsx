@@ -317,19 +317,22 @@ const DflItFutureReady = () => {
 
       const isMobile = containerRect.width < 768;
       const isTablet = containerRect.width >= 768 && containerRect.width < 1024;
-      let maxDim;
+      const isLg = containerRect.width >= 1024 && containerRect.width < 1280;
 
-      if (isMobile) {
-        maxDim = Math.min(containerRect.width * 0.92, 460 * DPR);
-      } else if (isTablet) {
-        maxDim = Math.min(containerRect.width * 0.62, 620 * DPR);
-      } else {
-        maxDim = Math.min(containerRect.width * 0.54, 880 * DPR);
-      }
+      // Mathematically constrained to slot dimensions with safe breathing room
+      // Laptop model normalized bounds: width ~0.98, height ~0.81
+      const slotWidth = slotRect.width * DPR;
+      const slotHeight = slotRect.height * DPR;
 
-      const scaleMultiplier = isMobile ? 0.98 : 1.15;
-      const effectiveDim = maxDim * scaleMultiplier;
-      const particleRadius = (isMobile ? 1.55 : 1.85) * DPR;
+      const safetyX = isMobile ? 0.90 : isLg ? 0.84 : 0.86;
+      const safetyY = isMobile ? 0.88 : isLg ? 0.84 : 0.86;
+
+      const maxDimByWidth = (slotWidth * safetyX) / 0.98;
+      const maxDimByHeight = (slotHeight * safetyY) / 0.81;
+      const effectiveDim = Math.min(maxDimByWidth, maxDimByHeight);
+
+      const particleRadius = (isMobile ? 1.4 : isLg ? 1.55 : 1.75) * DPR;
+      mouse.r = isMobile ? 65 : isLg ? 80 : 90;
 
       forceRender = true;
 
@@ -663,8 +666,18 @@ const DflItFutureReady = () => {
       resizeTimer = setTimeout(() => {
         if (!isMounted) return;
         initParticles(true);
-      }, 150);
+      }, 120);
     };
+
+    let resizeObserver = null;
+    if (typeof ResizeObserver !== 'undefined') {
+      resizeObserver = new ResizeObserver(() => {
+        if (!isMounted) return;
+        handleResize();
+      });
+      resizeObserver.observe(container);
+      resizeObserver.observe(laptopSlot);
+    }
 
     container.addEventListener('mousemove', handleMouseMove, { passive: true });
     container.addEventListener('mouseleave', releaseMouse, { passive: true });
@@ -677,6 +690,7 @@ const DflItFutureReady = () => {
       isMounted = false;
       if (animId) cancelAnimationFrame(animId);
       if (observer) observer.disconnect();
+      if (resizeObserver) resizeObserver.disconnect();
       clearTimeout(resizeTimer);
       window.removeEventListener('scroll', handleScroll);
       container.removeEventListener('mousemove', handleMouseMove);
@@ -704,11 +718,11 @@ const DflItFutureReady = () => {
       />
 
       {/* Foreground content */}
-      <div className="relative z-10 max-w-7xl xl:max-w-[1600px] mx-auto px-6 sm:px-10 lg:px-12 w-full grid grid-cols-1 lg:grid-cols-12 items-center gap-4 sm:gap-6 lg:gap-10">
+      <div className="relative z-10 max-w-7xl xl:max-w-[1600px] mx-auto px-4 sm:px-8 lg:px-10 xl:px-12 w-full grid grid-cols-1 lg:grid-cols-12 items-center gap-6 lg:gap-8 xl:gap-12">
         {/* Left column */}
         <div className="lg:col-span-5 xl:col-span-5 flex flex-col items-center lg:items-start text-center lg:text-left pointer-events-auto z-10 py-2 sm:py-4">
           {/* Eyebrow Pill */}
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-200/80 text-[#E66E19] text-xs font-bold uppercase tracking-wider mb-4 shadow-2xs">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-200/80 text-[#E66E19] text-xs font-bold uppercase tracking-wider mb-3.5 sm:mb-4 shadow-2xs">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#E66E19] opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-[#E66E19]" />
@@ -717,27 +731,27 @@ const DflItFutureReady = () => {
           </div>
 
           {/* Heading */}
-          <h2 className="text-3xl sm:text-4xl lg:text-[40px] xl:text-[46px] font-black tracking-tight text-slate-900 leading-[1.16] mb-3">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[32px] xl:text-[42px] font-black tracking-tight text-slate-900 leading-[1.2] mb-3">
             DFL IT Gets Your Business{" "}
-            <span className="bg-gradient-to-r from-[#E66E19] to-orange-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#E66E19] to-orange-500 bg-clip-text text-transparent inline-block">
               Future-Ready
             </span>
           </h2>
 
           {/* Subheading / Description */}
-          <p className="text-sm sm:text-base lg:text-[17px] text-slate-600 font-normal leading-relaxed mb-6 max-w-lg">
+          <p className="text-xs sm:text-sm lg:text-[14px] xl:text-base text-slate-600 font-normal leading-relaxed mb-5 max-w-lg">
             Empowering modern enterprises with scalable IT infrastructure, custom engineering, and mission-critical cloud solutions.
           </p>
 
           {/* Value Highlights */}
-          <div className="space-y-2.5 mb-7 w-full max-w-md">
+          <div className="space-y-2 mb-6 w-full max-w-md">
             <div className="flex items-center gap-2.5">
               <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-700">
                 <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
               </span>
-              <span className="text-xs sm:text-sm font-semibold text-slate-700">
+              <span className="text-xs sm:text-[13px] font-semibold text-slate-700">
                 Custom Enterprise Software & Web Platforms
               </span>
             </div>
@@ -748,7 +762,7 @@ const DflItFutureReady = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
               </span>
-              <span className="text-xs sm:text-sm font-semibold text-slate-700">
+              <span className="text-xs sm:text-[13px] font-semibold text-slate-700">
                 Cloud Architecture & Scalable Infrastructure
               </span>
             </div>
@@ -759,7 +773,7 @@ const DflItFutureReady = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
               </span>
-              <span className="text-xs sm:text-sm font-semibold text-slate-700">
+              <span className="text-xs sm:text-[13px] font-semibold text-slate-700">
                 Smart Process Automation & Telemetry
               </span>
             </div>
@@ -776,7 +790,7 @@ const DflItFutureReady = () => {
                   reassembleRef.current();
                 }
               }}
-              className="px-8 py-3.5 rounded-full bg-[#E66E19] hover:bg-[#d05f12] text-white font-bold text-sm shadow-lg shadow-orange-500/25 flex items-center justify-center transition-all duration-200 hover:-translate-y-0.5 active:scale-95 cursor-pointer select-none"
+              className="px-6 sm:px-7 lg:px-8 py-3 lg:py-3.5 rounded-full bg-[#E66E19] hover:bg-[#d05f12] text-white font-bold text-xs sm:text-sm shadow-lg shadow-orange-500/25 flex items-center justify-center transition-all duration-200 hover:-translate-y-0.5 active:scale-95 cursor-pointer select-none"
             >
               <span>Rebuild 3D Laptop</span>
             </button>
@@ -786,7 +800,7 @@ const DflItFutureReady = () => {
         {/* Right column: laptop slot */}
         <div
           ref={laptopSlotRef}
-          className="lg:col-span-7 xl:col-span-7 h-[260px] min-[360px]:h-[285px] min-[400px]:h-[320px] min-[480px]:h-[360px] sm:h-[400px] md:h-[470px] lg:h-[640px] xl:h-[680px] w-full flex items-center justify-center pointer-events-none"
+          className="lg:col-span-7 xl:col-span-7 h-[250px] min-[380px]:h-[280px] sm:h-[340px] md:h-[400px] lg:h-[440px] xl:h-[500px] 2xl:h-[560px] w-full flex items-center justify-center pointer-events-none"
         />
       </div>
     </section>
