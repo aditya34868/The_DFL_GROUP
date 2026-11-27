@@ -8,7 +8,7 @@ export default function PrivacyPolicy() {
   return (
     <div className="min-h-screen bg-white mt-14 text-slate-800 px-4 sm:px-6 py-12 md:px-8 lg:px-12 xl:px-16">
       <div className="mx-auto max-w-5xl 2xl:max-w-6xl rounded-2xl border border-slate-200 bg-white p-6 sm:p-8 md:p-12 shadow-sm">
-        
+
         {/* Header */}
         <header className="border-b border-slate-200 pb-6 mb-8">
           <div className="flex flex-wrap items-center justify-between gap-4">
@@ -33,7 +33,7 @@ export default function PrivacyPolicy() {
 
         {/* Policy Body */}
         <div className="space-y-8 text-xs leading-relaxed text-slate-700">
-          
+
           {/* Section 1 */}
           <section className="space-y-3">
             <h2 className="text-base font-bold text-[#E66E19]">1. Introduction</h2>
@@ -43,7 +43,7 @@ export default function PrivacyPolicy() {
             <p>
               The terms "DFL Express," "The DFL Group," "Company," "we," "our," or "us" refer to Demira Freight Linkers India Private Limited, including its trade names, brands, employees, directors, authorized representatives, affiliates, service providers, and business partners.
             </p>
-            
+
             {/* RED HIGHLIGHT - Compliance */}
             <div className="rounded-xl border border-red-200 bg-red-50 p-4 text-red-900">
               <strong className="font-bold block text-red-700 mb-1 text-xs">Regulatory Compliance Notice:</strong>
@@ -87,7 +87,7 @@ export default function PrivacyPolicy() {
           <section className="space-y-3">
             <h2 className="text-base font-bold text-[#E66E19]">4. Information We Collect & Identity Documentation</h2>
             <p>We collect standard account details, payment records, device IP addresses, shipping manifests, and tracking events.</p>
-            
+
             <div className="rounded-xl border border-red-200 bg-red-50 p-4 space-y-2 text-red-900">
               <h3 className="font-bold text-red-700 text-sm">4A. Identity & Customs Documents Compliance</h3>
               <p>
@@ -122,7 +122,7 @@ export default function PrivacyPolicy() {
           {/* Section 6A to 6E - SPECIAL INTEGRATIONS */}
           <section className="space-y-3">
             <h2 className="text-base font-bold text-[#E66E19]">6. Marketplace Integrations, APIs & AI Usage</h2>
-            
+
             <div className="space-y-3">
               {/* RED HIGHLIGHT - Amazon */}
               <div className="rounded-xl border border-red-200 bg-red-50 p-4 text-red-900">

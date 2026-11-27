@@ -6,14 +6,16 @@ import { useTalkModal } from "../context/TalkModalContext";
 import Cards from "../components/Cards";
 import FeaturesCards from "../components/FeaturesCards";
 import Faq from "../components/Faq";
+import GlobalMapPinsOverlay from "../components/GlobalMapPinsOverlay";
+import { getCountryFlagComponent, globalHubsData } from "../components/CountryFlags";
 
-import { 
+import {
   LOGISTICS_IMAGES,
-  services, 
-  highlights, 
+  services,
+  highlights,
   heroSlideImages,
-  techFeaturesData, 
-  bottomstats, 
+  techFeaturesData,
+  bottomstats,
   testimonials,
   partners,
   HomeFaqData
@@ -71,11 +73,10 @@ export default function Home() {
                   <h1
                     key={idx}
                     aria-hidden={idx !== activeSlide}
-                    className={`col-start-1 row-start-1 text-3xl sm:text-4xl md:text-5xl lg:text-[40px] xl:text-[48px] 2xl:text-[56px] font-extrabold leading-[1.18] sm:leading-[1.16] py-1 bg-gradient-to-r from-[#E66E19] from-20% to-[#000000] to-70% bg-clip-text text-transparent transition-opacity duration-700 ease-in-out ${
-                      idx === activeSlide
-                        ? "opacity-100 z-10"
-                        : "opacity-0 pointer-events-none z-0"
-                    }`}
+                    className={`col-start-1 row-start-1 text-3xl sm:text-4xl md:text-5xl lg:text-[40px] xl:text-[48px] 2xl:text-[56px] font-extrabold leading-[1.18] sm:leading-[1.16] py-1 bg-gradient-to-r from-[#E66E19] from-20% to-[#000000] to-70% bg-clip-text text-transparent transition-opacity duration-700 ease-in-out ${idx === activeSlide
+                      ? "opacity-100 z-10"
+                      : "opacity-0 pointer-events-none z-0"
+                      }`}
                   >
                     {lines.map((line, lineIdx) => (
                       <span key={lineIdx} className="block">
@@ -105,11 +106,10 @@ export default function Home() {
                     src={imgSrc}
                     alt={typeof highlights[idx] === "string" ? highlights[idx].replace(/\n/g, " ") : "DFL Express Logistics"}
                     aria-hidden={idx !== activeSlide}
-                    className={`absolute inset-0 h-full w-full object-contain filter drop-shadow-[0_16px_36px_rgba(0,0,0,0.12)] transition-opacity duration-700 ease-in-out ${
-                      idx === activeSlide
-                        ? "opacity-100 z-10"
-                        : "opacity-0 pointer-events-none z-0"
-                    }`}
+                    className={`absolute inset-0 h-full w-full object-contain filter drop-shadow-[0_16px_36px_rgba(0,0,0,0.12)] transition-opacity duration-700 ease-in-out ${idx === activeSlide
+                      ? "opacity-100 z-10"
+                      : "opacity-0 pointer-events-none z-0"
+                      }`}
                     loading={idx === 0 ? "eager" : "lazy"}
                   />
                 ))}
@@ -131,7 +131,7 @@ export default function Home() {
           />
         </div>
       </section>
-      
+
 
       {/* PARTNERS MARQUEE (Seamless Infinite Loop) */}
       <section className="overflow-hidden border-t border-slate-200 bg-slate-50/80 py-10 px-4 sm:px-6 lg:px-8 xl:px-10">
@@ -148,8 +148,8 @@ export default function Home() {
               return (
                 <div key={`p1-${i}`} className="flex shrink-0 items-center justify-center min-w-[100px]">
                   {IconComp ? (
-                    <IconComp 
-                      className={`h-10 sm:h-11 w-auto ${partner.color || "text-[#0B132A]"} filter drop-shadow-sm transition-transform duration-300 hover:scale-105`} 
+                    <IconComp
+                      className={`h-10 sm:h-11 w-auto ${partner.color || "text-[#0B132A]"} filter drop-shadow-sm transition-transform duration-300 hover:scale-105`}
                     />
                   ) : (
                     <span className="font-extrabold text-2xl tracking-tight bg-gradient-to-r from-[#E66E19] via-amber-500 to-[#0B132A] bg-clip-text text-transparent">
@@ -167,8 +167,8 @@ export default function Home() {
               return (
                 <div key={`p2-${i}`} className="flex shrink-0 items-center justify-center min-w-[100px]">
                   {IconComp ? (
-                    <IconComp 
-                      className={`h-10 sm:h-11 w-auto ${partner.color || "text-[#0B132A]"} filter drop-shadow-sm transition-transform duration-300 hover:scale-105`} 
+                    <IconComp
+                      className={`h-10 sm:h-11 w-auto ${partner.color || "text-[#0B132A]"} filter drop-shadow-sm transition-transform duration-300 hover:scale-105`}
                     />
                   ) : (
                     <span className="font-extrabold text-2xl tracking-tight bg-gradient-to-r from-[#E66E19] via-amber-500 to-[#0B132A] bg-clip-text text-transparent">
@@ -184,7 +184,7 @@ export default function Home() {
 
       {/* OUR NETWORK */}
       <section className="bg-white py-14 px-4 sm:px-6 lg:px-8 xl:px-10 overflow-hidden">
-        <div className="mx-auto max-w-7xl xl:max-w-[1520px] 2xl:max-w-[1680px] flex flex-col lg:flex-row items-center gap-10 xl:gap-16">
+        <div className="mx-auto max-w-7xl xl:max-w-[1520px] 2xl:max-w-[1680px] flex flex-col lg:flex-row items-start gap-10 xl:gap-14">
           <div className="lg:w-5/12 space-y-6">
             <div>
               <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#FF6B35]">
@@ -197,16 +197,50 @@ export default function Home() {
                 {t("home.networkDesc", "With a strong international network and strategic partners, we connect businesses to markets across the globe.")}
               </p>
             </div>
+
+            {/* Country Hubs Directory: Real SVG Flags, Country Dial Codes & Currencies (Clean, Borderless, No Background) */}
+            <div className="pt-10">
+              <div className="grid grid-cols-2 sm:grid-cols-2 gap-y-4 gap-x-6">
+                {globalHubsData.map((hub) => (
+                  <div key={hub.iso} className="flex items-center gap-3 group transition-transform duration-200 hover:translate-x-1">
+                    {/* Real SVG Country Flag */}
+                    <div className="shrink-0 flex items-center justify-center">
+                      {getCountryFlagComponent(hub.iso, "w-7 h-5 sm:w-8 sm:h-5.5 rounded-xs border border-slate-200/90 shadow-2xs object-cover")}
+                    </div>
+
+                    {/* Country & Details */}
+                    <div className="flex flex-col min-w-0">
+                      <div className="flex items-center gap-1.5">
+                        <span className="text-xs sm:text-sm font-bold text-slate-900 group-hover:text-[#E66E19] transition-colors truncate">
+                          {hub.country}
+                        </span>
+                        <span className="text-[10px] font-bold text-slate-400">
+                          ({hub.iso})
+                        </span>
+                      </div>
+                      <div className="flex items-center gap-1.5 text-[11px] font-medium text-slate-500 mt-0.5">
+                        <span className="font-bold text-[#E66E19]">{hub.code}</span>
+                        <span className="text-slate-300">•</span>
+                        <span className="text-slate-700 font-semibold">{hub.currency}</span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
 
           <div className="lg:w-7/12 relative w-full">
-            <img 
-              src="https://ik.imagekit.io/d4cjfvwoy/Global%20Locations%20Infographic%20Map.png" 
-              alt="Global Map Network"
-              className="w-full max-w-full h-auto object-contain"
-              loading="lazy"
-              decoding="async"
-            />
+            <div className="relative w-full">
+              <img
+                src="https://ik.imagekit.io/d4cjfvwoy/Global%20Locations%20Infographic%20Map.png"
+                alt="Global Map Network"
+                className="w-full max-w-full h-auto object-contain block bg-transparent"
+                loading="lazy"
+                decoding="async"
+              />
+              <GlobalMapPinsOverlay />
+            </div>
           </div>
         </div>
       </section>
@@ -231,51 +265,51 @@ export default function Home() {
         </div>
       </section>
 
-{/* HOW IT WORKS */}
-<section className="relative border-t border-slate-200 bg-white px-4 sm:px-6 lg:px-8 xl:px-10 pt-10 pb-16">
-  <div className="mx-auto max-w-7xl xl:max-w-[1520px] 2xl:max-w-[1680px]">
-    <h2 className="font-display text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-extrabold tracking-tight text-[#0B132A]">
-      {t("home.howItWorks")}
-    </h2>
-    <p className="mt-3 text-slate-600 max-w-2xl text-base sm:text-lg xl:text-xl leading-relaxed">
-      {t("home.howItWorksDesc")}
-    </p>
+      {/* HOW IT WORKS */}
+      <section className="relative border-t border-slate-200 bg-white px-4 sm:px-6 lg:px-8 xl:px-10 pt-10 pb-16">
+        <div className="mx-auto max-w-7xl xl:max-w-[1520px] 2xl:max-w-[1680px]">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-extrabold tracking-tight text-[#0B132A]">
+            {t("home.howItWorks")}
+          </h2>
+          <p className="mt-3 text-slate-600 max-w-2xl text-base sm:text-lg xl:text-xl leading-relaxed">
+            {t("home.howItWorksDesc")}
+          </p>
 
-    <div className="mt-8 border-t border-slate-200">
-      {/* Dynamic Key Array matching your JSON keys: "01", "02", "03", "04" */}
-      {["01", "02", "03", "04"].map((stepKey, i) => (
-        <details
-          key={stepKey}
-          className="group rounded-lg border-b border-slate-200 transition-all duration-300 hover:bg-slate-50 [&[open]]:bg-slate-50"
-        >
-          <summary className="grid cursor-pointer grid-cols-[auto_1fr_auto] items-center gap-6 py-7 px-4 list-none outline-none [&::-webkit-details-marker]:hidden">
-            <span className="font-display text-base sm:text-lg font-bold text-slate-400">
-              0{i + 1}
-            </span>
-            <div>
-              <h3 className="font-display text-xl sm:text-2xl md:text-3xl font-extrabold text-[#0B132A] transition-colors group-hover:text-[#E66E19] group-[&[open]]:text-[#E66E19]">
-                {t(`working.${stepKey}.name`)}
-              </h3>
-              <div className="hidden grid-rows-[0fr] opacity-0 transition-all duration-500 group-hover:mt-2 group-hover:grid-rows-[1fr] group-hover:opacity-100 [@media(hover:hover)]:grid">
-                <p className="max-w-xl overflow-hidden text-base sm:text-lg leading-relaxed text-slate-600">
-                  {t(`working.${stepKey}.description`)}
-                </p>
-              </div>
-            </div>
-            <span className="font-display text-xl text-slate-400 transition-all duration-300 group-hover:translate-x-1 group-hover:text-[#E66E19] group-[&[open]]:translate-x-1 group-[&[open]]:text-[#E66E19]">
-              →
-            </span>
-          </summary>
-          <div className="px-4 pb-7 pl-[calc(1rem+2.25rem)] [@media(hover:hover)]:hidden">
-            <p className="max-w-xl text-base leading-relaxed text-slate-600">
-              {t(`working.${stepKey}.description`)}
-            </p>
+          <div className="mt-8 border-t border-slate-200">
+            {/* Dynamic Key Array matching your JSON keys: "01", "02", "03", "04" */}
+            {["01", "02", "03", "04"].map((stepKey, i) => (
+              <details
+                key={stepKey}
+                className="group rounded-lg border-b border-slate-200 transition-all duration-300 hover:bg-slate-50 [&[open]]:bg-slate-50"
+              >
+                <summary className="grid cursor-pointer grid-cols-[auto_1fr_auto] items-center gap-6 py-7 px-4 list-none outline-none [&::-webkit-details-marker]:hidden">
+                  <span className="font-display text-base sm:text-lg font-bold text-slate-400">
+                    0{i + 1}
+                  </span>
+                  <div>
+                    <h3 className="font-display text-xl sm:text-2xl md:text-3xl font-extrabold text-[#0B132A] transition-colors group-hover:text-[#E66E19] group-[&[open]]:text-[#E66E19]">
+                      {t(`working.${stepKey}.name`)}
+                    </h3>
+                    <div className="hidden grid-rows-[0fr] opacity-0 transition-all duration-500 group-hover:mt-2 group-hover:grid-rows-[1fr] group-hover:opacity-100 [@media(hover:hover)]:grid">
+                      <p className="max-w-xl overflow-hidden text-base sm:text-lg leading-relaxed text-slate-600">
+                        {t(`working.${stepKey}.description`)}
+                      </p>
+                    </div>
+                  </div>
+                  <span className="font-display text-xl text-slate-400 transition-all duration-300 group-hover:translate-x-1 group-hover:text-[#E66E19] group-[&[open]]:translate-x-1 group-[&[open]]:text-[#E66E19]">
+                    →
+                  </span>
+                </summary>
+                <div className="px-4 pb-7 pl-[calc(1rem+2.25rem)] [@media(hover:hover)]:hidden">
+                  <p className="max-w-xl text-base leading-relaxed text-slate-600">
+                    {t(`working.${stepKey}.description`)}
+                  </p>
+                </div>
+              </details>
+            ))}
           </div>
-        </details>
-      ))}
-    </div>
-  </div>
-</section>
+        </div>
+      </section>
 
       {/* ADVANCED TECH FEATURES */}
       <section className="min-h-screen bg-[#0B132A]">
@@ -297,70 +331,70 @@ export default function Home() {
       </section>
 
       {/* CLIENT TESTIMONIALS & STATS */}
-<section className="bg-white px-4 sm:px-6 lg:px-8 xl:px-10 py-12">
-  <div className="mx-auto max-w-7xl xl:max-w-[1520px] 2xl:max-w-[1680px]">
-    <div className="relative flex flex-col lg:flex-row overflow-hidden rounded-3xl shadow-xl bg-[#E66E19]">
-      <div className="flex flex-col justify-between p-6 sm:p-8 md:p-12 xl:p-14 lg:w-7/12 text-white">
-        <div>
-          <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-orange-200">
-            {t("home.clientSuccess", "CLIENT SUCCESS STORIES")}
-          </span>
-          <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mt-1">
-            {t("home.whatClientsSay", "What Our Clients Say")}
-          </h2>
-          <p className="mt-3 text-sm sm:text-base xl:text-lg text-orange-100 max-w-xl leading-relaxed">
-            {t("home.clientsDesc", "Real businesses. Real results. Here's what our clients have to say about working with DFL Group.")}
-          </p>
-        </div>
+      <section className="bg-white px-4 sm:px-6 lg:px-8 xl:px-10 py-12">
+        <div className="mx-auto max-w-7xl xl:max-w-[1520px] 2xl:max-w-[1680px]">
+          <div className="relative flex flex-col lg:flex-row overflow-hidden rounded-3xl shadow-xl bg-[#E66E19]">
+            <div className="flex flex-col justify-between p-6 sm:p-8 md:p-12 xl:p-14 lg:w-7/12 text-white">
+              <div>
+                <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-orange-200">
+                  {t("home.clientSuccess", "CLIENT SUCCESS STORIES")}
+                </span>
+                <h2 className="text-3xl sm:text-4xl xl:text-5xl font-extrabold mt-1">
+                  {t("home.whatClientsSay", "What Our Clients Say")}
+                </h2>
+                <p className="mt-3 text-sm sm:text-base xl:text-lg text-orange-100 max-w-xl leading-relaxed">
+                  {t("home.clientsDesc", "Real businesses. Real results. Here's what our clients have to say about working with DFL Group.")}
+                </p>
+              </div>
 
-       {current && (
-    <div className="my-6 flex items-center gap-2">
-      <button onClick={prev} className="h-8 w-8 rounded-full bg-white text-[#E65100] flex items-center justify-center font-bold shadow hover:bg-orange-50 shrink-0">‹</button>
-      <div className="bg-white text-[#0B132A] p-5 sm:p-6 rounded-2xl shadow-md w-full min-h-[160px] flex flex-col justify-between">
-        <p className="text-sm sm:text-base md:text-lg xl:text-xl text-slate-700 font-medium leading-relaxed">
-          "{t(`testimonials.${current.id}.quote`, current.quote)}"
-        </p>
-        <div className="mt-4 flex items-center gap-3">
-          <img src={current.avatar} alt={current.name} className="h-10 w-10 rounded-full object-cover border" />
-          <div>
-            <h4 className="text-sm sm:text-base font-bold">{current.name}</h4>
+              {current && (
+                <div className="my-6 flex items-center gap-2">
+                  <button onClick={prev} className="h-8 w-8 rounded-full bg-white text-[#E65100] flex items-center justify-center font-bold shadow hover:bg-orange-50 shrink-0">‹</button>
+                  <div className="bg-white text-[#0B132A] p-5 sm:p-6 rounded-2xl shadow-md w-full min-h-[160px] flex flex-col justify-between">
+                    <p className="text-sm sm:text-base md:text-lg xl:text-xl text-slate-700 font-medium leading-relaxed">
+                      "{t(`testimonials.${current.id}.quote`, current.quote)}"
+                    </p>
+                    <div className="mt-4 flex items-center gap-3">
+                      <img src={current.avatar} alt={current.name} className="h-10 w-10 rounded-full object-cover border" />
+                      <div>
+                        <h4 className="text-sm sm:text-base font-bold">{current.name}</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <button onClick={next} className="h-8 w-8 rounded-full bg-white text-[#E65100] flex items-center justify-center font-bold shadow hover:bg-orange-50 shrink-0">›</button>
+                </div>
+              )}
+              <div className="flex justify-center gap-1.5">
+                {testimonials.map((_, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setIndex(i)}
+                    className={`h-2 rounded-full transition-all ${i === index ? "w-6 bg-white" : "w-2 bg-white/40"}`}
+                  />
+                ))}
+              </div>
+            </div>
+
+            <div className="relative lg:w-5/12 bg-slate-900 min-h-[350px] lg:min-h-full flex items-center justify-center p-6 xl:p-8">
+              <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80" alt="Cargo Ship" className="absolute inset-0 h-full w-full object-cover opacity-50" />
+              <div className="relative z-10 w-full max-w-xs sm:max-w-sm bg-slate-900/70 backdrop-blur-md p-5 sm:p-6 rounded-2xl border border-white/10 text-white space-y-4">
+                {bottomstats.map((item, idx) => (
+                  <React.Fragment key={item.id || idx}>
+                    <div className="flex items-center gap-3.5">
+                      <span className="text-xl sm:text-2xl text-[#E66E19]">{item.icon}</span>
+                      <div>
+                        <p className="text-lg sm:text-xl font-extrabold leading-none">{item.value}</p>
+                        <p className="text-xs sm:text-sm text-[#CBD5E1] mt-0.5">{t(`home.stats.${item.id || idx}`, item.label)}</p>
+                      </div>
+                    </div>
+                    {idx !== bottomstats.length - 1 && <hr className="border-white/10" />}
+                  </React.Fragment>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <button onClick={next} className="h-8 w-8 rounded-full bg-white text-[#E65100] flex items-center justify-center font-bold shadow hover:bg-orange-50 shrink-0">›</button>
-    </div>
-  )}
-        <div className="flex justify-center gap-1.5">
-          {testimonials.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => setIndex(i)}
-              className={`h-2 rounded-full transition-all ${i === index ? "w-6 bg-white" : "w-2 bg-white/40"}`}
-            />
-          ))}
-        </div>
-      </div>
-
-      <div className="relative lg:w-5/12 bg-slate-900 min-h-[350px] lg:min-h-full flex items-center justify-center p-6 xl:p-8">
-        <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80" alt="Cargo Ship" className="absolute inset-0 h-full w-full object-cover opacity-50" />
-        <div className="relative z-10 w-full max-w-xs sm:max-w-sm bg-slate-900/70 backdrop-blur-md p-5 sm:p-6 rounded-2xl border border-white/10 text-white space-y-4">
-          {bottomstats.map((item, idx) => (
-            <React.Fragment key={item.id || idx}>
-              <div className="flex items-center gap-3.5">
-                <span className="text-xl sm:text-2xl text-[#E66E19]">{item.icon}</span>
-                <div>
-                  <p className="text-lg sm:text-xl font-extrabold leading-none">{item.value}</p>
-                  <p className="text-xs sm:text-sm text-[#CBD5E1] mt-0.5">{t(`home.stats.${item.id || idx}`, item.label)}</p>
-                </div>
-              </div>
-              {idx !== bottomstats.length - 1 && <hr className="border-white/10" />}
-            </React.Fragment>
-          ))}
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
     </>
   );
 }

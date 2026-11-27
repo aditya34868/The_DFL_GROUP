@@ -8,7 +8,7 @@ export default function TermAndCondition() {
   return (
     <div className="min-h-screen bg-white mt-14 text-slate-800 px-4 sm:px-6 py-12 md:px-8 lg:px-12 xl:px-16">
       <div className="mx-auto max-w-5xl 2xl:max-w-6xl rounded-2xl border border-slate-200 bg-white p-6 sm:p-8 md:p-12 shadow-sm">
-        
+
         {/* Header */}
         <header className="border-b border-slate-200 pb-6 mb-8">
           <div className="flex flex-wrap items-center justify-between gap-4">
@@ -33,7 +33,7 @@ export default function TermAndCondition() {
 
         {/* Terms Body */}
         <div className="space-y-8 text-xs leading-relaxed text-slate-700">
-          
+
           {/* Section 1 */}
           <section className="space-y-3">
             <h2 className="text-base font-bold text-[#E66E19]">1. Acceptance of Terms</h2>
@@ -43,7 +43,7 @@ export default function TermAndCondition() {
             <p>
               These Terms constitute a legally binding agreement between the user and Demira Freight Linkers India Private Limited, which operates its services under the brand name DFL Express. The terms "DFL Express", "The DFL Group", "Company", "we", "our", or "us" refer to Demira Freight Linkers India Private Limited, including its divisions, brands, digital platforms, employees, agents, authorized partners, technology services, and future business operations.
             </p>
-            
+
             {/* RED HIGHLIGHT - Mandatory Compliance Notice */}
             <div className="rounded-xl border border-red-200 bg-red-50 p-4 text-red-900 space-y-1">
               <strong className="font-bold block text-red-700 text-xs">Binding Legal Agreement & Policy Cross-Reference:</strong>
@@ -72,7 +72,7 @@ export default function TermAndCondition() {
             <p>
               DFL Express is the trade name and business brand operated by Demira Freight Linkers India Private Limited, a company duly incorporated under the laws of India. Trade names such as DFL Express and The DFL Group are used solely for branding purposes and do not create separate legal entities.
             </p>
-            
+
             {/* Subsection 2.1 */}
             <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 space-y-2">
               <h3 className="font-bold text-slate-900 text-xs">2.1 Technology Platform Services</h3>
@@ -85,7 +85,7 @@ export default function TermAndCondition() {
           {/* Section 3 & Subsections */}
           <section className="space-y-4">
             <h2 className="text-base font-bold text-[#E66E19]">3. User Account, Registration & Integrations</h2>
-            
+
             <p>
               Users are responsible for maintaining the confidentiality of login credentials, API keys, and account activity. You must immediately notify DFL Express of any unauthorized account access.
             </p>

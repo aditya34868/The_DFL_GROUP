@@ -23,8 +23,8 @@ export default function PresenceLocations() {
               key={item.id}
               onClick={() => setSelectedCountry(item.id)}
               className={`rounded-full px-6 py-2.5 text-xs font-bold uppercase tracking-wider transition-all duration-300 shadow-sm ${isActive
-                  ? "bg-[#E66E19] text-white ring-4 ring-[#E66E19]/20 scale-105 shadow-orange-500/30"
-                  : "bg-white text-slate-700 hover:bg-orange-50 hover:text-[#E66E19] border border-slate-200"
+                ? "bg-[#E66E19] text-white ring-4 ring-[#E66E19]/20 scale-105 shadow-orange-500/30"
+                : "bg-white text-slate-700 hover:bg-orange-50 hover:text-[#E66E19] border border-slate-200"
                 }`}
             >
               {t(`presence.countries.${item.id}`, item.label)}

@@ -2,14 +2,14 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { useTalkModal } from "../context/TalkModalContext";
 import { keyAdvantages, transportModes, routingOptions } from "../data/siteData";
-import { 
-  FiTruck, 
-  FiBox, 
-  FiCheckCircle, 
-  FiArrowRight, 
-  FiChevronRight, 
+import {
+  FiTruck,
+  FiBox,
+  FiCheckCircle,
+  FiArrowRight,
+  FiChevronRight,
   FiPhoneCall,
-  FiShield 
+  FiShield
 } from "react-icons/fi";
 
 const GALLERY_IMAGES = [
@@ -45,7 +45,7 @@ export default function InlandTransport() {
       <div className="pointer-events-none absolute top-1/3 -right-40 h-96 w-96 rounded-full bg-orange-50/80 blur-3xl animate-pulse delay-1000" />
 
       <div className="relative mx-auto max-w-7xl 2xl:max-w-[1536px] z-10 space-y-16 xl:space-y-20">
-        
+
         {/* HERO SECTION */}
         <div className="mx-auto max-w-3xl text-center mb-16">
           <span className="inline-flex items-center gap-2.5 rounded-full bg-orange-100/80 border border-orange-200 px-4 py-1.5 text-xs font-extrabold uppercase tracking-widest text-[#E66E19] shadow-sm">
@@ -79,7 +79,7 @@ export default function InlandTransport() {
               </span>
               <span>{t("inlandTransport.destinationTerminal", "Destination Terminal")}</span>
             </div>
-            
+
             <div className="relative h-2.5 w-full overflow-hidden rounded-full bg-slate-100 border border-slate-200">
               <div className="absolute top-1 bottom-0 w-1/4 h-2 animate-scan rounded-full bg-gradient-to-r from-orange-400 via-[#E66E19] to-amber-500 shadow-md shadow-orange-500/50" />
             </div>
@@ -94,8 +94,8 @@ export default function InlandTransport() {
               <FiArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </button>
 
-            <button 
-              className="flex items-center gap-2 rounded-full border border-slate-300 bg-white px-7 py-3.5 text-sm font-bold text-slate-700 shadow-sm transition-all duration-300 hover:bg-slate-50 hover:border-slate-400 active:scale-95 cursor-pointer" 
+            <button
+              className="flex items-center gap-2 rounded-full border border-slate-300 bg-white px-7 py-3.5 text-sm font-bold text-slate-700 shadow-sm transition-all duration-300 hover:bg-slate-50 hover:border-slate-400 active:scale-95 cursor-pointer"
               onClick={openModal}
             >
               <FiPhoneCall className="h-4 w-4 text-[#E66E19]" />
@@ -108,10 +108,10 @@ export default function InlandTransport() {
         <div className="mb-20 rounded-3xl overflow-hidden border border-slate-200 shadow-xl grid grid-cols-1 md:grid-cols-3">
           {GALLERY_IMAGES.map((img, idx) => (
             <div key={idx} className="relative h-64 group overflow-hidden border-b md:border-b-0 md:border-r last:border-0 border-slate-200">
-              <img 
-                src={img.src} 
-                alt={img.alt} 
-                className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" 
+              <img
+                src={img.src}
+                alt={img.alt}
+                className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-5">
                 <span className="text-white text-xs font-bold bg-black/40 px-3.5 py-1.5 rounded-lg backdrop-blur-md border border-white/20">
@@ -165,9 +165,9 @@ export default function InlandTransport() {
           </div>
 
           <div className="relative group rounded-3xl overflow-hidden shadow-xl border border-slate-200">
-            <img 
-              src="https://images.unsplash.com/photo-1592838064575-70ed626d3a0e?auto=format&fit=crop&w=1000&q=80" 
-              alt="Cargo Logistics Road Network" 
+            <img
+              src="https://images.unsplash.com/photo-1592838064575-70ed626d3a0e?auto=format&fit=crop&w=1000&q=80"
+              alt="Cargo Logistics Road Network"
               className="w-full h-80 md:h-[380px] object-cover transition-transform duration-700 group-hover:scale-105"
             />
             <div className="absolute inset-x-4 bottom-4 bg-white/95 backdrop-blur-md p-4 rounded-2xl border border-slate-200 shadow-lg flex items-center gap-3">
@@ -199,8 +199,8 @@ export default function InlandTransport() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {transportModes.map((mode, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="group rounded-3xl border border-slate-200 bg-white p-7 shadow-sm hover:border-[#E66E19] hover:shadow-xl transition-all duration-300"
               >
                 <div className="flex items-center justify-between">
@@ -248,8 +248,8 @@ export default function InlandTransport() {
             {keyAdvantages.map((adv, idx) => {
               const IconComponent = adv.icon;
               return (
-                <div 
-                  key={idx} 
+                <div
+                  key={idx}
                   className="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:border-[#E66E19] hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5"
                 >
                   <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-orange-50 text-[#E66E19] border border-orange-100 group-hover:bg-[#E66E19] group-hover:text-white transition-colors">
@@ -306,10 +306,10 @@ export default function InlandTransport() {
             </div>
 
             <div className="relative group rounded-2xl overflow-hidden border border-white/10 shadow-lg">
-              <img 
-                src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80" 
-                alt="Modern Fleet Management" 
-                className="w-full h-72 md:h-96 object-cover transition-transform duration-700 group-hover:scale-105" 
+              <img
+                src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=800&q=80"
+                alt="Modern Fleet Management"
+                className="w-full h-72 md:h-96 object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-slate-950/60 flex items-center justify-center p-6 text-center">
                 <div className="bg-slate-900/90 backdrop-blur-md p-6 rounded-2xl border border-white/10 max-w-sm shadow-2xl">

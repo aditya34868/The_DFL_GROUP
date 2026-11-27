@@ -8,7 +8,7 @@ const Team = () => {
   return (
     <section className="bg-white mt-8 py-16 px-4 sm:px-6 md:px-8 lg:px-12">
       <div className="mx-auto max-w-7xl 2xl:max-w-[1536px]">
-        
+
         {/* HEADER SECTION */}
         <div className="mx-auto max-w-3xl text-center">
           <span className="inline-block rounded-full border border-[#E66E19]/30 bg-[#E66E19]/10 px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-[#E66E19]">

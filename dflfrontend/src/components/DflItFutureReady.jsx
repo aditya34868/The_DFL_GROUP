@@ -706,18 +706,66 @@ const DflItFutureReady = () => {
       {/* Foreground content */}
       <div className="relative z-10 max-w-7xl xl:max-w-[1600px] mx-auto px-6 sm:px-10 lg:px-12 w-full grid grid-cols-1 lg:grid-cols-12 items-center gap-4 sm:gap-6 lg:gap-10">
         {/* Left column */}
-        <div className="lg:col-span-5 xl:col-span-4 flex flex-col items-center lg:items-start text-center lg:text-left pointer-events-auto">
-          <p className="text-base sm:text-lg md:text-xl text-slate-600 font-normal mb-3 sm:mb-4 lg:mb-6 tracking-normal max-w-xl">
-            Somewhere out there, a business is ready to scale with smart tech.
-          </p>
+        <div className="lg:col-span-5 xl:col-span-5 flex flex-col items-center lg:items-start text-center lg:text-left pointer-events-auto z-10 py-2 sm:py-4">
+          {/* Eyebrow Pill */}
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-50 border border-orange-200/80 text-[#E66E19] text-xs font-bold uppercase tracking-wider mb-4 shadow-2xs">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#E66E19] opacity-75" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-[#E66E19]" />
+            </span>
+            <span>Enterprise Digital Systems</span>
+          </div>
 
-          <h2 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-semibold tracking-tight text-slate-800 leading-[1.14]">
-            <span className="block">DFL IT gets</span>
-            <span className="block text-[#E66E19]">your business</span>
-            <span className="block">future-ready</span>
+          {/* Heading */}
+          <h2 className="text-3xl sm:text-4xl lg:text-[40px] xl:text-[46px] font-black tracking-tight text-slate-900 leading-[1.16] mb-3">
+            DFL IT Gets Your Business{" "}
+            <span className="bg-gradient-to-r from-[#E66E19] to-orange-500 bg-clip-text text-transparent">
+              Future-Ready
+            </span>
           </h2>
 
-          <div className="mt-5 sm:mt-6 lg:mt-8 flex items-center gap-4">
+          {/* Subheading / Description */}
+          <p className="text-sm sm:text-base lg:text-[17px] text-slate-600 font-normal leading-relaxed mb-6 max-w-lg">
+            Empowering modern enterprises with scalable IT infrastructure, custom engineering, and mission-critical cloud solutions.
+          </p>
+
+          {/* Value Highlights */}
+          <div className="space-y-2.5 mb-7 w-full max-w-md">
+            <div className="flex items-center gap-2.5">
+              <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-700">
+                <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <span className="text-xs sm:text-sm font-semibold text-slate-700">
+                Custom Enterprise Software & Web Platforms
+              </span>
+            </div>
+
+            <div className="flex items-center gap-2.5">
+              <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-700">
+                <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <span className="text-xs sm:text-sm font-semibold text-slate-700">
+                Cloud Architecture & Scalable Infrastructure
+              </span>
+            </div>
+
+            <div className="flex items-center gap-2.5">
+              <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-700">
+                <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <span className="text-xs sm:text-sm font-semibold text-slate-700">
+                Smart Process Automation & Telemetry
+              </span>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-4">
             <button
               ref={originRef}
               title="Click to rebuild and reassemble the 3D Laptop"
@@ -738,7 +786,7 @@ const DflItFutureReady = () => {
         {/* Right column: laptop slot */}
         <div
           ref={laptopSlotRef}
-          className="lg:col-span-7 xl:col-span-8 h-[260px] min-[360px]:h-[285px] min-[400px]:h-[320px] min-[480px]:h-[360px] sm:h-[400px] md:h-[470px] lg:h-[640px] xl:h-[680px] w-full flex items-center justify-center pointer-events-none"
+          className="lg:col-span-7 xl:col-span-7 h-[260px] min-[360px]:h-[285px] min-[400px]:h-[320px] min-[480px]:h-[360px] sm:h-[400px] md:h-[470px] lg:h-[640px] xl:h-[680px] w-full flex items-center justify-center pointer-events-none"
         />
       </div>
     </section>

@@ -9,7 +9,7 @@ export default function OurPresence() {
   return (
     <main className="bg-white px-4 sm:px-6 py-20 text-[#0B132A] md:px-8 lg:px-12 pt-32 min-h-screen">
       <div className="mx-auto max-w-7xl 2xl:max-w-[1536px]">
-        
+
         {/* HERO SECTION */}
         <div className="mb-16 text-center">
           <span className="rounded-full bg-orange-100 border border-orange-200 px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider text-[#E66E19] shadow-sm">
@@ -43,7 +43,7 @@ export default function OurPresence() {
           {/* RESPONSIVE GRID FOR HIGHLIGHT CARDS */}
           <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {keyHighlights.map((item, index) => (
-              <div 
+              <div
                 key={index}
                 className="w-full rounded-2xl border border-slate-200 bg-orange-50/50 p-6 transition-all duration-300 hover:border-[#E66E19] hover:bg-white hover:shadow-lg hover:-translate-y-1 flex flex-col justify-between"
               >

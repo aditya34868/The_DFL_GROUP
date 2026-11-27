@@ -1,9 +1,10 @@
 
-import { FiShield, FiFileText, FiAnchor, FiCheckSquare, FiTruck, FiZap,
-   FiGlobe,FiBox,FiLock,FiServer,FiPackage,FiNavigation,FiMapPin,FiTrendingUp,
-  FiDollarSign,FiCode,FiCloud,FiHeadphones,FiBarChart2,FiBriefcase,FiCpu,
-   FiLayers,FiPercent,FiAward,FiClock,FiThermometer,
- } from "react-icons/fi";
+import {
+  FiShield, FiFileText, FiAnchor, FiCheckSquare, FiTruck, FiZap,
+  FiGlobe, FiBox, FiLock, FiServer, FiPackage, FiNavigation, FiMapPin, FiTrendingUp,
+  FiDollarSign, FiCode, FiCloud, FiHeadphones, FiBarChart2, FiBriefcase, FiCpu,
+  FiLayers, FiPercent, FiAward, FiClock, FiThermometer,
+} from "react-icons/fi";
 
 import { BsStars } from "react-icons/bs";
 import { SiDhl, SiShopify, SiFedex, SiUsps, SiEbay } from "react-icons/si";
@@ -37,7 +38,7 @@ export const testimonials = [
     name: "Pradeep Maurya",
     avatar: "https://i.pravatar.cc/150?img=14",
   },
-    {
+  {
     id: 3,
     quote: "Safe, timely, transparent, and hassle-free cargo movement with complete ownership and proactive communication.",
     name: "suresh kumar",
@@ -66,7 +67,7 @@ export const bottomstats = [
 ////////////////////////////////////////////////
 
 export const LOGISTICS_IMAGES = {
-  about:"https://i.ibb.co/d4LG1Hhn/Gemini-Generated-Image-ro5a4kro5a4kro5a.png",
+  about: "https://i.ibb.co/d4LG1Hhn/Gemini-Generated-Image-ro5a4kro5a4kro5a.png",
   heroVan:
     "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80",
   warehouse:
@@ -89,7 +90,7 @@ export const services = [
     description:
       "Fast, Secure air cargo services for time-sensitive shipments worldwide with realtime tracking.",
     tag: "Priority Air & Land",
-    image:"https://i.ibb.co/VcDrqynC/Air-Freight.avif",
+    image: "https://i.ibb.co/VcDrqynC/Air-Freight.avif",
     features: [
       "Express",
       "Global coverage",
@@ -119,7 +120,7 @@ export const services = [
     description:
       "Reliable ground transportation services covering major routes with flexible scheduling.",
     tag: "inland transportation",
-    image:"https://i.ibb.co/HDzC0Tqw/inland-Transport.jpg",
+    image: "https://i.ibb.co/HDzC0Tqw/inland-Transport.jpg",
     features: [
       "Flexible scheduling",
       "Door-to-door service",
@@ -130,7 +131,7 @@ export const services = [
   {
     id: "04",
     name: "Customs Clearance",
-    path: "/services/custom-clearance", 
+    path: "/services/custom-clearance",
     description:
       "Fast courier services for urgent deliveries with same-day and next-day delivery options.",
     tag: "Customs Express",
@@ -167,33 +168,33 @@ export const skills = [
   "Real-Time Telematics",
   "Cold Chain",
   "B2B Distribution",
-]; 
+];
 
 export const working = [
-   {
+  {
     id: "01",
     name: "Book Your Shipment",
     description:
       "Book your shipment online quickly and easily with instant quotes, flexible scheduling, and real-time pricing. Enter your shipment details, choose the right service, and confirm your booking in just a few simple steps.",
-   },
-    {
+  },
+  {
     id: "02",
     name: "Get Competitive Rates",
     description:
       "Compare available shipping options and select a solution that fits your budget and delivery requirements. Get competitive, transparent pricing with clear shipment costs, helping you plan your logistics with confidence and avoid unexpected charges.",
-   },
-    {
+  },
+  {
     id: "03",
     name: "Track Your Shipment",
     description:
       "Stay informed throughout the entire delivery journey with real-time shipment tracking. Monitor important milestones, receive timely status updates, and know exactly where your shipment is from pickup to final delivery.",
-   },
-    {
+  },
+  {
     id: "04",
     name: "Hassle Free Delivery",
     description:
       "Experience a smooth and reliable delivery process with timely updates until your shipment reaches its destination. From last-mile handling to final delivery confirmation, stay informed and enjoy greater visibility throughout the shipment journey.",
-   }
+  }
 ]
 
 export const stats = [
@@ -306,7 +307,7 @@ export const teamMembers = [
     id: 6,
     name: "Sarvesh Shukla ",
     role: "Head of Customs & Compliance",
-    image:"https://i.ibb.co/TBxs6yLF/Sarvesh-Kumar-Shukla.webp",
+    image: "https://i.ibb.co/TBxs6yLF/Sarvesh-Kumar-Shukla.webp",
     bio: "Ensures legal clearances, international trade regulations, and documentation.",
     socials: {
       linkedin: "https://www.linkedin.com/in/sarvesh-shukla-80484235/",
@@ -443,7 +444,7 @@ export const aboutHighlights = [
 
 export const AirFreightkeyAdvantages = [
   {
-    icon: FiClock, 
+    icon: FiClock,
     title: "Rapid Delivery Times",
     description:
       "Drastically minimizes transit time for time-sensitive, high-priority, and perishable cargo.",
@@ -515,184 +516,184 @@ export const galleryImages = [
 
 /////////////////////  AirFreightForwarding  //////////////////
 
-  export const AirEndToEndServices = [
-    { title: "Cargo Pick-up & Transport", detail: "Doorstep pickup using GPS tracking" },
-    { title: "Professional Packaging", detail: "IATA-standard temperature/fragile packing" },
-    { title: "Loading & Unloading", detail: "Automated warehouse pallet handling" },
-    { title: "Secure Storage", detail: "24/7 CCTV airport holding bays" },
-    { title: "Airport Warehouse Services", detail: "Express processing near runways" },
-    { title: "Customs Clearance Support", detail: "Fast-track documentation verification" },
-  ];
+export const AirEndToEndServices = [
+  { title: "Cargo Pick-up & Transport", detail: "Doorstep pickup using GPS tracking" },
+  { title: "Professional Packaging", detail: "IATA-standard temperature/fragile packing" },
+  { title: "Loading & Unloading", detail: "Automated warehouse pallet handling" },
+  { title: "Secure Storage", detail: "24/7 CCTV airport holding bays" },
+  { title: "Airport Warehouse Services", detail: "Express processing near runways" },
+  { title: "Customs Clearance Support", detail: "Fast-track documentation verification" },
+];
 
-     export const smartFeatures = [
-      {
-        icon: FiClock, 
-        title: "Strategic Airport Warehousing",
-        description:
-          "Located near major airport hubs to eliminate transport delays and optimize cargo load times.",
-      },
-      {
-        icon: FiCpu ,
-        title: "Digitized Documentation",
-        description:
-          "Automated customs filing and digital air waybills (e-AWB) that remove manual paperwork friction.",
-      },
-      {
-        icon: FiGlobe ,
-        title: "Direct Airline Network",
-        description:
-          "Priority belly-capacity and dedicated charter slots on top global air routes.",
-      },
-      {
-        icon: FiZap,
-        title: "AI Route Optimization",
-        description:
-          "Smart engines predicting real-time flight schedules for cost and time efficiency.",
-      },
-    ];
+export const smartFeatures = [
+  {
+    icon: FiClock,
+    title: "Strategic Airport Warehousing",
+    description:
+      "Located near major airport hubs to eliminate transport delays and optimize cargo load times.",
+  },
+  {
+    icon: FiCpu,
+    title: "Digitized Documentation",
+    description:
+      "Automated customs filing and digital air waybills (e-AWB) that remove manual paperwork friction.",
+  },
+  {
+    icon: FiGlobe,
+    title: "Direct Airline Network",
+    description:
+      "Priority belly-capacity and dedicated charter slots on top global air routes.",
+  },
+  {
+    icon: FiZap,
+    title: "AI Route Optimization",
+    description:
+      "Smart engines predicting real-time flight schedules for cost and time efficiency.",
+  },
+];
 
-    /////////////////////  PerishableCargo  //////////////////
+/////////////////////  PerishableCargo  //////////////////
 
-    export const perishableEndToEndServices = [
-      { title: "Pre-Cooling & Thermal Packing", detail: "Insulated thermal liners, gel packs & dry ice" },
-      { title: "Multi-Temp Reefer Pickup", detail: "GPS-tracked refrigerated trucks to port/airport" },
-      { title: "Air & Ocean Reefer Freight", detail: "Fast-track air cargo & 20ft/40ft active reefers" },
-      { title: "Priority Customs Clearance", detail: "Accelerated green-channel customs clearance" },
-      { title: "Phytosanitary & Health Compliance", detail: "Inspection handling & regulatory trade paperwork" },
-      { title: "24/7 IoT Sensor Telemetry", detail: "Continuous temperature & GPS chain-of-custody logs" },
-    ];
+export const perishableEndToEndServices = [
+  { title: "Pre-Cooling & Thermal Packing", detail: "Insulated thermal liners, gel packs & dry ice" },
+  { title: "Multi-Temp Reefer Pickup", detail: "GPS-tracked refrigerated trucks to port/airport" },
+  { title: "Air & Ocean Reefer Freight", detail: "Fast-track air cargo & 20ft/40ft active reefers" },
+  { title: "Priority Customs Clearance", detail: "Accelerated green-channel customs clearance" },
+  { title: "Phytosanitary & Health Compliance", detail: "Inspection handling & regulatory trade paperwork" },
+  { title: "24/7 IoT Sensor Telemetry", detail: "Continuous temperature & GPS chain-of-custody logs" },
+];
 
-    export const perishableSmartFeatures = [
-      {
-        icon: FiThermometer,
-        title: "Multi-Temperature Spectrum",
-        description:
-          "Deep Frozen (-18°C to -25°C), Chilled (+2°C to +8°C), and Controlled Ambient (+15°C to +25°C) cargo protection.",
-      },
-      {
-        icon: FiGlobe,
-        title: "Air & Ocean Reefer Solutions",
-        description:
-          "Fast-track air freight with thermal packaging/dry ice alongside 20ft & 40ft active refrigerated ocean containers.",
-      },
-      {
-        icon: FiShield,
-        title: "Priority Customs & Compliance",
-        description:
-          "Accelerated green-channel customs clearance, phytosanitary inspection handling, and regulatory documentation.",
-      },
-      {
-        icon: FiCpu,
-        title: "24/7 Temperature & GPS Telemetry",
-        description:
-          "Continuous IoT sensor logging to maintain unbroken chain of custody from origin to destination.",
-      },
-    ];
+export const perishableSmartFeatures = [
+  {
+    icon: FiThermometer,
+    title: "Multi-Temperature Spectrum",
+    description:
+      "Deep Frozen (-18°C to -25°C), Chilled (+2°C to +8°C), and Controlled Ambient (+15°C to +25°C) cargo protection.",
+  },
+  {
+    icon: FiGlobe,
+    title: "Air & Ocean Reefer Solutions",
+    description:
+      "Fast-track air freight with thermal packaging/dry ice alongside 20ft & 40ft active refrigerated ocean containers.",
+  },
+  {
+    icon: FiShield,
+    title: "Priority Customs & Compliance",
+    description:
+      "Accelerated green-channel customs clearance, phytosanitary inspection handling, and regulatory documentation.",
+  },
+  {
+    icon: FiCpu,
+    title: "24/7 Temperature & GPS Telemetry",
+    description:
+      "Continuous IoT sensor logging to maintain unbroken chain of custody from origin to destination.",
+  },
+];
 
-    export const perishableCargoFaq = [
-      {
-        id: 1,
-        num: "1",
-        question: "What temperature ranges do you support for perishable cargo?",
-        answer:
-          "We support a full multi-temperature spectrum including Deep Frozen (-18°C to -25°C) for seafood, meat, poultry, and processed foods; Chilled (+2°C to +8°C) for fresh fruits, vegetables, dairy, and confectionery; and Controlled Ambient (+15°C to +25°C) for specialized FMCG and healthcare goods.",
-      },
-      {
-        id: 2,
-        num: "2",
-        question: "Do you offer both air and ocean reefer shipping?",
-        answer:
-          "Yes. We provide fast-track air freight with thermal packaging and dry ice for urgent perishables, alongside 20ft and 40ft active refrigerated (Reefer) ocean containers for high-volume cold-chain cargo.",
-      },
-      {
-        id: 3,
-        num: "3",
-        question: "How do you prevent customs delays for perishable shipments?",
-        answer:
-          "We provide priority green-channel customs clearance, phytosanitary inspection coordination, and pre-verified regulatory documentation so your perishable cargo clears borders without breaking the cold chain.",
-      },
-      {
-        id: 4,
-        num: "4",
-        question: "Can I monitor my cargo temperature in real time?",
-        answer:
-          "Yes. Our 24/7 temperature and GPS telemetry uses continuous IoT sensor logging to monitor thermal stability and location throughout the entire transit, ensuring an unbroken chain of custody.",
-      },
-      {
-        id: 5,
-        num: "5",
-        question: "What industries use The DFL Group cold-chain logistics?",
-        answer:
-          "We serve exporters and importers of fresh produce, seafood, meat and poultry, dairy, confectionery, specialized FMCG products, and temperature-sensitive healthcare goods worldwide.",
-      },
-    ];
+export const perishableCargoFaq = [
+  {
+    id: 1,
+    num: "1",
+    question: "What temperature ranges do you support for perishable cargo?",
+    answer:
+      "We support a full multi-temperature spectrum including Deep Frozen (-18°C to -25°C) for seafood, meat, poultry, and processed foods; Chilled (+2°C to +8°C) for fresh fruits, vegetables, dairy, and confectionery; and Controlled Ambient (+15°C to +25°C) for specialized FMCG and healthcare goods.",
+  },
+  {
+    id: 2,
+    num: "2",
+    question: "Do you offer both air and ocean reefer shipping?",
+    answer:
+      "Yes. We provide fast-track air freight with thermal packaging and dry ice for urgent perishables, alongside 20ft and 40ft active refrigerated (Reefer) ocean containers for high-volume cold-chain cargo.",
+  },
+  {
+    id: 3,
+    num: "3",
+    question: "How do you prevent customs delays for perishable shipments?",
+    answer:
+      "We provide priority green-channel customs clearance, phytosanitary inspection coordination, and pre-verified regulatory documentation so your perishable cargo clears borders without breaking the cold chain.",
+  },
+  {
+    id: 4,
+    num: "4",
+    question: "Can I monitor my cargo temperature in real time?",
+    answer:
+      "Yes. Our 24/7 temperature and GPS telemetry uses continuous IoT sensor logging to monitor thermal stability and location throughout the entire transit, ensuring an unbroken chain of custody.",
+  },
+  {
+    id: 5,
+    num: "5",
+    question: "What industries use The DFL Group cold-chain logistics?",
+    answer:
+      "We serve exporters and importers of fresh produce, seafood, meat and poultry, dairy, confectionery, specialized FMCG products, and temperature-sensitive healthcare goods worldwide.",
+  },
+];
 
 
-    ////////////// Customer_clearance //////////////////
+////////////// Customer_clearance //////////////////
 
-      const whyChooseUs = [
-    {
-      icon: FiZap,
-      title: "Fast Documentation",
-      description:
-        "We recognize the urgency of import and export operations, ensuring prompt documentation arrangements so you can focus on core business.",
-    },
-    {
-      icon: FiAward,
-      title: "Expert Broker Associates",
-      description:
-        "Highly experienced in clearing all types of goods: garments, leather, automobiles, pharmaceuticals, perishables, pets, and more.",
-    },
-    {
-      icon: FiCpu,
-      title: "Automated Documentation",
-      description:
-        "Instant online platform generation of invoices, airway bills, bills of lading, bills of exchange, and shipping bills in seconds.",
-    },
-    {
-      icon: FiShield,
-      title: "Trade Compliance Solutions",
-      description:
-        "Assistance with obtaining government incentives, rebates, license preparation, and approvals from global trade authorities.",
-    },
-  ];
+const whyChooseUs = [
+  {
+    icon: FiZap,
+    title: "Fast Documentation",
+    description:
+      "We recognize the urgency of import and export operations, ensuring prompt documentation arrangements so you can focus on core business.",
+  },
+  {
+    icon: FiAward,
+    title: "Expert Broker Associates",
+    description:
+      "Highly experienced in clearing all types of goods: garments, leather, automobiles, pharmaceuticals, perishables, pets, and more.",
+  },
+  {
+    icon: FiCpu,
+    title: "Automated Documentation",
+    description:
+      "Instant online platform generation of invoices, airway bills, bills of lading, bills of exchange, and shipping bills in seconds.",
+  },
+  {
+    icon: FiShield,
+    title: "Trade Compliance Solutions",
+    description:
+      "Assistance with obtaining government incentives, rebates, license preparation, and approvals from global trade authorities.",
+  },
+];
 
-  const valueProps = [
-    {
-      icon: FiPercent,
-      title: "Reduced Costs",
-      desc: "Minimize duty payments and avoid demurrage or fines through proper documentation and accurate HS-code classification.",
-    },
-    {
-      icon: FiClock,
-      title: "Speed & Predictability",
-      desc: "Faster customs clearance means better supply chain reliability and significantly reduced lead times.",
-    },
-    {
-      icon: FiShield,
-      title: "Regulatory Peace of Mind",
-      desc: "Stay fully compliant even as global customs rules evolve, with proactive expert guidance.",
-    },
-    {
-      icon: FiLayers,
-      title: "Operational Efficiency",
-      desc: "Offloading the customs burden frees your team to focus on business growth rather than paperwork.",
-    },
-  ];
+const valueProps = [
+  {
+    icon: FiPercent,
+    title: "Reduced Costs",
+    desc: "Minimize duty payments and avoid demurrage or fines through proper documentation and accurate HS-code classification.",
+  },
+  {
+    icon: FiClock,
+    title: "Speed & Predictability",
+    desc: "Faster customs clearance means better supply chain reliability and significantly reduced lead times.",
+  },
+  {
+    icon: FiShield,
+    title: "Regulatory Peace of Mind",
+    desc: "Stay fully compliant even as global customs rules evolve, with proactive expert guidance.",
+  },
+  {
+    icon: FiLayers,
+    title: "Operational Efficiency",
+    desc: "Offloading the customs burden frees your team to focus on business growth rather than paperwork.",
+  },
+];
 
-  const industriesSupported = [
-    "Manufacturing & Machinery",
-    "Retail & E-commerce",
-    "Pharma & Healthcare",
-    "Electronics & Technology",
-    "Automotive Components",
-    "Perishables & Consumer Goods",
-  ];
-  
+const industriesSupported = [
+  "Manufacturing & Machinery",
+  "Retail & E-commerce",
+  "Pharma & Healthcare",
+  "Electronics & Technology",
+  "Automotive Components",
+  "Perishables & Consumer Goods",
+];
 
-  /////////////////////  Dfl_it.jsx ////////////////////////
 
-  export const ItServices = [
+/////////////////////  Dfl_it.jsx ////////////////////////
+
+export const ItServices = [
   {
     icon: FiCode,
     title: "Custom Software Development",
@@ -769,12 +770,12 @@ export const ItTeamMembers = [
   //   image: "",
   //   linkedin: "https://www.linkedin.com/in/rajesh-gaur-dfl-group-0b4a56437/",
   // },
-//   {
-//     name: "piyush Sihna ",
-//     role: "Mantore",
-//    image: "",
-//     linkedin: "https://linkedin.com",
-//   },
+  //   {
+  //     name: "piyush Sihna ",
+  //     role: "Mantore",
+  //    image: "",
+  //     linkedin: "https://linkedin.com",
+  //   },
 ];
 
 
@@ -806,7 +807,7 @@ export const keyAdvantages = [
   }
 ];
 
- export const transportModes = [
+export const transportModes = [
   {
     title: "Full Truckload (FTL)",
     subtitle: "Dedicated Fleet Capacity",
@@ -833,7 +834,7 @@ export const keyAdvantages = [
   }
 ];
 
- export const routingOptions = [
+export const routingOptions = [
   {
     title: "Door-to-Door",
     desc: "Direct pickup from sender address and delivery to final destination without hub delays."
@@ -852,90 +853,90 @@ export const keyAdvantages = [
 ///////////// Ocean Freightforwarding.jsx ///////////////////////
 
 
-  export const containerSpecs = [
-    {
-      type: "20ft Container",
-      ext: "6090mm x 2440mm x 2590mm",
-      int: "6010mm x 2340mm x 2390mm",
-      door: "2280mm x 2310mm",
-      tare: "2050 kg",
-      payload: "28430 kg",
-      maxGross: "30480 kg",
-    },
-    {
-      type: "40ft Container",
-      ext: "12180mm x 2440mm x 2590mm",
-      int: "12110mm x 2340mm x 2390mm",
-      door: "2280mm x 2310mm",
-      tare: "3750 kg",
-      payload: "26730 kg",
-      maxGross: "30400 kg",
-    },
-    {
-      type: "40ft High Cube",
-      ext: "12180mm x 2440mm x 2900mm",
-      int: "12110mm x 2340mm x 2690mm",
-      door: "2280mm x 2580mm",
-      tare: "3890 kg",
-      payload: "26590 kg",
-      maxGross: "30480 kg",
-    },
-  ];
+export const containerSpecs = [
+  {
+    type: "20ft Container",
+    ext: "6090mm x 2440mm x 2590mm",
+    int: "6010mm x 2340mm x 2390mm",
+    door: "2280mm x 2310mm",
+    tare: "2050 kg",
+    payload: "28430 kg",
+    maxGross: "30480 kg",
+  },
+  {
+    type: "40ft Container",
+    ext: "12180mm x 2440mm x 2590mm",
+    int: "12110mm x 2340mm x 2390mm",
+    door: "2280mm x 2310mm",
+    tare: "3750 kg",
+    payload: "26730 kg",
+    maxGross: "30400 kg",
+  },
+  {
+    type: "40ft High Cube",
+    ext: "12180mm x 2440mm x 2900mm",
+    int: "12110mm x 2340mm x 2690mm",
+    door: "2280mm x 2580mm",
+    tare: "3890 kg",
+    payload: "26590 kg",
+    maxGross: "30480 kg",
+  },
+];
 
-  export const oceanFeatures = [
-    {
-      icon: FiGlobe,
-      title: "Global Carrier Network",
-      description: "Direct tie-ups with top global ocean carriers, port handlers, and NVOCCs worldwide.",
-    },
-    {
-      icon: FiShield,
-      title: "Safe & Compliant Handling",
-      description: "Specialized care for heavy, bulky cargo, machinery, and defense equipment.",
-    },
-    {
-      icon: FiLayers,
-      title: "Flexible FCL & LCL Options",
-      description: "Tailored full-container and shared-container options matching your budget.",
-    },
-    {
-      icon: FiClock ,
-      title: "Digital Tracking & Schedule",
-      description: "Advanced technology to streamline vessel tracking and port documentation.",
-    },
-  ];
+export const oceanFeatures = [
+  {
+    icon: FiGlobe,
+    title: "Global Carrier Network",
+    description: "Direct tie-ups with top global ocean carriers, port handlers, and NVOCCs worldwide.",
+  },
+  {
+    icon: FiShield,
+    title: "Safe & Compliant Handling",
+    description: "Specialized care for heavy, bulky cargo, machinery, and defense equipment.",
+  },
+  {
+    icon: FiLayers,
+    title: "Flexible FCL & LCL Options",
+    description: "Tailored full-container and shared-container options matching your budget.",
+  },
+  {
+    icon: FiClock,
+    title: "Digital Tracking & Schedule",
+    description: "Advanced technology to streamline vessel tracking and port documentation.",
+  },
+];
 
-  export const serviceHighlights = [
-    {
-      title: "Full Container Load (FCL)",
-      detail: "Dedicated container space for high-volume or single-owner shipments.",
-    },
-    {
-      title: "Less than Container Load (LCL)",
-      detail: "Consolidated freight space to minimize shipping costs for smaller volumes.",
-    },
-    {
-      title: "NVOCC & Carrier Alliances",
-      detail: "Priority booking slots and competitive sea freight ocean rates.",
-    },
-    {
-      title: "Port-to-Port & Door-to-Door",
-      detail: "End-to-end logistics coordination from factory origin to ocean destination port.",
-    },
-    {
-      title: "Customs & Port Handling",
-      detail: "Faster port clearance support with digital shipping bill processing.",
-    },
-    {
-      title: "Heavy & Project Cargo",
-      detail: "Expert handling for oversized machinery, industrial goods, and defense units.",
-    },
-  ];
+export const serviceHighlights = [
+  {
+    title: "Full Container Load (FCL)",
+    detail: "Dedicated container space for high-volume or single-owner shipments.",
+  },
+  {
+    title: "Less than Container Load (LCL)",
+    detail: "Consolidated freight space to minimize shipping costs for smaller volumes.",
+  },
+  {
+    title: "NVOCC & Carrier Alliances",
+    detail: "Priority booking slots and competitive sea freight ocean rates.",
+  },
+  {
+    title: "Port-to-Port & Door-to-Door",
+    detail: "End-to-end logistics coordination from factory origin to ocean destination port.",
+  },
+  {
+    title: "Customs & Port Handling",
+    detail: "Faster port clearance support with digital shipping bill processing.",
+  },
+  {
+    title: "Heavy & Project Cargo",
+    detail: "Expert handling for oversized machinery, industrial goods, and defense units.",
+  },
+];
 
 
-  /////////////////// our presence ///////////////////
+/////////////////// our presence ///////////////////
 
-  export const keyHighlights = [
+export const keyHighlights = [
   {
     title: "Global Network",
     description: "Serving clients across continents, we connect you to opportunities in international markets through robust supply chain management."
@@ -990,7 +991,7 @@ export const branchOffices = [
     phone: "+91 9319524092",
     email: "ts@dflindia.in"
   },
-    {
+  {
     id: "nagina",
     countryId: "india",
     city: "NAGINA",
@@ -998,7 +999,7 @@ export const branchOffices = [
     phone: "+91 9355037796",
     email: "ts@dflindia.in"
   },
-    {
+  {
     id: "vadodara",
     countryId: "india",
     city: "VADODARA",
@@ -1014,7 +1015,7 @@ export const branchOffices = [
     phone: "+44 7388653479",
     email: "sales.uk@dflindia.in"
   },
-    {
+  {
     id: "thailand",
     countryId: "thailand",
     city: "Thailand",
@@ -1042,357 +1043,357 @@ export const branchOffices = [
 
 ///////////// tranportation.jsx /////////////////
 
-  export const TransportKeyAdvantages = [
-    {
-      icon: FiMapPin,
-      title: "Extensive Connectivity",
-      description: "Direct access to remote and urban locations with minimal geographical restrictions.",
-    },
-    {
-      icon: FiClock ,
-      title: "Flexible Routes & Schedules",
-      description: "Adaptable dispatch timings and customizable transit routes tailored to urgency.",
-    },
-    {
-      icon: FiTruck,
-      title: "Door-to-Door Delivery",
-      description: "Seamless single-point pickup and final destination drop-off without extra hassle.",
-    },
-    {
-      icon: FiDollarSign,
-      title: "Cost-Effective Solutions",
-      description: "Optimized FTL & LTL freight pricing sharing space to reduce operational overheads.",
-    },
-  ];
+export const TransportKeyAdvantages = [
+  {
+    icon: FiMapPin,
+    title: "Extensive Connectivity",
+    description: "Direct access to remote and urban locations with minimal geographical restrictions.",
+  },
+  {
+    icon: FiClock,
+    title: "Flexible Routes & Schedules",
+    description: "Adaptable dispatch timings and customizable transit routes tailored to urgency.",
+  },
+  {
+    icon: FiTruck,
+    title: "Door-to-Door Delivery",
+    description: "Seamless single-point pickup and final destination drop-off without extra hassle.",
+  },
+  {
+    icon: FiDollarSign,
+    title: "Cost-Effective Solutions",
+    description: "Optimized FTL & LTL freight pricing sharing space to reduce operational overheads.",
+  },
+];
 
-  export const serviceModels = [
-    {
-      title: "Full Truckload (FTL)",
-      detail: "Ideal for large shipments requiring an entire dedicated truck for maximum security & speed.",
-    },
-    {
-      title: "Less-than-Truckload (LTL)",
-      detail: "Cost-sharing model for smaller cargo by combining shipments on shared routes.",
-    },
-    {
-      title: "Door-to-Door Service",
-      detail: "End-to-end management from seller warehouse directly to client doorstep.",
-    },
-    {
-      title: "Door-to-Hub Logistics",
-      detail: "Pickup from factory location and drop-off at central regional distribution hubs.",
-    },
-    {
-      title: "Hub-to-Door Express",
-      detail: "Fast-track movement from primary transit hubs to individual customer locations.",
-    },
-    {
-      title: "GPS Tracked Fleet",
-      detail: "Real-time route surveillance and speed monitoring for full shipment visibility.",
-    },
-  ];
-
-
-  /////////////// Warehousing.jsx ////////////
-
-    export const warehouseWhyChooseUs = [
-      {
-        icon:FiBox ,
-        title: "Inventory Management",
-        description:
-          "Our warehouses offer a controlled environment for managing and monitoring stock levels, tracking product movements, and ensuring inventory aligns with customer demands.",
-      },
-      {
-        icon: FiPackage ,
-        title: "Order Fulfillment",
-        description:
-          "Serving as strategic distribution centers, our warehouses ensure quick and accurate picking, packing, and shipping of your products.",
-      },
-      {
-        icon: FiShield ,
-        title: "Risk Mitigation",
-        description:
-          "We provide secure spaces for goods, protecting them from potential damage, theft, or deterioration, thus significantly reducing supply chain risks.",
-      },
-      {
-        icon: FiTrendingUp ,
-        title: "Logistics Optimization",
-        description:
-          "Strategically placed warehouses help optimize overall logistics operations, reducing transportation costs and minimizing overall lead times.",
-      },
-    ];
-  
-    export const commitments = [
-      {
-        icon: FiLock,
-        title: "Advanced Security Systems",
-        desc: "24/7 monitoring, multi-layer surveillance, and strict access controls to prioritize the safety of your high-value inventory.",
-      },
-      {
-        icon: FiMapPin ,
-        title: "Strategic Node Locations",
-        desc: "Smooth coordination across air, ocean, and road transport networks to streamline multi-modal freight transitions.",
-      },
-      {
-        icon: FiServer ,
-        title: "Digital Transparency",
-        desc: "Real-time inventory status updates through our integrated platform for continuous oversight and control.",
-      },
-      {
-        icon: FiShield ,
-        title: "Transit Risk Reduction",
-        desc: "Minimizing risks of spoilage, mishandling, and unwanted delays through climate and handling control protocols.",
-      },
-    ];
+export const serviceModels = [
+  {
+    title: "Full Truckload (FTL)",
+    detail: "Ideal for large shipments requiring an entire dedicated truck for maximum security & speed.",
+  },
+  {
+    title: "Less-than-Truckload (LTL)",
+    detail: "Cost-sharing model for smaller cargo by combining shipments on shared routes.",
+  },
+  {
+    title: "Door-to-Door Service",
+    detail: "End-to-end management from seller warehouse directly to client doorstep.",
+  },
+  {
+    title: "Door-to-Hub Logistics",
+    detail: "Pickup from factory location and drop-off at central regional distribution hubs.",
+  },
+  {
+    title: "Hub-to-Door Express",
+    detail: "Fast-track movement from primary transit hubs to individual customer locations.",
+  },
+  {
+    title: "GPS Tracked Fleet",
+    detail: "Real-time route surveillance and speed monitoring for full shipment visibility.",
+  },
+];
 
 
-    //////////////////// Faq.jsx /////////////////
+/////////////// Warehousing.jsx ////////////
 
-    export const HomeFaqData = [
-      {
-        id: 1,
-        num: "01",
-        question: "What services does The DFL Group provide?",
-        answer: "The DFL Group provides end-to-end logistics and supply chain solutions, including air freight, ocean freight, inland transportation, customs clearance, warehousing, international courier and cargo services.",
-      },
-      {
-        id: 2,
-        num: "02",
-        question: "Does The DFL Group provide international shipping?",
-        answer: "Yes. We provide international logistics solutions for businesses, including air and ocean freight, international courier, customs clearance and door-to-door shipment support.",
-      },
-      {
-        id: 3,
-        num: "03",
-        question: "What is the difference between Air Freight and Ocean Freight?",
-        answer: "Air Freight is generally suitable for time-sensitive shipments, while Ocean Freight is commonly used for larger or heavier cargo where cost efficiency and higher capacity are important.",
-      },
-      {
-        id: 4,
-        num: "04",
-        question: "Do you offer FCL and LCL ocean freight services?",
-        answer: "Yes. The DFL Group provides both FCL (Full Container Load) and LCL (Less than Container Load) ocean freight solutions based on shipment requirements.",
-      },
-      {
-        id: 5,
-        num: "05",
-        question: "Does The DFL Group provide customs clearance services?",
-        answer: "Yes. We provide customs clearance support to help businesses manage documentation and customs procedures for their shipments.",
-      },
-      {
-        id: 6,
-        num: "06",
-        question: "Do you provide door-to-door delivery?",
-        answer: "Yes. Depending on the service and destination, door-to-door transportation and delivery solutions are available.",
-      },
-      {
-        id: 7,
-        num: "07",
-        question: "Can I track my shipment?",
-        answer: "Yes. Shipment tracking is available for applicable services, allowing customers to monitor shipment movement and delivery updates.",
-      },
-      {
-        id: 8,
-        num: "08",
-        question: "Do you provide warehousing services?",
-        answer: "Yes. The DFL Group provides warehousing and logistics support to help businesses manage storage, handling and shipment movement.",
-      },
-      {
-        id: 9,
-        num: "09",
-        question: "Can you handle large or special cargo?",
-        answer: "Yes. Our logistics solutions can be tailored to different cargo types, shipment sizes and transportation requirements.",
-      },
-      {
-        id: 10,
-        num: "10",
-        question: "How can I get a quote for my shipment?",
-        answer: "You can contact The DFL Group with your origin, destination, cargo details, weight/volume and preferred mode of transport to receive a suitable quotation.",
-      },
-      {
-        id: 11,
-        num: "11",
-        question: "Which countries does The DFL Group serve?",
-        answer: "The DFL Group supports international logistics requirements across multiple global trade lanes through its international network and logistics partners.",
-      },
-      {
-        id: 12,
-        num: "12",
-        question: "How can I contact The DFL Group?",
-        answer: "You can contact our team through the Contact Us section of the website for shipment enquiries, quotations and logistics support.",
-      }
-    ];
+export const warehouseWhyChooseUs = [
+  {
+    icon: FiBox,
+    title: "Inventory Management",
+    description:
+      "Our warehouses offer a controlled environment for managing and monitoring stock levels, tracking product movements, and ensuring inventory aligns with customer demands.",
+  },
+  {
+    icon: FiPackage,
+    title: "Order Fulfillment",
+    description:
+      "Serving as strategic distribution centers, our warehouses ensure quick and accurate picking, packing, and shipping of your products.",
+  },
+  {
+    icon: FiShield,
+    title: "Risk Mitigation",
+    description:
+      "We provide secure spaces for goods, protecting them from potential damage, theft, or deterioration, thus significantly reducing supply chain risks.",
+  },
+  {
+    icon: FiTrendingUp,
+    title: "Logistics Optimization",
+    description:
+      "Strategically placed warehouses help optimize overall logistics operations, reducing transportation costs and minimizing overall lead times.",
+  },
+];
 
-    export const airFreightForwarding = [
-    {
-      id:1,
-      num:"1",
-      question:"What is air forwarding?",
-      answer:"Air forwarding is the process of arranging and managing the transportation of goods by air. It can include cargo pickup, documentation, airline booking, customs clearance, shipment tracking and final delivery."
-    },
-       {
-      id:2,
-      num:"2",
-      question:"What types of goods can be shipped by air?",
-      answer:"Many types of eligible goods can be shipped by air, including commercial products, samples, electronics, machinery parts, e-commerce products, high-value goods and urgent shipments. The shipment must meet the applicable airline, customs and regulatory requirements."
-    },
-       {
-      id:3,
-      num:"3",
-      question:"Do you provide customs clearance for air shipments?",
-      answer:"Yes. We provide customs clearance support and documentation assistance for eligible air shipments, helping businesses manage the import and export process more smoothly."
-    },
-       {
-      id:4,
-      num:"4",
-      question:"Can I track my air shipment?",
-      answer:"Yes. Shipment tracking and regular updates allow you to stay informed about the movement and status of your cargo during transit."
-    },
-       {
-      id:5,
-      num:"5",
-      question:"Why choose air freight instead of sea freight?",
-      answer:"Air freight is generally chosen when faster delivery is important. It is particularly useful for urgent shipments, product samples, time-sensitive goods and shipments that need to reach international destinations within a shorter transit time."
-    }
-    ]
+export const commitments = [
+  {
+    icon: FiLock,
+    title: "Advanced Security Systems",
+    desc: "24/7 monitoring, multi-layer surveillance, and strict access controls to prioritize the safety of your high-value inventory.",
+  },
+  {
+    icon: FiMapPin,
+    title: "Strategic Node Locations",
+    desc: "Smooth coordination across air, ocean, and road transport networks to streamline multi-modal freight transitions.",
+  },
+  {
+    icon: FiServer,
+    title: "Digital Transparency",
+    desc: "Real-time inventory status updates through our integrated platform for continuous oversight and control.",
+  },
+  {
+    icon: FiShield,
+    title: "Transit Risk Reduction",
+    desc: "Minimizing risks of spoilage, mishandling, and unwanted delays through climate and handling control protocols.",
+  },
+];
 
 
+//////////////////// Faq.jsx /////////////////
 
-    
-    export const transportation = [
-    {
-      id:1,
-      num:"1",
-      question:"What is surface transport service?",
-      answer:"Surface transport is the movement of goods by road using trucks and other suitable transportation vehicles. It can be used for short, medium and long-distance shipments."
-    },
-       {
-      id:2,
-      num:"2",
-      question:"What is the difference between FTL and LTL transportation?",
-      answer:"FTL (Full Truckload) means the truck is used for a single shipment. LTL (Less-than-Truckload) allows different shipments to share the available truck space. The right option usually depends on the size and volume of your shipment."
-    },
-       {
-      id:3,
-      num:"3",
-      question:"Does The DFL Group provide door-to-door transportation?",
-      answer:"Yes. We provide door-to-door transportation along with door-to-hub and hub-to-door options, depending on the shipment and delivery requirements."
-    },
-       {
-      id:4,
-      num:"4",
-      question:"Can I track my road transportation shipment?",
-      answer:"Yes. Shipment tracking helps you stay updated on your cargo while it is being transported and provides better visibility of the shipment's progress."
-    },
-       {
-      id:5,
-      num:"5",
-      question:"What types of surface transportation services do you provide?",
-      answer:"Our surface transportation services include FTL and LTL transportation, first-mile and last-mile delivery, long-distance transportation, route planning, vehicle coordination and door-to-door cargo movement."
-    }
-    ]
+export const HomeFaqData = [
+  {
+    id: 1,
+    num: "01",
+    question: "What services does The DFL Group provide?",
+    answer: "The DFL Group provides end-to-end logistics and supply chain solutions, including air freight, ocean freight, inland transportation, customs clearance, warehousing, international courier and cargo services.",
+  },
+  {
+    id: 2,
+    num: "02",
+    question: "Does The DFL Group provide international shipping?",
+    answer: "Yes. We provide international logistics solutions for businesses, including air and ocean freight, international courier, customs clearance and door-to-door shipment support.",
+  },
+  {
+    id: 3,
+    num: "03",
+    question: "What is the difference between Air Freight and Ocean Freight?",
+    answer: "Air Freight is generally suitable for time-sensitive shipments, while Ocean Freight is commonly used for larger or heavier cargo where cost efficiency and higher capacity are important.",
+  },
+  {
+    id: 4,
+    num: "04",
+    question: "Do you offer FCL and LCL ocean freight services?",
+    answer: "Yes. The DFL Group provides both FCL (Full Container Load) and LCL (Less than Container Load) ocean freight solutions based on shipment requirements.",
+  },
+  {
+    id: 5,
+    num: "05",
+    question: "Does The DFL Group provide customs clearance services?",
+    answer: "Yes. We provide customs clearance support to help businesses manage documentation and customs procedures for their shipments.",
+  },
+  {
+    id: 6,
+    num: "06",
+    question: "Do you provide door-to-door delivery?",
+    answer: "Yes. Depending on the service and destination, door-to-door transportation and delivery solutions are available.",
+  },
+  {
+    id: 7,
+    num: "07",
+    question: "Can I track my shipment?",
+    answer: "Yes. Shipment tracking is available for applicable services, allowing customers to monitor shipment movement and delivery updates.",
+  },
+  {
+    id: 8,
+    num: "08",
+    question: "Do you provide warehousing services?",
+    answer: "Yes. The DFL Group provides warehousing and logistics support to help businesses manage storage, handling and shipment movement.",
+  },
+  {
+    id: 9,
+    num: "09",
+    question: "Can you handle large or special cargo?",
+    answer: "Yes. Our logistics solutions can be tailored to different cargo types, shipment sizes and transportation requirements.",
+  },
+  {
+    id: 10,
+    num: "10",
+    question: "How can I get a quote for my shipment?",
+    answer: "You can contact The DFL Group with your origin, destination, cargo details, weight/volume and preferred mode of transport to receive a suitable quotation.",
+  },
+  {
+    id: 11,
+    num: "11",
+    question: "Which countries does The DFL Group serve?",
+    answer: "The DFL Group supports international logistics requirements across multiple global trade lanes through its international network and logistics partners.",
+  },
+  {
+    id: 12,
+    num: "12",
+    question: "How can I contact The DFL Group?",
+    answer: "You can contact our team through the Contact Us section of the website for shipment enquiries, quotations and logistics support.",
+  }
+];
 
-     export const FaqOceanFright = [
-    {
-      id:1,
-      num:"1",
-      question:"What is ocean freight ?",
-      answer:"Ocean freight means arranging the transportation of goods by sea from one country to another. It can include booking the shipment, preparing documents, handling customs and coordinating delivery."
-    },
-       {
-      id:2,
-      num:"2",
-      question:"What is FCL and LCL shipping?",
-      answer:"FCL means Full Container Load, where a container is used for one shipment. LCL means Less than Container Load, where smaller shipments share space in the same container."
-    },
-       {
-      id:3,
-      num:"3",
-      question:"What type of goods can be shipped by sea?",
-      answer:"Many types of business cargo can be transported by ocean, including machinery, raw materials, industrial products, equipment, consumer goods and other eligible commercial shipments."
-    },
-       {
-      id:4,
-      num:"4",
-      question:"Can The DFL Group help with customs clearance?",
-      answer:"Yes. Our team can coordinate customs clearance and documentation as part of the overall ocean freight process, helping make import and export shipments easier to manage."
-    },
-       {
-      id:5,
-      num:"5",
-      question:"When should I choose ocean freight?",
-      answer:"Ocean freight is generally a good option for large, heavy or bulky shipments. It is especially useful when you are moving a larger quantity of goods and delivery speed is not the main priority."
-    }
-    ]
-    
-    
-     export const Customer_clearance = [
-    {
-      id:1,
-      num:"1",
-      question:"What is customs clearance?",
-      answer:"Customs clearance is the process of getting goods cleared by customs when they are being imported or exported. It involves submitting the required documents and completing the formalities before the goods can move ahead."
-    },
-       {
-      id:2,
-      num:"2",
-      question:"What documents are required for customs clearance?",
-      answer:"It depends on the type of goods, shipment and destination. Generally, documents such as a commercial invoice, packing list and shipping documents are required. Some products may also need additional licences, certificates or approvals."
-    },
-       {
-      id:3,
-      num:"3",
-      question:"Do you provide customs clearance for imports and exports?",
-      answer:"Yes. The DFL Group provides customs clearance support for both import and export shipments. The exact requirements depend on the cargo and the regulations applicable to the shipment."
-    },
-       {
-      id:4,
-      num:"4",
-      question:" Can you help with customs documentation?",
-      answer:"Yes. We help businesses organise and coordinate the documents needed for customs clearance. If additional documents or information are required during the process, our team helps coordinate them as well."
-    },
-       {
-      id:5,
-      num:"5",
-      question:"What happens if there is an error in the customs documents?",
-      answer:"If the documents are incomplete or contain incorrect information, customs may ask for clarification or additional documents. This can delay the shipment and may sometimes result in additional charges. That is why it is important to prepare the documentation correctly before the shipment reaches customs."
-    }
-    ]
+export const airFreightForwarding = [
+  {
+    id: 1,
+    num: "1",
+    question: "What is air forwarding?",
+    answer: "Air forwarding is the process of arranging and managing the transportation of goods by air. It can include cargo pickup, documentation, airline booking, customs clearance, shipment tracking and final delivery."
+  },
+  {
+    id: 2,
+    num: "2",
+    question: "What types of goods can be shipped by air?",
+    answer: "Many types of eligible goods can be shipped by air, including commercial products, samples, electronics, machinery parts, e-commerce products, high-value goods and urgent shipments. The shipment must meet the applicable airline, customs and regulatory requirements."
+  },
+  {
+    id: 3,
+    num: "3",
+    question: "Do you provide customs clearance for air shipments?",
+    answer: "Yes. We provide customs clearance support and documentation assistance for eligible air shipments, helping businesses manage the import and export process more smoothly."
+  },
+  {
+    id: 4,
+    num: "4",
+    question: "Can I track my air shipment?",
+    answer: "Yes. Shipment tracking and regular updates allow you to stay informed about the movement and status of your cargo during transit."
+  },
+  {
+    id: 5,
+    num: "5",
+    question: "Why choose air freight instead of sea freight?",
+    answer: "Air freight is generally chosen when faster delivery is important. It is particularly useful for urgent shipments, product samples, time-sensitive goods and shipments that need to reach international destinations within a shorter transit time."
+  }
+]
 
 
-    
-     export const FaqWarehousing = [
-    {
-      id:1,
-      num:"1",
-      question:"What is warehousing in logistics?",
-      answer:"Warehousing means storing goods safely at a designated facility until they are ready to be shipped, distributed or delivered. It is an important part of managing the movement of goods."
-    },
-       {
-      id:2,
-      num:"2",
-      question:" What types of goods can be stored in a warehouse?",
-      answer:"Different types of commercial and business goods can be stored, depending on their size, quantity, nature and storage requirements. The suitable storage arrangement may vary from one product to another."
-    },
-       {
-      id:3,
-      num:"3",
-      question:"Do you provide inventory management support?",
-      answer:"Yes. Our warehousing operations can include receiving goods, storing inventory, handling stock, preparing orders and arranging dispatch. This helps businesses keep better track of their goods."
-    },
-       {
-      id:4,
-      num:"4",
-      question:" Can warehousing be combined with transportation?",
-      answer:"Yes. Warehousing can be connected with transportation, freight forwarding and distribution services. This allows goods to be stored at the warehouse and then moved to their next destination when required."
-    },
-       {
-      id:5,
-      num:"5",
-      question:"How can warehousing help my business?",
-      answer:"Good warehousing helps businesses keep their stock organized and reduces the difficulty of managing goods at different stages of the supply chain. It also makes it easier to prepare and dispatch goods when they are needed."
-    }
-    ];
+
+
+export const transportation = [
+  {
+    id: 1,
+    num: "1",
+    question: "What is surface transport service?",
+    answer: "Surface transport is the movement of goods by road using trucks and other suitable transportation vehicles. It can be used for short, medium and long-distance shipments."
+  },
+  {
+    id: 2,
+    num: "2",
+    question: "What is the difference between FTL and LTL transportation?",
+    answer: "FTL (Full Truckload) means the truck is used for a single shipment. LTL (Less-than-Truckload) allows different shipments to share the available truck space. The right option usually depends on the size and volume of your shipment."
+  },
+  {
+    id: 3,
+    num: "3",
+    question: "Does The DFL Group provide door-to-door transportation?",
+    answer: "Yes. We provide door-to-door transportation along with door-to-hub and hub-to-door options, depending on the shipment and delivery requirements."
+  },
+  {
+    id: 4,
+    num: "4",
+    question: "Can I track my road transportation shipment?",
+    answer: "Yes. Shipment tracking helps you stay updated on your cargo while it is being transported and provides better visibility of the shipment's progress."
+  },
+  {
+    id: 5,
+    num: "5",
+    question: "What types of surface transportation services do you provide?",
+    answer: "Our surface transportation services include FTL and LTL transportation, first-mile and last-mile delivery, long-distance transportation, route planning, vehicle coordination and door-to-door cargo movement."
+  }
+]
+
+export const FaqOceanFright = [
+  {
+    id: 1,
+    num: "1",
+    question: "What is ocean freight ?",
+    answer: "Ocean freight means arranging the transportation of goods by sea from one country to another. It can include booking the shipment, preparing documents, handling customs and coordinating delivery."
+  },
+  {
+    id: 2,
+    num: "2",
+    question: "What is FCL and LCL shipping?",
+    answer: "FCL means Full Container Load, where a container is used for one shipment. LCL means Less than Container Load, where smaller shipments share space in the same container."
+  },
+  {
+    id: 3,
+    num: "3",
+    question: "What type of goods can be shipped by sea?",
+    answer: "Many types of business cargo can be transported by ocean, including machinery, raw materials, industrial products, equipment, consumer goods and other eligible commercial shipments."
+  },
+  {
+    id: 4,
+    num: "4",
+    question: "Can The DFL Group help with customs clearance?",
+    answer: "Yes. Our team can coordinate customs clearance and documentation as part of the overall ocean freight process, helping make import and export shipments easier to manage."
+  },
+  {
+    id: 5,
+    num: "5",
+    question: "When should I choose ocean freight?",
+    answer: "Ocean freight is generally a good option for large, heavy or bulky shipments. It is especially useful when you are moving a larger quantity of goods and delivery speed is not the main priority."
+  }
+]
+
+
+export const Customer_clearance = [
+  {
+    id: 1,
+    num: "1",
+    question: "What is customs clearance?",
+    answer: "Customs clearance is the process of getting goods cleared by customs when they are being imported or exported. It involves submitting the required documents and completing the formalities before the goods can move ahead."
+  },
+  {
+    id: 2,
+    num: "2",
+    question: "What documents are required for customs clearance?",
+    answer: "It depends on the type of goods, shipment and destination. Generally, documents such as a commercial invoice, packing list and shipping documents are required. Some products may also need additional licences, certificates or approvals."
+  },
+  {
+    id: 3,
+    num: "3",
+    question: "Do you provide customs clearance for imports and exports?",
+    answer: "Yes. The DFL Group provides customs clearance support for both import and export shipments. The exact requirements depend on the cargo and the regulations applicable to the shipment."
+  },
+  {
+    id: 4,
+    num: "4",
+    question: " Can you help with customs documentation?",
+    answer: "Yes. We help businesses organise and coordinate the documents needed for customs clearance. If additional documents or information are required during the process, our team helps coordinate them as well."
+  },
+  {
+    id: 5,
+    num: "5",
+    question: "What happens if there is an error in the customs documents?",
+    answer: "If the documents are incomplete or contain incorrect information, customs may ask for clarification or additional documents. This can delay the shipment and may sometimes result in additional charges. That is why it is important to prepare the documentation correctly before the shipment reaches customs."
+  }
+]
+
+
+
+export const FaqWarehousing = [
+  {
+    id: 1,
+    num: "1",
+    question: "What is warehousing in logistics?",
+    answer: "Warehousing means storing goods safely at a designated facility until they are ready to be shipped, distributed or delivered. It is an important part of managing the movement of goods."
+  },
+  {
+    id: 2,
+    num: "2",
+    question: " What types of goods can be stored in a warehouse?",
+    answer: "Different types of commercial and business goods can be stored, depending on their size, quantity, nature and storage requirements. The suitable storage arrangement may vary from one product to another."
+  },
+  {
+    id: 3,
+    num: "3",
+    question: "Do you provide inventory management support?",
+    answer: "Yes. Our warehousing operations can include receiving goods, storing inventory, handling stock, preparing orders and arranging dispatch. This helps businesses keep better track of their goods."
+  },
+  {
+    id: 4,
+    num: "4",
+    question: " Can warehousing be combined with transportation?",
+    answer: "Yes. Warehousing can be connected with transportation, freight forwarding and distribution services. This allows goods to be stored at the warehouse and then moved to their next destination when required."
+  },
+  {
+    id: 5,
+    num: "5",
+    question: "How can warehousing help my business?",
+    answer: "Good warehousing helps businesses keep their stock organized and reduces the difficulty of managing goods at different stages of the supply chain. It also makes it easier to prepare and dispatch goods when they are needed."
+  }
+];
 
 // ==========================================
 // DFL IT SOLUTIONS - 5-STEP WORKFLOW ONBOARDING PROCESS

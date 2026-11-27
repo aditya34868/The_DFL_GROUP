@@ -188,8 +188,8 @@ const Contact = () => {
                   required
                   placeholder={t("contact.emailPlaceholder", "john@example.com")}
                   className={`w-full rounded-xl border px-4 py-3 sm:py-3.5 lg:py-4 text-sm sm:text-base font-medium focus:outline-none focus:ring-2 transition-all ${errors.email
-                      ? "border-red-500 bg-red-50 text-red-900 focus:ring-red-500/20"
-                      : "border-slate-200 bg-slate-50 text-slate-800 focus:border-[#E66E19] focus:bg-white focus:ring-[#E66E19]/20"
+                    ? "border-red-500 bg-red-50 text-red-900 focus:ring-red-500/20"
+                    : "border-slate-200 bg-slate-50 text-slate-800 focus:border-[#E66E19] focus:bg-white focus:ring-[#E66E19]/20"
                     }`}
                 />
                 {errors.email && (
@@ -211,11 +211,10 @@ const Contact = () => {
 
               <div
                 ref={countryDropdownRef}
-                className={`relative flex items-center rounded-xl border transition-all ${
-                  errors.phone
-                    ? "border-red-500 bg-red-50 text-red-900 focus-within:ring-2 focus-within:ring-red-500/20"
-                    : "border-slate-200 bg-slate-50 text-slate-800 focus-within:border-[#E66E19] focus-within:bg-white focus-within:ring-2 focus-within:ring-[#E66E19]/20"
-                }`}
+                className={`relative flex items-center rounded-xl border transition-all ${errors.phone
+                  ? "border-red-500 bg-red-50 text-red-900 focus-within:ring-2 focus-within:ring-red-500/20"
+                  : "border-slate-200 bg-slate-50 text-slate-800 focus-within:border-[#E66E19] focus-within:bg-white focus-within:ring-2 focus-within:ring-[#E66E19]/20"
+                  }`}
               >
                 {/* Compact, clean trigger button with nice radius */}
                 <button
@@ -228,9 +227,8 @@ const Contact = () => {
                   <span className="text-base sm:text-lg leading-none">{selectedCountry.flag}</span>
                   <span className="text-xs sm:text-sm font-extrabold text-slate-800">{selectedCountry.code}</span>
                   <svg
-                    className={`w-3.5 h-3.5 text-slate-400 transition-transform duration-200 ${
-                      isCountryOpen ? "rotate-180 text-[#E66E19]" : ""
-                    }`}
+                    className={`w-3.5 h-3.5 text-slate-400 transition-transform duration-200 ${isCountryOpen ? "rotate-180 text-[#E66E19]" : ""
+                      }`}
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -295,20 +293,18 @@ const Contact = () => {
                               setIsCountryOpen(false);
                               setCountrySearch("");
                             }}
-                            className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-left text-xs transition-colors cursor-pointer ${
-                              isSelected
-                                ? "bg-orange-50 text-[#E66E19] font-bold"
-                                : "text-slate-700 hover:bg-slate-50 font-medium"
-                            }`}
+                            className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-left text-xs transition-colors cursor-pointer ${isSelected
+                              ? "bg-orange-50 text-[#E66E19] font-bold"
+                              : "text-slate-700 hover:bg-slate-50 font-medium"
+                              }`}
                           >
                             <div className="flex items-center gap-2.5 truncate mr-2">
                               <span className="text-base shrink-0 leading-none">{c.flag}</span>
                               <span className="truncate">{c.country}</span>
                             </div>
                             <span
-                              className={`text-[11px] font-bold shrink-0 px-2 py-0.5 rounded-lg ${
-                                isSelected ? "bg-[#E66E19]/10 text-[#E66E19]" : "bg-slate-100 text-slate-600"
-                              }`}
+                              className={`text-[11px] font-bold shrink-0 px-2 py-0.5 rounded-lg ${isSelected ? "bg-[#E66E19]/10 text-[#E66E19]" : "bg-slate-100 text-slate-600"
+                                }`}
                             >
                               {c.code}
                             </span>
